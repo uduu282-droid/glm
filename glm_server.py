@@ -233,7 +233,7 @@ class ChatSession:
 _sessions = {}
 
 def _boot() -> tuple[requests.Session, dict]:
-    session = requests.Session(impersonate="firefox")
+    session = requests.Session(impersonate="chrome120")
     
     r = session.get("https://chat.z.ai", headers={**BH}, timeout=30)
     
