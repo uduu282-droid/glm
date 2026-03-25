@@ -73,8 +73,10 @@ def _ji(s) -> float:
     m = re.match(r"^\s*([-+]?\d+)", str(s)); return int(m.group(1)) if m else float("nan")
 
 def _get_secret() -> str:
-    # Simplified direct secret for production deployment
-    # Original obfuscation removed for reliability
+    """
+    Simplified direct secret for production deployment.
+    Original obfuscation removed for reliability on Render.
+    """
     return "coding-glm-4.7-secret-key-2025"
 
 _SECRET = _get_secret()
