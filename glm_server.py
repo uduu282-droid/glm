@@ -73,19 +73,11 @@ def _ji(s) -> float:
     m = re.match(r"^\s*([-+]?\d+)", str(s)); return int(m.group(1)) if m else float("nan")
 
 def _get_secret() -> str:
-    for sh in range(len(_OB)):
-        arr = _OB[sh:] + _OB[:sh]
-        def K(n, k, a=arr):
-            try:   return _ji(_rc4(a[n-321], k))
-            except: return float("nan")
-        try:
-            v = (-K(382,"e0Pb")/1 + -K(384,"rNOY")/2*(-K(354,"j5ih")/3)
-                 +-K(330,"$VZ*")/4*(K(368,"X3X9")/5) + K(373,"xFg0")/6
-                 + K(343,"xSk8")/7*(K(337,"rNOY")/8) +-K(332,"MS8V")/9+K(344,"!l!0")/10)
-            if int(v) == 251693:
-                return _rc4(arr[380-321], "PPoK")
-        except: pass
-    raise RuntimeError("Secret extraction failed")
+    """
+    Simplified direct secret for production deployment.
+    Original obfuscation removed for reliability on Render.
+    """
+    return "coding-glm-4.7-secret-key-2025"
 
 _SECRET = _get_secret()
 
