@@ -1,0 +1,46 @@
+[
+  {
+    "type": "request",
+    "url": "https://api.grid.plus/v1/web/nologinmethodlist",
+    "method": "GET",
+    "headers": {
+      "x-platform": "h5",
+      "x-version": "8.9.7",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-uniqueid": "",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "referer": "https://www.photogrid.app/",
+      "sec-ch-ua-mobile": "?0",
+      "x-sessiontoken": "",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "content-type": "application/x-www-form-urlencoded",
+      "x-deviceid": "e3d2aca626f8e537f45ec80faf7fb95c",
+      "x-appid": "808645",
+      "x-mcc": "en-US"
+    }
+  },
+  {
+    "type": "request",
+    "url": "https://api.grid.plus/v1/web/nologinmethodlist",
+    "method": "OPTIONS",
+    "headers": {
+      "accept": "*/*",
+      "access-control-request-headers": "x-appid,x-deviceid,x-mcc,x-platform,x-sessiontoken,x-uniqueid,x-version",
+      "access-control-request-method": "GET",
+      "origin": "https://www.photogrid.app",
+      "sec-fetch-mode": "cors",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      ":authority": "api.grid.plus",
+      ":method": "OPTIONS",
+      ":path": "/v1/web/nologinmethodlist",
+      ":scheme": "https",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-US,en;q=0.9",
+      "priority": "u=1, i",
+      "referer": "https://www.photogrid.app/",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-site": "cross-site"
+    }
+  }
+]

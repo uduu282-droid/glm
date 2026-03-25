@@ -1,0 +1,71 @@
+{
+  "url": "https://chat.deepseek.com",
+  "timestamp": 1772876411748,
+  "cookies": [
+    {
+      "name": "aws-waf-token",
+      "value": "26a1adf3-ebf3-4c9e-8980-37b41fa21b62:BQoAeohDhW4JAAAA:yh8HrycTMU7Hf203qb/atgfkbf/wP54vYALCXGE9vyYqQsT+o5O/LOFOlEjvXTUcQ/TbqA+hhHUEVWB6sldd90TyRqvQYNYvDOYjsN3BSlfFZ3vnOWVUrHgDf4eNTEWLhCruDiTkeP75fPydXxJwCuPgBMQrcpHzmm48j14b1bw8ZSwJkqB7ODL0l9Hwu/o=",
+      "domain": ".deepseek.com",
+      "path": "/",
+      "expires": 1773222013
+    },
+    {
+      "name": "ds_session_id",
+      "value": "fbc402d297074d67b564c966e64c4b71",
+      "domain": "chat.deepseek.com",
+      "path": "/",
+      "expires": -1
+    },
+    {
+      "name": "smidV2",
+      "value": "20260307151015f5cc63f5d84d58f94e1a99350ecc8f31005ab570c7da6e240",
+      "domain": "chat.deepseek.com",
+      "path": "/",
+      "expires": 1807436415.151077
+    },
+    {
+      "name": ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae",
+      "value": "LHW5rtncjvrI5fBFyLBzIzHzrrtuG2/yuTyw9H27fYUrNjM9JsrPJXYFphpF3CAXPeAcOmOhC3/aclU+XHHBoQ%3D%3D",
+      "domain": "chat.deepseek.com",
+      "path": "/",
+      "expires": 1807436636.68176
+    }
+  ],
+  "localStorage": {
+    "hif_leim_cached": "\"op2j1xBcMZU5X2TCG3M4Ezl3HPS0vfDhTj4DUe3i46J/9ooUXCd8seI=.D87fpmysBDjj8DlZ\"",
+    "debugLiteModelChannel": "{\"value\":\"default\",\"__version\":\"0\"}",
+    "__close_idb_signal": "1772876529205.1887",
+    "thinkingEnabled": "{\"value\":false,\"__version\":\"2\"}",
+    "searchStateTriggerAppliedVersion": "{\"value\":1,\"__version\":\"0\"}",
+    ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae": "dZciv3ylY3d8dK4Texa65ErcsYU/3lprL4PgfiqvCT7ONqh9zX08HODmiC4xb6uHNiVMkMyq50f3LwJahRu89g==",
+    "__tea_cache_tokens_20006317": "{\"web_id\":\"7614446711901074701\",\"user_unique_id\":\"d8f00c09-ff62-4f78-bb98-21c3683cc578\",\"timestamp\":1772876962115,\"_type_\":\"default\"}",
+    "__appKit_@deepseek/chat_themePreference": "{\"value\":\"system\",\"__version\":\"0\"}",
+    "searchEnabled": "{\"value\":true,\"__version\":\"0\"}",
+    "__appKit_@deepseek/chat_banner": "{\"value\":{\"closedBannerId\":null,\"cachedBannerOptions\":null},\"__version\":\"0\"}",
+    "__appKit_@deepseek/chat_debugPanelEnabled": "{\"value\":false,\"__version\":\"0\"}",
+    "__tea_cache_first_20006317": "1",
+    "__appKit_@deepseek/chat_fg_enableHcaptcha": "{\"value\":false,\"__version\":\"0\"}",
+    "__ds_remote_feature_store": "{\"features\":{\"sse_auto_resume_timeout\":3000,\"chat_hcaptcha\":true,\"launch_clean_session_interval_seconds\":21600,\"hif_max_retry_interval_secs\":600,\"completion_request_timeout_ms\":60000,\"edit_request_timeout_ms\":60000,\"regenerate_request_timeout_ms\":60000,\"continue_request_timeout_ms\":60000,\"resume_request_timeout_ms\":60000,\"auto_resume_request_timeout_ms\":3000,\"search_state_on_launch\":\"on\",\"search_state_on_manually_created_chat\":\"keep\",\"search_state_on_automatically_created_chat\":\"on\",\"search_state_on_login\":\"on\",\"search_state_trigger\":{\"trigger\":\"on\",\"trigger_version\":1},\"allow_file_with_search\":true,\"normal_history_and_file_token_limit\":890880,\"r1_history_and_file_token_limit\":890880,\"volcengine_enabled\":\"true\",\"pow_prefetch\":true,\"pow_prefetch_count\":1},\"timestamp\":1772876529199,\"uuid\":\"805f2809-c11e-4eaa-a2cf-48a9d0baeb1b\",\"version\":5}",
+    "hif_dliq_cached": "\"nAuWIpPZf2ajrH7FyHhVd3TSSsl8rg5D4upaEZrTYQKIPJpTGLHSCdU=.8XJf28R1Mie7qcY6\"",
+    "__appKit_@deepseek/chat_debug": "{\"value\":false,\"__version\":\"0\"}",
+    "APMPLUS__cache__server__config__675113": "{\"sample\":{\"sample_rate\":1,\"include_users\":[],\"sample_granularity\":\"session\",\"rules\":[{\"name\":\"js_error\",\"enable\":true,\"sample_rate\":0.005,\"conditional_sample_rules\":[]},{\"name\":\"http\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"performance\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"resource_error\",\"enable\":true,\"sample_rate\":0.3,\"conditional_sample_rules\":[]},{\"name\":\"resource\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"custom\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"performance_timing\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"performance_longtask\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"pageview\",\"enable\":true,\"sample_rate\":1,\"conditional_sample_rules\":[]},{\"name\":\"action\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"blank_screen\",\"enable\":true,\"sample_rate\":0.5,\"conditional_sample_rules\":[]}]},\"status\":0,\"timestamp\":1772876964100}",
+    "APMPLUS675113": "JTdCJTIydXNlcklkJTIyOiUyMmE2OWQxYmFkLWQ5ZjUtNDMzZS05MTBiLWJlZmEzZmQyYWFkYiUyMiwlMjJkZXZpY2VJZCUyMjolMjI1Y2FlNTYzMS1jMWQ2LTRkZjgtYmZkZS0yMjY2YjZlOWY0NDklMjIsJTIyciUyMjowLjE0NzQ4OTY5NzY0NjY4ODMsJTIyZXhwaXJlcyUyMjoxNzgwNjUyOTY2MjY4JTdE",
+    "closeUnsafeEnvWarn": "{\"value\":false,\"__version\":\"0\"}",
+    "__appKit_@deepseek/chat_lastSessionValue": "{\"value\":{\"userIsMuted\":false,\"userMuteUntil\":0,\"loginMethod\":\"code\",\"siderCollapsed\":false,\"value\":{\"userIsMuted\":false,\"userMuteUntil\":0,\"loginMethod\":\"code\",\"siderCollapsed\":false}},\"__version\":\"0\"}",
+    "__appKit_@deepseek/chat_localePreference": "{\"value\":\"system\",\"__version\":\"0\"}",
+    "__appKit_@deepseek/chat_fg_enableNoIdbCache": "{\"value\":false,\"__version\":\"0\"}",
+    "userToken": "{\"value\":\"IDWgWde3z6LbED6s5LTV1OX5oWX+J58hWlr02qV0Km1VWFPt8+FHr+b7DEUO9XaI\",\"__version\":\"0\"}",
+    "debugModelChannel": "{\"value\":\"default\",\"__version\":\"0\"}"
+  },
+  "credentials": {
+    "email": "eres3022@gmail.com",
+    "password": "ronit@5805"
+  },
+  "powChallenge": {
+    "aws_waf_token_challenge_attempts": "{\"attempts\":1,\"lastAttemptTimestamp\":1772876412806}"
+  },
+  "sessionId": "d1772876432848-eb6zq71ha2",
+  "sessionStorage": {
+    "__tea_session_id_20006317": "{\"sessionId\":\"fc94656c-ad5c-444b-a006-e2361ba81591\",\"timestamp\":1772876417757}"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "passed": 6,
+  "failed": 1,
+  "tests": [
+    {
+      "name": "Health Check",
+      "status": "PASS",
+      "details": {
+        "status": "healthy",
+        "timestamp": "2026-03-07T20:42:02.269Z",
+        "pool": {
+          "total": 3,
+          "busy": 3,
+          "available": 0
+        },
+        "uptime": 181.9228567
+      }
+    },
+    {
+      "name": "Session Status",
+      "status": "PASS",
+      "details": {
+        "valid": true,
+        "age": "7.38 hours",
+        "cookies": 8,
+        "url": "https://chat.z.ai/",
+        "needsRefresh": true
+      }
+    },
+    {
+      "name": "Simple Math",
+      "status": "PASS",
+      "details": {
+        "duration": "10.55",
+        "correct": false
+      }
+    },
+    {
+      "name": "Science Question",
+      "status": "PASS",
+      "details": {
+        "duration": "45.12",
+        "hasConcepts": false
+      }
+    },
+    {
+      "name": "Literature Question",
+      "status": "PASS",
+      "details": {
+        "duration": "6.57",
+        "correct": true
+      }
+    },
+    {
+      "name": "Batch Questions",
+      "status": "PASS",
+      "details": {
+        "duration": "49.53",
+        "count": 3
+      }
+    },
+    {
+      "name": "Ask-Once",
+      "status": "FAIL",
+      "details": {
+        "error": "Chat interface not loaded. Check screenshot and HTML file for details."
+      }
+    }
+  ]
+}

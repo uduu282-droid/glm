@@ -1,0 +1,75 @@
+
+Puter.js AI Integration Documentation
+=================================
+
+Overview:
+--------
+Puter.js provides free, unlimited access to Claude AI models with streaming support.
+This integration allows Node.js applications to access powerful AI capabilities
+without managing API keys directly.
+
+Supported Models:
+---------------
+1. claude-sonnet-4-5  - Balanced performance (recommended)
+2. claude-sonnet-4    - Fast general-purpose model
+3. claude-opus-4-5    - Most capable model
+4. claude-opus-4-1    - Advanced reasoning capabilities
+5. claude-opus-4      - Deep analytical processing
+6. claude-haiku-4-5   - Fastest response times
+
+Features:
+-------
+✅ Free and unlimited usage
+✅ Streaming responses support
+✅ Multiple Claude models
+✅ Conversation history support
+✅ No direct API key management
+
+Installation:
+-----------
+npm install puter-js
+
+Basic Usage:
+----------
+// Simple message
+const response = await puter.ai.chat('Hello, how are you?');
+console.log(response.message.content);
+
+Streaming Responses:
+------------------
+// Real-time streaming with model selection
+const response = await puter.ai.chat('Tell me a story', {
+    model: 'claude-sonnet-4-5',
+    stream: true
+});
+
+// Handle streaming chunks
+for await (const chunk of response) {
+    if (chunk?.text) {
+        console.log(chunk.text);
+    }
+}
+
+Conversation History:
+-------------------
+const messages = [
+  { role: 'user', content: 'Hello!' },
+  { role: 'assistant', content: 'Hi there! How can I help you?' },
+  { role: 'user', content: 'Tell me about AI' }
+];
+
+const response = await puter.ai.chat(messages, {
+    model: 'claude-sonnet-4-5'
+});
+
+Requirements:
+-----------
+1. Puter.js account and API key
+2. Internet connectivity
+3. Node.js environment
+
+Limitations:
+----------
+1. Requires Puter.js account registration
+2. Dependent on Puter.js service availability
+3. Streaming requires async/await support

@@ -1,0 +1,38 @@
+{
+  "name": "rovo-dev-multi-account",
+  "version": "1.0.0",
+  "description": "Multi-account Rovo Dev CLI proxy with Cloudflare Workers - 5M tokens/day per account",
+  "main": "src/index.ts",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "auth:add": "node authenticate.js add",
+    "auth:list": "node authenticate.js list",
+    "auth:remove": "node authenticate.js remove",
+    "setup:deploy-all": "node setup-accounts.js deploy-all",
+    "setup:deploy-all-remote": "node setup-accounts.js deploy-all-remote",
+    "setup:list": "node setup-accounts.js list",
+    "setup:health": "node setup-accounts.js health",
+    "secrets:update": "node manage-secrets.js"
+  },
+  "keywords": [
+    "rovo-dev",
+    "claude",
+    "multi-account",
+    "cloudflare-workers",
+    "ai-proxy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.3.0",
+    "open": "^10.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "toml": "^3.0.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.63.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260305.1"
+  }
+}

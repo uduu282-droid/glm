@@ -1,0 +1,11 @@
+name = "aihubmix-worker"
+main = "worker-aihubmix.js"
+compatibility_date = "2024-01-01"
+
+workers_dev = true
+
+[vars]
+WORKER_NAME = "AIHubMix API Proxy with Key Rotation"
+VERSION = "3.0.0"
+ROTATION_ENABLED = "true"
+TOTAL_KEYS = "10"

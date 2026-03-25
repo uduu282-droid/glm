@@ -1,0 +1,46 @@
+[
+  {
+    "test_number": 1,
+    "prompt": "A beautiful sunset over mountains",
+    "url": "https://theresanaiforthat.com/api/generate/",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "response_size": 0,
+    "success": true,
+    "timestamp": "2026-03-18 20:54:55",
+    "raw_response": ""
+  },
+  {
+    "test_number": 2,
+    "prompt": "A cute cat sitting on a windowsill",
+    "url": "https://theresanaiforthat.com/api/generate/",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "response_size": 0,
+    "success": true,
+    "timestamp": "2026-03-18 20:54:57",
+    "raw_response": ""
+  },
+  {
+    "test_number": 3,
+    "prompt": "Futuristic city with flying cars",
+    "url": "https://theresanaiforthat.com/api/generate/",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "response_size": 0,
+    "success": true,
+    "timestamp": "2026-03-18 20:55:00",
+    "raw_response": ""
+  },
+  {
+    "test_number": 4,
+    "prompt": "Serene lake surrounded by pine trees",
+    "url": "https://theresanaiforthat.com/api/generate/",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "response_size": 0,
+    "success": true,
+    "timestamp": "2026-03-18 20:55:02",
+    "raw_response": ""
+  }
+]

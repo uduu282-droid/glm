@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-03-20T14:28:23.857Z",
+  "url": "https://ai-images-new.vercel.app/",
+  "summary": {
+    "totalRequests": 6,
+    "uniqueEndpoints": 1,
+    "apiRequests": 1,
+    "capturedResponses": 0
+  },
+  "endpoints": [
+    "https://open-ai21.p.rapidapi.com/texttoimage2"
+  ],
+  "apiRequests": [
+    {
+      "url": "https://open-ai21.p.rapidapi.com/texttoimage2",
+      "method": "POST",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "referer": "https://ai-images-new.vercel.app/",
+        "accept-language": "en-US,en;q=0.9",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "content-type": "application/json",
+        "x-rapidapi-key": "ebbd999ebemsh25e7e9f6544cc1dp1950ffjsn1f6ac8266b48",
+        "x-rapidapi-host": "open-ai21.p.rapidapi.com",
+        "origin": "https://ai-images-new.vercel.app"
+      },
+      "postData": "{\"text\":\"a cat\"}"
+    }
+  ],
+  "responses": [],
+  "cookies": {},
+  "pageInfo": {
+    "title": "Image Generator",
+    "url": "https://ai-images-new.vercel.app/",
+    "description": "",
+    "inputs": [
+      {
+        "type": "text",
+        "id": "",
+        "name": "",
+        "placeholder": "Describe the image you want to generate...",
+        "className": "w-full px-4 py-3 pr-24 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Generate",
+        "type": "submit",
+        "className": "absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors",
+        "id": ""
+      }
+    ],
+    "frameworks": {
+      "gradio": 0,
+      "nextjs": 0,
+      "react": 0
+    }
+  }
+}

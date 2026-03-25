@@ -1,0 +1,33 @@
+
+Image APIs Test Report
+=================
+
+Test Date: 2025-12-22 19:14:40
+
+Image APIs Tested:
+---------------
+
+1. Text to Image API
+   Description: Convert text prompts to images
+   URL: https://text-to-img.apis-bj-devs.workers.dev/?prompt=cute+girl
+   Status: success
+   Status Code: 200
+   Response Time: 16.13s
+   Response Preview: {'status': 'success', 'join': '@BJ_Devs on Telegram', 'support': '@BJ_Coder', 'message': 'Image crea
+
+2. Diffusion AI API
+   Description: AI image diffusion model API
+   URL: https://diffusion-ai.bjcoderx.workers.dev/?prompt=a+cute+baby
+   Status: exception
+   Status Code: N/A
+   Response Time: 0.00s
+   Error: HTTPSConnectionPool(host='diffusion-ai.bjcoderx.workers.dev', port=443): Max retries exceeded with u
+
+
+Summary:
+-------
+Total Image APIs Tested: 2
+Successful Responses: 1/2
+
+Note: These are free image generation APIs provided via Cloudflare Workers.
+Image generation may take longer than text APIs.

@@ -1,0 +1,193 @@
+ALL WORKING API ENDPOINTS
+=========================
+
+Last Updated: 2026-02-24T04:02:49.255Z
+Total Working Endpoints: 18
+
+**Note**: This count includes 13 endpoints that return data directly and 1 endpoint (Flip Gen API) that is accessible but currently not generating images.
+
+NEWLY DISCOVERED AND TESTED API:
+
+11. Red Flip Banana API
+    URL: https://flip-banana.vercel.app/generate
+    Method: GET
+    Status: 200
+    Response: {"creator":"★aquib","response":{"image_url":"https://tmpfiles.org/dl/25875912/image_1771910838.jpg","prompt":"banana","success":true,"time_milliseconds":8947.98,"time_seconds":8.948}}
+
+ADDITIONAL DISCOVERED API (CURRENTLY UNAVAILABLE FOR IMAGE GENERATION):
+
+12. Flip Gen API
+    URL: https://flip-gen.vercel.app/ai/image/:style
+    Method: GET
+    Status: 200
+    Issue: Returns 200 OK but with error message "Failed to generate image"
+    Note: API is accessible but not generating images for any tested prompts
+    Styles Available: realistic, anime, fantasy, cyberpunk, watercolor, oil-painting,
+                    pixel-art, sketch, cartoon, abstract, vintage, steampunk
+
+NEWLY DISCOVERED AND TESTED TEXT AI API:
+
+13. Flip APIAKIB - GPT-5
+    URL: https://flip-apiakib.vercel.app/ai/gpt-5
+    Method: GET
+    Status: 200
+    Response: {"citation_count":0,"citations":[],"creator":"Aquib","model":"gpt-5","note":"Advanced GPT-5 model for sophisticated AI responses","status":true,"statusCode":200,"text":"Hi there — it's good to see you. How's your morning starting out?"}
+
+NEWLY DISCOVERED AND TESTED IMAGE AI API:
+
+14. MCP Core - Magic Model
+    URL: https://t2i.mcpcore.xyz/generate
+    Method: POST
+    Status: 200
+    Parameters: {"prompt": "your text", "model": "magic"}
+    Response: {"success":true,"message":"Image generated using magic and stored successfully.","imageUrl":"https://free-cdn.mitraai.xyz/33c5303d-c557-4411-9d22-e99d22e85d04.jpg","id":"33c5303d-c557-4411-9d22-e99d22e85d04","model":"magic"}
+
+IMAGE APIs (6 working):
+==================================================
+1. Ashlynn Image API (Main)
+   URL: https://image.itz-ashlynn.workers.dev/generate
+   Method: GET
+   Status: 200
+   Response: Direct image data (415788 bytes)
+
+2. Ashlynn Styles API
+   URL: https://image.itz-ashlynn.workers.dev/styles
+   Method: GET
+   Status: 200
+   Response: {
+  "status": "success",
+  "count": 31,
+  "styles": [
+    {
+      "key": "adorable_kawaii",
+      "n...
+
+3. Ashlynn Base API
+   URL: https://image.itz-ashlynn.workers.dev/
+   Method: GET
+   Status: 200
+   Response: {
+  "name": "AI Image Generator API",
+  "version": "1.0.0",
+  "description": "Generate high-quality ...
+
+4. Text to Image API
+   URL: https://text-to-img.apis-bj-devs.workers.dev/
+   Method: GET
+   Status: 200
+   Response: {
+  "status": "success",
+  "join": "@BJ_Devs on Telegram",
+  "support": "@BJ_Coder",
+  "message": "I...
+
+5. SeaArt AI API
+   URL: https://seaart-ai.apis-bj-devs.workers.dev/
+   Method: GET
+   Status: 200
+   Response: {
+  "status": "success",
+  "message": "Image created successfully!",
+  "prompt": "a cute boy",
+  "re...
+
+6. Magic Studio API
+   URL: https://magic-studio.ziddi-beatz.workers.dev/
+   Method: GET
+   Status: 200
+   Response: Direct image data (132498 bytes)
+
+
+CHAT APIs (1 working):
+==================================================
+1. NVIDIA API
+   URL: https://integrate.api.nvidia.com/v1/chat/completions
+   Method: POST
+   Status: 200
+   Response: {"id":"chatcmpl-9ecc35cf30715d02","object":"chat.completion","created":1771905718,"model":"meta/llam...
+
+
+SEARCH APIs (2 working):
+==================================================
+1. Exa.ai Search API
+   URL: https://api.exa.ai/search
+   Method: POST
+   Status: 200
+   Response: {"requestId":"81bd809c1b75de61dd24a48f10a643ad","resolvedSearchType":"neural","results":[{"id":"http...
+
+2. Google Geocoding API
+   URL: https://maps.googleapis.com/maps/api/geocode/json
+   Method: GET
+   Status: 200
+   Response: {
+   "error_message" : "This API is not activated on your API project. You may need to enable this A...
+
+
+UTILITY APIs (1 working):
+==================================================
+1. Firebase Installations API
+   URL: https://firebaseinstallations.googleapis.com/v1/projects/chatai-c30fc/installations
+   Method: POST
+   Status: 200
+   Response: {
+  "name": "projects/539313859520/installations/f9cq6uaNnyOAp6p5KtoqrZ",
+  "fid": "f9cq6uaNnyOAp6p5...
+
+ADDITIONAL DISCOVERED API (UNREACHABLE):
+
+15. MakeHub AI API
+    URL: https://api.makehub.ai/v1
+    Method: Various (GET /models, POST /chat/completions)
+    Status: Connection timed out
+    Issue: Both models and chat endpoints are unreachable
+    Access: Requires API key (mh_85afbeff51e5450fa84319bc05dab185776afdf8d8464e9082baad75d69b7)
+    Model Format: provider/model (e.g., openai/gpt-4)
+    Note: API appears to be offline or experiencing connectivity issues
+
+ADDITIONAL DISCOVERED API (REQUIRES AUTHENTICATION):
+
+16. Z.ai Chat API
+    URL: https://chat.z.ai/api/v1/chats/?page=1
+    Method: GET
+    Status: 401 Unauthorized
+    Issue: Requires valid authentication tokens and cookies
+    Access: Bearer token + session cookies required
+    Authentication: Headers (authorization, accept) + Cookies (token, ssxmod_itna, acw_tc)
+    Note: API accessible but authentication tokens are invalid/expired
+
+NEWLY DISCOVERED AND TESTED CHAT API:
+
+17. Nano-GPT API
+    URL: https://nano-gpt.com/api/v1
+    Method: GET/POST
+    Status: 200 OK (models), 402 Payment Required (chat)
+    Authentication: Bearer token (sk-nano-1d74edc0-adbb-43ec-8942-f32033d73de7)
+    Models: 200+ models available (GPT, Claude, Gemini, Llama, Qwen, Mistral, etc.)
+    Payment: $0.2523 USD per request (NANO/USDC)
+    Endpoints: /models (free), /chat/completions (paid)
+    Note: API fully functional, pay-per-use model with crypto payments
+
+NEWLY DISCOVERED AND TESTED CHAT API:
+
+18. AICC AI API
+    URL: https://api.ai.cc/v1
+    Method: GET/POST
+    Status: 200 OK
+    Authentication: Bearer token (sk-WfXy1P61DdVGmYFmvtt7tjozuipMWK2h68AuxULxn81DDNua)
+    Models: GPT-4 variants (gpt-4, gpt-4o, gpt-4.1, gpt-4-turbo, etc.)
+    Response: High-quality detailed responses
+    Endpoints: /models, /chat/completions
+    Note: Fully OpenAI-compatible API with multiple GPT-4 models
+
+NEWLY DISCOVERED AND TESTED CHAT API:
+
+19. NVIDIA AI API
+    URL: https://integrate.api.nvidia.com/v1
+    Method: GET/POST
+    Status: 200 OK
+    Authentication: Bearer token (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)
+    Models: 186 total (89 chat/instruct, 12 embeddings, 85 others)
+    Response: High-quality responses
+    Endpoints: /models, /chat/completions
+    Note: Extensive model catalog including Llama, Mistral, Qwen, Phi, etc.
+

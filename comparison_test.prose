@@ -1,0 +1,27 @@
+Say "=== COMPARISON: Prose vs Python Features ===".
+
+Let name be "Prose".
+Let number be 42.
+Let pi be 3.14159.
+Say "Variable assignment works: " plus name plus ", " plus number plus ", " plus pi plus ".".
+
+If number > 40 then do the following.
+    Say "Conditional (if) statement works!".
+End if.
+
+Say "Testing loops:".
+Let counter be 0.
+Repeat 3 times do the following.
+    Let counter be counter plus 1.
+    Say "  Loop iteration " plus counter plus ".".
+End repeat.
+
+Define a function called double that takes x and does the following.
+    Let doubled be x times 2.
+    Give back doubled.
+End function.
+
+Call double with 5.
+Say "Function call result: 5 doubled is " plus result plus ".".
+
+Say "=== Prose language test complete ===".

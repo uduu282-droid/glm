@@ -1,0 +1,37 @@
+// Paste your captured cURL command or fetch call here
+// Example format:
+
+/*
+curl 'https://free-aichat.vercel.app/' \
+  -H 'accept: text/x-component' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'content-type: text/plain;charset=UTF-8' \
+  -H 'next-action: 405240754eac217df4ff6088d4d438a00cf17c8683' \
+  -H 'next-router-state-tree: %5B%22%22%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2Cnull%2Cnull%5D%7D%2Cnull%2Cnull%2Ctrue%5D' \
+  -H 'origin: https://free-aichat.vercel.app' \
+  -H 'referer: https://free-aichat.vercel.app/' \
+  -H 'sec-ch-ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36' \
+  --data-raw ''
+*/
+
+// OR paste fetch format:
+/*
+fetch('https://free-aichat.vercel.app/', {
+  method: 'POST',
+  headers: {
+    'accept': 'text/x-component',
+    'content-type': 'text/plain;charset=UTF-8',
+    'next-action': '...',
+    'next-router-state-tree': '...'
+  },
+  body: '',
+  referrerPolicy: 'strict-origin-when-cross-origin',
+  credentials: 'same-origin'
+});
+*/

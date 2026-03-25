@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-03-20T18-24-55-775Z",
+  "results": [
+    {
+      "name": "V2 Upscale Endpoint",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/image/upscale-v2",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "V2 Enhance Endpoint",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/v2/image/enhance",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Auto Remove Endpoint",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/image/auto-remove",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Manual Remove Endpoint",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/image/manual-remove",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Colorize Endpoint",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/image/colorize",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Unblur Endpoint",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/image/unblur",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Enhancement Task (POST)",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/enhancement/create",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D",
+        "type": "upscale"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "AI Enhance Service",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/service/enhance",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Image Tool API",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/tool/upscale",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Task Creation",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/task/create",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D",
+        "action": "upscale"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Async Process",
+      "method": "POST",
+      "url": "https://api.imgupscaler.ai/api/async/process",
+      "payload": {
+        "image_url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/85b56bad-33d8-4ff8-886c-abd0c2ba666a.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774032280&Signature=YyL8uQo1eXqa7aCLxNyVnXaLdWI%3D"
+      },
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Base API Info",
+      "method": "GET",
+      "url": "https://api.imgupscaler.ai/",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "API Version",
+      "method": "GET",
+      "url": "https://api.imgupscaler.ai/api/version",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "API Health",
+      "method": "GET",
+      "url": "https://api.imgupscaler.ai/api/health",
+      "success": false,
+      "error": "Request failed with status code 404"
+    }
+  ]
+}

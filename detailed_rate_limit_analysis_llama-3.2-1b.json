@@ -1,0 +1,215 @@
+{
+  "model": "llama-3.2-1b",
+  "api_key_length": 684,
+  "test_results": [
+    {
+      "request_num": 1,
+      "status_code": 200,
+      "response_time": 1.125324010848999,
+      "success": true,
+      "timestamp": 1766511284.166735,
+      "datetime": "2025-12-23 23:04:44.166735"
+    },
+    {
+      "request_num": 2,
+      "status_code": 200,
+      "response_time": 1.4351072311401367,
+      "success": true,
+      "timestamp": 1766511285.7029977,
+      "datetime": "2025-12-23 23:04:45.702998"
+    },
+    {
+      "request_num": 3,
+      "status_code": 200,
+      "response_time": 1.0706934928894043,
+      "success": true,
+      "timestamp": 1766511286.8749123,
+      "datetime": "2025-12-23 23:04:46.874912"
+    },
+    {
+      "request_num": 4,
+      "status_code": 200,
+      "response_time": 1.1281864643096924,
+      "success": true,
+      "timestamp": 1766511288.10676,
+      "datetime": "2025-12-23 23:04:48.106760"
+    },
+    {
+      "request_num": 5,
+      "status_code": 200,
+      "response_time": 1.1934154033660889,
+      "success": true,
+      "timestamp": 1766511289.4010892,
+      "datetime": "2025-12-23 23:04:49.401089"
+    },
+    {
+      "request_num": 6,
+      "status_code": 200,
+      "response_time": 1.2452828884124756,
+      "success": true,
+      "timestamp": 1766511290.753198,
+      "datetime": "2025-12-23 23:04:50.753198"
+    },
+    {
+      "request_num": 7,
+      "status_code": 200,
+      "response_time": 1.1683659553527832,
+      "success": true,
+      "timestamp": 1766511292.022285,
+      "datetime": "2025-12-23 23:04:52.022285"
+    },
+    {
+      "request_num": 8,
+      "status_code": 200,
+      "response_time": 1.208289623260498,
+      "success": true,
+      "timestamp": 1766511293.3315606,
+      "datetime": "2025-12-23 23:04:53.331561"
+    },
+    {
+      "request_num": 9,
+      "status_code": 200,
+      "response_time": 1.1370844841003418,
+      "success": true,
+      "timestamp": 1766511294.5703733,
+      "datetime": "2025-12-23 23:04:54.570373"
+    },
+    {
+      "request_num": 10,
+      "status_code": 200,
+      "response_time": 0.8973193168640137,
+      "success": true,
+      "timestamp": 1766511295.5692587,
+      "datetime": "2025-12-23 23:04:55.569259"
+    },
+    {
+      "request_num": 11,
+      "status_code": 200,
+      "response_time": 0.7471089363098145,
+      "success": true,
+      "timestamp": 1766511296.4193006,
+      "datetime": "2025-12-23 23:04:56.419301"
+    },
+    {
+      "request_num": 12,
+      "status_code": 200,
+      "response_time": 1.149872064590454,
+      "success": true,
+      "timestamp": 1766511297.669498,
+      "datetime": "2025-12-23 23:04:57.669498"
+    },
+    {
+      "request_num": 13,
+      "status_code": 200,
+      "response_time": 0.8171095848083496,
+      "success": true,
+      "timestamp": 1766511298.589248,
+      "datetime": "2025-12-23 23:04:58.589248"
+    },
+    {
+      "request_num": 14,
+      "status_code": 200,
+      "response_time": 0.7990818023681641,
+      "success": true,
+      "timestamp": 1766511299.4897053,
+      "datetime": "2025-12-23 23:04:59.489705"
+    },
+    {
+      "request_num": 15,
+      "status_code": 429,
+      "response_time": 0.2625110149383545,
+      "success": false,
+      "timestamp": 1766511299.8536491,
+      "datetime": "2025-12-23 23:04:59.853649"
+    },
+    {
+      "request_num": 16,
+      "status_code": 200,
+      "response_time": 0.7750601768493652,
+      "success": true,
+      "timestamp": 1766511300.7332127,
+      "datetime": "2025-12-23 23:05:00.733213"
+    },
+    {
+      "request_num": 17,
+      "status_code": 200,
+      "response_time": 1.117767333984375,
+      "success": true,
+      "timestamp": 1766511301.9546592,
+      "datetime": "2025-12-23 23:05:01.954659"
+    },
+    {
+      "request_num": 18,
+      "status_code": 200,
+      "response_time": 1.1110572814941406,
+      "success": true,
+      "timestamp": 1766511303.167443,
+      "datetime": "2025-12-23 23:05:03.167443"
+    },
+    {
+      "request_num": 19,
+      "status_code": 200,
+      "response_time": 1.153791904449463,
+      "success": true,
+      "timestamp": 1766511304.4249773,
+      "datetime": "2025-12-23 23:05:04.424977"
+    },
+    {
+      "request_num": 20,
+      "status_code": 429,
+      "response_time": 0.2618873119354248,
+      "success": false,
+      "timestamp": 1766511304.7888794,
+      "datetime": "2025-12-23 23:05:04.788879"
+    },
+    {
+      "request_num": 21,
+      "status_code": 200,
+      "response_time": 1.1955807209014893,
+      "success": true,
+      "timestamp": 1766511306.089576,
+      "datetime": "2025-12-23 23:05:06.089576"
+    },
+    {
+      "request_num": 22,
+      "status_code": 200,
+      "response_time": 0.8028616905212402,
+      "success": true,
+      "timestamp": 1766511306.9998012,
+      "datetime": "2025-12-23 23:05:06.999801"
+    },
+    {
+      "request_num": 23,
+      "status_code": 200,
+      "response_time": 1.08447265625,
+      "success": true,
+      "timestamp": 1766511308.1880717,
+      "datetime": "2025-12-23 23:05:08.188072"
+    },
+    {
+      "request_num": 24,
+      "status_code": 200,
+      "response_time": 0.85646653175354,
+      "success": true,
+      "timestamp": 1766511309.1461523,
+      "datetime": "2025-12-23 23:05:09.146152"
+    },
+    {
+      "request_num": 25,
+      "status_code": 200,
+      "response_time": 1.904254674911499,
+      "success": true,
+      "timestamp": 1766511311.1515033,
+      "datetime": "2025-12-23 23:05:11.151503"
+    }
+  ],
+  "analysis": {
+    "successful_count": 23,
+    "failed_count": 2,
+    "rate_limit_hits": 2,
+    "rate_limit_positions": [
+      15,
+      20
+    ]
+  }
+}

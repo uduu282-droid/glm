@@ -1,0 +1,16 @@
+name = "unified-image-api"
+main = "worker-image-api.js"
+compatibility_date = "2024-01-01"
+
+# Worker configuration
+workers_dev = true
+route = ""
+
+# Environment variables (if needed in future)
+[vars]
+BACKEND_BASE = "https://bgremover-backend-121350814881.us-central1.run.app"
+
+# Development settings
+[dev]
+port = 8787
+local_protocol = "http"

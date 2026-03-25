@@ -1,0 +1,7 @@
+https://www.hiflux.xyz/api/auth/session
+https://www.hiflux.xyz/_vercel/insights/view
+https://www.hiflux.xyz/pricing
+https://www.hiflux.xyz/remove-background
+https://www.hiflux.xyz/remove-watermark
+https://www.hiflux.xyz/nano-banana
+https://www.hiflux.xyz/nano-banana-apps

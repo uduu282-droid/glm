@@ -1,0 +1,113 @@
+{
+  "menuLinks": [
+    {
+      "text": "LunaPic Photo Editor tumbler profile picture",
+      "href": "https://www2.lunapic.com/editor/"
+    },
+    {
+      "text": "Upload",
+      "href": "https://www2.lunapic.com/editor/?action=quick-upload"
+    },
+    {
+      "text": "File",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Edit",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Adjust",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Draw",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Borders",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Filters",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Effects",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Art",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Animation",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "Help",
+      "href": "https://www2.lunapic.com/editor/?action=transparent#"
+    },
+    {
+      "text": "LunaPic",
+      "href": "https://www2.lunapic.com/editor/"
+    },
+    {
+      "text": "Edit",
+      "href": "https://www2.lunapic.com/editor/?action=edit-menu"
+    },
+    {
+      "text": "Watch our Video Tutorial on Transparent Backgrounds",
+      "href": "https://www2.lunapic.com/editor/?action=tutorial&va=Transparent+Background&ya=VWoOmu68d2E"
+    },
+    {
+      "text": "Edit",
+      "href": "https://www2.lunapic.com/editor/?action=edit-menu"
+    },
+    {
+      "text": "Home",
+      "href": "https://www2.lunapic.com/editor/"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://www2.lunapic.com/editor/?action=feedback"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www2.lunapic.com/editor/?action=privacy"
+    },
+    {
+      "text": "Support",
+      "href": "https://www.lunapic.com/support/"
+    },
+    {
+      "text": "LunaPic.com",
+      "href": "https://lunapic.com/"
+    },
+    {
+      "text": "let us know if you find any new bugs",
+      "href": "https://www2.lunapic.com/editor/?action=feedback"
+    }
+  ],
+  "toolButtons": [
+    {
+      "title": "LunaPic Photo Editor",
+      "src": "https://www2.lunapic.com/editor/images/lunapic-bw.png"
+    },
+    {
+      "title": "transparent Effect at lunapic.com",
+      "src": "https://support.lunapic.com/editor/premade/transparent.gif"
+    }
+  ],
+  "imageTools": [],
+  "allInteractive": [
+    {
+      "type": "button",
+      "text": "Upload"
+    },
+    {
+      "type": "button",
+      "text": "Go"
+    }
+  ]
+}

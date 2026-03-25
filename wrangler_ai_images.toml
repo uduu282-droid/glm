@@ -1,0 +1,7 @@
+name = "ai-images-proxy"
+main = "worker_ai_images.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+RAPIDAPI_KEY = "ebbd999ebemsh25e7e9f6544cc1dp1950ffjsn1f6ac8266b48"
+RAPIDAPI_HOST = "open-ai21.p.rapidapi.com"

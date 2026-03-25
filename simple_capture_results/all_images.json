@@ -1,0 +1,254 @@
+{
+  "allImages": [
+    {
+      "src": "https://imgupscaler.ai/favicon.ico",
+      "alt": "ImgUpscaler.ai Logo",
+      "id": "",
+      "className": "",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "src": "https://imgupscaler.ai/favicon.ico",
+      "alt": "ImgUpscaler.ai Logo",
+      "id": "",
+      "className": "",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "src": "blob:https://imgupscaler.ai/f3cb39d9-ec3e-4ef5-9cee-63e4573cffec",
+      "alt": "processed-image",
+      "id": "",
+      "className": "canvas-image absolute inset-0 w-full h-full object-cover",
+      "width": 408,
+      "height": 272
+    },
+    {
+      "src": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/a292e8e7-4df0-43d7-a89d-89cbcad3512c.webp?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774043971&Signature=gcquA3wRMydt7frxkgyfWwVYbIw%3D",
+      "alt": "Uploaded image preview",
+      "id": "",
+      "className": "w-16 h-16 object-cover rounded-lg border border-gray-200 dark:border-gray-600",
+      "width": 62,
+      "height": 62
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-PlushToy.webp",
+      "alt": "Plush Toy",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-BigCreatureCity.webp",
+      "alt": "Fantasy Creature",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-CrystalEmoji.webp",
+      "alt": "Crystal Emoji",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-WoodblockUkie.webp",
+      "alt": "Ukiyo-e Art",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-TextureMap.webp",
+      "alt": "Texture Map",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-HandmadeStatue.webp",
+      "alt": "3D Figurine",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/a292e8e7-4df0-43d7-a89d-89cbcad3512c.webp?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774043971&Signature=gcquA3wRMydt7frxkgyfWwVYbIw%3D",
+      "alt": "Uploaded image preview",
+      "id": "",
+      "className": "w-16 h-16 object-cover rounded-lg border border-gray-200 dark:border-gray-600",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-PlushToy.webp",
+      "alt": "Plush Toy",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-BigCreatureCity.webp",
+      "alt": "Fantasy Creature",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-CrystalEmoji.webp",
+      "alt": "Crystal Emoji",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-WoodblockUkie.webp",
+      "alt": "Ukiyo-e Art",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-TextureMap.webp",
+      "alt": "Texture Map",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/sensecase-HandmadeStatue.webp",
+      "alt": "3D Figurine",
+      "id": "",
+      "className": "w-full h-full object-cover",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "src": "blob:https://imgupscaler.ai/f3cb39d9-ec3e-4ef5-9cee-63e4573cffec",
+      "alt": "Original image",
+      "id": "",
+      "className": "w-full h-full object-cover block",
+      "width": 44,
+      "height": 44
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/before1.webp",
+      "alt": "First image",
+      "id": "",
+      "className": "absolute inset-0 z-20 rounded-2xl flex-shrink-0 select-none object-cover object-center w-full h-full",
+      "width": 2000,
+      "height": 1488
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/after1.webp",
+      "alt": "Second image",
+      "id": "",
+      "className": "object-cover object-center w-full h-full",
+      "width": 2000,
+      "height": 1488
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/before2.webp",
+      "alt": "First image",
+      "id": "",
+      "className": "absolute inset-0 z-20 rounded-2xl flex-shrink-0 select-none object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/after2.webp",
+      "alt": "Second image",
+      "id": "",
+      "className": "object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/before3.webp",
+      "alt": "First image",
+      "id": "",
+      "className": "absolute inset-0 z-20 rounded-2xl flex-shrink-0 select-none object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/after3.webp",
+      "alt": "Second image",
+      "id": "",
+      "className": "object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/before4.webp",
+      "alt": "First image",
+      "id": "",
+      "className": "absolute inset-0 z-20 rounded-2xl flex-shrink-0 select-none object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.imgupscaler.ai/userspace/imgupscaler/image/ai-photo-editor/after4.webp",
+      "alt": "Second image",
+      "id": "",
+      "className": "object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/example6.webp",
+      "alt": "First image",
+      "id": "",
+      "className": "absolute inset-0 z-20 rounded-2xl flex-shrink-0 select-none object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.magiceraser.org/userspace/magiceraser/image/ai-image-editor/example6-after.webp",
+      "alt": "Second image",
+      "id": "",
+      "className": "object-cover object-center w-full h-full",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://imgupscaler.ai/favicon.ico",
+      "alt": "ImgUpscaler.ai Logo",
+      "id": "",
+      "className": "",
+      "width": 32,
+      "height": 32
+    }
+  ],
+  "enhancedImages": [
+    {
+      "src": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/a292e8e7-4df0-43d7-a89d-89cbcad3512c.webp?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774043971&Signature=gcquA3wRMydt7frxkgyfWwVYbIw%3D",
+      "alt": "Uploaded image preview",
+      "id": "",
+      "className": "w-16 h-16 object-cover rounded-lg border border-gray-200 dark:border-gray-600",
+      "width": 62,
+      "height": 62
+    },
+    {
+      "src": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/a292e8e7-4df0-43d7-a89d-89cbcad3512c.webp?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774043971&Signature=gcquA3wRMydt7frxkgyfWwVYbIw%3D",
+      "alt": "Uploaded image preview",
+      "id": "",
+      "className": "w-16 h-16 object-cover rounded-lg border border-gray-200 dark:border-gray-600",
+      "width": 720,
+      "height": 480
+    }
+  ]
+}

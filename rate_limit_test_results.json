@@ -1,0 +1,610 @@
+[
+  {
+    "model_id": "llama-3.2-1b",
+    "total_requests": 5,
+    "successful_requests": 4,
+    "failed_requests": 1,
+    "success_rate": 80.0,
+    "avg_response_time": 1.511584758758545,
+    "fastest_response_time": 1.169039011001587,
+    "slowest_response_time": 1.9072225093841553,
+    "total_time": 6.583026170730591,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.9072225093841553,
+        "success": true,
+        "timestamp": 1766481576.8622434
+      },
+      {
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 1.315096378326416,
+        "success": true,
+        "timestamp": 1766481578.2284074
+      },
+      {
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 1.169039011001587,
+        "success": true,
+        "timestamp": 1766481579.44904
+      },
+      {
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 1.6549811363220215,
+        "success": true,
+        "timestamp": 1766481581.1545553
+      },
+      {
+        "request_num": 5,
+        "status_code": 429,
+        "response_time": 0.3306279182434082,
+        "success": false,
+        "timestamp": 1766481581.5370467
+      }
+    ]
+  },
+  {
+    "model_id": "moonshotai/Kimi-K2-Instruct",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 1.5112309455871582,
+    "fastest_response_time": 1.5112309455871582,
+    "slowest_response_time": 1.5112309455871582,
+    "total_time": 11.758083820343018,
+    "rate_limit_hit": false,
+    "timeout_occurred": true,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.5112309455871582,
+        "success": true,
+        "timestamp": 1766481576.4662519
+      },
+      {
+        "request_num": 2,
+        "status_code": "TIMEOUT",
+        "response_time": null,
+        "success": false,
+        "timestamp": 1766481586.7131047
+      }
+    ]
+  },
+  {
+    "model_id": "llama-4-maverick-17b-128e-turbo",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 0.26535630226135254,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.26535630226135254,
+        "success": false,
+        "timestamp": 1766481586.978461
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek-r1-0528",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 1.810215950012207,
+    "fastest_response_time": 1.810215950012207,
+    "slowest_response_time": 1.810215950012207,
+    "total_time": 12.052623510360718,
+    "rate_limit_hit": false,
+    "timeout_occurred": true,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.810215950012207,
+        "success": true,
+        "timestamp": 1766481576.7652369
+      },
+      {
+        "request_num": 2,
+        "status_code": "TIMEOUT",
+        "response_time": null,
+        "success": false,
+        "timestamp": 1766481587.0076444
+      }
+    ]
+  },
+  {
+    "model_id": "llama-4-maverick-17b-128e",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 1.982072114944458,
+    "fastest_response_time": 1.982072114944458,
+    "slowest_response_time": 1.982072114944458,
+    "total_time": 12.223328590393066,
+    "rate_limit_hit": false,
+    "timeout_occurred": true,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.982072114944458,
+        "success": true,
+        "timestamp": 1766481576.937093
+      },
+      {
+        "request_num": 2,
+        "status_code": "TIMEOUT",
+        "response_time": null,
+        "success": false,
+        "timestamp": 1766481587.1783495
+      }
+    ]
+  },
+  {
+    "model_id": "command-a",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 0.2992126941680908,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.2992126941680908,
+        "success": false,
+        "timestamp": 1766481587.4775622
+      }
+    ]
+  },
+  {
+    "model_id": "qwen-3-32b",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 2.421377420425415,
+    "fastest_response_time": 2.421377420425415,
+    "slowest_response_time": 2.421377420425415,
+    "total_time": 12.642739057540894,
+    "rate_limit_hit": false,
+    "timeout_occurred": true,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 2.421377420425415,
+        "success": true,
+        "timestamp": 1766481577.3763983
+      },
+      {
+        "request_num": 2,
+        "status_code": "TIMEOUT",
+        "response_time": null,
+        "success": false,
+        "timestamp": 1766481587.59776
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4.1-nano",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 0.2563912868499756,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.2563912868499756,
+        "success": false,
+        "timestamp": 1766481587.7339535
+      }
+    ]
+  },
+  {
+    "model_id": "qwen-2.5-coder-7b",
+    "total_requests": 6,
+    "successful_requests": 5,
+    "failed_requests": 1,
+    "success_rate": 83.33333333333334,
+    "avg_response_time": 1.248629093170166,
+    "fastest_response_time": 1.032926082611084,
+    "slowest_response_time": 1.5859084129333496,
+    "total_time": 6.862890958786011,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.5859084129333496,
+        "success": true,
+        "timestamp": 1766481583.1239555
+      },
+      {
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 1.0412886142730713,
+        "success": true,
+        "timestamp": 1766481584.2159703
+      },
+      {
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 1.244884967803955,
+        "success": true,
+        "timestamp": 1766481585.5109766
+      },
+      {
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 1.032926082611084,
+        "success": true,
+        "timestamp": 1766481586.5941725
+      },
+      {
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 1.3381373882293701,
+        "success": true,
+        "timestamp": 1766481587.984033
+      },
+      {
+        "request_num": 6,
+        "status_code": 429,
+        "response_time": 0.36588263511657715,
+        "success": false,
+        "timestamp": 1766481588.400938
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek-ocr",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 0.2725980281829834,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.2725980281829834,
+        "success": false,
+        "timestamp": 1766481588.6745358
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 0.43308210372924805,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.43308210372924805,
+        "success": false,
+        "timestamp": 1766481589.1091223
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek-r1-distill-qwen-32b",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 2.3080625534057617,
+    "fastest_response_time": 2.3080625534057617,
+    "slowest_response_time": 2.3080625534057617,
+    "total_time": 2.6190927028656006,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 2.3080625534057617,
+        "success": true,
+        "timestamp": 1766481589.315707
+      },
+      {
+        "request_num": 2,
+        "status_code": 429,
+        "response_time": 0.26021337509155273,
+        "success": false,
+        "timestamp": 1766481589.626737
+      }
+    ]
+  },
+  {
+    "model_id": "llama-4-maverick",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 2.3356549739837646,
+    "fastest_response_time": 2.3356549739837646,
+    "slowest_response_time": 2.3356549739837646,
+    "total_time": 2.652451992034912,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 2.3356549739837646,
+        "success": true,
+        "timestamp": 1766481589.314116
+      },
+      {
+        "request_num": 2,
+        "status_code": 429,
+        "response_time": 0.26592087745666504,
+        "success": false,
+        "timestamp": 1766481589.630913
+      }
+    ]
+  },
+  {
+    "model_id": "gemma-3-27b-it",
+    "total_requests": 3,
+    "successful_requests": 2,
+    "failed_requests": 1,
+    "success_rate": 66.66666666666666,
+    "avg_response_time": 1.640141487121582,
+    "fastest_response_time": 1.5113623142242432,
+    "slowest_response_time": 1.768920660018921,
+    "total_time": 3.758258581161499,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.5113623142242432,
+        "success": true,
+        "timestamp": 1766481589.1091223
+      },
+      {
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 1.768920660018921,
+        "success": true,
+        "timestamp": 1766481590.9285781
+      },
+      {
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.37635207176208496,
+        "success": false,
+        "timestamp": 1766481591.3560185
+      }
+    ]
+  },
+  {
+    "model_id": "mistral-large",
+    "total_requests": 3,
+    "successful_requests": 1,
+    "failed_requests": 2,
+    "success_rate": 33.33333333333333,
+    "avg_response_time": 0.8657064437866211,
+    "fastest_response_time": 0.8657064437866211,
+    "slowest_response_time": 0.8657064437866211,
+    "total_time": 2.2363882064819336,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 0.8657064437866211,
+        "success": true,
+        "timestamp": 1766481590.4966195
+      },
+      {
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.9763426780700684,
+        "success": false,
+        "timestamp": 1766481591.5239794
+      },
+      {
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.29306459426879883,
+        "success": false,
+        "timestamp": 1766481591.8673012
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek-v3",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 0.25334882736206055,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.25334882736206055,
+        "success": false,
+        "timestamp": 1766481592.12065
+      }
+    ]
+  },
+  {
+    "model_id": "command-r7b24",
+    "total_requests": 3,
+    "successful_requests": 2,
+    "failed_requests": 1,
+    "success_rate": 66.66666666666666,
+    "avg_response_time": 1.5488919019699097,
+    "fastest_response_time": 1.5096869468688965,
+    "slowest_response_time": 1.5880968570709229,
+    "total_time": 4.707516670227051,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.5096869468688965,
+        "success": true,
+        "timestamp": 1766481589.2436404
+      },
+      {
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 1.5880968570709229,
+        "success": true,
+        "timestamp": 1766481590.8818996
+      },
+      {
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 1.5088567733764648,
+        "success": false,
+        "timestamp": 1766481592.4414701
+      }
+    ]
+  },
+  {
+    "model_id": "command-r",
+    "total_requests": 2,
+    "successful_requests": 1,
+    "failed_requests": 1,
+    "success_rate": 50.0,
+    "avg_response_time": 1.3220899105072021,
+    "fastest_response_time": 1.3220899105072021,
+    "slowest_response_time": 1.3220899105072021,
+    "total_time": 1.7325177192687988,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.3220899105072021,
+        "success": true,
+        "timestamp": 1766481592.6781085
+      },
+      {
+        "request_num": 2,
+        "status_code": 429,
+        "response_time": 0.3589761257171631,
+        "success": false,
+        "timestamp": 1766481593.087536
+      }
+    ]
+  },
+  {
+    "model_id": "gemma-3n-e2b-it",
+    "total_requests": 3,
+    "successful_requests": 2,
+    "failed_requests": 1,
+    "success_rate": 66.66666666666666,
+    "avg_response_time": 1.6545301675796509,
+    "fastest_response_time": 1.6040639877319336,
+    "slowest_response_time": 1.7049963474273682,
+    "total_time": 4.577272891998291,
+    "rate_limit_hit": true,
+    "timeout_occurred": false,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.7049963474273682,
+        "success": true,
+        "timestamp": 1766481591.3317335
+      },
+      {
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 1.6040639877319336,
+        "success": true,
+        "timestamp": 1766481592.9861374
+      },
+      {
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 1.1674087047576904,
+        "success": false,
+        "timestamp": 1766481594.20401
+      }
+    ]
+  },
+  {
+    "model_id": "deepseek-r1-turbo",
+    "total_requests": 1,
+    "successful_requests": 0,
+    "failed_requests": 1,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "fastest_response_time": 0,
+    "slowest_response_time": 0,
+    "total_time": 10.967316389083862,
+    "rate_limit_hit": false,
+    "timeout_occurred": true,
+    "results": [
+      {
+        "request_num": 1,
+        "status_code": "TIMEOUT",
+        "response_time": null,
+        "success": false,
+        "timestamp": 1766481600.0774999
+      }
+    ]
+  }
+]

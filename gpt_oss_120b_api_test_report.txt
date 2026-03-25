@@ -1,0 +1,44 @@
+
+GPT OSS 120B Free API Test Report
+============================
+
+Test Date: 2025-12-22 19:17:54
+API Base URL: https://gpt-oss-120b-100k.bankai7.workers.dev
+API Key: GPT-OSS-120B-A7
+Model: gpt-oss-120b
+
+DNS Resolution Check:
+------------------
+Status: Success
+
+Endpoints Tested:
+---------------
+
+1. /v1/models
+   Status: error
+   Status Code: 404
+   Response Time: 2.62s
+   Error: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if I
+
+2. /v1/chat/completions
+   Status: error
+   Status Code: 404
+   Response Time: 1.54s
+   Error: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if I
+
+
+Summary:
+-------
+DNS Resolution: Success
+Total Endpoints Tested: 2
+Successful Responses: 0/2
+
+API Features:
+- OpenAI Compatible: ✅
+- Daily Limit: 100,000 Requests
+
+Note: This is a free OpenAI-compatible API for GPT OSS 120B model.

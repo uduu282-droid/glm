@@ -1,0 +1,86 @@
+[
+  {
+    "request_num": 1,
+    "status_code": 200,
+    "response_time": 1.4959979057312012,
+    "success": true,
+    "timestamp": 1766510394.0273588
+  },
+  {
+    "request_num": 2,
+    "status_code": 200,
+    "response_time": 1.188216209411621,
+    "success": true,
+    "timestamp": 1766510395.3159072
+  },
+  {
+    "request_num": 3,
+    "status_code": 200,
+    "response_time": 1.261003017425537,
+    "success": true,
+    "timestamp": 1766510396.6778245
+  },
+  {
+    "request_num": 4,
+    "status_code": 200,
+    "response_time": 1.4240891933441162,
+    "success": true,
+    "timestamp": 1766510398.2029645
+  },
+  {
+    "request_num": 5,
+    "status_code": 200,
+    "response_time": 2.032191276550293,
+    "success": true,
+    "timestamp": 1766510400.335916
+  },
+  {
+    "request_num": 6,
+    "status_code": 200,
+    "response_time": 1.2887868881225586,
+    "success": true,
+    "timestamp": 1766510401.7253644
+  },
+  {
+    "request_num": 7,
+    "status_code": 200,
+    "response_time": 1.0582513809204102,
+    "success": true,
+    "timestamp": 1766510402.8850005
+  },
+  {
+    "request_num": 8,
+    "status_code": 200,
+    "response_time": 0.7322869300842285,
+    "success": true,
+    "timestamp": 1766510403.717869
+  },
+  {
+    "request_num": 9,
+    "status_code": 200,
+    "response_time": 1.1712942123413086,
+    "success": true,
+    "timestamp": 1766510404.9899402
+  },
+  {
+    "request_num": 10,
+    "status_code": 200,
+    "response_time": 0.6991117000579834,
+    "success": true,
+    "timestamp": 1766510405.790318
+  },
+  {
+    "request_num": 11,
+    "status_code": 200,
+    "response_time": 0.8074018955230713,
+    "success": true,
+    "timestamp": 1766510406.6988003
+  },
+  {
+    "request_num": 12,
+    "status_code": 429,
+    "response_time": 1.6617460250854492,
+    "success": false,
+    "timestamp": 1766510408.4612546
+  }
+]

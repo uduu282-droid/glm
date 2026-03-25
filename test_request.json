@@ -1,0 +1,9 @@
+{
+  "model": "coding-minimax-m2.7-free",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, how are you?"
+    }
+  ]
+}

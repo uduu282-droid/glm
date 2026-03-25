@@ -1,0 +1,38 @@
+
+TypeGPT API - Extended Model Test Report
+=====================================
+
+Test Date: 2025-12-22 19:07:24
+API Base URL: https://api.typegpt.net/v1
+
+Additional Models Test Results:
+-----------------------------
+
+Model: deepseek-ai/DeepSeek-R1-0528
+Status: success
+Status Code: 200
+Response Time: 29.80s
+Response Preview: Hmm, the user is asking about my model and creator. This is a pretty common introductory question - new users often want to know who they're talking t
+Error: None
+
+Model: Qwen/Qwen3-235B-A22B-Instruct-2507
+Status: error
+Status Code: 503
+Response Time: 1.04s
+Response Preview: N/A
+Error: {"error":{"code":"model_not_found","message":"分组 default 下模型 Qwen/Qwen3-235B-A22B-Instruct-2507 无可用渠道（distributor） (request id: 2025122213364634001029
+
+Model: mistralai/mistral-large-3-675b-instruct-2512
+Status: exception
+Status Code: N/A
+Response Time: 0.00s
+Response Preview: N/A
+Error: HTTPSConnectionPool(host='api.typegpt.net', port=443): Read timed out. (read timeout=30)
+
+
+Summary:
+-------
+Total Models Tested: 3
+Successful Responses: 1/3
+
+API Key: sk-AQ7hKnl...OpKwdIqpeu

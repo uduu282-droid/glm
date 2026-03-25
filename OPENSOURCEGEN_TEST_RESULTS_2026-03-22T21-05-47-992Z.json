@@ -1,0 +1,21 @@
+{
+  "testTime": "2026-03-22T21:05:47.992Z",
+  "totalTests": 2,
+  "passed": 1,
+  "failed": 1,
+  "skipped": 0,
+  "results": [
+    {
+      "name": "Health Check",
+      "status": "✅ PASS",
+      "details": "Status: 200, Response: {\"status\":\"ok\",\"message\":\"Server is running\"}",
+      "timestamp": "2026-03-22T21:05:47.758Z"
+    },
+    {
+      "name": "Device Registration",
+      "status": "❌ FAIL",
+      "details": "Request failed with status code 403 - {\"error\":\"Registration not allowed for this client.\"}",
+      "timestamp": "2026-03-22T21:05:47.992Z"
+    }
+  ]
+}

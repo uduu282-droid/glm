@@ -1,0 +1,8 @@
+https://api.iconify.design/lucide.json
+https://cdn.magiceraser.org/userspace/magiceraser/plans/web_plans_2026_03_11.json
+https://api.imgupscaler.ai/api/pai-login/v1/user/get-userinfo
+https://www.google-analytics.com/g/collect
+https://pai-us.us-west-1.log.aliyuncs.com/logstores/web-imgupsclaer/track
+https://api.imgupscaler.ai/api/common/upload/upload-image
+https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png
+https://api.imgupscaler.ai/api/common/upload/sign-object

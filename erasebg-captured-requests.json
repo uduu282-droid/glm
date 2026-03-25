@@ -1,0 +1,196 @@
+[
+  {
+    "timestamp": 1774394313389,
+    "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=optional",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394313469,
+    "url": "https://cdn.pixelbin.io/v2/dummy-cloudname/original/erasebg_assets/common/api.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394313469,
+    "url": "https://cdn.pixelbin.io/v2/dummy-cloudname/original/watermarkremover_asset/logo/GooglePlay.svg?f_auto=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394313469,
+    "url": "https://cdn.pixelbin.io/v2/dummy-cloudname/original/watermarkremover_asset/logo/AppleStore.svg?f_auto=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394314229,
+    "url": "https://api.erase.bg/cms/api/websites?filters[searchTag]=erasebg&populate[navBar][populate]=*&locale=en&populate[languageConfig][fields][0]=shortCode&populate[socialMediaLinks]=socialMediaLinks&populate[footerBadgeList]=footerBadgeList&populate[footerLinks]=footerLinks",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394314261,
+    "url": "https://api.erase.bg/cms/api/translations/content/multi?locale=en&namespace=common&searchTag=erasebg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394314274,
+    "url": "https://www.erase.bg/static/assets/images/upload.4b5bf6912e2c99fd7a4e.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394315623,
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-4X59BQGEPX&gtm=45je63n1v877079722z8846049932za20gzb846049932zd846049932&_p=1774394314746&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1152976670.1774394316&ul=en-us&sr=2560x1440&uaa=x86&uab=64&uafvl=Not-A.Brand%3B24.0.0.0%7CChromium%3B146.0.7680.153&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAGA&_s=1&tag_exp=103116026~103200004~115616986~115938466~115938469~116024733~117384405~117484252&sid=1774394315&sct=1&seg=0&dl=https%3A%2F%2Fwww.erase.bg%2F&dt=Free%20Background%20Image%20Remover%3A%20Remove%20BG%20from%20HD%20Images%20Online%20-%20Erase.bg&_tu=QA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2860",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394317127,
+    "url": "https://api.erase.bg/service/panel/users/v1.0/session",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-ebg-signature": "v1:54de71eb54649f596a30fd5e1062c461b09d11ee126bf00a06eddf0fdbfe5ea7",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "x-ebg-param": "MjAyNTEwMTVUMTA1NjQzWg=="
+    }
+  },
+  {
+    "timestamp": 1774394317128,
+    "url": "https://api.erase.bg/service/panel/users/v1.0/session",
+    "method": "OPTIONS",
+    "headers": {
+      "accept": "*/*",
+      "access-control-request-headers": "x-ebg-param,x-ebg-signature",
+      "access-control-request-method": "GET",
+      "origin": "https://www.erase.bg",
+      "sec-fetch-mode": "cors",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774394317571,
+    "url": "https://us.i.posthog.com/api/surveys/?token=phc_a7s4xRxymzUs3F8x2xht7tgrN1CR4MQ4hfwwsPm4Jf0&ip=0&_=1774394317571&ver=1.363.4",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394318107,
+    "url": "https://api.erase.bg/service/panel/users/v1.0/session",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-ebg-signature": "v1:54de71eb54649f596a30fd5e1062c461b09d11ee126bf00a06eddf0fdbfe5ea7",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "x-ebg-param": "MjAyNTEwMTVUMTA1NjQzWg=="
+    }
+  },
+  {
+    "timestamp": 1774394318108,
+    "url": "https://api.erase.bg/service/panel/users/v1.0/session",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-ebg-signature": "v1:54de71eb54649f596a30fd5e1062c461b09d11ee126bf00a06eddf0fdbfe5ea7",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "x-ebg-param": "MjAyNTEwMTVUMTA1NjQzWg=="
+    }
+  },
+  {
+    "timestamp": 1774394320624,
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-4X59BQGEPX&gtm=45je63n1v877079722z8846049932za20gzb846049932zd846049932&_p=1774394314746&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1152976670.1774394316&ul=en-us&sr=2560x1440&uaa=x86&uab=64&uafvl=Not-A.Brand%3B24.0.0.0%7CChromium%3B146.0.7680.153&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAGQ&tag_exp=103116026~103200004~115616986~115938466~115938469~116024733~117384405~117484252&sid=1774394315&sct=1&seg=0&dl=https%3A%2F%2Fwww.erase.bg%2F&dt=Free%20Background%20Image%20Remover%3A%20Remove%20BG%20from%20HD%20Images%20Online%20-%20Erase.bg&_tu=QA&_s=2&tfd=7885",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www.erase.bg/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "content-type": "text/plain;charset=UTF-8",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "postData": "en=POSTHOG_SCRIPT_INITIALIZED&_et=23\r\nen=GOOGLE_ONE_TAP_DISMISSED&ep.context_locale=en&ep.device_type=desktop&ep.free_property=erasebg&ep.referrer=false&ep.timezone=Asia%2FCalcutta&ep.channel=browser&_et=237\r\nen=GOOGLE_ONE_TAP_SKIPPED&ep.context_locale=en&ep.device_type=desktop&ep.free_property=erasebg&ep.referrer=false&ep.timezone=Asia%2FCalcutta&ep.channel=browser&_et=3\r\nen=ANONYMOUS_ID_INITIALIZED&_et=860\r\nen=POSTHOG_SCRIPT_INITIALIZED&_et=974\r\nen=ANONYMOUS_ID_INITIALIZED&_et=2\r\nen=ANONYMOUS_ID_INITIALIZED&_et=1\r\nen=GOOGLE_ONE_TAP_SKIPPED&ep.context_locale=en&ep.device_type=desktop&ep.free_property=erasebg&ep.referrer=false&ep.timezone=Asia%2FCalcutta&ep.channel=browser&_et=5"
+  }
+]

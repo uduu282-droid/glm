@@ -1,0 +1,215 @@
+{
+  "timestamp": "2026-03-20T09:18:20.779Z",
+  "url": "https://www.hiflux.xyz/",
+  "allEndpoints": [
+    "https://www.hiflux.xyz/api/auth/session",
+    "https://www.hiflux.xyz/_vercel/insights/view",
+    "https://www.hiflux.xyz/pricing",
+    "https://www.hiflux.xyz/remove-background",
+    "https://www.hiflux.xyz/remove-watermark",
+    "https://www.hiflux.xyz/nano-banana",
+    "https://www.hiflux.xyz/nano-banana-apps"
+  ],
+  "generationRequests": [
+    {
+      "url": "https://www.hiflux.xyz/api/auth/session",
+      "method": "GET",
+      "headers": {
+        "referer": "https://www.hiflux.xyz/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "accept": "*/*"
+      }
+    },
+    {
+      "url": "https://www.hiflux.xyz/_vercel/insights/view",
+      "method": "POST",
+      "headers": {
+        "referer": "https://www.hiflux.xyz/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "origin": "https://www.hiflux.xyz"
+      },
+      "postData": "{\"o\":\"https://www.hiflux.xyz/\",\"sv\":\"0.1.3\",\"sdkn\":\"@vercel/analytics/next\",\"sdkv\":\"1.5.0\",\"ts\":1773998290108,\"dp\":\"/\",\"r\":\"\"}"
+    },
+    {
+      "url": "https://www.hiflux.xyz/pricing?_rsc=1wc5s",
+      "method": "GET",
+      "headers": {
+        "rsc": "1",
+        "referer": "https://www.hiflux.xyz/",
+        "next-url": "/en",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "next-router-prefetch": "1",
+        "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%5B%22locale%22%2C%22en%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2C%22%2F%22%2C%22refresh%22%5D%7D%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+        "accept": "*/*",
+        "cookie": "__Host-next-auth.csrf-token=7ad9ed87d0373a23111b8f30b42ffa2ef1f63272a49086adce961cea6cebe02e%7C014dff6bca0fc6e1f873e41341a37964ca6bab14c10006d1fb9a1c1869b59e8b; __Secure-next-auth.callback-url=https%3A%2F%2Fwww.hiflux.xyz; g_state={\"i_l\":0,\"i_ll\":1773998290371,\"i_b\":\"rKdc1WJuAuQvK2yUbI5I9O3nizg4qiHl3UIMpqSjmWU\",\"i_e\":{\"enable_itp_optimization\":0}}"
+      }
+    },
+    {
+      "url": "https://www.hiflux.xyz/remove-background?_rsc=1wc5s",
+      "method": "GET",
+      "headers": {
+        "rsc": "1",
+        "referer": "https://www.hiflux.xyz/",
+        "next-url": "/en",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "next-router-prefetch": "1",
+        "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%5B%22locale%22%2C%22en%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2C%22%2F%22%2C%22refresh%22%5D%7D%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+        "accept": "*/*",
+        "cookie": "__Host-next-auth.csrf-token=7ad9ed87d0373a23111b8f30b42ffa2ef1f63272a49086adce961cea6cebe02e%7C014dff6bca0fc6e1f873e41341a37964ca6bab14c10006d1fb9a1c1869b59e8b; __Secure-next-auth.callback-url=https%3A%2F%2Fwww.hiflux.xyz; g_state={\"i_l\":0,\"i_ll\":1773998290371,\"i_b\":\"rKdc1WJuAuQvK2yUbI5I9O3nizg4qiHl3UIMpqSjmWU\",\"i_e\":{\"enable_itp_optimization\":0}}"
+      }
+    },
+    {
+      "url": "https://www.hiflux.xyz/remove-watermark?_rsc=1wc5s",
+      "method": "GET",
+      "headers": {
+        "rsc": "1",
+        "referer": "https://www.hiflux.xyz/",
+        "next-url": "/en",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "next-router-prefetch": "1",
+        "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%5B%22locale%22%2C%22en%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2C%22%2F%22%2C%22refresh%22%5D%7D%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+        "accept": "*/*",
+        "cookie": "__Host-next-auth.csrf-token=7ad9ed87d0373a23111b8f30b42ffa2ef1f63272a49086adce961cea6cebe02e%7C014dff6bca0fc6e1f873e41341a37964ca6bab14c10006d1fb9a1c1869b59e8b; __Secure-next-auth.callback-url=https%3A%2F%2Fwww.hiflux.xyz; g_state={\"i_l\":0,\"i_ll\":1773998290371,\"i_b\":\"rKdc1WJuAuQvK2yUbI5I9O3nizg4qiHl3UIMpqSjmWU\",\"i_e\":{\"enable_itp_optimization\":0}}"
+      }
+    },
+    {
+      "url": "https://www.hiflux.xyz/nano-banana?_rsc=1wc5s",
+      "method": "GET",
+      "headers": {
+        "rsc": "1",
+        "referer": "https://www.hiflux.xyz/",
+        "next-url": "/en",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "next-router-prefetch": "1",
+        "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%5B%22locale%22%2C%22en%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2C%22%2F%22%2C%22refresh%22%5D%7D%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+        "accept": "*/*",
+        "cookie": "__Host-next-auth.csrf-token=7ad9ed87d0373a23111b8f30b42ffa2ef1f63272a49086adce961cea6cebe02e%7C014dff6bca0fc6e1f873e41341a37964ca6bab14c10006d1fb9a1c1869b59e8b; __Secure-next-auth.callback-url=https%3A%2F%2Fwww.hiflux.xyz; g_state={\"i_l\":0,\"i_ll\":1773998290371,\"i_b\":\"rKdc1WJuAuQvK2yUbI5I9O3nizg4qiHl3UIMpqSjmWU\",\"i_e\":{\"enable_itp_optimization\":0}}"
+      }
+    },
+    {
+      "url": "https://www.hiflux.xyz/nano-banana-apps?_rsc=1wc5s",
+      "method": "GET",
+      "headers": {
+        "rsc": "1",
+        "referer": "https://www.hiflux.xyz/",
+        "next-url": "/en",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "next-router-prefetch": "1",
+        "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%5B%22locale%22%2C%22en%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2C%22%2F%22%2C%22refresh%22%5D%7D%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+        "accept": "*/*",
+        "cookie": "__Host-next-auth.csrf-token=7ad9ed87d0373a23111b8f30b42ffa2ef1f63272a49086adce961cea6cebe02e%7C014dff6bca0fc6e1f873e41341a37964ca6bab14c10006d1fb9a1c1869b59e8b; __Secure-next-auth.callback-url=https%3A%2F%2Fwww.hiflux.xyz; g_state={\"i_l\":0,\"i_ll\":1773998290371,\"i_b\":\"rKdc1WJuAuQvK2yUbI5I9O3nizg4qiHl3UIMpqSjmWU\",\"i_e\":{\"enable_itp_optimization\":0}}"
+      }
+    }
+  ],
+  "responses": [],
+  "interfaceInfo": {
+    "textInputs": [
+      {
+        "type": "textarea",
+        "placeholder": "Describe in English prompt for best results | Upload to edit | Quote to refine",
+        "id": "prompt",
+        "className": "w-full bg-transparent !py-0 !border-0 !outline-0 !ring-0 !shadow-none !rounded-none !px-0 resize-none text-base font-medium placeholder:text-slate-400 focus:!ring-0 focus:!outline-0 focus:!border-0 p-0 leading-relaxed",
+        "hasValue": false
+      },
+      {
+        "type": "textarea",
+        "placeholder": "",
+        "id": "",
+        "className": "",
+        "hasValue": true
+      }
+    ],
+    "actionButtons": [
+      {
+        "text": "1Why choose HiFlux AI over other free AI image generators?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "2What advanced technology powers HiFlux AI image generation?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "3Which FLUX.1 AI models does HiFlux AI use for image generation?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "4How to use HiFlux AI free image generator step by step?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "5How does HiFlux AI photo editor work for image editing?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "6What are the best practices for HiFlux AI image generation?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "7What features does HiFlux AI offer in free vs premium plans?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "8Why is HiFlux AI accessible without registration globally?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "9Does HiFlux AI provide commercial rights for business use?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "10How does HiFlux AI ensure privacy and data protection?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "11Why does HiFlux AI deliver superior image quality compared to competitors?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "12What should I do if HiFlux AI generation fails or results aren't satisfactory?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      },
+      {
+        "text": "13What devices and platforms support HiFlux AI access globally?",
+        "id": "",
+        "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+        "disabled": false
+      }
+    ],
+    "hasMainForm": true,
+    "formAction": "https://www.hiflux.xyz/"
+  }
+}

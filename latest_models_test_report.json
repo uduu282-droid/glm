@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-12-23 00:20:47",
+  "total_models_tested": 10,
+  "successful_models": 6,
+  "failed_models": 4,
+  "test_results": [
+    {
+      "model": "gpt-4",
+      "status": "success",
+      "status_code": 200,
+      "response_time": 2.593506097793579,
+      "response": "Hello!"
+    },
+    {
+      "model": "gpt-4o",
+      "status": "exception",
+      "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "status": "exception",
+      "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "model": "gpt-4o-mini-audio-preview",
+      "status": "error",
+      "status_code": 500,
+      "response_time": 1.751915693283081,
+      "error": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+    },
+    {
+      "model": "gpt-4o-mini-tts",
+      "status": "success",
+      "status_code": 200,
+      "response_time": 0.935070276260376,
+      "response": "<audio controls src=\"https://www.openai.fm/api/generate?input=Say%20hello%20in%20one%20sentence.&prompt=&voice=coral\"></audio>"
+    },
+    {
+      "model": "o1",
+      "status": "exception",
+      "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "model": "o1-mini",
+      "status": "success",
+      "status_code": 200,
+      "response_time": 6.017198801040649,
+      "response": "Hello there\u2014hope your day\u2019s treating you kindly so far \ud83d\ude0a"
+    },
+    {
+      "model": "gpt-4.1",
+      "status": "success",
+      "status_code": 200,
+      "response_time": 4.179991722106934,
+      "response": "Hello there, radiant traveler of words\u2014ready to stir a little magic in the air today? \u2728"
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "status": "success",
+      "status_code": 200,
+      "response_time": 5.19908332824707,
+      "response": "Hello!"
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "status": "success",
+      "status_code": 200,
+      "response_time": 1.3505723476409912,
+      "response": "Hey there!"
+    }
+  ],
+  "total_available_models": 937
+}

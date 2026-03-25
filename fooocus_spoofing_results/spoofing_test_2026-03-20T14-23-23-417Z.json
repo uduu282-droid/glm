@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-03-20T14:23:23.417Z",
+  "totalAttempts": 5,
+  "successful": 0,
+  "failed": 5,
+  "results": [
+    {
+      "success": false,
+      "error": "No generated image found",
+      "identityNumber": 1,
+      "generationTime": 23437
+    },
+    {
+      "success": false,
+      "error": "No generated image found",
+      "identityNumber": 2,
+      "generationTime": 23415
+    },
+    {
+      "success": false,
+      "error": "No generated image found",
+      "identityNumber": 3,
+      "generationTime": 24931
+    },
+    {
+      "success": false,
+      "error": "No generated image found",
+      "identityNumber": 4,
+      "generationTime": 23936
+    },
+    {
+      "success": false,
+      "error": "No generated image found",
+      "identityNumber": 5,
+      "generationTime": 23541
+    }
+  ]
+}

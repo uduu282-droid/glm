@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-03-20T09:35:21.516Z",
+  "url": "https://image-world-king.vercel.app/",
+  "summary": {
+    "totalRequests": 12,
+    "uniqueEndpoints": 1,
+    "apiRequests": 1,
+    "capturedResponses": 1
+  },
+  "endpoints": [
+    "https://image-world-king.vercel.app/api/gen-v1"
+  ],
+  "apiRequests": [
+    {
+      "url": "https://image-world-king.vercel.app/api/gen-v1?text=A%20mystical%20forest%20with%20glowing%20plants%20and%20floating%20islands%2C%20a%20small%20cottage%20with%20warm%20light%20in%20the%20window%2C%20starry%20night%20sky%20with%20aurora%20borealis%2C%20digital%20art%2C%20fantasy%20style%2C%20highly%20detailed%2C%204K",
+      "method": "GET",
+      "headers": {
+        "referer": "https://image-world-king.vercel.app/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://image-world-king.vercel.app/api/gen-v1?text=A%20mystical%20forest%20with%20glowing%20plants%20and%20floating%20islands%2C%20a%20small%20cottage%20with%20warm%20light%20in%20the%20window%2C%20starry%20night%20sky%20with%20aurora%20borealis%2C%20digital%20art%2C%20fantasy%20style%2C%20highly%20detailed%2C%204K",
+      "status": 200,
+      "contentType": "application/json",
+      "response": {
+        "api_owner": "@hardhackar007",
+        "expires_in": "5 minutes",
+        "image_url": "https://i.ibb.co/7djS1zWP/generated-A-mystical-forest-with-glowing-plants-and-floating-islands-a-small-cottage-with-warm-ligh.jpg",
+        "prompt": "A mystical forest with glowing plants and floating islands, a small cottage with warm light in the window, starry night sky with aurora borealis, digital art, fantasy style, highly detailed, 4K",
+        "size_bytes": 160768,
+        "success": true,
+        "thumbnail": "https://i.ibb.co/B5cfCPZb/generated-A-mystical-forest-with-glowing-plants-and-floating-islands-a-small-cottage-with-warm-ligh.jpg"
+      },
+      "hasImageData": true
+    }
+  ],
+  "cookies": {},
+  "pageInfo": {
+    "title": "IMAGE WORLD | AI Image Generation",
+    "url": "https://image-world-king.vercel.app/",
+    "description": "",
+    "inputs": [
+      {
+        "type": "textarea",
+        "id": "",
+        "name": "",
+        "placeholder": "Describe your vision with high precision..."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "PROCESSING...",
+        "type": "submit",
+        "className": "btn-gradient w-full py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3"
+      }
+    ]
+  }
+}

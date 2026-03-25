@@ -1,0 +1,5 @@
+https://api.iconify.design/lucide.json
+https://cdn.magiceraser.org/userspace/magiceraser/plans/web_plans_2026_03_11.json
+https://www.google-analytics.com/g/collect
+https://api.imgupscaler.ai/api/pai-login/v1/user/get-userinfo
+https://pai-us.us-west-1.log.aliyuncs.com/logstores/web-imgupsclaer/track

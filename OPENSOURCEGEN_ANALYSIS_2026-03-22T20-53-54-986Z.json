@@ -1,0 +1,223 @@
+{
+  "captureTime": "2026-03-22T20-53-54-986Z",
+  "url": "https://opensourcegen.com/",
+  "totalRequests": 15,
+  "apiEndpoints": [
+    "fonts.googleapis.com",
+    "firebase.googleapis.com",
+    "opensourcegen.com",
+    "firebaseinstallations.googleapis.com",
+    "www.google-analytics.com"
+  ],
+  "scripts": [
+    "https://opensourcegen.com/assets/index-B3tsfRjJ.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-GX68LMDZR9",
+    "https://opensourcegen.com/_vercel/insights/script.js",
+    "https://opensourcegen.com/_vercel/speed-insights/script.js",
+    "https://www.googletagmanager.com/gtag/js?l=dataLayer&id=G-GX68LMDZR9",
+    "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js",
+    "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"
+  ],
+  "requests": [
+    {
+      "timestamp": 1774212822724,
+      "url": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "text/css,*/*;q=0.1"
+      },
+      "resourceType": "stylesheet"
+    },
+    {
+      "timestamp": 1774212822725,
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "text/css,*/*;q=0.1"
+      },
+      "resourceType": "stylesheet"
+    },
+    {
+      "timestamp": 1774212822726,
+      "url": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "text/css,*/*;q=0.1"
+      },
+      "resourceType": "stylesheet"
+    },
+    {
+      "timestamp": 1774212823295,
+      "url": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:755065672131:web:ea964e140fa05a76ecad76/webConfig",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "x-goog-api-key",
+        "access-control-request-method": "GET",
+        "origin": "https://opensourcegen.com",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/"
+      },
+      "resourceType": "other"
+    },
+    {
+      "timestamp": 1774212823386,
+      "url": "https://opensourcegen.com/images/styles/generated-image-1771191036932.png",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+      },
+      "resourceType": "image"
+    },
+    {
+      "timestamp": 1774212823387,
+      "url": "https://opensourcegen.com/images/styles/generated-image-1771192257964.png",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+      },
+      "resourceType": "image"
+    },
+    {
+      "timestamp": 1774212823388,
+      "url": "https://opensourcegen.com/images/styles/generated-image-1771191734904.png",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+      },
+      "resourceType": "image"
+    },
+    {
+      "timestamp": 1774212823388,
+      "url": "https://opensourcegen.com/images/styles/generated-image-1771191888758.png",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+      },
+      "resourceType": "image"
+    },
+    {
+      "timestamp": 1774212823392,
+      "url": "https://opensourcegen.com/api/health",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "*/*",
+        "cookie": "theme=dark"
+      },
+      "resourceType": "fetch"
+    },
+    {
+      "timestamp": 1774212823452,
+      "url": "https://firebaseinstallations.googleapis.com/v1/projects/opensourcegen-prod/installations",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type,x-firebase-client,x-goog-api-key",
+        "access-control-request-method": "POST",
+        "origin": "https://opensourcegen.com",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/"
+      },
+      "resourceType": "other"
+    },
+    {
+      "timestamp": 1774212823833,
+      "url": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:755065672131:web:ea964e140fa05a76ecad76/webConfig",
+      "method": "GET",
+      "headers": {
+        "x-goog-api-key": "AIzaSyBmPLymGM3ZquLnZvEIYwp53R3mkmIte0Y",
+        "referer": "https://opensourcegen.com/",
+        "accept-language": "en-US,en;q=0.9",
+        "accept": "application/json",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "origin": "https://opensourcegen.com"
+      },
+      "resourceType": "fetch"
+    },
+    {
+      "timestamp": 1774212823836,
+      "url": "https://opensourcegen.com/api/osg-register",
+      "method": "POST",
+      "headers": {
+        "referer": "https://opensourcegen.com/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "cookie": "theme=dark",
+        "origin": "https://opensourcegen.com"
+      },
+      "postData": "{\"fingerprint\":\"a1c49b6084ba860b58a93b4773480b38\"}",
+      "resourceType": "fetch"
+    },
+    {
+      "timestamp": 1774212824059,
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GX68LMDZR9&gtm=45je63i0v9244135006za200zd9244135006&_p=1774212824045&gcd=13l3l3l3l1l1&npa=0&dma=0&_fid=cEJPzD0QnouJBsGXaOqpIn&cid=1375562384.1774212824&ul=en-us&sr=800x600&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~115938466~115938469~116024733~117484252&sid=1774212824&sct=1&seg=0&dl=https%3A%2F%2Fopensourcegen.com%2F&dt=OpenSourceGen%20-%20Free%20AI%20Image%20and%20Video%20Generator%20%7C%20Text%20to%20Image%20%26%20Video%20AI&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.origin=firebase&tfd=1682",
+      "method": "POST",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "*/*",
+        "origin": "https://opensourcegen.com"
+      },
+      "resourceType": "fetch"
+    },
+    {
+      "timestamp": 1774212824076,
+      "url": "https://firebaseinstallations.googleapis.com/v1/projects/opensourcegen-prod/installations",
+      "method": "POST",
+      "headers": {
+        "x-firebase-client": "eyJ2ZXJzaW9uIjoyLCJoZWFydGJlYXRzIjpbeyJhZ2VudCI6ImZpcmUtY29yZS8wLjE0LjggZmlyZS1jb3JlLWVzbTIwMjAvMC4xNC44IGZpcmUtanMvIGZpcmUtYXV0aC8xLjEyLjAgZmlyZS1hdXRoLWVzbTIwMjAvMS4xMi4wIGZpcmUtanMtYWxsLWFwcC8xMi45LjAgZmlyZS1nY3MvMC4xNC4wIGZpcmUtZ2NzLWVzbTIwMjAvMC4xNC4wIGZpcmUtaWlkLzAuNi4xOSBmaXJlLWlpZC1lc20yMDIwLzAuNi4xOSBmaXJlLWFuYWx5dGljcy8wLjEwLjE5IGZpcmUtYW5hbHl0aWNzLWVzbTIwMjAvMC4xMC4xOSIsImRhdGVzIjpbIjIwMjYtMDMtMjIiXX1dfQ",
+        "x-goog-api-key": "AIzaSyBmPLymGM3ZquLnZvEIYwp53R3mkmIte0Y",
+        "referer": "https://opensourcegen.com/",
+        "accept-language": "en-US,en;q=0.9",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "origin": "https://opensourcegen.com"
+      },
+      "postData": "{\"fid\":\"cEJPzD0QnouJBsGXaOqpIn\",\"authVersion\":\"FIS_v2\",\"appId\":\"1:755065672131:web:ea964e140fa05a76ecad76\",\"sdkVersion\":\"w:0.6.19\"}",
+      "resourceType": "fetch"
+    },
+    {
+      "timestamp": 1774212829073,
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GX68LMDZR9&gtm=45je63i0v9244135006za200zd9244135006&_p=1774212824045&gcd=13l3l3l3l1l1&npa=0&dma=0&_fid=cEJPzD0QnouJBsGXaOqpIn&cid=1375562384.1774212824&ul=en-us&sr=800x600&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=2&tag_exp=103116026~103200004~115938466~115938469~116024733~117484252&dt=Home%20-%20OpenSourceGen&dl=https%3A%2F%2Fopensourcegen.com%2F&dp=%2F&sid=1774212824&sct=1&seg=1&en=page_view&_ee=1&ep.origin=firebase&_et=3&tfd=6700",
+      "method": "POST",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://opensourcegen.com/",
+        "accept": "*/*",
+        "origin": "https://opensourcegen.com"
+      },
+      "resourceType": "fetch"
+    }
+  ]
+}

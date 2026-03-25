@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-03-20T19-03-22-419Z",
+  "worker": "https://aihubmix-worker.llamai.workers.dev",
+  "totalModels": 20,
+  "successful": 13,
+  "failed": 7,
+  "successRate": "65%",
+  "results": [
+    {
+      "success": true,
+      "model": "coding-glm-5-free",
+      "response": "Working",
+      "usage": {
+        "prompt_tokens": 18,
+        "completion_tokens": 157,
+        "total_tokens": 175,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-glm-5-turbo-free",
+      "response": "Working.",
+      "usage": {
+        "prompt_tokens": 18,
+        "completion_tokens": 82,
+        "total_tokens": 100,
+        "prompt_tokens_details": {
+          "cached_tokens": 2
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 78
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-minimax-m2.7-free",
+      "response": "<think>\nThe user asks: \"Hi! Just testing. Respond with one word: \"Working\".\"\n\nWe need to obey. This ",
+      "usage": {
+        "prompt_tokens": 54,
+        "completion_tokens": 60,
+        "total_tokens": 114,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 58
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-minimax-m2.5-free",
+      "response": "<think>\nThe user is testing and wants a response with one word: \"Working\". I should respond with exa",
+      "usage": {
+        "prompt_tokens": 54,
+        "completion_tokens": 27,
+        "total_tokens": 81,
+        "completion_tokens_details": {
+          "reasoning_tokens": 26
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-minimax-m2.1-free",
+      "response": "<think>\nThe user is asking me to respond with just one word: \"Working\". This is a simple test reques",
+      "usage": {
+        "prompt_tokens": 54,
+        "completion_tokens": 38,
+        "total_tokens": 92,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 36
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-glm-4.7-free",
+      "response": "Working",
+      "usage": {
+        "prompt_tokens": 18,
+        "completion_tokens": 78,
+        "total_tokens": 96,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 75
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-glm-4.6-free",
+      "response": "Working",
+      "usage": {
+        "prompt_tokens": 18,
+        "completion_tokens": 217,
+        "total_tokens": 235,
+        "prompt_tokens_details": {
+          "cached_tokens": 2
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 214
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "coding-minimax-m2-free",
+      "response": "<think>\nThe user is asking me to respond with just one word: \"Working\". This is a simple test to see",
+      "usage": {
+        "prompt_tokens": 54,
+        "completion_tokens": 37,
+        "total_tokens": 91,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "kimi-for-coding-free",
+      "response": "Working.",
+      "usage": {
+        "prompt_tokens": 20,
+        "completion_tokens": 5,
+        "total_tokens": 25
+      }
+    },
+    {
+      "success": true,
+      "model": "minimax-m2.5-free",
+      "response": "\n\nWorking",
+      "usage": {
+        "prompt_tokens": 51,
+        "completion_tokens": 72,
+        "total_tokens": 123
+      }
+    },
+    {
+      "success": true,
+      "model": "gpt-4.1-free",
+      "response": "Working",
+      "usage": {
+        "prompt_tokens": 20,
+        "completion_tokens": 2,
+        "total_tokens": 22,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "success": true,
+      "model": "gpt-4.1-mini-free",
+      "response": "Working",
+      "usage": {
+        "prompt_tokens": 20,
+        "completion_tokens": 2,
+        "total_tokens": 22,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "success": false,
+      "model": "gpt-4.1-nano-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 202603201903119872698470917008)"
+    },
+    {
+      "success": false,
+      "model": "gpt-4o-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 2026032019031189357421941009410)"
+    },
+    {
+      "success": true,
+      "model": "glm-4.7-flash-free",
+      "response": "Working",
+      "usage": {
+        "prompt_tokens": 18,
+        "completion_tokens": 117,
+        "total_tokens": 135,
+        "prompt_tokens_details": {
+          "cached_tokens": 2
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 114
+        }
+      }
+    },
+    {
+      "success": false,
+      "model": "step-3.5-flash-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 2026032019031774196192273595352)"
+    },
+    {
+      "success": false,
+      "model": "mimo-v2-flash-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 2026032019031853877323775946626)"
+    },
+    {
+      "success": false,
+      "model": "gemini-3.1-flash-image-preview-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 2026032019031933849600254497396)"
+    },
+    {
+      "success": false,
+      "model": "gemini-3-flash-preview-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 2026032019032013254670756341538)"
+    },
+    {
+      "success": false,
+      "model": "gemini-2.0-flash-free",
+      "error": "Sorry, you have reached the limit of the free model quota. Please switch to a paid model to enjoy unlimited concurrency. https://console.aihubmix.com/topup (tid: 2026032019032129339028206690803)"
+    }
+  ],
+  "workingModels": [
+    "coding-glm-5-free",
+    "coding-glm-5-turbo-free",
+    "coding-minimax-m2.7-free",
+    "coding-minimax-m2.5-free",
+    "coding-minimax-m2.1-free",
+    "coding-glm-4.7-free",
+    "coding-glm-4.6-free",
+    "coding-minimax-m2-free",
+    "kimi-for-coding-free",
+    "minimax-m2.5-free",
+    "gpt-4.1-free",
+    "gpt-4.1-mini-free",
+    "glm-4.7-flash-free"
+  ],
+  "failedModels": [
+    "gpt-4.1-nano-free",
+    "gpt-4o-free",
+    "step-3.5-flash-free",
+    "mimo-v2-flash-free",
+    "gemini-3.1-flash-image-preview-free",
+    "gemini-3-flash-preview-free",
+    "gemini-2.0-flash-free"
+  ]
+}

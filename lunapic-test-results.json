@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-03-25T00:42:13.486Z",
+  "testImage": "C:\\Users\\Ronit\\Downloads\\test models 2\\ashlynn_generated_image.png",
+  "tests": [
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-transparent-1774399333786.png",
+      "size": 29664
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-grayscale-1774399334076.png",
+      "size": 31489
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-blur-1774399334378.png",
+      "size": 30123
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-brightness-1774399334667.png",
+      "size": 31500
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-contrast-1774399334957.png",
+      "size": 30218
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-invert-1774399335242.png",
+      "size": 31456
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-resize-1774399335530.png",
+      "size": 30027
+    },
+    {
+      "success": true,
+      "file": "C:\\Users\\Ronit\\Downloads\\test models 2\\lunapic-test-rotate-1774399335812.png",
+      "size": 31338
+    }
+  ]
+}

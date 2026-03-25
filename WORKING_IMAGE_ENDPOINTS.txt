@@ -1,0 +1,59 @@
+WORKING IMAGE GENERATION ENDPOINTS
+==================================
+
+Last Updated: 2026-02-24T03:45:34.198Z
+Total Working Endpoints: 6
+
+1. Ashlynn Image API
+   URL: https://image.itz-ashlynn.workers.dev/generate
+   Method: GET
+   Status: 200
+   Response: Direct image data (287108 bytes)
+
+2. Ashlynn Styles API
+   URL: https://image.itz-ashlynn.workers.dev/styles
+   Method: GET
+   Status: 200
+   Response: {
+  "status": "success",
+  "count": 31,
+  "styles": [
+    {
+      "key": "adorable_kawaii",
+      "n...
+
+3. Ashlynn Base API
+   URL: https://image.itz-ashlynn.workers.dev/
+   Method: GET
+   Status: 200
+   Response: {
+  "name": "AI Image Generator API",
+  "version": "1.0.0",
+  "description": "Generate high-quality ...
+
+4. Text to Image API
+   URL: https://text-to-img.apis-bj-devs.workers.dev/
+   Method: GET
+   Status: 200
+   Response: {
+  "status": "success",
+  "join": "@BJ_Devs on Telegram",
+  "support": "@BJ_Coder",
+  "message": "I...
+
+5. SeaArt AI API
+   URL: https://seaart-ai.apis-bj-devs.workers.dev/
+   Method: GET
+   Status: 200
+   Response: {
+  "status": "success",
+  "message": "Image created successfully!",
+  "prompt": "a cute boy",
+  "re...
+
+6. Magic Studio API
+   URL: https://magic-studio.ziddi-beatz.workers.dev/
+   Method: GET
+   Status: 200
+   Response: Direct image data (132190 bytes)
+

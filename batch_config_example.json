@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "A beautiful sunset over tropical mountains with palm trees",
+    "style": "cinematic",
+    "negative_prompt": "blurry, low quality, distorted",
+    "duration": 5,
+    "resolution": "1024x1024",
+    "output_file": "results/sunset_video.json"
+  },
+  {
+    "prompt": "Futuristic cyberpunk city with flying cars and neon lights at night",
+    "style": "cyberpunk",
+    "negative_prompt": "daylight, sunny, nature",
+    "duration": 3,
+    "resolution": "512x512",
+    "output_file": "results/cyberpunk_city.json"
+  },
+  {
+    "prompt": "Peaceful ocean waves crashing on sandy beach",
+    "style": "realistic",
+    "negative_prompt": "cartoon, anime, people, text",
+    "duration": 4,
+    "resolution": "1024x576",
+    "output_file": "results/ocean_waves.json"
+  },
+  {
+    "prompt": "Astronaut floating in space with Earth and stars in background",
+    "style": "scifi",
+    "negative_prompt": "blurry, distorted, low quality",
+    "duration": 3,
+    "resolution": "512x512",
+    "output_file": "results/space_scene.json"
+  },
+  {
+    "prompt": "Magical forest with glowing mushrooms and fairy lights",
+    "style": "fantasy",
+    "negative_prompt": "modern, urban, technology",
+    "duration": 5,
+    "resolution": "1024x1024",
+    "output_file": "results/magical_forest.json"
+  },
+  {
+    "prompt": "Dragon breathing fire over medieval castle",
+    "style": "fantasy",
+    "negative_prompt": "cartoon, funny, modern",
+    "duration": 4,
+    "resolution": "1024x576",
+    "output_file": "results/dragon_castle.json"
+  },
+  {
+    "prompt": "Underwater coral reef with colorful tropical fish",
+    "style": "realistic",
+    "negative_prompt": "cartoon, anime, blurry",
+    "duration": 3,
+    "resolution": "512x512",
+    "output_file": "results/underwater_reef.json"
+  },
+  {
+    "prompt": "Cherry blossoms falling in Japanese garden",
+    "style": "anime",
+    "negative_prompt": "realistic, photo, western",
+    "duration": 5,
+    "resolution": "1024x1024",
+    "output_file": "results/japanese_garden.json"
+  }
+]

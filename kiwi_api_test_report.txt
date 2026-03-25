@@ -1,0 +1,35 @@
+
+Kiwi API Test Report
+===============
+
+Test Date: 2025-12-22 21:02:50
+Base URL: https://kiwillm.onrender.com/v1
+API Key: kiwi-kwIQR...x2p35NeMbc
+
+Endpoints Tested:
+---------------
+
+1. /chat/completions (POST)
+   Status: error
+   Status Code: 500
+   Response Time: 3.93s
+   Error: {"error":"Upstream Provider Error","details":"Upstream API returned an error page. The model might b
+
+2. /models (GET)
+   Status: success
+   Status Code: 200
+   Response Time: 0.44s
+   Response Preview: {'object': 'list', 'data': [{'id': 'deepseek-v3', 'object': 'model', 'created': 1766417565611, 'owne...
+
+
+Summary:
+-------
+Total Endpoints Tested: 2
+Successful Responses: 1/2
+
+API Details:
+- Model Used: deepseek-v3
+- OpenAI Compatible: ✅
+- Authentication: Bearer token
+
+Note: This is an OpenAI-compatible API hosted at kiwillm.onrender.com

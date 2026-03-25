@@ -1,0 +1,10 @@
+name = "photogrid-proxy"
+main = "worker-photogrid.js"
+compatibility_date = "2024-01-01"
+
+# Worker configuration
+workers_dev = true
+
+# Environment variables (if needed)
+[vars]
+PHOTOGRID_BASE_URL = "https://api.grid.plus/v1"

@@ -1,0 +1,78 @@
+
+TypeGPT API Test Report
+=====================
+
+Test Date: 2025-12-22 19:05:50
+API Base URL: https://api.typegpt.net/v1
+API Key: sk-AQ7hKnl...OpKwdIqpeu
+
+Single Model Test:
+----------------
+Model: deepseek-ai/deepseek-r1
+Status: success
+Status Code: 200
+Response Time: 1.98s
+
+Full Response:
+{
+  "id": "0d3e3e3a89b14e56ad57874789306c04",
+  "object": "chat.completion",
+  "created": 1766410534,
+  "model": "deepseek-ai/deepseek-r1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "reasoning_content": "Okay, the user greeted me and asked how I am today. Since I'm an AI, I don't have feelings, but I should respond politely. Let me acknowledge their greeting and mention that I don't have feelings but am here to help. Then, offer assistance. Keep it friendly and open-ended.\n\nWait, the user might have just started a conversation. Maybe they want to chat or have a specific question. I should make sure to invite them to ask whatever they need help with.",
+        "tool_calls": null
+      },
+      "logprobs": null,
+      "finish_reason": "length",
+      "matched_stop": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12,
+    "total_tokens": 112,
+    "completion_tokens": 100,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0
+  },
+  "metadata": {
+    "weight_version": "default"
+  }
+}
+
+Multiple Model Tests:
+-------------------
+
+Model: deepseek-ai/deepseek-r1
+Status: success
+Status Code: 200
+Response Time: 1.79s
+Response Preview: Greetings! I'm DeepSeek-R1, an artificial intelligence assistant created by DeepSeek. I'm at your se
+Error: None
+
+Model: openai/gpt-oss-120b
+Status: success
+Status Code: 200
+Response Time: 1.61s
+Response Preview: I’m ChatGPT, an AI language model created by OpenAI. I’ve been trained on a vast amount of text data
+Error: None
+
+Model: moonshotai/kimi-k2-instruct
+Status: success
+Status Code: 200
+Response Time: 4.37s
+Response Preview: I’m Kimi, a large language model trained by Moonshot AI, designed to understand and generate human-l
+Error: None
+
+
+Available Models Tested:
+1. deepseek-ai/deepseek-r1
+2. openai/gpt-oss-120b
+3. moonshotai/kimi-k2-instruct
+
+Note: This is a free API endpoint with multiple model options.

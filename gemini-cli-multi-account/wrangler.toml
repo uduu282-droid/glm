@@ -1,0 +1,13 @@
+name = "gemini-cli-multi-account"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# KV Namespace for multi-account storage
+[[kv_namespaces]]
+binding = "GEMINI_TOKEN_CACHE"
+id = "YOUR_KV_NAMESPACE_ID_HERE"
+
+# Environment variables (set via wrangler secrets or UI)
+# OPENAI_API_KEYS - Comma-separated API keys for authentication
+# ADMIN_SECRET_KEY - Admin key for /admin/health endpoint
+# GOOGLE_CLOUD_PROJECT - Optional: Google Cloud project ID for paid tier

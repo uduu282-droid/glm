@@ -1,0 +1,67 @@
+{
+  "passed": 2,
+  "failed": 4,
+  "tests": [
+    {
+      "name": "Connectivity",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "duration": 2494
+      }
+    },
+    {
+      "name": "Chat Completions Simple",
+      "status": "FAIL",
+      "details": {
+        "status": 500,
+        "data": {
+          "error": {
+            "message": "Qwen API error: 400 - {\"error\":{\"code\":\"invalid_parameter_error\",\"message\":\"model `qwen-plus` is not supported.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"508d6cdc-bc31-9776-b3ac-f73a5645f604\"}",
+            "type": "internal_server_error"
+          }
+        }
+      }
+    },
+    {
+      "name": "Complex Question",
+      "status": "FAIL",
+      "details": {
+        "status": 500,
+        "data": {
+          "error": {
+            "message": "Qwen API error: 400 - {\"error\":{\"code\":\"invalid_parameter_error\",\"message\":\"model `qwen-plus` is not supported.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"e3fc55ef-234c-911c-8740-dc6735700c6f\"}",
+            "type": "internal_server_error"
+          }
+        }
+      }
+    },
+    {
+      "name": "Alternative Model",
+      "status": "FAIL",
+      "details": {
+        "status": 500,
+        "data": {
+          "error": {
+            "message": "Qwen API error: 400 - {\"error\":{\"code\":\"invalid_parameter_error\",\"message\":\"model `qwen-turbo` is not supported.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"3140fbf4-4082-9873-9cac-7663b3a0694d\"}",
+            "type": "internal_server_error"
+          }
+        }
+      }
+    },
+    {
+      "name": "Streaming",
+      "status": "WARN",
+      "details": {
+        "status": 500
+      }
+    },
+    {
+      "name": "Error Handling",
+      "status": "PASS",
+      "details": {
+        "status": 400
+      }
+    }
+  ]
+}

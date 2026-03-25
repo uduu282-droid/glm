@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+.env
+package-lock.json
+universal-ai-proxy/
+*.mp3
+*.json
+!package.json

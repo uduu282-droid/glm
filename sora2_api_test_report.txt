@@ -1,0 +1,21 @@
+
+Sora2 Text to Video API Test Report
+==================================
+
+Test Date: 2025-12-22 19:00:17
+API Endpoint: https://vetrex.x10.mx/api/sora2.php
+
+1. GET Endpoint Test:
+   - URL: https://vetrex.x10.mx/api/sora2.php?text=Man
+   - Status: Failed
+   - Response: No response
+
+2. POST Endpoint Test:
+   - URL: https://vetrex.x10.mx/api/sora2.php
+   - Payload: {"text": "Spider-Man screams and collapses to the ground dramatically."}
+   - Status: Failed
+   - Response: No response
+
+Note: Video generation is asynchronous. Use the task_url from the response to check the status of your video generation.
+
+Task Checking Endpoint: https://vetrex.x10.mx/api/task_sora2.php?name=TASK_NAME

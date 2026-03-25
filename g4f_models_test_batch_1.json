@@ -1,0 +1,902 @@
+[
+  {
+    "model_id": "default",
+    "total_requests": 10,
+    "successful_requests": 9,
+    "failed_requests": 1,
+    "success_rate": 90.0,
+    "avg_response_time": 4.0438699457380505,
+    "all_results": [
+      {
+        "model": "default",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.5158710479736328,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 5.6904988288879395,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.9116950035095215,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 3.0612952709198,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 3.705596923828125,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 1.594634771347046,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 2.823000192642212,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 4.194061994552612,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 6.898175477981567,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 10,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4",
+    "total_requests": 10,
+    "successful_requests": 7,
+    "failed_requests": 3,
+    "success_rate": 70.0,
+    "avg_response_time": 3.488624061856951,
+    "all_results": [
+      {
+        "model": "gpt-4",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 2.4736597537994385,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 8.969301223754883,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 1.7425239086151123,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 4.5532379150390625,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 5,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 6,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 1.7172739505767822,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 8,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 3.071662425994873,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 1.8927092552185059,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o",
+    "total_requests": 10,
+    "successful_requests": 4,
+    "failed_requests": 6,
+    "success_rate": 40.0,
+    "avg_response_time": 13.994401454925537,
+    "all_results": [
+      {
+        "model": "gpt-4o",
+        "request_num": 1,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 9.271929264068604,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.790334701538086,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 4,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 6.496596813201904,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 28.261634349822998,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Shield: Status: 502, Content-Type: 'text/html', User-Agent: 'python-requests/2.32.3'\"}}"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 7,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.9962677955627441,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.9024262428283691,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 3.2584166526794434,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 7.961507940292359,
+    "all_results": [
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.841994047164917,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 11.981557369232178,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 1.1964101791381836,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 5.784220218658447,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8115277290344238,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 5.240515232086182,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.8951475620269775,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 6.888731002807617,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.4974546432495117,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 5.6699817180633545,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o-mini-audio-preview",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5464053153991699,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.7985959053039551,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.9078028202056885,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.926865816116333,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 5,
+        "status_code": 429,
+        "response_time": 0.3921663761138916,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.8518903255462646,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 0.29844212532043457,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8391003608703613,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.6010704040527344,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 1.2206368446350098,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o-mini-tts",
+    "total_requests": 10,
+    "successful_requests": 3,
+    "failed_requests": 7,
+    "success_rate": 30.0,
+    "avg_response_time": 1.5433538754781086,
+    "all_results": [
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.8226399421691895,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 0.4872615337371826,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.310166597366333,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 4,
+        "status_code": 429,
+        "response_time": 0.2837331295013428,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.4677278995513916,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 0.4917564392089844,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 0.28443074226379395,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.5014946460723877,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 0.505683422088623,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.47516727447509766,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o1",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "o1",
+        "request_num": 1,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.5603981018066406,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 3,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8283812999725342,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 5,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.8320047855377197,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 7,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.848628044128418,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 9,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.8215682506561279,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o1-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 7.62612829208374,
+    "all_results": [
+      {
+        "model": "o1-mini",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 5.008545875549316,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 1.3929896354675293,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.0270538330078125,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8558516502380371,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 6.213165521621704,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.9218254089355469,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 9.618022441864014,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.49686694145202637,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 7.139526605606079,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.45679354667663574,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o3-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 6.659065914154053,
+    "all_results": [
+      {
+        "model": "o3-mini",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 4.689985990524292,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8175020217895508,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.837878227233887,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8696651458740234,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 6.243792533874512,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.5290799140930176,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 4.803081274032593,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8194162845611572,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 5.985187292098999,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 1.6997408866882324,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o3-mini-high",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 7.219209480285644,
+    "all_results": [
+      {
+        "model": "o3-mini-high",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 4.543022632598877,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.49569153785705566,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 4.999788284301758,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 1.8872768878936768,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 7.164753437042236,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.48745036125183105,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 6.910622596740723,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8726696968078613,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 7.921521425247192,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.8132505416870117,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  }
+]

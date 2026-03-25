@@ -1,0 +1,27 @@
+
+Image Service API Test Report
+============================
+
+API Endpoint: https://image-gen-eosin.vercel.app
+API Status: Healthy (verified)
+
+Test Performed:
+1. POST /edit-image
+   - Image URL: https://images.unsplash.com/photo-1506744038136-46273834b3fb
+   - Prompt: Turn this landscape into a watercolor painting
+   - Model: gemini-2.5-flash-image-preview
+   - Image Count: 1
+
+Results:
+- Session ID: fb031077-63a7-4502-8b3d-854d52a89b0f
+- Workflow ID: 854b586d-00b2-479f-af53-b15d11bad585
+
+Tracking Information:
+- Endpoint: GET /track-session
+- Tracking Method: Use query parameters with session_id and workflow_id
+
+Note: Image generation is asynchronous and may take several minutes to complete.
+Use the session_id and workflow_id to track the progress of your request.
+
+API Key: 225b593504...398e6c16c8
+Test Date: 2025-12-22 18:58:06

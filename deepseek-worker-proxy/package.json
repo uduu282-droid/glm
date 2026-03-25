@@ -1,0 +1,45 @@
+{
+  "name": "deepseek-worker-proxy",
+  "version": "1.0.0",
+  "description": "DeepSeek OpenAI-compatible API proxy with multi-account support",
+  "main": "src/index.ts",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "build": "wrangler deploy --dry-run --outdir=dist",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "eslint --ext .ts src --fix",
+    "tsc": "tsc --noEmit --skipLibCheck",
+    "auth:add": "node authenticate.js add",
+    "auth:list": "node authenticate.js list",
+    "auth:remove": "node authenticate.js remove",
+    "setup:deploy": "node setup-accounts.js deploy",
+    "setup:deploy-all": "node setup-accounts.js deploy-all",
+    "setup:deploy-dev": "node setup-accounts.js deploy --dev",
+    "setup:deploy-all-dev": "node setup-accounts.js deploy-all --dev",
+    "setup:list-kv": "node setup-accounts.js list-kv",
+    "setup:list-kv-dev": "node setup-accounts.js list-kv --dev",
+    "setup:remove-kv": "node setup-accounts.js remove-kv",
+    "setup:remove-kv-dev": "node setup-accounts.js remove-kv --dev",
+    "setup:health": "node setup-accounts.js health",
+    "setup:health-dev": "node setup-accounts.js health --dev",
+    "secrets:update": "node manage-secrets.js",
+    "secrets:list": "node manage-secrets.js list",
+    "auth:refresh": "node auto-refresh-tokens.js",
+    "auth:refresh:watch": "node auto-refresh-tokens.js --watch",
+    "auth:status": "node authenticate.js list"
+  },
+  "dependencies": {
+    "hono": "^4.9.2",
+    "open": "^8.4.2",
+    "qrcode-terminal": "^0.12.0",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250816.0",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.33.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^4.30.0"
+  }
+}

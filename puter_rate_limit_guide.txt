@@ -1,0 +1,77 @@
+
+Puter.js AI Rate Limit Testing Guide
+================================
+
+Overview:
+--------
+This guide explains how to test and handle rate limits when using Puter.js AI services.
+Rate limiting is a common protection mechanism that prevents abuse of API services.
+
+Common Rate Limit Indicators:
+--------------------------
+1. HTTP Status Code 429 (Too Many Requests)
+2. Error messages containing "rate limit" or "quota exceeded"
+3. Sudden request failures after initial successes
+4. Service-specific rate limit headers in responses
+
+Testing Methodology:
+------------------
+1. Send a controlled number of requests (e.g., 30) in a short period
+2. Measure response times and success rates
+3. Identify failure patterns
+4. Determine optimal request intervals
+
+Recommended Testing Approach:
+--------------------------
+1. Start with rapid requests (50-100ms apart)
+2. Monitor for rate limit errors
+3. Gradually increase delays until errors stop
+4. Document findings for production usage
+
+Rate Limit Mitigation Strategies:
+------------------------------
+1. Exponential Backoff:
+   - When rate limited, wait and retry with increasing delays
+   - Example: 1s, 2s, 4s, 8s, etc.
+
+2. Request Queuing:
+   - Queue requests and process at controlled intervals
+   - Use a worker pattern with configurable delays
+
+3. Request Batching:
+   - Combine multiple small requests into fewer larger ones
+   - Use conversation history to reduce separate requests
+
+4. Caching:
+   - Cache responses for repeated queries
+   - Reduce redundant API calls
+
+Production Best Practices:
+-----------------------
+1. Always implement error handling for rate limit responses
+2. Use appropriate delays between requests (200-500ms minimum)
+3. Log rate limit events for monitoring
+4. Implement retry logic with backoff
+5. Monitor usage patterns and adjust accordingly
+
+Example Implementation:
+--------------------
+// With proper rate limiting
+async function sendWithRateLimit(message, delayMs = 500) {
+  await new Promise(resolve => setTimeout(resolve, delayMs));
+  return await puter.ai.chat(message);
+}
+
+// With exponential backoff
+async function sendWithBackoff(message, retries = 3, delay = 1000) {
+  try {
+    return await puter.ai.chat(message);
+  } catch (error) {
+    if (error.status === 429 && retries > 0) {
+      console.log(`Rate limited, retrying in ${delay}ms...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+      return sendWithBackoff(message, retries - 1, delay * 2);
+    }
+    throw error;
+  }
+}

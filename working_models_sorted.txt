@@ -1,0 +1,58 @@
+Working Models (Sorted by Response Time)
+=====================================
+
+Total working models: 53
+
+  1. llama-4-maverick-17b-128e - 0.79s
+  2. deepseek-r1-0528 - 0.95s
+  3. llama-3.2-1b - 0.99s
+  4. qwen-3-32b - 1.06s
+  5. moonshotai/Kimi-K2-Instruct - 1.08s
+  6. qwen-2.5-coder-7b - 1.11s
+  7. llama-4-maverick-17b-128e-turbo - 1.14s
+  8. llama-4-maverick - 1.14s
+  9. deepseek-r1-distill-qwen-32b - 1.22s
+ 10. command-a - 1.22s
+ 11. gpt-4.1-nano - 1.24s
+ 12. gemma-3-27b-it - 1.24s
+ 13. command-r7b24 - 1.27s
+ 14. deepseek-ocr - 1.28s
+ 15. deepseek - 1.35s
+ 16. deepseek-r1-turbo - 1.36s
+ 17. gemma-3n-e2b-it - 1.40s
+ 18. mistral-large - 1.43s
+ 19. command-r - 1.47s
+ 20. deepseek-v3 - 1.49s
+ 21. qwen-3-next-80b-a3b - 1.51s
+ 22. llama-3.3-70b-turbo - 1.51s
+ 23. mistral-small-3.1-24b-2503 - 1.52s
+ 24. gemini-2.5-flash-lite - 1.62s
+ 25. PollinationsAI:deepseek-v3 - 1.64s
+ 26. PollinationsAI:gpt-5-nano - 1.65s
+ 27. PollinationsAI:bidara - 1.70s
+ 28. codegemma-7b - 1.71s
+ 29. kat-coder-pro - 1.74s
+ 30. gemma-2-9b - 1.78s
+ 31. llama-3.3-70b - 1.81s
+ 32. mistral-small-3.1-24b - 1.81s
+ 33. qwen-3-0.6b - 2.04s
+ 34. deepseek-r1t-chimera - 2.04s
+ 35. wizardlm-2-7b - 2.08s
+ 36. gpt-4 - 2.33s
+ 37. qwen-3-coder-480b-a35b-turbo - 2.47s
+ 38. gpt-image - 2.50s
+ 39. qwen-3-30b-a3b - 2.76s
+ 40. qwen-3-4b - 3.43s
+ 41. glm-4.6 - 3.97s
+ 42. flux-schnell - 4.48s
+ 43. flux-pro - 4.54s
+ 44. aria - 4.71s
+ 45. o4-mini - 4.72s
+ 46. o1-mini - 5.22s
+ 47. gpt-4.1-mini - 5.25s
+ 48. PollinationsAI:llama-roblox - 5.49s
+ 49. PollinationsAI:chickytutor - 6.60s
+ 50. llama-3.2-3b - 7.08s
+ 51. gpt-5-thinking - 7.26s
+ 52. gpt-5-1-instant - 7.29s
+ 53. gpt-4o-mini - 8.83s

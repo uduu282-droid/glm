@@ -1,0 +1,184 @@
+{
+  "timestamp": "2026-03-20T09:13:01.490Z",
+  "url": "https://www.hiflux.xyz/",
+  "networkRequests": 7,
+  "apiEndpoints": [
+    "https://www.hiflux.xyz/api/auth/session"
+  ],
+  "javascriptFiles": [
+    "https://www.hiflux.xyz/_next/static/chunks/4bd1b696-904baccb8956fee7.js",
+    "https://www.hiflux.xyz/_next/static/chunks/1684-3641e8627b811267.js",
+    "https://www.hiflux.xyz/_next/static/chunks/main-app-b2a06d0517525d48.js",
+    "https://www.hiflux.xyz/_next/static/chunks/9465-65436efe607ba55b.js",
+    "https://www.hiflux.xyz/_next/static/chunks/3304-25068832e997fb09.js",
+    "https://www.hiflux.xyz/_next/static/chunks/711-48a745356f8dc9da.js",
+    "https://www.hiflux.xyz/_next/static/chunks/4211-aaa8f17ddaa4e0bf.js",
+    "https://www.hiflux.xyz/_next/static/chunks/3599-957fd456423ca5d5.js",
+    "https://www.hiflux.xyz/_next/static/chunks/5850-12343d134cf4c689.js",
+    "https://www.hiflux.xyz/_next/static/chunks/9394-b88b7ab77e84bf7e.js",
+    "https://www.hiflux.xyz/_next/static/chunks/1685-ba016d4906e12d98.js",
+    "https://www.hiflux.xyz/_next/static/chunks/6217-0958744023a85208.js",
+    "https://www.hiflux.xyz/_next/static/chunks/app/%5Blocale%5D/page-1d6ec69542874f46.js",
+    "https://www.hiflux.xyz/_next/static/chunks/6853-1eb95eec20c9d2c5.js",
+    "https://www.hiflux.xyz/_next/static/chunks/app/%5Blocale%5D/layout-d2c9a74595f2a3eb.js",
+    "https://www.hiflux.xyz/_next/static/chunks/app/not-found-9148a553c4d37e94.js",
+    "https://www.hiflux.xyz/_next/static/chunks/polyfills-42372ed130431b0a.js",
+    "https://www.hiflux.xyz/_vercel/insights/script.js",
+    "https://www.hiflux.xyz/_next/static/chunks/webpack-76f967007626c501.js",
+    "https://challenges.cloudflare.com/turnstile/v0/api.js"
+  ],
+  "forms": [
+    {
+      "id": "form_0",
+      "action": "https://www.hiflux.xyz/",
+      "method": "get",
+      "className": ""
+    }
+  ],
+  "buttons": [
+    {
+      "text": "English",
+      "type": "button",
+      "className": "justify-center whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transform translateZ(0) text-foreground hover:bg-accent hover:text-accent-foreground hover:-translate-y-0.5 transition-colors duration-200 h-9 has-[>svg]:px-3 tech-button-secondary hidden md:flex items-center gap-2 px-3 py-2 rounded-full cursor-pointer flex-shrink-0",
+      "id": "radix-«Rpgt6nb»"
+    },
+    {
+      "text": "Sign in",
+      "type": "submit",
+      "className": "items-center justify-center gap-2 whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transform translateZ(0) gradient-primary text-primary-foreground shadow-green hover:shadow-green-lg hover:-translate-y-0.5 gradient-hover h-9 has-[>svg]:px-3 tech-button-primary hidden md:flex font-semibold px-4 py-2 text-sm rounded-full cursor-pointer flex-shrink-0",
+      "id": ""
+    },
+    {
+      "text": "",
+      "type": "submit",
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transform translateZ(0) cursor-pointer text-foreground hover:text-accent-foreground hover:-translate-y-0.5 size-9 theme-toggle relative rounded-full transition-all duration-300 ease-in-out flex-shrink-0 h-9 w-9 border-0 shadow-none hover:scale-105 hover:bg-white/20",
+      "id": ""
+    },
+    {
+      "text": "",
+      "type": "submit",
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transform translateZ(0) cursor-pointer hover:text-accent-foreground hover:-translate-y-0.5 size-9 h-9 w-9 text-white hover:bg-blue-500/10 rounded-full transition-all duration-300",
+      "id": ""
+    },
+    {
+      "text": "Start Creating",
+      "type": "submit",
+      "className": "hero-cta-button relative group overflow-hidden cursor-pointer px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 text-base sm:text-lg md:text-xl lg:text-2xl font-bold rounded-2xl font-rounded transition-all duration-300 ease-out hover:-translate-y-0.5 shadow-green hover:shadow-green-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-ring/50  /* 使用项目的gradient-primary样式 */ gradient-primary text-primary-foreground gradient-hover  /* 防止换行 */ whitespace-nowrap flex items-center justify-center min-w-fit",
+      "id": ""
+    },
+    {
+      "text": "Pro Model",
+      "type": "button",
+      "className": "icon-button-sm flex items-center gap-1 max-[400px]:gap-0.5 max-[480px]:gap-0.5 px-2 max-[400px]:px-1.5 max-[480px]:px-1.5 py-1.5 h-9 max-[480px]:h-10 rounded-lg text-sm max-[400px]:text-xs font-medium transition-all duration-200 cursor-pointer flex-shrink-0 border bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-blue-300 border-slate-600/50 hover:border-blue-500/30",
+      "id": ""
+    },
+    {
+      "text": "Batch Mode",
+      "type": "button",
+      "className": "icon-button-sm flex items-center gap-1 max-[400px]:gap-0.5 max-[480px]:gap-0.5 px-2 max-[400px]:px-1.5 max-[480px]:px-1.5 py-1.5 h-9 max-[480px]:h-10 rounded-lg text-sm max-[400px]:text-xs font-medium transition-all duration-200 cursor-pointer flex-shrink-0 border bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-violet-300 border-slate-600/50 hover:border-violet-500/30",
+      "id": ""
+    },
+    {
+      "text": "1:1",
+      "type": "button",
+      "className": "icon-button-sm flex items-center gap-1 max-[400px]:gap-0.5 max-[480px]:gap-0.5 px-2 max-[400px]:px-1.5 max-[480px]:px-1.5 py-1.5 h-9 max-[480px]:h-10 rounded-lg text-sm max-[400px]:text-xs font-medium transition-all duration-200 cursor-pointer bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-cyan-300 border border-slate-600/50 hover:border-cyan-500/30",
+      "id": ""
+    },
+    {
+      "text": "HD",
+      "type": "button",
+      "className": "icon-button-sm flex items-center gap-1 max-[400px]:gap-0.5 max-[480px]:gap-0.5 px-2 max-[400px]:px-1.5 max-[480px]:px-1.5 py-1.5 h-9 max-[480px]:h-10 rounded-lg text-sm max-[400px]:text-xs font-medium transition-all duration-200 cursor-pointer flex-shrink-0 border bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-cyan-300 border-slate-600/50 hover:border-cyan-500/30",
+      "id": ""
+    },
+    {
+      "text": "Edit Image",
+      "type": "button",
+      "className": "icon-button-sm flex items-center gap-1 max-[400px]:gap-0.5 max-[480px]:gap-0.5 px-2 max-[400px]:px-1.5 max-[480px]:px-1.5 py-1.5 h-9 max-[480px]:h-10 rounded-lg text-sm max-[400px]:text-xs font-medium transition-all duration-200 cursor-pointer bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-cyan-300 border border-slate-600/50 hover:border-cyan-500/30 flex-shrink-0",
+      "id": ""
+    },
+    {
+      "text": "",
+      "type": "submit",
+      "className": "icon-button-sm w-9 h-9 min-w-9 min-h-9 max-w-9 max-h-9 rounded-full flex items-center justify-center transition-all duration-200 flex-shrink-0 border hover:transform hover:scale-105 ml-auto bg-slate-600/50 text-slate-400 cursor-not-allowed border-slate-600/30",
+      "id": ""
+    },
+    {
+      "text": "1Why choose HiFlux AI over other free AI image gen",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "2What advanced technology powers HiFlux AI image g",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "3Which FLUX.1 AI models does HiFlux AI use for ima",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "4How to use HiFlux AI free image generator step by",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "5How does HiFlux AI photo editor work for image ed",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "6What are the best practices for HiFlux AI image g",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "7What features does HiFlux AI offer in free vs pre",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "8Why is HiFlux AI accessible without registration ",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "9Does HiFlux AI provide commercial rights for busi",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "10How does HiFlux AI ensure privacy and data prote",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "11Why does HiFlux AI deliver superior image qualit",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "12What should I do if HiFlux AI generation fails o",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    },
+    {
+      "text": "13What devices and platforms support HiFlux AI acc",
+      "type": "submit",
+      "className": "w-full p-6 text-left flex items-center gap-4 group transition-all duration-300 hover:bg-blue-500/5",
+      "id": ""
+    }
+  ]
+}

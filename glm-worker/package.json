@@ -1,0 +1,29 @@
+{
+  "name": "glm-worker-proxy",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible Cloudflare Worker proxy for Z.ai GLM-5",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "node test-worker.js",
+    "verify": "node verify.js",
+    "deploy:auto": "npm install && npm run deploy"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "glm-5",
+    "openai-compatible",
+    "zhipu"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}

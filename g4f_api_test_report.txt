@@ -1,0 +1,33 @@
+
+g4f API Test Report
+================
+
+Test Date: 2025-12-23 00:14:33
+Base URL: https://g4f.dev/v1
+API Key: 684 characters
+
+Endpoints Tested:
+---------------
+
+1. /chat/completions (POST)
+   Status: success
+   Status Code: 200
+   Response Time: 9.62s
+   Response Preview: {'id': 'chatcmpl-znHiz8Z3wYQoXy91ZYyagNTaRko5', 'object': 'chat.completion', 'created': 1766429066, ...
+
+2. /models (GET)
+   Status: N/A
+   Status Code: N/A
+
+
+Summary:
+-------
+Total Endpoints Tested: 2
+Successful Responses: 1/2
+
+API Details:
+- Model Used: gpt-4.1
+- Web Search: Disabled
+- Authentication: Bearer token
+
+Note: This is the g4f API service for text generation

@@ -1,0 +1,44 @@
+{
+  "timestamp": "20260320_134044",
+  "test_prompt": "A young woman in a field of flowers",
+  "base_url": "https://ai-image-gen-zeta.vercel.app/api/generate",
+  "summary": {
+    "total": 5,
+    "successful": 1,
+    "failed": 4,
+    "success_rate": "20.0%"
+  },
+  "results": [
+    {
+      "provider": "pollinations",
+      "status": "SUCCESS",
+      "duration": 2.962627,
+      "response_code": 200,
+      "images_count": 1
+    },
+    {
+      "provider": "runware",
+      "status": "EXCEPTION",
+      "duration": 2.416613,
+      "error": "'str' object has no attribute 'get'"
+    },
+    {
+      "provider": "together",
+      "status": "EXCEPTION",
+      "duration": 2.381914,
+      "error": "'str' object has no attribute 'get'"
+    },
+    {
+      "provider": "google",
+      "status": "EXCEPTION",
+      "duration": 0.702909,
+      "error": "'str' object has no attribute 'get'"
+    },
+    {
+      "provider": "xai",
+      "status": "EXCEPTION",
+      "duration": 0.850899,
+      "error": "'str' object has no attribute 'get'"
+    }
+  ]
+}

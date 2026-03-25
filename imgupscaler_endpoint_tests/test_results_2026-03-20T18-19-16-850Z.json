@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-20T18-19-16-850Z",
+  "imageUrl": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/6b1a97ea-9262-4328-8901-61c04d7d9432.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774045146&Signature=oOdRSmKEHPbTrFS2bffZcH7tCuw%3D",
+  "results": [
+    {
+      "name": "General Enhancement (upscale)",
+      "endpoint": "/api/image/enhance",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Sharpen",
+      "endpoint": "/api/image/sharpen",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Restore",
+      "endpoint": "/api/image/restore",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "AI Edit",
+      "endpoint": "/api/image/edit",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Alternative Enhance (v1)",
+      "endpoint": "/api/v1/image/enhance",
+      "success": false,
+      "error": "Request failed with status code 404"
+    },
+    {
+      "name": "Process Endpoint",
+      "endpoint": "/api/process",
+      "success": false,
+      "error": "Request failed with status code 404"
+    }
+  ]
+}

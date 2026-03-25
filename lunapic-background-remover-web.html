@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunaPic Background Remover - Magic Wand Tool</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 1.1em;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .upload-area {
+      border: 3px dashed #667eea;
+      border-radius: 15px;
+      padding: 60px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: #f8f9ff;
+    }
+
+    .upload-area:hover {
+      background: #eef1ff;
+      border-color: #764ba2;
+    }
+
+    .upload-area.dragover {
+      background: #e0e7ff;
+      border-color: #764ba2;
+      transform: scale(1.02);
+    }
+
+    .upload-icon {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+
+    .upload-text {
+      font-size: 1.3em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .upload-subtext {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    #fileInput {
+      display: none;
+    }
+
+    .controls {
+      margin-top: 30px;
+      padding: 25px;
+      background: #f8f9ff;
+      border-radius: 15px;
+      display: none;
+    }
+
+    .controls.active {
+      display: block;
+    }
+
+    .control-group {
+      margin-bottom: 20px;
+    }
+
+    .control-group label {
+      display: block;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 8px;
+      font-size: 1.05em;
+    }
+
+    .control-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .control-item {
+      flex: 1;
+    }
+
+    input[type="range"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    input[type="range"] {
+      padding: 0;
+      height: 8px;
+      -webkit-appearance: none;
+      background: #e0e0e0;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      background: #667eea;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .preview-container {
+      margin-top: 30px;
+      display: none;
+    }
+
+    .preview-container.active {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .preview-box {
+      border-radius: 15px;
+      overflow: hidden;
+      background: #f8f9ff;
+      padding: 15px;
+    }
+
+    .preview-label {
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .preview-image {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background: repeating-conic-gradient(#808080 0% 25%, #ffffff 0% 50%) 50% / 20px 20px;
+      border-radius: 10px;
+    }
+
+    .status {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+      display: none;
+    }
+
+    .status.loading {
+      display: block;
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .status.success {
+      display: block;
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .status.error {
+      display: block;
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .info-box {
+      background: #e7f3ff;
+      border-left: 4px solid #2196F3;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .info-box strong {
+      color: #1976D2;
+    }
+
+    @media (max-width: 768px) {
+      .preview-container.active {
+        grid-template-columns: 1fr;
+      }
+      
+      .control-row {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎨 LunaPic Background Remover</h1>
+      <p>Magic Wand Tool - Remove Backgrounds with Click-Point Selection</p>
+    </div>
+
+    <div class="content">
+      <!-- Upload Area -->
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">📤</div>
+        <div class="upload-text">Drag & Drop or Click to Upload</div>
+        <div class="upload-subtext">Supports JPG, PNG, WebP (Max 10MB)</div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp">
+      </div>
+
+      <!-- Controls -->
+      <div class="controls" id="controls">
+        <div class="control-group">
+          <label>🎯 Click Point (Where to sample background)</label>
+          <div class="control-row">
+            <div class="control-item">
+              <label style="font-size: 0.9em; margin-top: 10px;">X Position:</label>
+              <input type="number" id="clickX" value="10" min="0" max="1000">
+            </div>
+            <div class="control-item">
+              <label style="font-size: 0.9em; margin-top: 10px;">Y Position:</label>
+              <input type="number" id="clickY" value="10" min="0" max="1000">
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>🌈 Fuzz Tolerance: <span id="fuzzValue">8</span></label>
+          <input type="range" id="fuzz" min="0" max="100" value="8">
+          <div style="margin-top: 8px; font-size: 0.85em; color: #666;">
+            Low = precise removal | High = aggressive removal
+          </div>
+        </div>
+
+        <button class="btn" id="removeBgBtn">✨ Remove Background</button>
+      </div>
+
+      <!-- Status -->
+      <div class="status" id="status"></div>
+
+      <!-- Preview -->
+      <div class="preview-container" id="previewContainer">
+        <div class="preview-box">
+          <div class="preview-label">Original Image</div>
+          <img id="originalPreview" class="preview-image" src="" alt="Original">
+        </div>
+        <div class="preview-box">
+          <div class="preview-label">Background Removed</div>
+          <img id="resultPreview" class="preview-image" src="" alt="Result">
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="info-box">
+        <strong>💡 How it works:</strong> This uses LunaPic's "magic wand" tool. Click on the background area you want to remove. 
+        The algorithm will select similar colors based on the fuzz tolerance. Works best when background is uniform and different from subject.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('fileInput');
+    const controls = document.getElementById('controls');
+    const previewContainer = document.getElementById('previewContainer');
+    const status = document.getElementById('status');
+    const originalPreview = document.getElementById('originalPreview');
+    const resultPreview = document.getElementById('resultPreview');
+    const fuzzSlider = document.getElementById('fuzz');
+    const fuzzValue = document.getElementById('fuzzValue');
+    const clickX = document.getElementById('clickX');
+    const clickY = document.getElementById('clickY');
+    const removeBgBtn = document.getElementById('removeBgBtn');
+
+    let sessionId = null;
+    let cookie = null;
+    let currentFile = null;
+
+    // Upload area click
+    uploadArea.addEventListener('click', () => fileInput.click());
+    
+    fileInput.addEventListener('change', handleFileSelect);
+
+    // Drag and drop
+    uploadArea.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      uploadArea.classList.add('dragover');
+    });
+
+    uploadArea.addEventListener('dragleave', () => {
+      uploadArea.classList.remove('dragover');
+    });
+
+    uploadArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      uploadArea.classList.remove('dragover');
+      const files = e.dataTransfer.files;
+      if (files.length > 0) {
+        handleFile(files[0]);
+      }
+    });
+
+    function handleFileSelect(e) {
+      const file = e.target.files[0];
+      if (file) {
+        handleFile(file);
+      }
+    }
+
+    function handleFile(file) {
+      if (!file.type.startsWith('image/')) {
+        showStatus('Please upload an image file', 'error');
+        return;
+      }
+
+      if (file.size > 10 * 1024 * 1024) {
+        showStatus('File size must be less than 10MB', 'error');
+        return;
+      }
+
+      currentFile = file;
+      
+      // Show preview
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        originalPreview.src = e.target.result;
+        previewContainer.classList.add('active');
+        controls.classList.add('active');
+        showStatus('Image uploaded! Adjust settings and click "Remove Background"', 'success');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Fuzz slider
+    fuzzSlider.addEventListener('input', (e) => {
+      fuzzValue.textContent = e.target.value;
+    });
+
+    // Remove background button
+    removeBgBtn.addEventListener('click', async () => {
+      if (!currentFile) {
+        showStatus('Please upload an image first', 'error');
+        return;
+      }
+
+      removeBgBtn.disabled = true;
+      showStatus('<span class="spinner"></span>Uploading image...', 'loading');
+
+      try {
+        // Step 1: Upload image
+        const formData = new FormData();
+        formData.append('file', currentFile);
+        formData.append('action', 'upload');
+
+        const uploadResponse = await fetch('https://www2.lunapic.com/editor/', {
+          method: 'POST',
+          body: formData
+        });
+
+        // Extract session from cookies
+        const setCookie = uploadResponse.headers.get('set-cookie');
+        if (setCookie) {
+          const iconIdMatch = setCookie.match(/icon_id=([^;]+)/);
+          if (iconIdMatch) {
+            sessionId = iconIdMatch[1];
+            cookie = setCookie.split(';').map(c => c.trim().split('=')[0] + '=' + c.trim().split('=')[1]).join('; ');
+          }
+        }
+
+        if (!sessionId) {
+          throw new Error('Failed to establish session');
+        }
+
+        showStatus('<span class="spinner"></span>Session established. Removing background...', 'loading');
+        
+        // Wait for server processing
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Step 2: Remove background
+        const bgFormData = new FormData();
+        bgFormData.append('savenav', 'LunaPic > Edit > Transparent Background');
+        bgFormData.append('fuzz', fuzzSlider.value);
+        bgFormData.append('fill', 'area');
+        bgFormData.append('action', 'do-trans');
+        bgFormData.append('x', clickX.value);
+        bgFormData.append('y', clickY.value);
+
+        await fetch('https://www2.lunapic.com/editor/', {
+          method: 'POST',
+          headers: {
+            'Cookie': cookie
+          },
+          body: bgFormData
+        });
+
+        showStatus('<span class="spinner"></span>Downloading result...', 'loading');
+
+        // Step 3: Get result
+        const resultUrl = `https://www2.lunapic.com/editor/working/${sessionId}-bt-1`;
+        const resultResponse = await fetch(resultUrl, {
+          headers: {
+            'Cookie': cookie
+          }
+        });
+
+        const resultBlob = await resultResponse.blob();
+        const resultUrl_local = URL.createObjectURL(resultBlob);
+        
+        resultPreview.src = resultUrl_local;
+        
+        // Create download link
+        const downloadLink = document.createElement('a');
+        downloadLink.href = resultUrl_local;
+        downloadLink.download = `lunapic_result_${Date.now()}.png`;
+        downloadLink.style.display = 'none';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+
+        showStatus('✅ Background removed successfully! Download should start automatically.', 'success');
+        
+      } catch (error) {
+        console.error(error);
+        showStatus('❌ Error: ' + error.message, 'error');
+      } finally {
+        removeBgBtn.disabled = false;
+      }
+    });
+
+    function showStatus(message, type) {
+      status.innerHTML = message;
+      status.className = 'status ' + type;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+[
+  {
+    "timestamp": 1774394717764,
+    "url": "https://cdn.imgupscaler.ai/userspace/imgupscaler/logo/upscaler_logo_transparentbg.webp",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718053,
+    "url": "https://api.iconify.design/heroicons.json?icons=ellipsis-vertical%2Cx-mark-20-solid",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718054,
+    "url": "https://api.iconify.design/lucide.json?icons=arrow-left%2Carrow-right%2Carrow-up-right%2Cchevron-down%2Cchevron-right%2Ccircle-help%2Cexpand%2Cfilm%2Cimage%2Cimage-plus%2Cimage-up%2Cimage-upscale%2Cloader-pinwheel%2Cmenu%2Cmoon%2Cmove%2Cpalette%2Cpencil%2Cscan%2Csmile%2Csparkles%2Ctype%2Cupload-cloud%2Cvideo%2Cwand-2",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718054,
+    "url": "https://api.iconify.design/icon-park.json?icons=new-picture",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718056,
+    "url": "https://api.iconify.design/pajamas.json?icons=work-item-enhancement",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718057,
+    "url": "https://api.iconify.design/jam.json?icons=picture-edit",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718057,
+    "url": "https://api.iconify.design/ic.json?icons=sharp-hd",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718058,
+    "url": "https://api.iconify.design/streamline-flex-color.json?icons=color-picker",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718058,
+    "url": "https://api.iconify.design/file-icons.json?icons=nanoc",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718060,
+    "url": "https://api.iconify.design/noto.json?icons=banana",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718061,
+    "url": "https://api.iconify.design/iconoir.json?icons=text-box",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718061,
+    "url": "https://api.iconify.design/mdi.json?icons=arrow-expand-all",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718061,
+    "url": "https://api.iconify.design/fluent-color.json?icons=document-edit-24",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718061,
+    "url": "https://api.iconify.design/fxemoji.json?icons=banana",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718062,
+    "url": "https://api.iconify.design/flag.json?icons=gb-4x3",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394718062,
+    "url": "https://api.imgupscaler.ai/api/pai-login/v1/user/get-userinfo",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "",
+      "referer": "https://imgupscaler.ai/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "product-serial": "",
+      "product-code": "067003",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774394718064,
+    "url": "https://api.imgupscaler.ai/api/pai-login/v1/user/get-userinfo",
+    "method": "OPTIONS",
+    "headers": {
+      "accept": "*/*",
+      "access-control-request-headers": "authorization,product-code,product-serial",
+      "access-control-request-method": "POST",
+      "origin": "https://imgupscaler.ai",
+      "sec-fetch-mode": "cors",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  }
+]

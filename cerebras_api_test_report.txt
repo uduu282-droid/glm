@@ -1,0 +1,35 @@
+
+Cerebras API Test Report
+==================
+
+Test Date: 2025-12-22 21:14:07
+Base URL: https://api.cerebras.ai/v1
+API Key: csk-pkmtk3...n4f34vhjwe
+
+Endpoints Tested:
+---------------
+
+1. /chat/completions (POST)
+   Status: success
+   Status Code: 200
+   Response Time: 0.79s
+   Response Preview: {'id': 'chatcmpl-6cf94b31-48d8-4dbc-950f-b43397e9ea60', 'choices': [{'finish_reason': 'length', 'ind...
+
+2. /models (GET)
+   Status: success
+   Status Code: 200
+   Response Time: 0.39s
+   Response Preview: {'object': 'list', 'data': [{'id': 'llama3.1-8b', 'object': 'model', 'created': 0, 'owned_by': 'Cere...
+
+
+Summary:
+-------
+Total Endpoints Tested: 2
+Successful Responses: 2/2
+
+API Details:
+- Model Used: llama-3.3-70b
+- Authentication: Bearer token
+- Provider: Cerebras
+
+Note: This is the official Cerebras API

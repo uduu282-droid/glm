@@ -1,0 +1,187 @@
+/**
+ * RefineForever Image Editor - API Analyzer
+ * 
+ * Analyzes the RefineForever website to find API endpoints
+ * 
+ * Usage: node analyze-refineforever.js
+ */
+
+const puppeteer = require('puppeteer');
+const fs = require('fs').promises;
+
+async function analyzeRefineForever() {
+  console.log('🔍 Analyzing RefineForever API\n');
+  console.log('=' .repeat(70));
+  
+  let browser;
+  try {
+    // Launch browser
+    console.log('🌐 Launching browser...');
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+
+    const page = await browser.newPage();
+    
+    // Set user agent
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    
+    // Enable request interception
+    await page.setRequestInterception(true);
+
+    const capturedRequests = [];
+    const apiEndpoints = new Set();
+
+    // Capture all requests
+    page.on('request', request => {
+      const url = request.url();
+      
+      // Filter for important requests
+      if (url.includes('api') || 
+          url.includes('graphql') || 
+          url.includes('upload') || 
+          url.includes('generate') ||
+          url.includes('edit') ||
+          url.includes('image') ||
+          url.includes('api.') ||
+          request.resourceType() === 'fetch' ||
+          request.resourceType() === 'xhr') {
+        
+        capturedRequests.push({
+          timestamp: Date.now(),
+          url: url,
+          method: request.method(),
+          headers: request.headers(),
+          postData: request.postData(),
+          resourceType: request.resourceType()
+        });
+        
+        try {
+          const urlObj = new URL(url);
+          apiEndpoints.add(urlObj.hostname);
+        } catch (e) {}
+        
+        console.log(`\n📡 ${request.method()} ${url}`);
+        if (request.postData) {
+          console.log('   Body:', String(request.postData).substring(0, 300));
+        }
+      }
+      
+      request.continue();
+    });
+
+    console.log('\n📍 Navigating to RefineForever...');
+    
+    // Navigate with longer wait
+    await page.goto('https://refineforever.com/tool/advanced_edit_image', {
+      waitUntil: 'networkidle0',
+      timeout: 60000
+    });
+
+    // Wait for page to load
+    console.log('⏳ Waiting for page to fully load...');
+    await new Promise(resolve => setTimeout(resolve, 5000));
+
+    // Take screenshot to see what loaded
+    await page.screenshot({ path: 'refineforever-screenshot.png', fullPage: false });
+    console.log('\n📸 Screenshot saved to: refineforever-screenshot.png');
+
+    // Get page content
+    const html = await page.content();
+    await fs.writeFile('refineforever-page.html', html, 'utf-8');
+    console.log('💾 Page HTML saved to: refineforever-page.html');
+
+    // Extract any JavaScript files
+    const scripts = await page.evaluate(() => {
+      return Array.from(document.querySelectorAll('script[src]'))
+        .map(s => s.src)
+        .filter(src => src.startsWith('http'));
+    });
+    
+    console.log(`\n📄 Found ${scripts.length} external scripts`);
+    scripts.forEach(src => console.log(`   ${src}`));
+
+    // Save results
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    
+    const results = {
+      captureTime: timestamp,
+      url: 'https://refineforever.com/tool/advanced_edit_image',
+      totalRequests: capturedRequests.length,
+      apiEndpoints: Array.from(apiEndpoints),
+      scripts: scripts,
+      requests: capturedRequests
+    };
+    
+    await fs.writeFile(
+      `REFINEFOREVER_ANALYSIS_${timestamp}.json`,
+      JSON.stringify(results, null, 2),
+      'utf-8'
+    );
+    
+    // Create summary
+    const summary = `# 🔍 RefineForever API Analysis Results
+
+## 📊 Overview
+- **Tool**: Advanced Edit Image
+- **URL**: https://refineforever.com/tool/advanced_edit_image
+- **Analysis Time**: ${timestamp}
+- **Total Requests Captured**: ${capturedRequests.length}
+- **API Endpoints Found**: ${apiEndpoints.size}
+
+## 🌐 API Endpoints Detected
+
+${Array.from(apiEndpoints).map(ep => `- ${ep}`).join('\n')}
+
+## 📈 Key Requests
+
+### POST Requests (Likely API Calls):
+${capturedRequests.filter(r => r.method === 'POST').map(r => `- ${r.url}`).join('\n') || 'None detected'}
+
+### Upload/Image Requests:
+${capturedRequests.filter(r => r.url.includes('upload') || r.url.includes('image')).map(r => `- ${r.url}`).join('\n') || 'None detected'}
+
+## 🎯 Next Steps
+
+1. **Review the JSON file** for complete request/response details
+2. **Test endpoints directly** using curl or Postman
+3. **Check authentication requirements** (API keys, cookies, tokens)
+4. **Analyze payload structure** for image editing parameters
+
+## 📁 Generated Files
+
+- \`REFINEFOREVER_ANALYSIS_${timestamp}.json\` - Full API capture
+- \`refineforever-page.html\` - Page HTML source
+- \`refineforever-screenshot.png\` - Page screenshot
+
+---
+*Generated by RefineForever API Analyzer*
+`;
+
+    await fs.writeFile(
+      `REFINEFOREVER_ANALYSIS_${timestamp}.md`,
+      summary,
+      'utf-8'
+    );
+    
+    console.log('\n✅ ANALYSIS COMPLETE!');
+    console.log('=' .repeat(70));
+    console.log(`\n📄 Results saved to: REFINEFOREVER_ANALYSIS_${timestamp}.json`);
+    console.log(`📝 Summary saved to: REFINEFOREVER_ANALYSIS_${timestamp}.md`);
+    console.log(`\n📊 Total requests captured: ${capturedRequests.length}`);
+    console.log(`🌐 Unique API endpoints: ${apiEndpoints.size}`);
+    console.log(`\n👉 Check the generated files to see the API structure!`);
+
+  } catch (error) {
+    console.error('\n❌ Error:', error.message);
+    console.error(error.stack);
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
+}
+
+// Run analysis
+analyzeRefineForever().catch(console.error);

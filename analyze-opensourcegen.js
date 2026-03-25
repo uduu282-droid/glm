@@ -1,0 +1,186 @@
+/**
+ * OpenSourceGen - API Analyzer
+ * 
+ * Analyzes the OpenSourceGen website to find API endpoints
+ * 
+ * Usage: node analyze-opensourcegen.js
+ */
+
+const puppeteer = require('puppeteer');
+const fs = require('fs').promises;
+
+async function analyzeOpenSourceGen() {
+  console.log('🔍 Analyzing OpenSourceGen API\n');
+  console.log('=' .repeat(70));
+  
+  let browser;
+  try {
+    // Launch browser
+    console.log('🌐 Launching browser...');
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+
+    const page = await browser.newPage();
+    
+    // Set user agent
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    
+    // Enable request interception
+    await page.setRequestInterception(true);
+
+    const capturedRequests = [];
+    const apiEndpoints = new Set();
+
+    // Capture all requests
+    page.on('request', request => {
+      const url = request.url();
+      
+      // Filter for important requests
+      if (url.includes('api') || 
+          url.includes('graphql') || 
+          url.includes('generate') ||
+          url.includes('create') ||
+          url.includes('submit') ||
+          url.includes('process') ||
+          url.includes('api.') ||
+          request.resourceType() === 'fetch' ||
+          request.resourceType() === 'xhr') {
+        
+        capturedRequests.push({
+          timestamp: Date.now(),
+          url: url,
+          method: request.method(),
+          headers: request.headers(),
+          postData: request.postData(),
+          resourceType: request.resourceType()
+        });
+        
+        try {
+          const urlObj = new URL(url);
+          apiEndpoints.add(urlObj.hostname);
+        } catch (e) {}
+        
+        console.log(`\n📡 ${request.method()} ${url}`);
+        if (request.postData) {
+          console.log('   Body:', String(request.postData).substring(0, 300));
+        }
+      }
+      
+      request.continue();
+    });
+
+    console.log('\n📍 Navigating to OpenSourceGen...');
+    
+    // Navigate with longer wait
+    await page.goto('https://opensourcegen.com/', {
+      waitUntil: 'networkidle0',
+      timeout: 60000
+    });
+
+    // Wait for page to load
+    console.log('⏳ Waiting for page to fully load...');
+    await new Promise(resolve => setTimeout(resolve, 5000));
+
+    // Take screenshot to see what loaded
+    await page.screenshot({ path: 'opensourcegen-screenshot.png', fullPage: false });
+    console.log('\n📸 Screenshot saved to: opensourcesgen-screenshot.png');
+
+    // Get page content
+    const html = await page.content();
+    await fs.writeFile('opensourcegen-page.html', html, 'utf-8');
+    console.log('💾 Page HTML saved to: opensourcegen-page.html');
+
+    // Extract any JavaScript files
+    const scripts = await page.evaluate(() => {
+      return Array.from(document.querySelectorAll('script[src]'))
+        .map(s => s.src)
+        .filter(src => src.startsWith('http'));
+    });
+    
+    console.log(`\n📄 Found ${scripts.length} external scripts`);
+    scripts.forEach(src => console.log(`   ${src}`));
+
+    // Save results
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    
+    const results = {
+      captureTime: timestamp,
+      url: 'https://opensourcegen.com/',
+      totalRequests: capturedRequests.length,
+      apiEndpoints: Array.from(apiEndpoints),
+      scripts: scripts,
+      requests: capturedRequests
+    };
+    
+    await fs.writeFile(
+      `OPENSOURCEGEN_ANALYSIS_${timestamp}.json`,
+      JSON.stringify(results, null, 2),
+      'utf-8'
+    );
+    
+    // Create summary
+    const summary = `# 🔍 OpenSourceGen API Analysis Results
+
+## 📊 Overview
+- **URL**: https://opensourcegen.com/
+- **Analysis Time**: ${timestamp}
+- **Total Requests Captured**: ${capturedRequests.length}
+- **API Endpoints Found**: ${apiEndpoints.size}
+
+## 🌐 API Endpoints Detected
+
+${Array.from(apiEndpoints).map(ep => `- ${ep}`).join('\n')}
+
+## 📈 Key Requests
+
+### POST Requests (Likely API Calls):
+${capturedRequests.filter(r => r.method === 'POST').map(r => `- ${r.url}`).join('\n') || 'None detected'}
+
+### API/Generate Requests:
+${capturedRequests.filter(r => r.url.includes('api') || r.url.includes('generate')).map(r => `- ${r.url}`).join('\n') || 'None detected'}
+
+## 🎯 Next Steps
+
+1. **Review the JSON file** for complete request/response details
+2. **Test endpoints directly** using curl or Postman
+3. **Check authentication requirements** (API keys, cookies, tokens)
+4. **Analyze payload structure** for generation parameters
+
+## 📁 Generated Files
+
+- \`OPENSOURCEGEN_ANALYSIS_${timestamp}.json\` - Full API capture
+- \`opensourcegen-page.html\` - Page HTML source
+- \`opensourcegen-screenshot.png\` - Page screenshot
+
+---
+*Generated by OpenSourceGen API Analyzer*
+`;
+
+    await fs.writeFile(
+      `OPENSOURCEGEN_ANALYSIS_${timestamp}.md`,
+      summary,
+      'utf-8'
+    );
+    
+    console.log('\n✅ ANALYSIS COMPLETE!');
+    console.log('=' .repeat(70));
+    console.log(`\n📄 Results saved to: OPENSOURCEGEN_ANALYSIS_${timestamp}.json`);
+    console.log(`📝 Summary saved to: OPENSOURCEGEN_ANALYSIS_${timestamp}.md`);
+    console.log(`\n📊 Total requests captured: ${capturedRequests.length}`);
+    console.log(`🌐 Unique API endpoints: ${apiEndpoints.size}`);
+    console.log(`\n👉 Check the generated files to see the API structure!`);
+
+  } catch (error) {
+    console.error('\n❌ Error:', error.message);
+    console.error(error.stack);
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
+}
+
+// Run analysis
+analyzeOpenSourceGen().catch(console.error);

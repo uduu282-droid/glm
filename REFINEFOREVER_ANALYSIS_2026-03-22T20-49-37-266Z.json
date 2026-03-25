@@ -1,0 +1,123 @@
+{
+  "captureTime": "2026-03-22T20-49-37-266Z",
+  "url": "https://refineforever.com/tool/advanced_edit_image",
+  "totalRequests": 8,
+  "apiEndpoints": [
+    "refineforever.com",
+    "googleads.g.doubleclick.net",
+    "ep1.adtrafficquality.google",
+    "cloudflareinsights.com",
+    "www.google.com",
+    "ep2.adtrafficquality.google"
+  ],
+  "scripts": [
+    "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202603170101/show_ads_impl_fy2021.js",
+    "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8961957938835561",
+    "https://refineforever.com/assets/index-B-QYTy2U.js",
+    "https://static.cloudflareinsights.com/beacon.min.js"
+  ],
+  "requests": [
+    {
+      "timestamp": 1774212568912,
+      "url": "https://refineforever.com/tool/advanced_edit_image",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+      },
+      "resourceType": "document"
+    },
+    {
+      "timestamp": 1774212569650,
+      "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8961957938835561&output=html&adk=1812271804&adf=3025194257&lmt=1774212569&plat=1%3A8%2C2%3A8%2C3%3A2162688%2C4%3A2162688%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32&format=0x0&url=https%3A%2F%2Frefineforever.com%2Ftool%2Fadvanced_edit_image&pra=5&aiof=9&asro=0&aiapm=0.1542&aiapmd=0.1423&aiapmi=0.16&aiapmid=1&aiactd=0&aicctd=0&ailctd=0&aimart=4&aimartd=4&aieuf=1&aicrs=1&uach=WyIiLCIiLCIiLCIiLCIiLG51bGwsMCxudWxsLCIiLG51bGwsMF0.&abgtt=6&dt=1774212569455&bpp=10&bdt=294&idt=179&shv=r20260318&mjsv=m202603170101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=776195589148&frm=20&pv=2&u_tz=330&u_his=2&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=8&adx=-12245933&ady=-12245933&biw=800&bih=600&scr_x=0&scr_y=0&eid=31097350%2C95378425%2C95386360&oid=2&pvsid=7193555868049809&tmod=1092176346&uas=0&nvt=1&fsapi=1&fc=1920&brdim=10%2C10%2C10%2C10%2C800%2C0%2C780%2C580%2C800%2C600&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=0.98&ifi=1&uci=a!1&fsb=1&dtd=193",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "referer": "https://refineforever.com/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+      },
+      "resourceType": "document"
+    },
+    {
+      "timestamp": 1774212569711,
+      "url": "https://refineforever.com/tools.json",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://refineforever.com/tool/advanced_edit_image",
+        "accept": "*/*"
+      },
+      "resourceType": "fetch"
+    },
+    {
+      "timestamp": 1774212569849,
+      "url": "https://refineforever.com/images/previews/advanced_edit_image_1_Image_fx(3).jpg",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://refineforever.com/tool/advanced_edit_image",
+        "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+      },
+      "resourceType": "image"
+    },
+    {
+      "timestamp": 1774212570198,
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260318&st=env&sjk=7193555868049809",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://refineforever.com/",
+        "accept": "*/*",
+        "origin": "https://refineforever.com"
+      },
+      "resourceType": "xhr"
+    },
+    {
+      "timestamp": 1774212570600,
+      "url": "https://cloudflareinsights.com/cdn-cgi/rum",
+      "method": "POST",
+      "headers": {
+        "referer": "https://refineforever.com/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "origin": "https://refineforever.com"
+      },
+      "postData": "{\"memory\":{\"totalJSHeapSize\":13946438,\"usedJSHeapSize\":8697066,\"jsHeapSizeLimit\":4395630592},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":540,\"firstContentfulPaint\":900,\"startTime\":1774212568907.6,\"versions\":{\"js\":\"2026.2.0\",\"timings\":2},\"pageloadId\":\"1e54b6be-ba3d-438a-b31e-5cbea6be09eb\",\"location\":\"https://refineforever.com/tool/advanced_edit_image\",\"nt\":\"navigate\",\"timingsV2\":{\"nextHopProtocol\":\"h3\",\"domainLookupStart\":7.300000004470348,\"domainLookupEnd\":42.70000000298023,\"connectStart\":42.70000000298023,\"connectEnd\":131.10000000149012,\"requestStart\":131.10000000149012,\"responseStart\":251.20000000298023,\"responseEnd\":251.70000000298023,\"domInteractive\":257.1000000014901,\"domComplete\":1290,\"loadEventStart\":1290.1000000014901,\"loadEventEnd\":1290.8000000044703,\"finalResponseHeadersStart\":251.20000000298023,\"firstInterimResponseStart\":0,\"transferSize\":989,\"decodedBodySize\":1897},\"dt\":\"\",\"siteToken\":\"d57f22b9c2544cc08c460ab94357a7a8\",\"st\":2}",
+      "resourceType": "xhr"
+    },
+    {
+      "timestamp": 1774212570919,
+      "url": "https://www.google.com/recaptcha/api2/aframe",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "referer": "https://refineforever.com/",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+      },
+      "resourceType": "document"
+    },
+    {
+      "timestamp": 1774212571380,
+      "url": "https://ep2.adtrafficquality.google/generate_204?gDYjlw",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "referer": "https://ep2.adtrafficquality.google/sodar/sodar2/253/runner.html",
+        "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+      },
+      "resourceType": "image"
+    }
+  ]
+}

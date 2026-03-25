@@ -1,0 +1,2702 @@
+[
+  {
+    "model_id": "default",
+    "total_requests": 10,
+    "successful_requests": 9,
+    "failed_requests": 1,
+    "success_rate": 90.0,
+    "avg_response_time": 4.0438699457380505,
+    "all_results": [
+      {
+        "model": "default",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.5158710479736328,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 5.6904988288879395,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.9116950035095215,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 3.0612952709198,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 3.705596923828125,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 1.594634771347046,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 2.823000192642212,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 4.194061994552612,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 6.898175477981567,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "default",
+        "request_num": 10,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4",
+    "total_requests": 10,
+    "successful_requests": 7,
+    "failed_requests": 3,
+    "success_rate": 70.0,
+    "avg_response_time": 3.488624061856951,
+    "all_results": [
+      {
+        "model": "gpt-4",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 2.4736597537994385,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 8.969301223754883,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 1.7425239086151123,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 4.5532379150390625,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 5,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 6,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 1.7172739505767822,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 8,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 3.071662425994873,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 1.8927092552185059,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o",
+    "total_requests": 10,
+    "successful_requests": 4,
+    "failed_requests": 6,
+    "success_rate": 40.0,
+    "avg_response_time": 13.994401454925537,
+    "all_results": [
+      {
+        "model": "gpt-4o",
+        "request_num": 1,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 9.271929264068604,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.790334701538086,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 4,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 6.496596813201904,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 28.261634349822998,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Shield: Status: 502, Content-Type: 'text/html', User-Agent: 'python-requests/2.32.3'\"}}"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 7,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.9962677955627441,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.9024262428283691,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 3.2584166526794434,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 7.961507940292359,
+    "all_results": [
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.841994047164917,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 11.981557369232178,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 1.1964101791381836,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 5.784220218658447,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8115277290344238,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 5.240515232086182,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.8951475620269775,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 6.888731002807617,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.4974546432495117,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 5.6699817180633545,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o-mini-audio-preview",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5464053153991699,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.7985959053039551,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.9078028202056885,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.926865816116333,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 5,
+        "status_code": 429,
+        "response_time": 0.3921663761138916,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.8518903255462646,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 0.29844212532043457,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8391003608703613,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.6010704040527344,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-audio-preview",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 1.2206368446350098,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseError: Error 404: Model not found: openai-audio. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\"},\"model\":\"gpt-4o-mini-audio-preview\"}"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4o-mini-tts",
+    "total_requests": 10,
+    "successful_requests": 3,
+    "failed_requests": 7,
+    "success_rate": 30.0,
+    "avg_response_time": 1.5433538754781086,
+    "all_results": [
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.8226399421691895,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 0.4872615337371826,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.310166597366333,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 4,
+        "status_code": 429,
+        "response_time": 0.2837331295013428,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.4677278995513916,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 0.4917564392089844,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 0.28443074226379395,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.5014946460723877,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 0.505683422088623,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4o-mini-tts",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.47516727447509766,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o1",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "o1",
+        "request_num": 1,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.5603981018066406,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 3,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8283812999725342,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 5,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.8320047855377197,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 7,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.848628044128418,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1",
+        "request_num": 9,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "o1",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.8215682506561279,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o1-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 7.62612829208374,
+    "all_results": [
+      {
+        "model": "o1-mini",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 5.008545875549316,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 1.3929896354675293,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.0270538330078125,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8558516502380371,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 6.213165521621704,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.9218254089355469,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 9.618022441864014,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.49686694145202637,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 7.139526605606079,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o1-mini",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.45679354667663574,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o3-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 6.659065914154053,
+    "all_results": [
+      {
+        "model": "o3-mini",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 4.689985990524292,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8175020217895508,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.837878227233887,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8696651458740234,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 6.243792533874512,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.5290799140930176,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 4.803081274032593,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8194162845611572,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 5.985187292098999,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 1.6997408866882324,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o3-mini-high",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 7.219209480285644,
+    "all_results": [
+      {
+        "model": "o3-mini-high",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 4.543022632598877,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.49569153785705566,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 4.999788284301758,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 1.8872768878936768,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 7.164753437042236,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.48745036125183105,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 6.910622596740723,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8726696968078613,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 7.921521425247192,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o3-mini-high",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.8132505416870117,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o4-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 8.06431679725647,
+    "all_results": [
+      {
+        "model": "o4-mini",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 6.499576807022095,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8984270095825195,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 8.693100690841675,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.49187541007995605,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 5.7242350578308105,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.947873592376709,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 6.760511159896851,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.8894946575164795,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 8.5572190284729,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.8592705726623535,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "o4-mini-high",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 10.209582805633545,
+    "all_results": [
+      {
+        "model": "o4-mini-high",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 27.745755434036255,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8421053886413574,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 6.873631000518799,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.8081200122833252,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 3.9090752601623535,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.5703332424163818,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 3.8934640884399414,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.797461748123169,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 4.74668288230896,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "o4-mini-high",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.8612849712371826,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4.1",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 6.168635082244873,
+    "all_results": [
+      {
+        "model": "gpt-4.1",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 3.9786972999572754,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8417232036590576,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 4.664551258087158,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.4617133140563965,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 3.0148704051971436,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.487896203994751,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 5.490974187850952,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 8,
+        "status_code": 429,
+        "response_time": 0.22624993324279785,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.8186681270599365,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 10.857831478118896,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4.1-mini",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 8.791660022735595,
+    "all_results": [
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5079832077026367,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 7.567126512527466,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.4879794120788574,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 7.737748861312866,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8157708644866943,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 8.107778787612915,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 5.981396675109863,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.4739189147949219,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 11.732982158660889,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.5456147193908691,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4.1-nano",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 2.1320000171661375,
+    "all_results": [
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 1,
+        "status_code": 200,
+        "response_time": 1.4158542156219482,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 1.6940279006958008,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.7369084358215332,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 1.1393871307373047,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8670117855072021,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.5377683639526367,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 1.2573540210723877,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.495403528213501,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 2.000715970993042,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.515568733215332,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-4.5",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "gpt-4.5",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.4595770835876465,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 3.389080047607422,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"gpt-4.5\"}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.3167688846588135,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 4,
+        "status_code": 429,
+        "response_time": 0.3614037036895752,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 4.022908449172974,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"gpt-4.5\"}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.5346794128417969,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 2.836240768432617,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"gpt-4.5\"}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.4915041923522949,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.7669222354888916,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-4.5",
+        "request_num": 10,
+        "status_code": 429,
+        "response_time": 0.25011539459228516,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-oss-120b",
+    "total_requests": 10,
+    "successful_requests": 2,
+    "failed_requests": 8,
+    "success_rate": 20.0,
+    "avg_response_time": 4.574095368385315,
+    "all_results": [
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 1.2556548118591309,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 2,
+        "status_code": 429,
+        "response_time": 0.22685980796813965,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.262239933013916,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.5151212215423584,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.4683098793029785,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.4943349361419678,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 0.2530364990234375,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 1.3265867233276367,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.48422694206237793,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-oss-120b",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 3.8618199825286865,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "dall-e-3",
+    "total_requests": 10,
+    "successful_requests": 5,
+    "failed_requests": 5,
+    "success_rate": 50.0,
+    "avg_response_time": 6.463427305221558,
+    "all_results": [
+      {
+        "model": "dall-e-3",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5135972499847412,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 4.904640197753906,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.4839134216308594,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 5.083189964294434,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.48172473907470703,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 8.814547300338745,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.8128399848937988,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 9.369887590408325,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.5127818584442139,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "dall-e-3",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 1.3400142192840576,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "gpt-image",
+    "total_requests": 10,
+    "successful_requests": 4,
+    "failed_requests": 6,
+    "success_rate": 40.0,
+    "avg_response_time": 12.121298730373383,
+    "all_results": [
+      {
+        "model": "gpt-image",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.48050570487976074,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 16.272114753723145,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.8001067638397217,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 6.140124320983887,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.5938687324523926,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 7.249947786331177,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.801072359085083,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.5503349304199219,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 15.131267547607422,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "gpt-image",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.4658520221710205,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "meta-ai",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "meta-ai",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 4.129146099090576,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseStatusError: Response 500: Fetch response failed\"},\"model\":\"meta-ai\"}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8145351409912109,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 1.594198226928711,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 5.392030477523804,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseStatusError: Response 500: Fetch response failed\"},\"model\":\"meta-ai\"}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.47530198097229004,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 4.903835296630859,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseStatusError: Response 500: Fetch response failed\"},\"model\":\"meta-ai\"}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 1.3274922370910645,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 4.371389150619507,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseStatusError: Response 500: Fetch response failed\"},\"model\":\"meta-ai\"}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 1.0792078971862793,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "meta-ai",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 4.966891288757324,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"ResponseStatusError: Response 500: Fetch response failed\"},\"model\":\"meta-ai\"}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-2-70b",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "llama-2-70b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.4944484233856201,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.8679516315460205,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.47363924980163574,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.719494104385376,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-2-70b\"}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.5594685077667236,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.7342488765716553,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-2-70b\"}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.4917917251586914,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.7379891872406006,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-2-70b\"}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 1.3796279430389404,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-2-70b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.6894941329956055,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: Add a \\\"api_key\\\"\"},\"model\":\"llama-2-70b\"}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3-8b",
+    "total_requests": 10,
+    "successful_requests": 3,
+    "failed_requests": 7,
+    "success_rate": 30.0,
+    "avg_response_time": 3.079632600148519,
+    "all_results": [
+      {
+        "model": "llama-3-8b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5342941284179688,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 1.8473060131072998,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.3529469966888428,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 1.835050344467163,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8764262199401855,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 1.282285213470459,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.6107237339019775,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.47783422470092773,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 9,
+        "status_code": 200,
+        "response_time": 0.949756383895874,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3-8b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.4722745418548584,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3-70b",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "llama-3-70b",
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.24384546279907227,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.6734821796417236,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: Add a \\\"api_key\\\"\"},\"model\":\"llama-3-70b\"}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.4661240577697754,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 4,
+        "status_code": 429,
+        "response_time": 0.27024364471435547,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 5,
+        "status_code": 429,
+        "response_time": 0.30050039291381836,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 6,
+        "status_code": 429,
+        "response_time": 0.2560296058654785,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 0.24074482917785645,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.7178876399993896,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: api_key is missing\"},\"model\":\"llama-3-70b\"}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 9,
+        "status_code": 429,
+        "response_time": 0.7161896228790283,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3-70b",
+        "request_num": 10,
+        "status_code": 429,
+        "response_time": 0.2661583423614502,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.1-8b",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5038387775421143,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 1.6156859397888184,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.4248487949371338,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.4983198642730713,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 5,
+        "status_code": 429,
+        "response_time": 0.25609469413757324,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.4633297920227051,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 7,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 8,
+        "status_code": null,
+        "response_time": null,
+        "success": false,
+        "error": "HTTPSConnectionPool(host='g4f.dev', port=443): Read timed out. (read timeout=30)"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.554450511932373,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-8b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.4723331928253174,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 3.701946258544922,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-3.1-70b\"}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.4621915817260742,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 3.6655097007751465,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-3.1-70b\"}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 4,
+        "status_code": 429,
+        "response_time": 0.24256658554077148,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8537490367889404,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 3.66668701171875,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-3.1-70b\"}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.47126293182373047,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 3.8304882049560547,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: Add a \\\"api_key\\\"\"},\"model\":\"llama-3.1-70b\"}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 9,
+        "status_code": 429,
+        "response_time": 0.24172663688659668,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.49534010887145996,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.1-405b",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.8137173652648926,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 2,
+        "status_code": 429,
+        "response_time": 0.23981475830078125,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 3,
+        "status_code": 500,
+        "response_time": 0.5867362022399902,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-3.1-405b\"}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.5326154232025146,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.6086816787719727,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-3.1-405b\"}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.8594837188720703,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.5394613742828369,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 8,
+        "status_code": 429,
+        "response_time": 0.22368454933166504,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.9436755180358887,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: Add a \\\"api_key\\\"\"},\"model\":\"llama-3.1-405b\"}"
+      },
+      {
+        "model": "llama-3.1-405b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.6261627674102783,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: Add a \\\"api_key\\\"\"},\"model\":\"llama-3.1-405b\"}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.2-3b",
+    "total_requests": 10,
+    "successful_requests": 3,
+    "failed_requests": 7,
+    "success_rate": 30.0,
+    "avg_response_time": 4.237200180689494,
+    "all_results": [
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.5989630222320557,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 2.0681889057159424,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.21211481094360352,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 4,
+        "status_code": 200,
+        "response_time": 1.984494686126709,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.5047867298126221,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 6,
+        "status_code": 429,
+        "response_time": 0.2381727695465088,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 7,
+        "status_code": 429,
+        "response_time": 1.2249114513397217,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.4731438159942627,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.4960043430328369,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-3b",
+        "request_num": 10,
+        "status_code": 200,
+        "response_time": 4.910820007324219,
+        "success": true,
+        "response": null
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.2-11b",
+    "total_requests": 10,
+    "successful_requests": 0,
+    "failed_requests": 10,
+    "success_rate": 0.0,
+    "avg_response_time": 0,
+    "all_results": [
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 1,
+        "status_code": 500,
+        "response_time": 0.4832885265350342,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 2,
+        "status_code": 500,
+        "response_time": 0.4925069808959961,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: Add a \\\"api_key\\\"\"},\"model\":\"llama-3.2-11b\"}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.21665573120117188,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.4866204261779785,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.715177059173584,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.48020148277282715,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.6558010578155518,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.6011459827423096,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"MissingAuthError: API key is required for Puter.js API\"},\"model\":\"llama-3.2-11b\"}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 1.3021085262298584,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-11b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.4766366481781006,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.2-90b",
+    "total_requests": 10,
+    "successful_requests": 2,
+    "failed_requests": 8,
+    "success_rate": 20.0,
+    "avg_response_time": 3.5307185649871826,
+    "all_results": [
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.2789175510406494,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 2,
+        "status_code": 429,
+        "response_time": 0.25776028633117676,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 3,
+        "status_code": 429,
+        "response_time": 0.22277259826660156,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.489180326461792,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 5,
+        "status_code": 200,
+        "response_time": 1.4203131198883057,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 6,
+        "status_code": 500,
+        "response_time": 0.507143497467041,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 7,
+        "status_code": 200,
+        "response_time": 2.543060541152954,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 8,
+        "status_code": 500,
+        "response_time": 0.534714937210083,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.4957849979400635,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.2-90b",
+        "request_num": 10,
+        "status_code": 429,
+        "response_time": 0.31178927421569824,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      }
+    ]
+  },
+  {
+    "model_id": "llama-3.3-70b",
+    "total_requests": 10,
+    "successful_requests": 4,
+    "failed_requests": 6,
+    "success_rate": 40.0,
+    "avg_response_time": 4.565190434455872,
+    "all_results": [
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 1,
+        "status_code": 429,
+        "response_time": 0.23741769790649414,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"Rate limit (1x10secs) exceeded for /v1/chat/completions\"}}"
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 2,
+        "status_code": 200,
+        "response_time": 5.6773521900177,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 3,
+        "status_code": 200,
+        "response_time": 1.9786944389343262,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 4,
+        "status_code": 500,
+        "response_time": 0.5131704807281494,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 5,
+        "status_code": 500,
+        "response_time": 0.8356142044067383,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 6,
+        "status_code": 200,
+        "response_time": 4.67772912979126,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 7,
+        "status_code": 500,
+        "response_time": 0.885908842086792,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 8,
+        "status_code": 200,
+        "response_time": 2.118650436401367,
+        "success": true,
+        "response": null
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 9,
+        "status_code": 500,
+        "response_time": 0.884493350982666,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      },
+      {
+        "model": "llama-3.3-70b",
+        "request_num": 10,
+        "status_code": 500,
+        "response_time": 0.45173096656799316,
+        "success": false,
+        "response": "{\"error\":{\"message\":\"You are most wanted! Please wait before making another request.\"}}"
+      }
+    ]
+  }
+]

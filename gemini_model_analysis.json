@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-03-10T12:11:13.133Z",
+  "foundModels": [
+    "gemini"
+  ],
+  "modelDetails": [
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    },
+    {
+      "file": "/_next/static/chunks/app/page-1319a369ca449a20.js",
+      "match": "Gemini",
+      "full": "gemini"
+    }
+  ],
+  "mostLikely": "gemini-pro",
+  "alternatives": [
+    "gemini-pro",
+    "gemini-1.0-pro",
+    "gemini-1.5-pro",
+    "gemini-1.5-flash",
+    "gemini-ultra",
+    "gemini-advanced"
+  ],
+  "conclusion": "Model selection likely happens server-side using gemini-pro as default"
+}

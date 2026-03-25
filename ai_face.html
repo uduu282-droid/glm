@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>My AI Face — Clawdbot Style</title>
+
+<style>
+
+  body {
+
+    margin: 0;
+
+    background: #0a0a0a;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: system-ui, sans-serif;
+
+    overflow: hidden;
+
+  }
+
+
+
+  .monitor {
+
+    width: 620px;
+
+    height: 460px;
+
+    background: #e5e5e5;
+
+    border: 35px solid #222;
+
+    border-radius: 35px;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,0.9),
+
+                inset 0 0 40px rgba(255,255,255,0.3);
+
+    position: relative;
+
+    overflow: hidden;
+
+  }
+
+
+
+  .screen {
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(135deg, #ff5e5e, #ff9a9a);
+
+    position: relative;
+
+    overflow: hidden;
+
+  }
+
+
+
+  .screen::after { /* retro scanlines */
+
+    content: '';
+
+    position: absolute;
+
+    top: 0; left: 0; right: 0; bottom: 0;
+
+    background: repeating-linear-gradient(
+
+      transparent 0px,
+
+      transparent 3px,
+
+      rgba(0,0,0,0.07) 3px,
+
+      rgba(0,0,0,0.07) 6px
+
+    );
+
+    pointer-events: none;
+
+  }
+
+
+
+  #face {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 280px;
+
+    height: 260px;
+
+    transition: transform 0.4s ease;
+
+  }
+
+
+
+  .eye {
+
+    position: absolute;
+
+    top: 85px;
+
+    width: 78px;
+
+    height: 22px;
+
+    background: #111;
+
+    border-radius: 8px;
+
+    box-shadow: 0 6px 0 #000;
+
+  }
+
+  #left-eye  { left: 38px; }
+
+  #right-eye { right: 38px; }
+
+
+
+  .brow {
+
+    position: absolute;
+
+    top: 55px;
+
+    width: 70px;
+
+    height: 12px;
+
+    background: #111;
+
+    border-radius: 50%;
+
+  }
+
+  #left-brow  { left: 42px; transform: rotate(-12deg); }
+
+  #right-brow { right: 42px; transform: rotate(12deg); }
+
+
+
+  .mouth {
+
+    position: absolute;
+
+    bottom: 65px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 92px;
+
+    height: 38px;
+
+    border: 14px solid #111;
+
+    border-top: none;
+
+    border-radius: 0 0 90px 90px;
+
+  }
+
+
+
+  /* === EXPRESSIONS === */
+
+  #face.sleeping .eye {
+
+    height: 7px;
+
+    top: 92px;
+
+    border-radius: 2px;
+
+  }
+
+  #face.sleeping .mouth {
+
+    height: 12px;
+
+    width: 28px;
+
+    border-radius: 4px;
+
+    border: none;
+
+    background: #111;
+
+  }
+
+  #face.sleeping #face { animation: breathe 3.5s infinite ease-in-out; }
+
+
+
+  #face.happy .mouth {
+
+    border-radius: 90px 90px 0 0;
+
+    height: 22px;
+
+    border-bottom: 14px solid #111;
+
+  }
+
+  #face.happy .brow {
+
+    transform: rotate(0deg) !important;
+
+    top: 48px;
+
+  }
+
+
+
+  #face.surprised .eye {
+
+    height: 38px;
+
+    top: 72px;
+
+    border-radius: 50%;
+
+  }
+
+  #face.surprised .mouth {
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    border: 12px solid #111;
+
+    border-top: none;
+
+  }
+
+
+
+  #face.thinking .brow {
+
+    top: 48px;
+
+  }
+
+  #left-brow { transform: rotate(-35deg) !important; }
+
+  #right-brow { transform: rotate(35deg) !important; }
+
+
+
+  /* Zzz for sleeping */
+
+  .zzz {
+
+    position: absolute;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: #111;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    user-select: none;
+
+  }
+
+  .zzz1 { left: 190px; top: 80px; animation: zzz1 2.8s infinite; animation-delay: 0s; }
+
+  .zzz2 { left: 230px; top: 55px; animation: zzz1 2.8s infinite; animation-delay: 0.7s; }
+
+  .zzz3 { left: 270px; top: 90px; animation: zzz1 2.8s infinite; animation-delay: 1.4s; }
+
+
+
+  @keyframes zzz1 {
+
+    0%   { transform: translateY(0); opacity: 0; }
+
+    20%  { opacity: 1; }
+
+    80%  { opacity: 1; }
+
+    100% { transform: translateY(-110px); opacity: 0; }
+
+  }
+
+
+
+  @keyframes breathe {
+
+    50% { transform: scale(1.04); }
+
+  }
+
+
+
+  .controls {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(0,0,0,0.6);
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    gap: 8px;
+
+  }
+
+  button {
+
+    padding: 8px 16px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    color: #111;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+  }
+
+  button:hover { background: #ffd700; }
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="monitor">
+
+  <div class="screen">
+
+    <div id="face">
+
+      <!-- eyes -->
+
+      <div class="eye" id="left-eye"></div>
+
+      <div class="eye" id="right-eye"></div>
+
+      <!-- brows -->
+
+      <div class="brow" id="left-brow"></div>
+
+      <div class="brow" id="right-brow"></div>
+
+      <!-- mouth -->
+
+      <div class="mouth"></div>
+
+
+
+      <!-- Zzz -->
+
+      <div class="zzz zzz1">z</div>
+
+      <div class="zzz zzz2">z</div>
+
+      <div class="zzz zzz3">z</div>
+
+    </div>
+
+
+
+    <div class="controls">
+
+      <button onclick="setExpression('idle')">Idle (blink)</button>
+
+      <button onclick="setExpression('happy')">Happy</button>
+
+      <button onclick="setExpression('surprised')">Surprised</button>
+
+      <button onclick="setExpression('thinking')">Thinking</button>
+
+      <button onclick="setExpression('sleeping')">💤 Sleeping</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+const face = document.getElementById('face');
+
+
+
+function setExpression(mode) {
+
+  face.className = mode; // removes all previous classes
+
+
+
+  // auto-blink only in idle
+
+  if (mode === 'idle') {
+
+    setTimeout(autoBlink, 1500);
+
+  }
+
+}
+
+
+
+function autoBlink() {
+
+  if (!face.classList.contains('idle')) return;
+
+  const eyes = document.querySelectorAll('.eye');
+
+  eyes.forEach(e => e.style.height = '4px');
+
+  setTimeout(() => {
+
+    eyes.forEach(e => e.style.height = '22px');
+
+    if (face.classList.contains('idle')) setTimeout(autoBlink, 2200 + Math.random()*3000);
+
+  }, 180);
+
+}
+
+
+
+// start in idle with blinking
+
+setExpression('idle');
+
+</script>
+
+
+
+</body>
+
+</html>

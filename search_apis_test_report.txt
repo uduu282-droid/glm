@@ -1,0 +1,32 @@
+
+Search APIs Test Report
+==================
+
+Test Date: 2025-12-22 19:15:42
+
+Search APIs Tested:
+----------------
+
+1. Bing Search
+   Description: Search using Bing search engine
+   URL: https://bing-search.apis-bj-devs.workers.dev/?search=cats&limit=2
+   Status: success
+   Status Code: 200
+   Response Time: 1.15s
+   Response Preview: {'status': True, 'join': '@BJ_Devs on Telegram', 'support': '@BJ_Coder', 'code': 200, 'result': {'qu...
+
+2. Google Search
+   Description: Search using Google search engine
+   URL: https://google-search.bjcoderx.workers.dev/?q=cats
+   Status: exception
+   Status Code: N/A
+   Response Time: 0.00s
+   Error: HTTPSConnectionPool(host='google-search.bjcoderx.workers.dev', port=443): Max retries exceeded with 
+
+
+Summary:
+-------
+Total Search APIs Tested: 2
+Successful Responses: 1/2
+
+Note: These are free search APIs provided via Cloudflare Workers.

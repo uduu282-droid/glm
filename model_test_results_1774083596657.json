@@ -1,0 +1,193 @@
+{
+  "summary": {
+    "total": 12,
+    "working": 12,
+    "failed": 0,
+    "timestamp": "2026-03-21T08:59:56.657Z"
+  },
+  "workingModels": [
+    "Cinematic (backend processing)",
+    "Cyberpunk (backend processing)",
+    "Realistic (backend processing)",
+    "Fantasy (backend processing)",
+    "SciFi (backend processing)",
+    "Anime (backend processing)",
+    "Cartoon (backend processing)",
+    "Painting (backend processing)",
+    "Sketch (backend processing)",
+    "Horror (backend processing)",
+    "Vintage (backend processing)",
+    "Modern (backend processing)"
+  ],
+  "failedModels": [],
+  "detailedResults": [
+    {
+      "name": "Cinematic",
+      "style": "cinematic",
+      "prompt": "A beautiful sunset over mountains",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Cyberpunk",
+      "style": "cyberpunk",
+      "prompt": "Futuristic city with flying cars",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Realistic",
+      "style": "realistic",
+      "prompt": "Ocean waves on a beach",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Fantasy",
+      "style": "fantasy",
+      "prompt": "Magical forest with glowing mushrooms",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "SciFi",
+      "style": "scifi",
+      "prompt": "Astronaut in space with Earth",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Anime",
+      "style": "anime",
+      "prompt": "Cherry blossoms in Japanese garden",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Cartoon",
+      "style": "cartoon",
+      "prompt": "Cute robot dancing",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Painting",
+      "style": "painting",
+      "prompt": "Portrait of a woman",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Sketch",
+      "style": "sketch",
+      "prompt": "Mountain landscape drawing",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Horror",
+      "style": "horror",
+      "prompt": "Haunted house at night",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Vintage",
+      "style": "vintage",
+      "prompt": "Old car from 1950s",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    },
+    {
+      "name": "Modern",
+      "style": "modern",
+      "prompt": "Minimalist architecture",
+      "success": true,
+      "status": 200,
+      "code": 410003,
+      "message": "Server exception, The response type of the server is not supported by the client.",
+      "data": {
+        "code": 410003,
+        "message": "Server exception, The response type of the server is not supported by the client.",
+        "data": null
+      }
+    }
+  ]
+}

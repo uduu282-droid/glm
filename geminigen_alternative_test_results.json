@@ -1,0 +1,7 @@
+{
+  "minimal_request": {
+    "error": "{\"detail\":{\"error_code\":\"GEMINI_RATE_LIMIT\",\"error_message\":\"The server currently is experiencing high traffic. Please try again. If it still doesn't work. Please come back in 10 minutes.\"}}",
+    "status_code": 500
+  },
+  "models_test": null
+}

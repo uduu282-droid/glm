@@ -1,0 +1,11 @@
+Let name be "World".
+Say "Hello, " plus name plus "!".
+
+Let x be 5.
+Let y be 10.
+Let sum be x plus y.
+Say "The sum of " plus x plus " and " plus y plus " is " plus sum plus ".".
+
+Repeat 3 times do the following.
+    Say "This is iteration number " plus counter plus ".".
+End repeat.

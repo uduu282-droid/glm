@@ -1,0 +1,29 @@
+{
+  "timestamp": "20260320_135222",
+  "summary": {
+    "total": 3,
+    "successful": 3,
+    "failed": 0,
+    "success_rate": "100.0%"
+  },
+  "results": [
+    {
+      "provider": "pollinations",
+      "status": "SUCCESS",
+      "images": 1,
+      "duration": 7.176167
+    },
+    {
+      "provider": "runware",
+      "status": "SUCCESS",
+      "images": 1,
+      "duration": 6.091385
+    },
+    {
+      "provider": "runware:101@1",
+      "status": "SUCCESS",
+      "images": 1,
+      "duration": 4.451707
+    }
+  ]
+}

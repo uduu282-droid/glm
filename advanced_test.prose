@@ -1,0 +1,24 @@
+Let name be "Prose Language".
+Say "Testing advanced features of " plus name plus ":".
+
+Let age be 20.
+If age >= 18 then do the following.
+    Say "You are an adult.".
+End if.
+
+Let number be 5.
+Say "The number is " plus number plus ".".
+
+Let a be 15.
+Let b be 4.
+Let result1 be a plus b.
+Let result2 be a minus b.
+Let result3 be a times b.
+Let result4 be a divided by b.
+Say "Result of addition is " plus result1 plus ".".
+Say "Result of subtraction is " plus result2 plus ".".
+Say "Result of multiplication is " plus result3 plus ".".
+Say "Result of division is " plus result4 plus ".".
+
+Let greeting be "Hello, World!".
+Say "Original: " plus greeting plus ".".

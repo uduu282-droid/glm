@@ -1,0 +1,832 @@
+[
+  {
+    "timestamp": 1774395530789,
+    "url": "https://letsenhance.io/background-removal",
+    "method": "GET",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "timestamp": 1774395530962,
+    "url": "https://letsenhance.io/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZ0.woff2",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZ0.woff2",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "u=1",
+      "sec-fetch-dest": "font",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530963,
+    "url": "https://letsenhance.io/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZ0.woff2",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZ0.woff2",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "u=1",
+      "sec-fetch-dest": "font",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530963,
+    "url": "https://letsenhance.io/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZ0.woff2",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZ0.woff2",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "u=1",
+      "sec-fetch-dest": "font",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530964,
+    "url": "https://letsenhance.io/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZ0.woff2",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZ0.woff2",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "u=1",
+      "sec-fetch-dest": "font",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530964,
+    "url": "https://letsenhance.io/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZ0.woff2",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/webfonts/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZ0.woff2",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "u=1",
+      "sec-fetch-dest": "font",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530967,
+    "url": "https://letsenhance.io/static/image-to-video-d84888bfd65c1ee0568a4a85d3696ecc.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/image-to-video-d84888bfd65c1ee0568a4a85d3696ecc.svg",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530968,
+    "url": "https://letsenhance.io/static/video-upscaler-b374958f5f89856b5825dcc3f7d97dec.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/video-upscaler-b374958f5f89856b5825dcc3f7d97dec.svg",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530971,
+    "url": "https://letsenhance.io/static/81c7a0bc946d60ac3501b9a546e1086c/62331/ImageBefore.avif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/81c7a0bc946d60ac3501b9a546e1086c/62331/ImageBefore.avif",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530972,
+    "url": "https://letsenhance.io/static/3fb04ae002fc3efe1624cc76151916ef/68559/ImageAfter.avif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/3fb04ae002fc3efe1624cc76151916ef/68559/ImageAfter.avif",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530975,
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAACEUlEQVR42kWRzU8TQRjGtyg0mKgHY+JF/wkOxiPIBWPUsPZAolGh1kOzgsnWLVlxJW2qTdOSpV9ut0ixHswqmBIrpBhNJFgJ1QMQTxoSU+ACpUDZ7O7s9nWmkvge5v3IzC/zvA+1qAQKecn78UP60dyX14H5fMbfReEQRdEuKEoLANgEQWjCuYnMnU7X08hIdD4UFmdHY/FCLJYoxBPJmVAoUqRpRy/1Y/IZZPx3IBu8Z/2ci8Lat2xPdnJ2QFHe3iSAUqnUjJON+het6bGJ7xgONdWwVM0C3bBIi8gxyPMSVUh54XZ3J0QeO+tvkhz09lwZSUiZ5ZevlGFCkCSp+Wq369pd9zCN2+OSlPpKHmu6YaiqbqqqZiKkaweqBqyHi1Kfxvk+3k27o76+W37+fk5KjkL+/VSxtPr7HJHKcdzJix3X12kHs4WBx2R5bIEAc7lpyzBMsEwdditLyDQRsCwXb+hoa3MRWVRne7tXGOJhJj81TWCBwMQpZlA8feF8R//lSzdYfMX+XJKLBLi9XbEQMsE0iWRc4pplH8YphmHsv9Y2ujbKq0PB4JPCg/4BkJPiO4bJngiHlVaHQ2jx+V6cHVcWz5AdynK6AazsVBvL29/bg5XlFVSvw/8fIgSBytYSbJYX4E+55sEj4u6RQyMoQfh89NBlWyolN3a4u18zseR67UCt71SrhqYj8Hg80b+NQUy93cElJQAAAABJRU5ErkJggg==",
+    "method": "GET",
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "referer": ""
+    }
+  },
+  {
+    "timestamp": 1774395530980,
+    "url": "https://letsenhance.io/static/e20c68db4547f67372ba13ba422a80f5/9e32f/oval.avif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/e20c68db4547f67372ba13ba422a80f5/9e32f/oval.avif",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395530988,
+    "url": "https://letsenhance.io/webpack-runtime-5768d0161cbf1dec709a.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395530988,
+    "url": "https://letsenhance.io/framework-3a5fd45494ebb0dce7e7.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395530991,
+    "url": "https://letsenhance.io/38a8da06-763f11f2a2b141027ed4.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395530992,
+    "url": "https://letsenhance.io/ad7f724d-d627dc38c9d54f2ba6e9.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395530993,
+    "url": "https://letsenhance.io/d67dd30b-441417adb424f3d54bd8.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395530993,
+    "url": "https://letsenhance.io/app-9b37a8db1f79ea6e644a.js",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395530993,
+    "url": "https://letsenhance.io/manifest.webmanifest",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395531092,
+    "url": "https://letsenhance.io/static/ai-9b7a8ed0b6f90f3f91e3acefc08c6bdf.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/ai-9b7a8ed0b6f90f3f91e3acefc08c6bdf.svg",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395531093,
+    "url": "https://letsenhance.io/static/se-4a532e780e171f827b8d7d977995c7d5.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/se-4a532e780e171f827b8d7d977995c7d5.svg",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395531093,
+    "url": "https://letsenhance.io/static/compression-5ad93de537303a3b52454b6bbc5f8298.svg",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/static/compression-5ad93de537303a3b52454b6bbc5f8298.svg",
+      ":scheme": "https",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "i",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395531189,
+    "url": "https://letsenhance.io/styles.b2573ba7f07f75743217.css",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/styles.b2573ba7f07f75743217.css",
+      ":scheme": "https",
+      "accept": "text/css,*/*;q=0.1",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; __cf_bm=3ziG7PrwCQv3GvmAYl6xEdBqU8HpbdQ9a8WCkBIukJQ-1774395529.9600537-1.0.1.1-UsvpF0D85t4wB6QPKbDgSa4QmcDsNxVm704TwwznYdrHURaGuFtGlrZXGMX.Z802GgqEU.OYfF5xfx7Z0sAgp72D1W3r_XoEJ9tU607FfXh1zblq_dAoUVQD53FxWqcv",
+      "priority": "u=0",
+      "sec-fetch-dest": "style",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395531880,
+    "url": "https://letsenhance.io/page-data/app-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-96a47217e97c2efa-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/page-data/app-data.json",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; cf_clearance=4uH8yly_KjEllJ2R83EnfDiwFVOe.Kv5mQQfY.SwkIw-1774395530-1.2.1.1-lt0cJhJaDvlxWZyXiSJUHBXR_vm5acd2wNtasfyRXH1LodJJJulfozSzMPSSXCOerJFvwwZp_aOresJi2Jw8L4Wzkl6gDNYHwsDKHIzb8WSW1toxyyLor3nLWoIeoVndUY7tB15TzIImJ6cPUSEKDTo9GrRE0dGRILXuNPvYf0yh1KxOQ_baVTno35zOUJuNaujkncpJTzwsH43TcYqe6uYgx1KhB..t_bnwrK2frX0; __cf_bm=WYhP2tZlOA1kPxJHU4iuOqz9loCuDeGZoEGAnie7Mi4-1774395530.7625067-1.0.1.1-Dh2ghLupOfDohToHHXMjFih5nt2SnRUg6vjia.i6qkDP_1lj41AR_J2Y6i7fgVkHd1USpvFl4jd3Iaf2uXnYf8XBS.EIcaPbOrYtv.HXdEilxskRT5wNTcFCd4a4zlio",
+      "priority": "u=1, i",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395531881,
+    "url": "https://letsenhance.io/page-data/background-removal/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-918e670a5f7ea768-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395532322,
+    "url": "https://log.cookieyes.com/api/v1/log",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "content-type": "multipart/form-data; boundary=----WebKitFormBoundary9u3quCTRXunajNo9",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "postData": "------WebKitFormBoundary9u3quCTRXunajNo9\r\nContent-Disposition: form-data; name=\"key\"\r\n\r\ne1215bbeacf3c108a623cfb0\r\n------WebKitFormBoundary9u3quCTRXunajNo9\r\nContent-Disposition: form-data; name=\"request_type\"\r\n\r\nbanner_load\r\n------WebKitFormBoundary9u3quCTRXunajNo9\r\nContent-Disposition: form-data; name=\"event_log_time\"\r\n\r\n1774395532\r\n------WebKitFormBoundary9u3quCTRXunajNo9\r\nContent-Disposition: form-data; name=\"payload\"\r\n\r\n{\"consent_session_id\":\"bVpQQjZydno4cnFWRXVMSWRVenRxc1ZJVzEzZ0pROHk\",\"banner_id\":\"\"}\r\n------WebKitFormBoundary9u3quCTRXunajNo9--\r\n"
+  },
+  {
+    "timestamp": 1774395532527,
+    "url": "https://directory.cookieyes.com/api/v1/ip",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395532601,
+    "url": "https://letsenhance.io/page-data/sq/d/1179230616.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-a296d773155e940f-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      ":authority": "letsenhance.io",
+      ":method": "GET",
+      ":path": "/page-data/sq/d/1179230616.json",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "cookie": "xEdgeLocation=IN; xEdgeLocation=IN; cf_clearance=4uH8yly_KjEllJ2R83EnfDiwFVOe.Kv5mQQfY.SwkIw-1774395530-1.2.1.1-lt0cJhJaDvlxWZyXiSJUHBXR_vm5acd2wNtasfyRXH1LodJJJulfozSzMPSSXCOerJFvwwZp_aOresJi2Jw8L4Wzkl6gDNYHwsDKHIzb8WSW1toxyyLor3nLWoIeoVndUY7tB15TzIImJ6cPUSEKDTo9GrRE0dGRILXuNPvYf0yh1KxOQ_baVTno35zOUJuNaujkncpJTzwsH43TcYqe6uYgx1KhB..t_bnwrK2frX0; __cf_bm=WYhP2tZlOA1kPxJHU4iuOqz9loCuDeGZoEGAnie7Mi4-1774395530.7625067-1.0.1.1-Dh2ghLupOfDohToHHXMjFih5nt2SnRUg6vjia.i6qkDP_1lj41AR_J2Y6i7fgVkHd1USpvFl4jd3Iaf2uXnYf8XBS.EIcaPbOrYtv.HXdEilxskRT5wNTcFCd4a4zlio; _rdt_uuid=1774395532244.ae891288-73d0-4a38-aca6-6fb843752cdb; cookieyes-consent=consentid:bVpQQjZydno4cnFWRXVMSWRVenRxc1ZJVzEzZ0pROHk,consent:,action:,necessary:,functional:,analytics:,performance:,advertisement:,other:",
+      "priority": "u=1, i",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395533809,
+    "url": "https://letsenhance.io/favicon-32x32.png?v=789ce8d8f20309243734b3ac18f6648b",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395533832,
+    "url": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fletsenhance.io%2Fbackground-removal&title=Free%20Online%20Background%20Remover%20-%20No%20Sign-up%20-%20LetsEnhance%20%7C%20LetsEnhance&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=v3",
+    "method": "GET",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "referer": "https://letsenhance.io/",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "timestamp": 1774395534043,
+    "url": "https://m.stripe.network/inner.html#url=https%3A%2F%2Fletsenhance.io%2Fbackground-removal&title=Free%20Online%20Background%20Remover%20-%20No%20Sign-up%20-%20LetsEnhance%20%7C%20LetsEnhance&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=v3",
+    "method": "GET",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "referer": "https://js.stripe.com/",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "timestamp": 1774395535951,
+    "url": "https://letsenhance.io/page-data/pricing/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395535952,
+    "url": "https://letsenhance.io/page-data/ai-image-generation/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395535952,
+    "url": "https://letsenhance.io/page-data/ai-image-to-video/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395535953,
+    "url": "https://letsenhance.io/page-data/how-to-use/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395536702,
+    "url": "https://letsenhance.io/page-data/ai-image-generation/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-a9848732bb1a8bb1-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395536740,
+    "url": "https://letsenhance.io/page-data/how-to-use/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-abaab70590fd0dc4-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395537127,
+    "url": "https://letsenhance.io/page-data/pricing/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-83ca7024d35cc19e-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395537154,
+    "url": "https://letsenhance.io/page-data/ai-image-to-video/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-ae12b65c1af0b73b-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395540159,
+    "url": "https://letsenhance.io/page-data/signup/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395540160,
+    "url": "https://letsenhance.io/page-data/index/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395540161,
+    "url": "https://letsenhance.io/page-data/login/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395540161,
+    "url": "https://letsenhance.io/page-data/affiliate-program/page-data.json",
+    "method": "GET",
+    "headers": {
+      "origin": "https://letsenhance.io",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-purpose": "prefetch",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395540902,
+    "url": "https://letsenhance.io/page-data/signup/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-bcf20abf5fdbc840-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395540905,
+    "url": "https://letsenhance.io/page-data/affiliate-program/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-a66dcd0e5748dd0f-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395541432,
+    "url": "https://letsenhance.io/page-data/login/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-9d889b042a3c9783-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "timestamp": 1774395541549,
+    "url": "https://letsenhance.io/page-data/index/page-data.json",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://letsenhance.io/background-removal",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=56334034ad33ca59ec29aef17871d2a7b15ccb7e,sentry-public_key=2992c3d912e54bf09146fd2827323052,sentry-trace_id=734d39d3522246b089973aef0f4b25dc,sentry-org_id=4504568732844032,sentry-sampled=true,sentry-sample_rand=0.08903843535501621,sentry-sample_rate=0.1",
+      "sentry-trace": "734d39d3522246b089973aef0f4b25dc-88548dfb70fef8d4-1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  }
+]

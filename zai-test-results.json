@@ -1,0 +1,84 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "skipped": 2,
+  "tests": [
+    {
+      "name": "Chats Endpoint",
+      "status": "PASS",
+      "details": {
+        "chats": 15
+      }
+    },
+    {
+      "name": "Pagination",
+      "status": "PASS",
+      "details": {
+        "successfulPages": 3,
+        "totalPages": 3
+      }
+    },
+    {
+      "name": "Models Endpoint",
+      "status": "SKIP",
+      "details": {
+        "status": 403,
+        "expected": true
+      }
+    },
+    {
+      "name": "Chat Completions",
+      "status": "SKIP",
+      "details": {
+        "status": 404,
+        "expected": true
+      }
+    },
+    {
+      "name": "Header Validation",
+      "status": "PASS",
+      "details": {
+        "fullHeadersRequired": false
+      }
+    },
+    {
+      "name": "Session Integrity",
+      "status": "PASS",
+      "details": {
+        "hasCookies": true,
+        "hasToken": true,
+        "hasTimestamp": true,
+        "hasUrl": true,
+        "cookieCount": 8,
+        "tokenLength": 238
+      }
+    },
+    {
+      "name": "Rate Limit",
+      "status": "PASS",
+      "details": {
+        "rateLimited": false,
+        "results": [
+          {
+            "request": 1,
+            "status": 200,
+            "duration": 631,
+            "timestamp": "2026-03-07T19:07:08.249Z"
+          },
+          {
+            "request": 2,
+            "status": 200,
+            "duration": 223,
+            "timestamp": "2026-03-07T19:07:08.579Z"
+          },
+          {
+            "request": 3,
+            "status": 200,
+            "duration": 169,
+            "timestamp": "2026-03-07T19:07:08.851Z"
+          }
+        ]
+      }
+    }
+  ]
+}

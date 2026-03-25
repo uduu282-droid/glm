@@ -1,0 +1,61 @@
+
+Cerebras API Comprehensive Model Test Report
+=====================================
+
+Test Date: 2025-12-22 21:18:29
+Base URL: https://api.cerebras.ai/v1
+API Key: csk-pkmtk3...n4f34vhjwe
+
+Models Tested:
+------------
+
+Model: llama-3.3-70b
+  Status: success
+  Status Code: 200
+  Response Time: 2.33s
+  Response: Hello.
+
+Model: llama3.1-8b
+  Status: success
+  Status Code: 200
+  Response Time: 0.50s
+  Response: Hello.
+
+Model: gpt-oss-120b
+  Status: parse_error
+  Status Code: 200
+  Response Time: 1.02s
+  Error: 'content'
+
+Model: qwen-3-32b
+  Status: success
+  Status Code: 200
+  Response Time: 0.65s
+  Response: <think>
+Okay, the user wants me to say
+
+Model: zai-glm-4.6
+  Status: parse_error
+  Status Code: 200
+  Response Time: 0.85s
+  Error: 'content'
+
+Model: qwen-3-235b-a22b-instruct-2507
+  Status: success
+  Status Code: 200
+  Response Time: 3.53s
+  Response: Hello!
+
+
+Summary:
+-------
+Total Models Tested: 6
+Successful Responses: 4/6
+Success Rate: 66.7% if total_tests > 0 else 0%
+
+API Details:
+- Authentication: Bearer token
+- Provider: Cerebras
+- Base URL: https://api.cerebras.ai/v1
+
+Note: This is the official Cerebras API with multiple model support

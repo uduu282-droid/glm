@@ -1,0 +1,16 @@
+name = "glm-worker-proxy"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables (set via wrangler secret or .dev.vars)
+# - No secrets needed for GLM (uses guest authentication)
+
+[vars]
+# Optional: Rate limiting configuration
+RATE_LIMIT_ENABLED = false
+RATE_LIMIT_REQUESTS = "10"
+RATE_LIMIT_WINDOW = "60"
+
+# Development environment overrides
+[env.dev]
+name = "glm-worker-proxy-dev"

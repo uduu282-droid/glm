@@ -1,0 +1,5814 @@
+{
+  "total_models": 937,
+  "working_models": 53,
+  "non_working_models": 884,
+  "success_rate": 5.656350053361793,
+  "detailed_results": [
+    {
+      "model_id": "default",
+      "success": false,
+      "response_time": 0.46431732177734375,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-4",
+      "success": true,
+      "response_time": 2.333228826522827,
+      "status_code": 200
+    },
+    {
+      "model_id": "gpt-4o",
+      "success": false,
+      "response_time": 0.503572940826416,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-4o-mini",
+      "success": true,
+      "response_time": 8.826752185821533,
+      "status_code": 200
+    },
+    {
+      "model_id": "gpt-4o-mini-audio-preview",
+      "success": false,
+      "response_time": 0.22330737113952637,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-4o-mini-tts",
+      "success": false,
+      "response_time": 0.3160591125488281,
+      "status_code": 429
+    },
+    {
+      "model_id": "o1",
+      "success": false,
+      "response_time": 0.49210262298583984,
+      "status_code": 500
+    },
+    {
+      "model_id": "o1-mini",
+      "success": true,
+      "response_time": 5.219555377960205,
+      "status_code": 200
+    },
+    {
+      "model_id": "o3-mini",
+      "success": false,
+      "response_time": 0.5334606170654297,
+      "status_code": 500
+    },
+    {
+      "model_id": "o3-mini-high",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "o4-mini",
+      "success": true,
+      "response_time": 4.7249674797058105,
+      "status_code": 200
+    },
+    {
+      "model_id": "o4-mini-high",
+      "success": false,
+      "response_time": 0.23482465744018555,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-4.1",
+      "success": false,
+      "response_time": 0.24879789352416992,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-4.1-mini",
+      "success": true,
+      "response_time": 5.245832204818726,
+      "status_code": 200
+    },
+    {
+      "model_id": "gpt-4.1-nano",
+      "success": true,
+      "response_time": 1.2365062236785889,
+      "status_code": 200
+    },
+    {
+      "model_id": "gpt-4.5",
+      "success": false,
+      "response_time": 0.4692115783691406,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-oss-120b",
+      "success": false,
+      "response_time": 1.4998278617858887,
+      "status_code": 500
+    },
+    {
+      "model_id": "dall-e-3",
+      "success": false,
+      "response_time": 0.2221202850341797,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-image",
+      "success": true,
+      "response_time": 2.49617075920105,
+      "status_code": 200
+    },
+    {
+      "model_id": "meta-ai",
+      "success": false,
+      "response_time": 0.516991376876831,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-2-70b",
+      "success": false,
+      "response_time": 0.8834762573242188,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3-8b",
+      "success": false,
+      "response_time": 0.2238607406616211,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3-70b",
+      "success": false,
+      "response_time": 0.2500617504119873,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3.1-8b",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "llama-3.1-70b",
+      "success": false,
+      "response_time": 0.840566873550415,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.1-405b",
+      "success": false,
+      "response_time": 0.646824836730957,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.2-3b",
+      "success": true,
+      "response_time": 7.08148455619812,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-3.2-11b",
+      "success": false,
+      "response_time": 0.5254318714141846,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.2-90b",
+      "success": false,
+      "response_time": 0.4735722541809082,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.3-70b",
+      "success": true,
+      "response_time": 1.8106110095977783,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-4-scout",
+      "success": false,
+      "response_time": 0.4750027656555176,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-4-maverick",
+      "success": true,
+      "response_time": 1.1443202495574951,
+      "status_code": 200
+    },
+    {
+      "model_id": "mistral-7b",
+      "success": false,
+      "response_time": 0.4866797924041748,
+      "status_code": 500
+    },
+    {
+      "model_id": "mixtral-8x7b",
+      "success": false,
+      "response_time": 0.676077127456665,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-nemo",
+      "success": false,
+      "response_time": 0.6356308460235596,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-small-24b",
+      "success": false,
+      "response_time": 0.482891321182251,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-small-3.1-24b",
+      "success": true,
+      "response_time": 1.8134255409240723,
+      "status_code": 200
+    },
+    {
+      "model_id": "hermes-2-dpo",
+      "success": false,
+      "response_time": 0.48709654808044434,
+      "status_code": 500
+    },
+    {
+      "model_id": "phi-4",
+      "success": false,
+      "response_time": 0.2371068000793457,
+      "status_code": 429
+    },
+    {
+      "model_id": "phi-4-multimodal",
+      "success": false,
+      "response_time": 0.24463462829589844,
+      "status_code": 429
+    },
+    {
+      "model_id": "phi-4-reasoning-plus",
+      "success": false,
+      "response_time": 0.25284433364868164,
+      "status_code": 429
+    },
+    {
+      "model_id": "wizardlm-2-7b",
+      "success": true,
+      "response_time": 2.081254482269287,
+      "status_code": 200
+    },
+    {
+      "model_id": "wizardlm-2-8x22b",
+      "success": false,
+      "response_time": 0.21361947059631348,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.0",
+      "success": false,
+      "response_time": 0.22946524620056152,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.0-flash",
+      "success": false,
+      "response_time": 0.257112979888916,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.0-flash-thinking",
+      "success": false,
+      "response_time": 0.2345116138458252,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.0-flash-thinking-with-apps",
+      "success": false,
+      "response_time": 0.22610831260681152,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.5-flash",
+      "success": false,
+      "response_time": 0.4847242832183838,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemini-2.5-pro",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "gemini-3-pro-preview",
+      "success": false,
+      "response_time": 7.919665336608887,
+      "status_code": 500
+    },
+    {
+      "model_id": "codegemma-7b",
+      "success": true,
+      "response_time": 1.7059412002563477,
+      "status_code": 200
+    },
+    {
+      "model_id": "gemma-2b",
+      "success": false,
+      "response_time": 0.24302291870117188,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemma-1.1-7b",
+      "success": false,
+      "response_time": 0.5331144332885742,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemma-2-9b",
+      "success": true,
+      "response_time": 1.7785518169403076,
+      "status_code": 200
+    },
+    {
+      "model_id": "gemma-2-27b",
+      "success": false,
+      "response_time": 0.2428576946258545,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemma-3-4b",
+      "success": false,
+      "response_time": 0.2527766227722168,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemma-3-12b",
+      "success": false,
+      "response_time": 0.23272967338562012,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemma-3-27b",
+      "success": false,
+      "response_time": 0.4606821537017822,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemma-3n-e4b",
+      "success": false,
+      "response_time": 0.22696948051452637,
+      "status_code": 429
+    },
+    {
+      "model_id": "command-r",
+      "success": true,
+      "response_time": 1.4685230255126953,
+      "status_code": 200
+    },
+    {
+      "model_id": "command-r-plus",
+      "success": false,
+      "response_time": 0.4270617961883545,
+      "status_code": 429
+    },
+    {
+      "model_id": "command-r7b",
+      "success": false,
+      "response_time": 0.520639181137085,
+      "status_code": 500
+    },
+    {
+      "model_id": "command-a",
+      "success": true,
+      "response_time": 1.2160511016845703,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-2-72b",
+      "success": false,
+      "response_time": 0.20917844772338867,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-2-vl-7b",
+      "success": false,
+      "response_time": 0.48668527603149414,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2-vl-72b",
+      "success": false,
+      "response_time": 0.5778441429138184,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5",
+      "success": false,
+      "response_time": 0.4949371814727783,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-7b",
+      "success": false,
+      "response_time": 1.0078256130218506,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-72b",
+      "success": false,
+      "response_time": 0.483410120010376,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-coder-32b",
+      "success": false,
+      "response_time": 1.9323558807373047,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-1m",
+      "success": false,
+      "response_time": 0.49558591842651367,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-max",
+      "success": false,
+      "response_time": 0.26329898834228516,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-2.5-vl-72b",
+      "success": false,
+      "response_time": 0.6746549606323242,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-235b",
+      "success": false,
+      "response_time": 1.0785531997680664,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-32b",
+      "success": true,
+      "response_time": 1.0613915920257568,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-30b",
+      "success": false,
+      "response_time": 0.2563004493713379,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-3-14b",
+      "success": false,
+      "response_time": 0.48222780227661133,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-4b",
+      "success": true,
+      "response_time": 3.425767183303833,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-1.7b",
+      "success": false,
+      "response_time": 0.501227855682373,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-0.6b",
+      "success": true,
+      "response_time": 2.036161184310913,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwq-32b",
+      "success": false,
+      "response_time": 0.46056675910949707,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-v3",
+      "success": true,
+      "response_time": 1.4924252033233643,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-r1",
+      "success": false,
+      "response_time": 0.5003325939178467,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-r1-turbo",
+      "success": true,
+      "response_time": 1.3633227348327637,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-r1-distill-llama-70b",
+      "success": false,
+      "response_time": 0.23268795013427734,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-r1-distill-qwen-1.5b",
+      "success": false,
+      "response_time": 0.2352151870727539,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-r1-distill-qwen-14b",
+      "success": false,
+      "response_time": 0.669482946395874,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-r1-distill-qwen-32b",
+      "success": true,
+      "response_time": 1.2151644229888916,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-prover-v2",
+      "success": false,
+      "response_time": 0.4798758029937744,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-prover-v2-671b",
+      "success": false,
+      "response_time": 1.2370660305023193,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-v3-0324",
+      "success": false,
+      "response_time": 0.4849059581756592,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-v3-0324-turbo",
+      "success": false,
+      "response_time": 0.2549781799316406,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-r1-0528",
+      "success": true,
+      "response_time": 0.9494895935058594,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-r1-0528-turbo",
+      "success": false,
+      "response_time": 0.24532437324523926,
+      "status_code": 429
+    },
+    {
+      "model_id": "janus-pro-7b",
+      "success": false,
+      "response_time": 0.2126777172088623,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok-2",
+      "success": false,
+      "response_time": 0.4688084125518799,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3",
+      "success": false,
+      "response_time": 0.5632164478302002,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-r1",
+      "success": false,
+      "response_time": 0.5654878616333008,
+      "status_code": 500
+    },
+    {
+      "model_id": "kimi-k2",
+      "success": false,
+      "response_time": 0.4756472110748291,
+      "status_code": 500
+    },
+    {
+      "model_id": "r1-1776",
+      "success": false,
+      "response_time": 0.38760972023010254,
+      "status_code": 429
+    },
+    {
+      "model_id": "nemotron-70b",
+      "success": false,
+      "response_time": 0.5297613143920898,
+      "status_code": 500
+    },
+    {
+      "model_id": "dolphin-2.6",
+      "success": false,
+      "response_time": 0.23996376991271973,
+      "status_code": 429
+    },
+    {
+      "model_id": "dolphin-2.9",
+      "success": false,
+      "response_time": 0.46711158752441406,
+      "status_code": 500
+    },
+    {
+      "model_id": "airoboros-70b",
+      "success": false,
+      "response_time": 0.25540924072265625,
+      "status_code": 429
+    },
+    {
+      "model_id": "lzlv-70b",
+      "success": false,
+      "response_time": 0.26999998092651367,
+      "status_code": 429
+    },
+    {
+      "model_id": "aria",
+      "success": true,
+      "response_time": 4.705518007278442,
+      "status_code": 200
+    },
+    {
+      "model_id": "evil",
+      "success": false,
+      "response_time": 1.2973849773406982,
+      "status_code": 500
+    },
+    {
+      "model_id": "sdxl-turbo",
+      "success": false,
+      "response_time": 0.49504590034484863,
+      "status_code": 500
+    },
+    {
+      "model_id": "sd-3.5-large",
+      "success": false,
+      "response_time": 0.24892592430114746,
+      "status_code": 429
+    },
+    {
+      "model_id": "flux",
+      "success": false,
+      "response_time": 0.4947175979614258,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-pro",
+      "success": true,
+      "response_time": 4.536901950836182,
+      "status_code": 200
+    },
+    {
+      "model_id": "flux-dev",
+      "success": false,
+      "response_time": 0.5322976112365723,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-schnell",
+      "success": true,
+      "response_time": 4.478810787200928,
+      "status_code": 200
+    },
+    {
+      "model_id": "flux-redux",
+      "success": false,
+      "response_time": 0.7682576179504395,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-depth",
+      "success": false,
+      "response_time": 0.4870295524597168,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-canny",
+      "success": false,
+      "response_time": 0.4847230911254883,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-kontext",
+      "success": false,
+      "response_time": 0.23191571235656738,
+      "status_code": 429
+    },
+    {
+      "model_id": "flux-dev-lora",
+      "success": false,
+      "response_time": 0.9837071895599365,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-1",
+      "success": false,
+      "response_time": 0.8164477348327637,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-1-instant",
+      "success": true,
+      "response_time": 7.29400372505188,
+      "status_code": 200
+    },
+    {
+      "model_id": "gpt-5-1-thinking",
+      "success": false,
+      "response_time": 0.5952157974243164,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "gpt-5-instant",
+      "success": false,
+      "response_time": 0.4774456024169922,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-thinking",
+      "success": true,
+      "response_time": 7.255015134811401,
+      "status_code": 200
+    },
+    {
+      "model_id": "study",
+      "success": false,
+      "response_time": 0.48275065422058105,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:openai",
+      "success": false,
+      "response_time": 1.0427627563476562,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:evil",
+      "success": false,
+      "response_time": 0.5001890659332275,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:deepseek-v3",
+      "success": true,
+      "response_time": 1.6416809558868408,
+      "status_code": 200
+    },
+    {
+      "model_id": "PollinationsAI:gemini-2.5-flash-lite",
+      "success": false,
+      "response_time": 0.4895355701446533,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:searchgpt",
+      "success": false,
+      "response_time": 1.0901808738708496,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:mistral-small-3.1-24b",
+      "success": false,
+      "response_time": 0.48757314682006836,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:gpt-5-mini",
+      "success": false,
+      "response_time": 4.823695182800293,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:gpt-4o-mini-audio-preview",
+      "success": false,
+      "response_time": 0.46125245094299316,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:gpt-5-nano",
+      "success": true,
+      "response_time": 1.647587537765503,
+      "status_code": 200
+    },
+    {
+      "model_id": "PollinationsAI:gpt-5-chat",
+      "success": false,
+      "response_time": 0.48590660095214844,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:o4-mini",
+      "success": false,
+      "response_time": 0.807957649230957,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:qwen-2.5-coder-32b",
+      "success": false,
+      "response_time": 0.49210286140441895,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:llama-roblox",
+      "success": true,
+      "response_time": 5.494259357452393,
+      "status_code": 200
+    },
+    {
+      "model_id": "PollinationsAI:bidara",
+      "success": true,
+      "response_time": 1.698892593383789,
+      "status_code": 200
+    },
+    {
+      "model_id": "PollinationsAI:chickytutor",
+      "success": true,
+      "response_time": 6.599907875061035,
+      "status_code": 200
+    },
+    {
+      "model_id": "PollinationsAI:midijourney",
+      "success": false,
+      "response_time": 0.9561851024627686,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:rtist",
+      "success": false,
+      "response_time": 0.588707685470581,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:unity",
+      "success": false,
+      "response_time": 2.0129220485687256,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:flux",
+      "success": false,
+      "response_time": 0.6291744709014893,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:turbo",
+      "success": false,
+      "response_time": 1.1772172451019287,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:kontext",
+      "success": false,
+      "response_time": 0.731356143951416,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:gptimage",
+      "success": false,
+      "response_time": 0.25312018394470215,
+      "status_code": 429
+    },
+    {
+      "model_id": "PollinationsAI:openai-audio",
+      "success": false,
+      "response_time": 0.8168082237243652,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:alloy",
+      "success": false,
+      "response_time": 0.77311110496521,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:echo",
+      "success": false,
+      "response_time": 1.0687062740325928,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:fable",
+      "success": false,
+      "response_time": 0.5775899887084961,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:onyx",
+      "success": false,
+      "response_time": 0.24622821807861328,
+      "status_code": 429
+    },
+    {
+      "model_id": "PollinationsAI:nova",
+      "success": false,
+      "response_time": 0.9989883899688721,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:shimmer",
+      "success": false,
+      "response_time": 0.4811687469482422,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:coral",
+      "success": false,
+      "response_time": 0.8394334316253662,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:verse",
+      "success": false,
+      "response_time": 0.48506760597229004,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:ballad",
+      "success": false,
+      "response_time": 5.352109432220459,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:ash",
+      "success": false,
+      "response_time": 0.5291314125061035,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:sage",
+      "success": false,
+      "response_time": 0.8688437938690186,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:amuch",
+      "success": false,
+      "response_time": 0.9976933002471924,
+      "status_code": 500
+    },
+    {
+      "model_id": "PollinationsAI:dan",
+      "success": false,
+      "response_time": 0.23317885398864746,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.5-flash-lite",
+      "success": true,
+      "response_time": 1.6167147159576416,
+      "status_code": 200
+    },
+    {
+      "model_id": "searchgpt",
+      "success": false,
+      "response_time": 0.2363905906677246,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-5-mini",
+      "success": false,
+      "response_time": 0.2513885498046875,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-5-nano",
+      "success": false,
+      "response_time": 0.23754596710205078,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-5-chat",
+      "success": false,
+      "response_time": 0.24917960166931152,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-roblox",
+      "success": false,
+      "response_time": 0.5337352752685547,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-4",
+      "success": false,
+      "response_time": 1.2972872257232666,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-4-heavy",
+      "success": false,
+      "response_time": 1.4509406089782715,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-4-reasoning",
+      "success": false,
+      "response_time": 0.5008077621459961,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-reasoning",
+      "success": false,
+      "response_time": 0.5378425121307373,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-mini",
+      "success": false,
+      "response_time": 0.5311076641082764,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-mini-reasoning",
+      "success": false,
+      "response_time": 0.4576246738433838,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-2-image",
+      "success": false,
+      "response_time": 0.34224605560302734,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "model-router",
+      "success": false,
+      "response_time": 0.642134428024292,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-4o-mini-audio",
+      "success": false,
+      "response_time": 0.8312332630157471,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-kontext-pro",
+      "success": false,
+      "response_time": 0.5850691795349121,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-max",
+      "success": false,
+      "response_time": 1.9862396717071533,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-plus",
+      "success": false,
+      "response_time": 0.49182677268981934,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-235b-a22b",
+      "success": false,
+      "response_time": 2.278989553451538,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-coder-plus",
+      "success": false,
+      "response_time": 0.47919750213623047,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-30b-a3b",
+      "success": true,
+      "response_time": 2.756887674331665,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-coder-30b-a3b",
+      "success": false,
+      "response_time": 0.5144610404968262,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-max",
+      "success": false,
+      "response_time": 1.9532482624053955,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-turbo",
+      "success": false,
+      "response_time": 0.47934746742248535,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-omni-7b",
+      "success": false,
+      "response_time": 0.2349081039428711,
+      "status_code": 429
+    },
+    {
+      "model_id": "qvq-72b-preview-0310",
+      "success": false,
+      "response_time": 1.5833449363708496,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-2.5-vl-32b",
+      "success": false,
+      "response_time": 0.2733449935913086,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-2.5-14b-1m",
+      "success": false,
+      "response_time": 0.5446276664733887,
+      "status_code": 500
+    },
+    {
+      "model_id": "glm-4.6",
+      "success": true,
+      "response_time": 3.9736764430999756,
+      "status_code": 200
+    },
+    {
+      "model_id": "glm-4.5v",
+      "success": false,
+      "response_time": 0.46268701553344727,
+      "status_code": 500
+    },
+    {
+      "model_id": "glm-4.5",
+      "success": false,
+      "response_time": 4.681215763092041,
+      "status_code": 500
+    },
+    {
+      "model_id": "glm-4.5-air",
+      "success": false,
+      "response_time": 0.509044885635376,
+      "status_code": 500
+    },
+    {
+      "model_id": "glm-4.1v-9b-thinking",
+      "success": false,
+      "response_time": 0.699059009552002,
+      "status_code": 500
+    },
+    {
+      "model_id": "z1-rumination",
+      "success": false,
+      "response_time": 0.8682522773742676,
+      "status_code": 500
+    },
+    {
+      "model_id": "z1-32b",
+      "success": false,
+      "response_time": 0.26072072982788086,
+      "status_code": 429
+    },
+    {
+      "model_id": "chatglm",
+      "success": false,
+      "response_time": 0.5072393417358398,
+      "status_code": 500
+    },
+    {
+      "model_id": "0808-360b-dr",
+      "success": false,
+      "response_time": 0.4812922477722168,
+      "status_code": 500
+    },
+    {
+      "model_id": "glm-4-32b",
+      "success": false,
+      "response_time": 0.21945619583129883,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepcoder-14b",
+      "success": false,
+      "response_time": 1.0684869289398193,
+      "status_code": 500
+    },
+    {
+      "model_id": "tongyi-deepresearch-30b-a3b",
+      "success": false,
+      "response_time": 2.264434576034546,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwq-32b-arliai-rpr",
+      "success": false,
+      "response_time": 0.679175853729248,
+      "status_code": 500
+    },
+    {
+      "model_id": "dolphin-mistral-24b-venice-edition",
+      "success": false,
+      "response_time": 0.2971534729003906,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-chat-v3-0324",
+      "success": false,
+      "response_time": 0.46684789657592773,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-chat-v3.1",
+      "success": false,
+      "response_time": 0.6346035003662109,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-r1-0528-qwen-3-8b",
+      "success": false,
+      "response_time": 0.43610453605651855,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.0-flash-exp",
+      "success": false,
+      "response_time": 1.8440566062927246,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemma-3-12b-it",
+      "success": false,
+      "response_time": 0.24653291702270508,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemma-3-27b-it",
+      "success": true,
+      "response_time": 1.2406625747680664,
+      "status_code": 200
+    },
+    {
+      "model_id": "gemma-3-4b-it",
+      "success": false,
+      "response_time": 0.6528613567352295,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemma-3n-e2b-it",
+      "success": true,
+      "response_time": 1.4006977081298828,
+      "status_code": 200
+    },
+    {
+      "model_id": "gemma-3n-e4b-it",
+      "success": false,
+      "response_time": 0.47362303733825684,
+      "status_code": 500
+    },
+    {
+      "model_id": "kat-coder-pro",
+      "success": true,
+      "response_time": 1.7351391315460205,
+      "status_code": 200
+    },
+    {
+      "model_id": "longcat-flash-chat",
+      "success": false,
+      "response_time": 1.1331377029418945,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.3-8b",
+      "success": false,
+      "response_time": 0.47359538078308105,
+      "status_code": 500
+    },
+    {
+      "model_id": "mai-ds-r1",
+      "success": false,
+      "response_time": 0.4767308235168457,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-small-24b-2501",
+      "success": false,
+      "response_time": 1.2884178161621094,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-small-3.2-24b",
+      "success": false,
+      "response_time": 0.631068229675293,
+      "status_code": 500
+    },
+    {
+      "model_id": "hermes-3-llama-3.1-405b",
+      "success": false,
+      "response_time": 0.5348410606384277,
+      "status_code": 500
+    },
+    {
+      "model_id": "nemotron-nano-12b-v2-vl",
+      "success": false,
+      "response_time": 0.5097365379333496,
+      "status_code": 500
+    },
+    {
+      "model_id": "nemotron-nano-9b",
+      "success": false,
+      "response_time": 0.3095278739929199,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-oss-20b",
+      "success": false,
+      "response_time": 0.2503798007965088,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-3-coder",
+      "success": false,
+      "response_time": 0.3260378837585449,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-r1t-chimera",
+      "success": true,
+      "response_time": 2.040926456451416,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-r1t2-chimera",
+      "success": false,
+      "response_time": 1.97945237159729,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-llama-3.3-70b",
+      "success": false,
+      "response_time": 0.482196569442749,
+      "status_code": 500
+    },
+    {
+      "model_id": "apriel-5b",
+      "success": false,
+      "response_time": 0.24250125885009766,
+      "status_code": 429
+    },
+    {
+      "model_id": "minimax-m2",
+      "success": false,
+      "response_time": 0.5120151042938232,
+      "status_code": 500
+    },
+    {
+      "model_id": "kimi-k2-thinking",
+      "success": false,
+      "response_time": 0.2509760856628418,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-ocr",
+      "success": true,
+      "response_time": 1.284658670425415,
+      "status_code": 200
+    },
+    {
+      "model_id": "olmocr-2-7b-1025",
+      "success": false,
+      "response_time": 0.24486541748046875,
+      "status_code": 429
+    },
+    {
+      "model_id": "paddleocr-vl-0.9b",
+      "success": false,
+      "response_time": 0.2511320114135742,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-v3.2-exp",
+      "success": false,
+      "response_time": 0.31074953079223633,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-v3.1-terminus",
+      "success": false,
+      "response_time": 0.25609350204467773,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-3-next-80b-a3b",
+      "success": true,
+      "response_time": 1.5104494094848633,
+      "status_code": 200
+    },
+    {
+      "model_id": "kimi-k2-0905",
+      "success": false,
+      "response_time": 0.2549896240234375,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-v3.1",
+      "success": false,
+      "response_time": 0.5093810558319092,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-coder-480b-a35b-turbo",
+      "success": true,
+      "response_time": 2.4726009368896484,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-235b-a22b-thinking-2507",
+      "success": false,
+      "response_time": 0.49201345443725586,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-coder-480b-a35b",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "qwen-3-235b-a22b-2507",
+      "success": false,
+      "response_time": 0.5226373672485352,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-4-maverick-17b-128e-turbo",
+      "success": true,
+      "response_time": 1.1355564594268799,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-4-maverick-17b-128e",
+      "success": true,
+      "response_time": 0.7888340950012207,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-4-scout-17b-16e",
+      "success": false,
+      "response_time": 0.5457487106323242,
+      "status_code": 500
+    },
+    {
+      "model_id": "devstral-small-2507",
+      "success": false,
+      "response_time": 0.43291807174682617,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-small-3.2-24b-2506",
+      "success": false,
+      "response_time": 0.6241374015808105,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-guard-4-12b",
+      "success": false,
+      "response_time": 0.523859977722168,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-4-opus",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "claude-4-sonnet",
+      "success": false,
+      "response_time": 1.1471686363220215,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek",
+      "success": true,
+      "response_time": 1.3493809700012207,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-3.3-70b-turbo",
+      "success": true,
+      "response_time": 1.511218786239624,
+      "status_code": 200
+    },
+    {
+      "model_id": "moonshotai/Kimi-K2-Instruct",
+      "success": true,
+      "response_time": 1.0787949562072754,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-4b-2507",
+      "success": false,
+      "response_time": 0.532174825668335,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-8b",
+      "success": false,
+      "response_time": 0.5358412265777588,
+      "status_code": 500
+    },
+    {
+      "model_id": "smollm3-3b",
+      "success": false,
+      "response_time": 0.7793056964874268,
+      "status_code": 429
+    },
+    {
+      "model_id": "apertus-8b-2509",
+      "success": false,
+      "response_time": 0.2560114860534668,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3.2-1b",
+      "success": true,
+      "response_time": 0.9893085956573486,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-30b-a3b-2507",
+      "success": false,
+      "response_time": 0.961834192276001,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.2-11b-vision",
+      "success": false,
+      "response_time": 0.7215709686279297,
+      "status_code": 500
+    },
+    {
+      "model_id": "command-r-plus24",
+      "success": false,
+      "response_time": 0.28499817848205566,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3.1-nemotron-70b",
+      "success": false,
+      "response_time": 0.5076477527618408,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-nemo-2407",
+      "success": false,
+      "response_time": 0.5142710208892822,
+      "status_code": 500
+    },
+    {
+      "model_id": "phi-3.5-mini",
+      "success": false,
+      "response_time": 0.2339928150177002,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-image-edit-rapid-aio",
+      "success": false,
+      "response_time": 0.2599916458129883,
+      "status_code": 429
+    },
+    {
+      "model_id": "eigen-banana-qwen-image-edit",
+      "success": false,
+      "response_time": 0.5232114791870117,
+      "status_code": 500
+    },
+    {
+      "model_id": "fibo",
+      "success": false,
+      "response_time": 0.2907834053039551,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-image-edit-rapid-aio-gguf",
+      "success": false,
+      "response_time": 0.5163707733154297,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-image-lightning",
+      "success": false,
+      "response_time": 0.2644674777984619,
+      "status_code": 429
+    },
+    {
+      "model_id": "stable-diffusion-xl-base-1.0",
+      "success": false,
+      "response_time": 0.5251796245574951,
+      "status_code": 500
+    },
+    {
+      "model_id": "prx-1024-t2i-beta",
+      "success": false,
+      "response_time": 0.5375957489013672,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-image",
+      "success": false,
+      "response_time": 0.5421600341796875,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3",
+      "success": false,
+      "response_time": 0.27474355697631836,
+      "status_code": 429
+    },
+    {
+      "model_id": "qvq-72b",
+      "success": false,
+      "response_time": 0.5147910118103027,
+      "status_code": 500
+    },
+    {
+      "model_id": "stable-diffusion-3.5-large",
+      "success": false,
+      "response_time": 0.2284984588623047,
+      "status_code": 429
+    },
+    {
+      "model_id": "sdxl-1.0",
+      "success": false,
+      "response_time": 0.24758076667785645,
+      "status_code": 429
+    },
+    {
+      "model_id": "longcat-video",
+      "success": false,
+      "response_time": 0.21833109855651855,
+      "status_code": 429
+    },
+    {
+      "model_id": "wan2.2-t2v-a14b",
+      "success": false,
+      "response_time": 0.6945641040802002,
+      "status_code": 500
+    },
+    {
+      "model_id": "wan2.2-ti2v-5b",
+      "success": false,
+      "response_time": 0.25551295280456543,
+      "status_code": 429
+    },
+    {
+      "model_id": "hunyuanvideo",
+      "success": false,
+      "response_time": 0.8334214687347412,
+      "status_code": 500
+    },
+    {
+      "model_id": "mochi-1",
+      "success": false,
+      "response_time": 0.40778136253356934,
+      "status_code": 429
+    },
+    {
+      "model_id": "wan2.1-t2v-14b",
+      "success": false,
+      "response_time": 0.5100154876708984,
+      "status_code": 500
+    },
+    {
+      "model_id": "veo3.1-fast",
+      "success": false,
+      "response_time": 0.3483705520629883,
+      "status_code": 429
+    },
+    {
+      "model_id": "cogvideox-5b",
+      "success": false,
+      "response_time": 0.26632237434387207,
+      "status_code": 429
+    },
+    {
+      "model_id": "sora-2",
+      "success": false,
+      "response_time": 0.5021743774414062,
+      "status_code": 500
+    },
+    {
+      "model_id": "wan2.1-t2v-1.3b",
+      "success": false,
+      "response_time": 0.27150535583496094,
+      "status_code": 429
+    },
+    {
+      "model_id": "ltx-video-0.9.7-dev",
+      "success": false,
+      "response_time": 0.2612602710723877,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.5-pro-grounding-exp",
+      "success": false,
+      "response_time": 0.5581619739532471,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-opus-4-1-20250805-thinking-16k",
+      "success": false,
+      "response_time": 0.7072999477386475,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-sonnet-4-5",
+      "success": false,
+      "response_time": 0.9597213268280029,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-sonnet-4-5-20250929-thinking-32k",
+      "success": false,
+      "response_time": 0.5207641124725342,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-opus-4-1",
+      "success": false,
+      "response_time": 0.5990784168243408,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-high",
+      "success": false,
+      "response_time": 1.0492050647735596,
+      "status_code": 500
+    },
+    {
+      "model_id": "o3",
+      "success": false,
+      "response_time": 0.2644164562225342,
+      "status_code": 429
+    },
+    {
+      "model_id": "chatgpt-4o",
+      "success": false,
+      "response_time": 0.482058048248291,
+      "status_code": 500
+    },
+    {
+      "model_id": "ernie-5.0-preview-1022",
+      "success": false,
+      "response_time": 0.4705464839935303,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-opus-4-20250514-thinking-16k",
+      "success": false,
+      "response_time": 0.8837552070617676,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-v3.2-exp-thinking",
+      "success": false,
+      "response_time": 0.4781970977783203,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-vl-235b-a22b",
+      "success": false,
+      "response_time": 0.24621105194091797,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-opus-4",
+      "success": false,
+      "response_time": 0.24650120735168457,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-medium-2508",
+      "success": false,
+      "response_time": 0.24303531646728516,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok-4-0709",
+      "success": false,
+      "response_time": 0.9854013919830322,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemini-2.5-flash-preview25",
+      "success": false,
+      "response_time": 0.5023269653320312,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-4-fast-reasoning",
+      "success": false,
+      "response_time": 1.2620725631713867,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-haiku-4-5",
+      "success": false,
+      "response_time": 0.9081225395202637,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-sonnet-4-20250514-thinking-32k",
+      "success": false,
+      "response_time": 0.6312539577484131,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-vl-235b-a22b-thinking",
+      "success": false,
+      "response_time": 0.9585773944854736,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-235b-a22b-no-thinking",
+      "success": false,
+      "response_time": 0.35489702224731445,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-5-mini-high",
+      "success": false,
+      "response_time": 0.9255576133728027,
+      "status_code": 500
+    },
+    {
+      "model_id": "mai-1",
+      "success": false,
+      "response_time": 0.5001699924468994,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-sonnet-4",
+      "success": false,
+      "response_time": 0.5091173648834229,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-3-7-sonnet-20250219-thinking-32k",
+      "success": false,
+      "response_time": 0.2645149230957031,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-medium-2505",
+      "success": false,
+      "response_time": 0.23788881301879883,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.5-flash-lite-preview25-no-thinking",
+      "success": false,
+      "response_time": 0.23519372940063477,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-3-5-sonnet",
+      "success": false,
+      "response_time": 0.8919093608856201,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-3-7-sonnet",
+      "success": false,
+      "response_time": 0.23671579360961914,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-3-next-80b-a3b-thinking",
+      "success": false,
+      "response_time": 2.5031378269195557,
+      "status_code": 500
+    },
+    {
+      "model_id": "minimax-m1",
+      "success": false,
+      "response_time": 4.646284341812134,
+      "status_code": 500
+    },
+    {
+      "model_id": "amazon-nova-experimental-chat",
+      "success": false,
+      "response_time": 0.5681898593902588,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-mini-high",
+      "success": false,
+      "response_time": 1.122058629989624,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-mini-beta",
+      "success": false,
+      "response_time": 0.232651948928833,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-small-2506",
+      "success": false,
+      "response_time": 0.4810831546783447,
+      "status_code": 500
+    },
+    {
+      "model_id": "command-a25",
+      "success": false,
+      "response_time": 0.25347042083740234,
+      "status_code": 429
+    },
+    {
+      "model_id": "ling-flash-2.0",
+      "success": false,
+      "response_time": 0.8759264945983887,
+      "status_code": 500
+    },
+    {
+      "model_id": "step-3",
+      "success": false,
+      "response_time": 0.49641966819763184,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-nano-high",
+      "success": false,
+      "response_time": 0.23639512062072754,
+      "status_code": 429
+    },
+    {
+      "model_id": "ring-flash-2.0",
+      "success": false,
+      "response_time": 0.2358088493347168,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-3-5-haiku",
+      "success": false,
+      "response_time": 1.353714942932129,
+      "status_code": 500
+    },
+    {
+      "model_id": "magistral-medium-2506",
+      "success": false,
+      "response_time": 0.4848146438598633,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-small-3.1-24b-2503",
+      "success": true,
+      "response_time": 1.522768497467041,
+      "status_code": 200
+    },
+    {
+      "model_id": "riftrunner",
+      "success": false,
+      "response_time": 0.47833991050720215,
+      "status_code": 500
+    },
+    {
+      "model_id": "phantom-1105-1",
+      "success": false,
+      "response_time": 0.48296546936035156,
+      "status_code": 500
+    },
+    {
+      "model_id": "ibm-granite-h-small",
+      "success": false,
+      "response_time": 0.4834902286529541,
+      "status_code": 500
+    },
+    {
+      "model_id": "hunyuan-vision-1.5-thinking",
+      "success": false,
+      "response_time": 0.9434216022491455,
+      "status_code": 500
+    },
+    {
+      "model_id": "anonymous-1010",
+      "success": false,
+      "response_time": 0.2512028217315674,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-3-vl-8b-thinking",
+      "success": false,
+      "response_time": 0.4881150722503662,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-vl-8b",
+      "success": false,
+      "response_time": 1.3658881187438965,
+      "status_code": 500
+    },
+    {
+      "model_id": "stephen",
+      "success": false,
+      "response_time": 0.5327367782592773,
+      "status_code": 500
+    },
+    {
+      "model_id": "aegis-core",
+      "success": false,
+      "response_time": 1.1612048149108887,
+      "status_code": 500
+    },
+    {
+      "model_id": "x1-turbo-0906",
+      "success": false,
+      "response_time": 0.24783968925476074,
+      "status_code": 429
+    },
+    {
+      "model_id": "bridge-mind",
+      "success": false,
+      "response_time": 0.48244810104370117,
+      "status_code": 500
+    },
+    {
+      "model_id": "winter-wind",
+      "success": false,
+      "response_time": 0.9127335548400879,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-high-no-system-prompt",
+      "success": false,
+      "response_time": 0.5647110939025879,
+      "status_code": 500
+    },
+    {
+      "model_id": "anonymous-922",
+      "success": false,
+      "response_time": 0.49012231826782227,
+      "status_code": 500
+    },
+    {
+      "model_id": "lmarena-internal-test-only",
+      "success": false,
+      "response_time": 0.4938082695007324,
+      "status_code": 500
+    },
+    {
+      "model_id": "not-a-new-model",
+      "success": false,
+      "response_time": 0.9956610202789307,
+      "status_code": 500
+    },
+    {
+      "model_id": "eb45-turbo",
+      "success": false,
+      "response_time": 0.2349107265472412,
+      "status_code": 429
+    },
+    {
+      "model_id": "sorting-hat",
+      "success": false,
+      "response_time": 0.4661548137664795,
+      "status_code": 500
+    },
+    {
+      "model_id": "leepwal",
+      "success": false,
+      "response_time": 0.6458110809326172,
+      "status_code": 500
+    },
+    {
+      "model_id": "mimo-7b",
+      "success": false,
+      "response_time": 0.6092662811279297,
+      "status_code": 500
+    },
+    {
+      "model_id": "polaris",
+      "success": false,
+      "response_time": 0.23740124702453613,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-3-max-thinking",
+      "success": false,
+      "response_time": 0.6801204681396484,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5-high-new-system-prompt",
+      "success": false,
+      "response_time": 1.1873414516448975,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-3-omni-flash",
+      "success": false,
+      "response_time": 0.2711822986602783,
+      "status_code": 429
+    },
+    {
+      "model_id": "monster",
+      "success": false,
+      "response_time": 0.4629330635070801,
+      "status_code": 500
+    },
+    {
+      "model_id": "raptor-1110",
+      "success": false,
+      "response_time": 0.6238515377044678,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-vl-max",
+      "success": false,
+      "response_time": 0.2983274459838867,
+      "status_code": 429
+    },
+    {
+      "model_id": "raptor-llm-1017",
+      "success": false,
+      "response_time": 0.4644317626953125,
+      "status_code": 500
+    },
+    {
+      "model_id": "tensor",
+      "success": false,
+      "response_time": 0.24008584022521973,
+      "status_code": 429
+    },
+    {
+      "model_id": "whisperfall",
+      "success": false,
+      "response_time": 1.2917139530181885,
+      "status_code": 429
+    },
+    {
+      "model_id": "mimo-vl-7b-rl-2508",
+      "success": false,
+      "response_time": 0.2385544776916504,
+      "status_code": 429
+    },
+    {
+      "model_id": "viper",
+      "success": false,
+      "response_time": 0.21299505233764648,
+      "status_code": 429
+    },
+    {
+      "model_id": "rain-drop",
+      "success": false,
+      "response_time": 0.24639606475830078,
+      "status_code": 429
+    },
+    {
+      "model_id": "silvandra",
+      "success": false,
+      "response_time": 0.4957571029663086,
+      "status_code": 500
+    },
+    {
+      "model_id": "mercury",
+      "success": false,
+      "response_time": 0.5259206295013428,
+      "status_code": 500
+    },
+    {
+      "model_id": "willow",
+      "success": false,
+      "response_time": 0.504845142364502,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-5.1",
+      "success": false,
+      "response_time": 0.46820497512817383,
+      "status_code": 500
+    },
+    {
+      "model_id": "ring-1t",
+      "success": false,
+      "response_time": 0.5904102325439453,
+      "status_code": 500
+    },
+    {
+      "model_id": "raptor-llm-1024",
+      "success": false,
+      "response_time": 0.48033571243286133,
+      "status_code": 500
+    },
+    {
+      "model_id": "willow-chat-alpha",
+      "success": false,
+      "response_time": 0.6914710998535156,
+      "status_code": 500
+    },
+    {
+      "model_id": "flying-octopus",
+      "success": false,
+      "response_time": 0.23784828186035156,
+      "status_code": 429
+    },
+    {
+      "model_id": "beluga-1106-1",
+      "success": false,
+      "response_time": 0.9973397254943848,
+      "status_code": 500
+    },
+    {
+      "model_id": "beluga-1106-2",
+      "success": false,
+      "response_time": 0.5714447498321533,
+      "status_code": 500
+    },
+    {
+      "model_id": "raptor-vision-1107",
+      "success": false,
+      "response_time": 0.5372962951660156,
+      "status_code": 500
+    },
+    {
+      "model_id": "hunyuan-image-3.0",
+      "success": false,
+      "response_time": 0.7194602489471436,
+      "status_code": 500
+    },
+    {
+      "model_id": "wan2.5-preview-prompt-extend",
+      "success": false,
+      "response_time": 0.23441123962402344,
+      "status_code": 429
+    },
+    {
+      "model_id": "imagen-4.0-ultra-generate",
+      "success": false,
+      "response_time": 1.2339656352996826,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.5-flash-image-preview (nano-banana)",
+      "success": false,
+      "response_time": 0.5074217319488525,
+      "status_code": 500
+    },
+    {
+      "model_id": "imagen-4.0-generate",
+      "success": false,
+      "response_time": 0.605898380279541,
+      "status_code": 500
+    },
+    {
+      "model_id": "seedream-4-high-res-fal",
+      "success": false,
+      "response_time": 0.23919034004211426,
+      "status_code": 429
+    },
+    {
+      "model_id": "wan2.5",
+      "success": false,
+      "response_time": 0.46180105209350586,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-image-1-high-fidelity",
+      "success": false,
+      "response_time": 0.31089282035827637,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-image-1",
+      "success": false,
+      "response_time": 0.22657227516174316,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-image-1-mini",
+      "success": false,
+      "response_time": 0.7668054103851318,
+      "status_code": 500
+    },
+    {
+      "model_id": "mai-image-1",
+      "success": false,
+      "response_time": 0.23005962371826172,
+      "status_code": 429
+    },
+    {
+      "model_id": "seedream-3",
+      "success": false,
+      "response_time": 0.2246387004852295,
+      "status_code": 429
+    },
+    {
+      "model_id": "flux-1-kontext-max",
+      "success": false,
+      "response_time": 0.4594540596008301,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-image-prompt-extend",
+      "success": false,
+      "response_time": 0.6250224113464355,
+      "status_code": 500
+    },
+    {
+      "model_id": "imagen-3.0-generate",
+      "success": false,
+      "response_time": 0.6652576923370361,
+      "status_code": 500
+    },
+    {
+      "model_id": "hunyuan-image-3.0-fal",
+      "success": false,
+      "response_time": 0.2745375633239746,
+      "status_code": 429
+    },
+    {
+      "model_id": "flux-1-kontext-pro",
+      "success": false,
+      "response_time": 0.25731539726257324,
+      "status_code": 429
+    },
+    {
+      "model_id": "ideogram-v3-quality",
+      "success": false,
+      "response_time": 0.22740387916564941,
+      "status_code": 429
+    },
+    {
+      "model_id": "imagen-4.0-fast-generate",
+      "success": false,
+      "response_time": 0.6223936080932617,
+      "status_code": 500
+    },
+    {
+      "model_id": "photon",
+      "success": false,
+      "response_time": 0.22647356986999512,
+      "status_code": 429
+    },
+    {
+      "model_id": "lucid-origin",
+      "success": false,
+      "response_time": 0.33949851989746094,
+      "status_code": 429
+    },
+    {
+      "model_id": "recraft",
+      "success": false,
+      "response_time": 0.3122286796569824,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-2.0-flash-preview-image-generation",
+      "success": false,
+      "response_time": 0.669196605682373,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-1-kontext-dev",
+      "success": false,
+      "response_time": 0.6052706241607666,
+      "status_code": 500
+    },
+    {
+      "model_id": "hunyuan-image-2.1",
+      "success": false,
+      "response_time": 0.47937607765197754,
+      "status_code": 500
+    },
+    {
+      "model_id": "hidream-e1.1",
+      "success": false,
+      "response_time": 0.26911401748657227,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-image-edit",
+      "success": false,
+      "response_time": 0.6211731433868408,
+      "status_code": 500
+    },
+    {
+      "model_id": "seededit-3.0",
+      "success": false,
+      "response_time": 0.23221683502197266,
+      "status_code": 429
+    },
+    {
+      "model_id": "reve",
+      "success": false,
+      "response_time": 0.5000648498535156,
+      "status_code": 500
+    },
+    {
+      "model_id": "reve-fast-edit",
+      "success": false,
+      "response_time": 0.3304159641265869,
+      "status_code": 429
+    },
+    {
+      "model_id": "mandarin",
+      "success": false,
+      "response_time": 1.954909086227417,
+      "status_code": 500
+    },
+    {
+      "model_id": "o1-pro",
+      "success": false,
+      "response_time": 1.8509914875030518,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-haiku-4.5",
+      "success": false,
+      "response_time": 0.9038739204406738,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-sonnet-4.5",
+      "success": false,
+      "response_time": 0.4898543357849121,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-3-haiku",
+      "success": false,
+      "response_time": 0.2684307098388672,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-large",
+      "success": true,
+      "response_time": 1.4306039810180664,
+      "status_code": 200
+    },
+    {
+      "model_id": "mistral-medium",
+      "success": false,
+      "response_time": 0.8339707851409912,
+      "status_code": 500
+    },
+    {
+      "model_id": "ministral-3b-2410",
+      "success": false,
+      "response_time": 0.5893650054931641,
+      "status_code": 500
+    },
+    {
+      "model_id": "ministral-3b",
+      "success": false,
+      "response_time": 0.3435499668121338,
+      "status_code": 429
+    },
+    {
+      "model_id": "ministral-8b-2410",
+      "success": false,
+      "response_time": 0.7908351421356201,
+      "status_code": 429
+    },
+    {
+      "model_id": "ministral-8b",
+      "success": false,
+      "response_time": 0.22810745239257812,
+      "status_code": 429
+    },
+    {
+      "model_id": "open-mistral-7b",
+      "success": false,
+      "response_time": 0.24952125549316406,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-tiny",
+      "success": false,
+      "response_time": 0.23708772659301758,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-tiny-2312",
+      "success": false,
+      "response_time": 0.5008118152618408,
+      "status_code": 500
+    },
+    {
+      "model_id": "open-mistral-nemo",
+      "success": false,
+      "response_time": 0.2661862373352051,
+      "status_code": 429
+    },
+    {
+      "model_id": "open-mistral-nemo-2407",
+      "success": false,
+      "response_time": 0.2256779670715332,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-tiny-2407",
+      "success": false,
+      "response_time": 0.24158978462219238,
+      "status_code": 429
+    },
+    {
+      "model_id": "pixtral-large-2411",
+      "success": false,
+      "response_time": 1.0312156677246094,
+      "status_code": 500
+    },
+    {
+      "model_id": "pixtral-large",
+      "success": false,
+      "response_time": 0.6196622848510742,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-large-pixtral-2411",
+      "success": false,
+      "response_time": 0.5367076396942139,
+      "status_code": 500
+    },
+    {
+      "model_id": "codestral-2508",
+      "success": false,
+      "response_time": 0.7409379482269287,
+      "status_code": 429
+    },
+    {
+      "model_id": "codestral",
+      "success": false,
+      "response_time": 1.0241117477416992,
+      "status_code": 500
+    },
+    {
+      "model_id": "devstral-small",
+      "success": false,
+      "response_time": 0.2662661075592041,
+      "status_code": 429
+    },
+    {
+      "model_id": "pixtral-12b-2409",
+      "success": false,
+      "response_time": 0.496809720993042,
+      "status_code": 500
+    },
+    {
+      "model_id": "pixtral-12b",
+      "success": false,
+      "response_time": 0.4714820384979248,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-small",
+      "success": false,
+      "response_time": 0.514453649520874,
+      "status_code": 429
+    },
+    {
+      "model_id": "magistral-medium-2509",
+      "success": false,
+      "response_time": 0.4836161136627197,
+      "status_code": 500
+    },
+    {
+      "model_id": "magistral-medium",
+      "success": false,
+      "response_time": 0.46279048919677734,
+      "status_code": 500
+    },
+    {
+      "model_id": "magistral-small-2509",
+      "success": false,
+      "response_time": 0.5969860553741455,
+      "status_code": 500
+    },
+    {
+      "model_id": "magistral-small",
+      "success": false,
+      "response_time": 0.2458498477935791,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-moderation-2411",
+      "success": false,
+      "response_time": 0.2548215389251709,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-moderation",
+      "success": false,
+      "response_time": 0.47960948944091797,
+      "status_code": 500
+    },
+    {
+      "model_id": "mistral-ocr-2505",
+      "success": false,
+      "response_time": 0.23476862907409668,
+      "status_code": 429
+    },
+    {
+      "model_id": "mistral-ocr",
+      "success": false,
+      "response_time": 0.2286231517791748,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok-beta",
+      "success": false,
+      "response_time": 0.24153423309326172,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok-vision-beta",
+      "success": false,
+      "response_time": 0.22624897956848145,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok-3-fast",
+      "success": false,
+      "response_time": 0.26764678955078125,
+      "status_code": 429
+    },
+    {
+      "model_id": "grok-3-mini-fast",
+      "success": false,
+      "response_time": 0.5039727687835693,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-2-vision",
+      "success": false,
+      "response_time": 0.47561097145080566,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-chat",
+      "success": false,
+      "response_time": 0.47788238525390625,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-reasoner",
+      "success": false,
+      "response_time": 0.25189781188964844,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemini-1.5-flash",
+      "success": false,
+      "response_time": 0.47162675857543945,
+      "status_code": 500
+    },
+    {
+      "model_id": "mixtral-8x22b",
+      "success": false,
+      "response_time": 0.49175548553466797,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemini-1.5-8b-flash",
+      "success": false,
+      "response_time": 0.4936182498931885,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemini-1.5-pro",
+      "success": false,
+      "response_time": 0.5354392528533936,
+      "status_code": 500
+    },
+    {
+      "model_id": "gemini-2.5-flash-thinking",
+      "success": false,
+      "response_time": 0.3638620376586914,
+      "status_code": 429
+    },
+    {
+      "model_id": "gemma-3-1b",
+      "success": false,
+      "response_time": 0.5479114055633545,
+      "status_code": 500
+    },
+    {
+      "model_id": "hermes-2-pro",
+      "success": false,
+      "response_time": 0.2429654598236084,
+      "status_code": 429
+    },
+    {
+      "model_id": "hermes-3-70b",
+      "success": false,
+      "response_time": 0.2344207763671875,
+      "status_code": 429
+    },
+    {
+      "model_id": "hermes-3-405b",
+      "success": false,
+      "response_time": 0.2514958381652832,
+      "status_code": 429
+    },
+    {
+      "model_id": "deephermes-3-8b",
+      "success": false,
+      "response_time": 0.23397564888000488,
+      "status_code": 429
+    },
+    {
+      "model_id": "deephermes-3-24b",
+      "success": false,
+      "response_time": 0.2504699230194092,
+      "status_code": 429
+    },
+    {
+      "model_id": "phi-3-mini",
+      "success": false,
+      "response_time": 0.5236480236053467,
+      "status_code": 500
+    },
+    {
+      "model_id": "phi-3-medium",
+      "success": false,
+      "response_time": 0.2547268867492676,
+      "status_code": 429
+    },
+    {
+      "model_id": "phi-4-reasoning",
+      "success": false,
+      "response_time": 0.2520167827606201,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-3.7-sonnet",
+      "success": false,
+      "response_time": 0.46533989906311035,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-3.7-sonnet-thinking",
+      "success": false,
+      "response_time": 0.7048723697662354,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-3.5-haiku",
+      "success": false,
+      "response_time": 0.22737503051757812,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-3.5-sonnet",
+      "success": false,
+      "response_time": 0.4609193801879883,
+      "status_code": 500
+    },
+    {
+      "model_id": "claude-3-opus",
+      "success": false,
+      "response_time": 0.27672696113586426,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-3-sonnet",
+      "success": false,
+      "response_time": 0.22198224067687988,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-2.1",
+      "success": false,
+      "response_time": 0.21233153343200684,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-2",
+      "success": false,
+      "response_time": 0.2374897003173828,
+      "status_code": 429
+    },
+    {
+      "model_id": "claude-2.0",
+      "success": false,
+      "response_time": 0.4946310520172119,
+      "status_code": 500
+    },
+    {
+      "model_id": "reka-flash",
+      "success": false,
+      "response_time": 0.22271966934204102,
+      "status_code": 429
+    },
+    {
+      "model_id": "command",
+      "success": false,
+      "response_time": 0.5215704441070557,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwen-vl-plus",
+      "success": false,
+      "response_time": 0.21804165840148926,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-2.5-vl-7b",
+      "success": false,
+      "response_time": 0.2412416934967041,
+      "status_code": 429
+    },
+    {
+      "model_id": "qwen-2.5-coder-7b",
+      "success": true,
+      "response_time": 1.11328125,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-2.5-vl-3b",
+      "success": false,
+      "response_time": 0.4866180419921875,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-prover",
+      "success": false,
+      "response_time": 0.49847888946533203,
+      "status_code": 500
+    },
+    {
+      "model_id": "deepseek-r1-zero",
+      "success": false,
+      "response_time": 0.23351693153381348,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-r1-distill-llama-8b",
+      "success": false,
+      "response_time": 0.23876380920410156,
+      "status_code": 429
+    },
+    {
+      "model_id": "deepseek-coder",
+      "success": false,
+      "response_time": 0.4899153709411621,
+      "status_code": 500
+    },
+    {
+      "model_id": "inflection-3-productivity",
+      "success": false,
+      "response_time": 0.4868030548095703,
+      "status_code": 500
+    },
+    {
+      "model_id": "inflection-3-pi",
+      "success": false,
+      "response_time": 0.487213134765625,
+      "status_code": 500
+    },
+    {
+      "model_id": "grok-3-beta",
+      "success": false,
+      "response_time": 0.24898481369018555,
+      "status_code": 429
+    },
+    {
+      "model_id": "sonar-reasoning-pro",
+      "success": false,
+      "response_time": 0.49124789237976074,
+      "status_code": 500
+    },
+    {
+      "model_id": "sonar-pro",
+      "success": false,
+      "response_time": 0.22161316871643066,
+      "status_code": 429
+    },
+    {
+      "model_id": "sonar-deep-research",
+      "success": false,
+      "response_time": 0.23438763618469238,
+      "status_code": 429
+    },
+    {
+      "model_id": "sonar-reasoning",
+      "success": false,
+      "response_time": 0.2393937110900879,
+      "status_code": 429
+    },
+    {
+      "model_id": "sonar",
+      "success": false,
+      "response_time": 0.4684417247772217,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.1-sonar-small-online",
+      "success": false,
+      "response_time": 0.22831034660339355,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3.1-sonar-large-online",
+      "success": false,
+      "response_time": 0.48015689849853516,
+      "status_code": 500
+    },
+    {
+      "model_id": "nemotron-49b",
+      "success": false,
+      "response_time": 0.47391247749328613,
+      "status_code": 500
+    },
+    {
+      "model_id": "nemotron-253b",
+      "success": false,
+      "response_time": 0.2361278533935547,
+      "status_code": 429
+    },
+    {
+      "model_id": "glm-4",
+      "success": false,
+      "response_time": 0.22870635986328125,
+      "status_code": 429
+    },
+    {
+      "model_id": "glm-z1-32b",
+      "success": false,
+      "response_time": 0.2573812007904053,
+      "status_code": 429
+    },
+    {
+      "model_id": "glm-4-9b",
+      "success": false,
+      "response_time": 0.5072476863861084,
+      "status_code": 500
+    },
+    {
+      "model_id": "glm-z1-9b",
+      "success": false,
+      "response_time": 0.25928401947021484,
+      "status_code": 429
+    },
+    {
+      "model_id": "glm-z1-rumination-32b",
+      "success": false,
+      "response_time": 0.49483823776245117,
+      "status_code": 500
+    },
+    {
+      "model_id": "minimax",
+      "success": false,
+      "response_time": 0.6231443881988525,
+      "status_code": 500
+    },
+    {
+      "model_id": "dolphin-3.0-r1-24b",
+      "success": false,
+      "response_time": 0.48293232917785645,
+      "status_code": 500
+    },
+    {
+      "model_id": "dolphin-3.0-24b",
+      "success": false,
+      "response_time": 0.48754000663757324,
+      "status_code": 500
+    },
+    {
+      "model_id": "dolphin-8x22b",
+      "success": false,
+      "response_time": 0.49834465980529785,
+      "status_code": 500
+    },
+    {
+      "model_id": "kimi-vl-thinking",
+      "success": false,
+      "response_time": 0.42864227294921875,
+      "status_code": 429
+    },
+    {
+      "model_id": "moonlight-16b",
+      "success": false,
+      "response_time": 0.5530259609222412,
+      "status_code": 500
+    },
+    {
+      "model_id": "qwerky-72b",
+      "success": false,
+      "response_time": 0.22652673721313477,
+      "status_code": 429
+    },
+    {
+      "model_id": "lfm-7b",
+      "success": false,
+      "response_time": 0.9120018482208252,
+      "status_code": 500
+    },
+    {
+      "model_id": "lfm-3b",
+      "success": false,
+      "response_time": 0.221360445022583,
+      "status_code": 429
+    },
+    {
+      "model_id": "lfm-40b",
+      "success": false,
+      "response_time": 0.2199382781982422,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5.1",
+      "success": false,
+      "response_time": 0.23605966567993164,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5.1-chat",
+      "success": false,
+      "response_time": 0.6719167232513428,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5.1-codex",
+      "success": false,
+      "response_time": 0.24468541145324707,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5.1-codex-mini",
+      "success": false,
+      "response_time": 0.5001261234283447,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:kwaipilot/kat-coder-pro:free",
+      "success": false,
+      "response_time": 0.49509644508361816,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-linear-48b-a3b-instruct",
+      "success": false,
+      "response_time": 0.2164018154144287,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-k2-thinking",
+      "success": false,
+      "response_time": 0.2667841911315918,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:amazon/nova-premier-v1",
+      "success": false,
+      "response_time": 0.24148273468017578,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:perplexity/sonar-pro-search",
+      "success": false,
+      "response_time": 0.49795079231262207,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/voxtral-small-24b-2507",
+      "success": false,
+      "response_time": 0.22979235649108887,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-oss-safeguard-20b",
+      "success": false,
+      "response_time": 0.24218106269836426,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nvidia/nemotron-nano-12b-v2-vl:free",
+      "success": false,
+      "response_time": 0.2218313217163086,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nvidia/nemotron-nano-12b-v2-vl",
+      "success": false,
+      "response_time": 1.1933329105377197,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:minimax/minimax-m2",
+      "success": false,
+      "response_time": 0.23508286476135254,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:liquid/lfm2-8b-a1b",
+      "success": false,
+      "response_time": 0.5421891212463379,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:liquid/lfm-2.2-6b",
+      "success": false,
+      "response_time": 0.5070104598999023,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:ibm-granite/granite-4.0-h-micro",
+      "success": false,
+      "response_time": 0.49579930305480957,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepcogito/cogito-v2-preview-llama-405b",
+      "success": false,
+      "response_time": 0.22589349746704102,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-image-mini",
+      "success": false,
+      "response_time": 0.48794031143188477,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-haiku-4.5",
+      "success": false,
+      "response_time": 0.5314786434173584,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-vl-8b-thinking",
+      "success": false,
+      "response_time": 0.4945237636566162,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-vl-8b-instruct",
+      "success": false,
+      "response_time": 0.23569083213806152,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-image",
+      "success": false,
+      "response_time": 0.4852750301361084,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:inclusionai/ring-1t",
+      "success": false,
+      "response_time": 0.22503352165222168,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:inclusionai/ling-1t",
+      "success": false,
+      "response_time": 0.46987318992614746,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/o3-deep-research",
+      "success": false,
+      "response_time": 0.5183112621307373,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/o4-mini-deep-research",
+      "success": false,
+      "response_time": 0.4775104522705078,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "success": false,
+      "response_time": 0.5853073596954346,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:baidu/ernie-4.5-21b-a3b-thinking",
+      "success": false,
+      "response_time": 0.4707157611846924,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash-image",
+      "success": false,
+      "response_time": 0.4713878631591797,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-vl-30b-a3b-thinking",
+      "success": false,
+      "response_time": 0.5267767906188965,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-vl-30b-a3b-instruct",
+      "success": false,
+      "response_time": 0.26598238945007324,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-pro",
+      "success": false,
+      "response_time": 0.2568652629852295,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4.6",
+      "success": false,
+      "response_time": 0.5593278408050537,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4.6:exacto",
+      "success": false,
+      "response_time": 0.23746895790100098,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-sonnet-4.5",
+      "success": false,
+      "response_time": 0.2988109588623047,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-v3.2-exp",
+      "success": false,
+      "response_time": 0.26477861404418945,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:thedrummer/cydonia-24b-v4.1",
+      "success": false,
+      "response_time": 0.4719276428222656,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:relace/relace-apply-3",
+      "success": false,
+      "response_time": 0.5008590221405029,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash-preview-09-2025",
+      "success": false,
+      "response_time": 0.4893372058868408,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash-lite-preview-09-2025",
+      "success": false,
+      "response_time": 0.24219012260437012,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-vl-235b-a22b-thinking",
+      "success": false,
+      "response_time": 0.27466678619384766,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-vl-235b-a22b-instruct",
+      "success": false,
+      "response_time": 0.48325061798095703,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-max",
+      "success": false,
+      "response_time": 0.48594212532043457,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-coder-plus",
+      "success": false,
+      "response_time": 0.47991418838500977,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-codex",
+      "success": false,
+      "response_time": 0.4745190143585205,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-v3.1-terminus",
+      "success": false,
+      "response_time": 0.25616025924682617,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-v3.1-terminus:exacto",
+      "success": false,
+      "response_time": 0.5002307891845703,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-4-fast",
+      "success": false,
+      "response_time": 0.42612600326538086,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:alibaba/tongyi-deepresearch-30b-a3b:free",
+      "success": false,
+      "response_time": 0.25703883171081543,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:alibaba/tongyi-deepresearch-30b-a3b",
+      "success": false,
+      "response_time": 0.23965692520141602,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-coder-flash",
+      "success": false,
+      "response_time": 0.23431611061096191,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:arcee-ai/afm-4.5b",
+      "success": false,
+      "response_time": 0.4727346897125244,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:opengvlab/internvl3-78b",
+      "success": false,
+      "response_time": 0.2279801368713379,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-next-80b-a3b-thinking",
+      "success": false,
+      "response_time": 0.2164926528930664,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-next-80b-a3b-instruct",
+      "success": false,
+      "response_time": 0.24923396110534668,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meituan/longcat-flash-chat:free",
+      "success": false,
+      "response_time": 0.24374890327453613,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meituan/longcat-flash-chat",
+      "success": false,
+      "response_time": 0.5470376014709473,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-plus-2025-07-28",
+      "success": false,
+      "response_time": 0.7035744190216064,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-plus-2025-07-28:thinking",
+      "success": false,
+      "response_time": 0.25317883491516113,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nvidia/nemotron-nano-9b-v2:free",
+      "success": false,
+      "response_time": 0.505645751953125,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nvidia/nemotron-nano-9b-v2",
+      "success": false,
+      "response_time": 0.5292630195617676,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-k2-0905",
+      "success": false,
+      "response_time": 0.23998594284057617,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-k2-0905:exacto",
+      "success": false,
+      "response_time": 0.5271739959716797,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepcogito/cogito-v2-preview-llama-70b",
+      "success": false,
+      "response_time": 0.5657029151916504,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepcogito/cogito-v2-preview-llama-109b-moe",
+      "success": false,
+      "response_time": 0.5284709930419922,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepcogito/cogito-v2-preview-deepseek-671b",
+      "success": false,
+      "response_time": 0.46416568756103516,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:stepfun-ai/step3",
+      "success": false,
+      "response_time": 0.22191333770751953,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-30b-a3b-thinking-2507",
+      "success": false,
+      "response_time": 0.273909330368042,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-code-fast-1",
+      "success": false,
+      "response_time": 0.3437070846557617,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nousresearch/hermes-4-70b",
+      "success": false,
+      "response_time": 0.5179750919342041,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nousresearch/hermes-4-405b",
+      "success": false,
+      "response_time": 0.2397909164428711,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash-image-preview",
+      "success": false,
+      "response_time": 0.5301625728607178,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-chat-v3.1:free",
+      "success": false,
+      "response_time": 0.4903273582458496,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-chat-v3.1",
+      "success": false,
+      "response_time": 0.506690263748169,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-audio-preview",
+      "success": false,
+      "response_time": 0.5281009674072266,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-medium-3.1",
+      "success": false,
+      "response_time": 0.22454214096069336,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:baidu/ernie-4.5-21b-a3b",
+      "success": false,
+      "response_time": 0.48767948150634766,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:baidu/ernie-4.5-vl-28b-a3b",
+      "success": false,
+      "response_time": 0.530203104019165,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4.5v",
+      "success": false,
+      "response_time": 0.5157756805419922,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:ai21/jamba-mini-1.7",
+      "success": false,
+      "response_time": 0.26699280738830566,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:ai21/jamba-large-1.7",
+      "success": false,
+      "response_time": 0.24945712089538574,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-chat",
+      "success": false,
+      "response_time": 0.25408315658569336,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5",
+      "success": false,
+      "response_time": 0.49083495140075684,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-mini",
+      "success": false,
+      "response_time": 0.23409104347229004,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-5-nano",
+      "success": false,
+      "response_time": 0.23293685913085938,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-oss-120b",
+      "success": false,
+      "response_time": 0.21872925758361816,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-oss-120b:exacto",
+      "success": false,
+      "response_time": 0.8133656978607178,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-oss-20b:free",
+      "success": false,
+      "response_time": 0.526792049407959,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-oss-20b",
+      "success": false,
+      "response_time": 0.4700338840484619,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-opus-4.1",
+      "success": false,
+      "response_time": 0.24179434776306152,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/codestral-2508",
+      "success": false,
+      "response_time": 0.23264598846435547,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-coder-30b-a3b-instruct",
+      "success": false,
+      "response_time": 0.49312305450439453,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-30b-a3b-instruct-2507",
+      "success": false,
+      "response_time": 0.24845504760742188,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4.5",
+      "success": false,
+      "response_time": 0.472841739654541,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4.5-air:free",
+      "success": false,
+      "response_time": 0.49122190475463867,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4.5-air",
+      "success": false,
+      "response_time": 0.4899423122406006,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-235b-a22b-thinking-2507",
+      "success": false,
+      "response_time": 0.23081016540527344,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:z-ai/glm-4-32b",
+      "success": false,
+      "response_time": 0.23899149894714355,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-coder:free",
+      "success": false,
+      "response_time": 0.49987149238586426,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-coder",
+      "success": false,
+      "response_time": 0.23180079460144043,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-coder:exacto",
+      "success": false,
+      "response_time": 0.2974424362182617,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:bytedance/ui-tars-1.5-7b",
+      "success": false,
+      "response_time": 0.5017697811126709,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash-lite",
+      "success": false,
+      "response_time": 0.49471259117126465,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-235b-a22b-2507",
+      "success": false,
+      "response_time": 0.49155497550964355,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:switchpoint/router",
+      "success": false,
+      "response_time": 0.2486732006072998,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-k2:free",
+      "success": false,
+      "response_time": 0.31434106826782227,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-k2",
+      "success": false,
+      "response_time": 0.24971222877502441,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:thudm/glm-4.1v-9b-thinking",
+      "success": false,
+      "response_time": 0.4750328063964844,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/devstral-medium",
+      "success": false,
+      "response_time": 0.5356667041778564,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/devstral-small",
+      "success": false,
+      "response_time": 0.5892021656036377,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "success": false,
+      "response_time": 0.28763675689697266,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-4",
+      "success": false,
+      "response_time": 0.907616376876831,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3n-e2b-it:free",
+      "success": false,
+      "response_time": 0.27039289474487305,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:tencent/hunyuan-a13b-instruct",
+      "success": false,
+      "response_time": 0.5748767852783203,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:tngtech/deepseek-r1t2-chimera:free",
+      "success": false,
+      "response_time": 0.47440171241760254,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:tngtech/deepseek-r1t2-chimera",
+      "success": false,
+      "response_time": 0.27480244636535645,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:morph/morph-v3-large",
+      "success": false,
+      "response_time": 0.5933206081390381,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:morph/morph-v3-fast",
+      "success": false,
+      "response_time": 0.4888761043548584,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:baidu/ernie-4.5-vl-424b-a47b",
+      "success": false,
+      "response_time": 0.23563528060913086,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:baidu/ernie-4.5-300b-a47b",
+      "success": false,
+      "response_time": 0.22496986389160156,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:thedrummer/anubis-70b-v1.1",
+      "success": false,
+      "response_time": 0.4962301254272461,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:inception/mercury",
+      "success": false,
+      "response_time": 0.46329784393310547,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small-3.2-24b-instruct:free",
+      "success": false,
+      "response_time": 0.25440263748168945,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small-3.2-24b-instruct",
+      "success": false,
+      "response_time": 0.3054344654083252,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:minimax/minimax-m1",
+      "success": false,
+      "response_time": 0.5249347686767578,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash-lite-preview-06-17",
+      "success": false,
+      "response_time": 0.2569575309753418,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-flash",
+      "success": false,
+      "response_time": 0.2249891757965088,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-pro",
+      "success": false,
+      "response_time": 0.2483534812927246,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:moonshotai/kimi-dev-72b",
+      "success": false,
+      "response_time": 0.7228398323059082,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/o3-pro",
+      "success": false,
+      "response_time": 0.31565070152282715,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-3-mini",
+      "success": false,
+      "response_time": 0.46625256538391113,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-3",
+      "success": false,
+      "response_time": 0.4872603416442871,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/magistral-small-2506",
+      "success": false,
+      "response_time": 0.2914571762084961,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/magistral-medium-2506:thinking",
+      "success": false,
+      "response_time": 0.23484086990356445,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/magistral-medium-2506",
+      "success": false,
+      "response_time": 0.2530643939971924,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-pro-preview",
+      "success": false,
+      "response_time": 0.5039432048797607,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "success": false,
+      "response_time": 0.523101806640625,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-0528-qwen3-8b",
+      "success": false,
+      "response_time": 0.5045416355133057,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-0528:free",
+      "success": false,
+      "response_time": 0.7320327758789062,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-0528",
+      "success": false,
+      "response_time": 0.23503541946411133,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-opus-4",
+      "success": false,
+      "response_time": 0.4972200393676758,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-sonnet-4",
+      "success": false,
+      "response_time": 0.22660136222839355,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/devstral-small-2505",
+      "success": false,
+      "response_time": 0.5304665565490723,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3n-e4b-it:free",
+      "success": false,
+      "response_time": 0.47852659225463867,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3n-e4b-it",
+      "success": false,
+      "response_time": 0.4897472858428955,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/codex-mini",
+      "success": false,
+      "response_time": 1.2379939556121826,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.3-8b-instruct:free",
+      "success": false,
+      "response_time": 0.23378777503967285,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nousresearch/deephermes-3-mistral-24b-preview",
+      "success": false,
+      "response_time": 0.8697481155395508,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-medium-3",
+      "success": false,
+      "response_time": 0.24337100982666016,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.5-pro-preview-05-06",
+      "success": false,
+      "response_time": 0.23029470443725586,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:arcee-ai/spotlight",
+      "success": false,
+      "response_time": 0.48962879180908203,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:arcee-ai/maestro-reasoning",
+      "success": false,
+      "response_time": 0.22574257850646973,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:arcee-ai/virtuoso-large",
+      "success": false,
+      "response_time": 0.47173643112182617,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:arcee-ai/coder-large",
+      "success": false,
+      "response_time": 0.48426127433776855,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:microsoft/phi-4-reasoning-plus",
+      "success": false,
+      "response_time": 0.22326993942260742,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:inception/mercury-coder",
+      "success": false,
+      "response_time": 0.2316451072692871,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-4b:free",
+      "success": false,
+      "response_time": 0.5059654712677002,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-prover-v2",
+      "success": false,
+      "response_time": 0.23906731605529785,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-guard-4-12b",
+      "success": false,
+      "response_time": 0.22973203659057617,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-30b-a3b:free",
+      "success": false,
+      "response_time": 0.2203068733215332,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-30b-a3b",
+      "success": false,
+      "response_time": 0.5007174015045166,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-8b",
+      "success": false,
+      "response_time": 0.47222328186035156,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-14b:free",
+      "success": false,
+      "response_time": 0.22802424430847168,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-14b",
+      "success": false,
+      "response_time": 0.5244691371917725,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-32b",
+      "success": false,
+      "response_time": 0.23409414291381836,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-235b-a22b:free",
+      "success": false,
+      "response_time": 0.4799191951751709,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen3-235b-a22b",
+      "success": false,
+      "response_time": 0.4808480739593506,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:tngtech/deepseek-r1t-chimera:free",
+      "success": false,
+      "response_time": 0.23132681846618652,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:tngtech/deepseek-r1t-chimera",
+      "success": false,
+      "response_time": 0.49092888832092285,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:microsoft/mai-ds-r1:free",
+      "success": false,
+      "response_time": 0.23600244522094727,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:microsoft/mai-ds-r1",
+      "success": false,
+      "response_time": 0.23067975044250488,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/o4-mini-high",
+      "success": false,
+      "response_time": 0.21644210815429688,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/o3",
+      "success": false,
+      "response_time": 0.5318012237548828,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/o4-mini",
+      "success": false,
+      "response_time": 0.23724722862243652,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen2.5-coder-7b-instruct",
+      "success": false,
+      "response_time": 0.5313053131103516,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4.1",
+      "success": false,
+      "response_time": 0.24823760986328125,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4.1-mini",
+      "success": false,
+      "response_time": 0.22637605667114258,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4.1-nano",
+      "success": false,
+      "response_time": 0.47730207443237305,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:eleutherai/llemma_7b",
+      "success": false,
+      "response_time": 0.24337553977966309,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:alfredpros/codellama-7b-instruct-solidity",
+      "success": false,
+      "response_time": 0.51827073097229,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:arliai/qwq-32b-arliai-rpr-v1:free",
+      "success": false,
+      "response_time": 0.4811718463897705,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:arliai/qwq-32b-arliai-rpr-v1",
+      "success": false,
+      "response_time": 0.4844348430633545,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:agentica-org/deepcoder-14b-preview:free",
+      "success": false,
+      "response_time": 0.48465394973754883,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:agentica-org/deepcoder-14b-preview",
+      "success": false,
+      "response_time": 0.23573637008666992,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-3-mini-beta",
+      "success": false,
+      "response_time": 0.5093216896057129,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:x-ai/grok-3-beta",
+      "success": false,
+      "response_time": 0.46126437187194824,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "success": false,
+      "response_time": 0.4831714630126953,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-4-maverick:free",
+      "success": false,
+      "response_time": 0.6402056217193604,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-4-maverick",
+      "success": false,
+      "response_time": 0.5928313732147217,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-4-scout:free",
+      "success": false,
+      "response_time": 0.27012133598327637,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-4-scout",
+      "success": false,
+      "response_time": 0.49470090866088867,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen2.5-vl-32b-instruct:free",
+      "success": false,
+      "response_time": 0.4877808094024658,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen2.5-vl-32b-instruct",
+      "success": false,
+      "response_time": 0.4954514503479004,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-chat-v3-0324:free",
+      "success": false,
+      "response_time": 0.22028255462646484,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-chat-v3-0324",
+      "success": false,
+      "response_time": 0.22654056549072266,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/o1-pro",
+      "success": false,
+      "response_time": 0.21974396705627441,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small-3.1-24b-instruct:free",
+      "success": false,
+      "response_time": 0.23462462425231934,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small-3.1-24b-instruct",
+      "success": false,
+      "response_time": 0.3645315170288086,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:allenai/olmo-2-0325-32b-instruct",
+      "success": false,
+      "response_time": 0.7339615821838379,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemma-3-4b-it:free",
+      "success": false,
+      "response_time": 0.5272457599639893,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3-4b-it",
+      "success": false,
+      "response_time": 0.45982980728149414,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3-12b-it:free",
+      "success": false,
+      "response_time": 0.4864675998687744,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3-12b-it",
+      "success": false,
+      "response_time": 0.2348945140838623,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:cohere/command-a",
+      "success": false,
+      "response_time": 0.46832728385925293,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-mini-search-preview",
+      "success": false,
+      "response_time": 0.22790312767028809,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-search-preview",
+      "success": false,
+      "response_time": 0.5502569675445557,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-3-27b-it:free",
+      "success": false,
+      "response_time": 0.2689483165740967,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemma-3-27b-it",
+      "success": false,
+      "response_time": 0.5089054107666016,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:thedrummer/skyfall-36b-v2",
+      "success": false,
+      "response_time": 0.223175048828125,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:microsoft/phi-4-multimodal-instruct",
+      "success": false,
+      "response_time": 0.494814395904541,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:perplexity/sonar-reasoning-pro",
+      "success": false,
+      "response_time": 0.4787900447845459,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:perplexity/sonar-pro",
+      "success": false,
+      "response_time": 0.2378542423248291,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:perplexity/sonar-deep-research",
+      "success": false,
+      "response_time": 0.8015463352203369,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwq-32b",
+      "success": false,
+      "response_time": 0.4831669330596924,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.0-flash-lite-001",
+      "success": false,
+      "response_time": 0.48544979095458984,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3.7-sonnet:thinking",
+      "success": false,
+      "response_time": 0.24399900436401367,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3.7-sonnet",
+      "success": false,
+      "response_time": 0.4846992492675781,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-saba",
+      "success": false,
+      "response_time": 0.23859715461730957,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-guard-3-8b",
+      "success": false,
+      "response_time": 0.21626687049865723,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/o3-mini-high",
+      "success": false,
+      "response_time": 0.7819147109985352,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.0-flash-001",
+      "success": false,
+      "response_time": 0.21454262733459473,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-vl-plus",
+      "success": false,
+      "response_time": 0.49794840812683105,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:aion-labs/aion-1.0",
+      "success": false,
+      "response_time": 0.48244309425354004,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:aion-labs/aion-1.0-mini",
+      "success": false,
+      "response_time": 0.480985164642334,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:aion-labs/aion-rp-llama-3.1-8b",
+      "success": false,
+      "response_time": 0.5078909397125244,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-vl-max",
+      "success": false,
+      "response_time": 0.23642706871032715,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-turbo",
+      "success": false,
+      "response_time": 0.7251927852630615,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen2.5-vl-72b-instruct",
+      "success": false,
+      "response_time": 0.5948982238769531,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-plus",
+      "success": false,
+      "response_time": 0.5372490882873535,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-max",
+      "success": false,
+      "response_time": 0.4888951778411865,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/o3-mini",
+      "success": false,
+      "response_time": 0.2301928997039795,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small-24b-instruct-2501:free",
+      "success": false,
+      "response_time": 0.2364354133605957,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small-24b-instruct-2501",
+      "success": false,
+      "response_time": 0.5843403339385986,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-distill-qwen-32b",
+      "success": false,
+      "response_time": 0.34119677543640137,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-distill-qwen-14b",
+      "success": false,
+      "response_time": 0.5044639110565186,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:perplexity/sonar-reasoning",
+      "success": false,
+      "response_time": 0.5120601654052734,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:perplexity/sonar",
+      "success": false,
+      "response_time": 0.499575138092041,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-distill-llama-70b:free",
+      "success": false,
+      "response_time": 0.2570335865020752,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1-distill-llama-70b",
+      "success": false,
+      "response_time": 1.0301942825317383,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1:free",
+      "success": false,
+      "response_time": 0.4900326728820801,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-r1",
+      "success": false,
+      "response_time": 0.253887414932251,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:minimax/minimax-01",
+      "success": false,
+      "response_time": 0.8066887855529785,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/codestral-2501",
+      "success": false,
+      "response_time": 0.3019556999206543,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:microsoft/phi-4",
+      "success": false,
+      "response_time": 0.24646902084350586,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:sao10k/l3.1-70b-hanami-x1",
+      "success": false,
+      "response_time": 0.5096638202667236,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:deepseek/deepseek-chat",
+      "success": false,
+      "response_time": 0.3209397792816162,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:sao10k/l3.3-euryale-70b",
+      "success": false,
+      "response_time": 0.25075674057006836,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/o1",
+      "success": false,
+      "response_time": 0.2538115978240967,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:cohere/command-r7b-12-2024",
+      "success": false,
+      "response_time": 0.47647619247436523,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemini-2.0-flash-exp:free",
+      "success": false,
+      "response_time": 0.24817681312561035,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.3-70b-instruct:free",
+      "success": false,
+      "response_time": 0.24578094482421875,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.3-70b-instruct",
+      "success": false,
+      "response_time": 0.21601462364196777,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:amazon/nova-lite-v1",
+      "success": false,
+      "response_time": 0.24194002151489258,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:amazon/nova-micro-v1",
+      "success": false,
+      "response_time": 0.2501547336578369,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:amazon/nova-pro-v1",
+      "success": false,
+      "response_time": 0.5385696887969971,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-2024-11-20",
+      "success": false,
+      "response_time": 0.4319651126861572,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-large-2411",
+      "success": false,
+      "response_time": 0.5319957733154297,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-large-2407",
+      "success": false,
+      "response_time": 0.5065150260925293,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/pixtral-large-2411",
+      "success": false,
+      "response_time": 0.517935037612915,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-2.5-coder-32b-instruct:free",
+      "success": false,
+      "response_time": 0.4893829822540283,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-2.5-coder-32b-instruct",
+      "success": false,
+      "response_time": 0.4785585403442383,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:raifle/sorcererlm-8x22b",
+      "success": false,
+      "response_time": 1.0053322315216064,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:thedrummer/unslopnemo-12b",
+      "success": false,
+      "response_time": 0.48391222953796387,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3.5-haiku-20241022",
+      "success": false,
+      "response_time": 0.4891378879547119,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3.5-haiku",
+      "success": false,
+      "response_time": 0.23081040382385254,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthracite-org/magnum-v4-72b",
+      "success": false,
+      "response_time": 0.504091739654541,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3.5-sonnet",
+      "success": false,
+      "response_time": 0.24164581298828125,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/ministral-3b",
+      "success": false,
+      "response_time": 1.0105986595153809,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/ministral-8b",
+      "success": false,
+      "response_time": 0.5201313495635986,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-2.5-7b-instruct",
+      "success": false,
+      "response_time": 0.24537038803100586,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nvidia/llama-3.1-nemotron-70b-instruct",
+      "success": false,
+      "response_time": 0.5143284797668457,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:inflection/inflection-3-pi",
+      "success": false,
+      "response_time": 0.22505974769592285,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:inflection/inflection-3-productivity",
+      "success": false,
+      "response_time": 0.4672572612762451,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:thedrummer/rocinante-12b",
+      "success": false,
+      "response_time": 0.24758601188659668,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.2-3b-instruct:free",
+      "success": false,
+      "response_time": 0.2342820167541504,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.2-3b-instruct",
+      "success": false,
+      "response_time": 0.2223527431488037,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.2-1b-instruct",
+      "success": false,
+      "response_time": 0.22403407096862793,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.2-90b-vision-instruct",
+      "success": false,
+      "response_time": 0.22890448570251465,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.2-11b-vision-instruct",
+      "success": false,
+      "response_time": 0.21406269073486328,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-2.5-72b-instruct:free",
+      "success": false,
+      "response_time": 0.4937479496002197,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-2.5-72b-instruct",
+      "success": false,
+      "response_time": 0.22936463356018066,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:neversleep/llama-3.1-lumimaid-8b",
+      "success": false,
+      "response_time": 0.48522472381591797,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/pixtral-12b",
+      "success": false,
+      "response_time": 0.8062975406646729,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:cohere/command-r-08-2024",
+      "success": false,
+      "response_time": 0.48291563987731934,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:cohere/command-r-plus-08-2024",
+      "success": false,
+      "response_time": 0.49509501457214355,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:qwen/qwen-2.5-vl-7b-instruct",
+      "success": false,
+      "response_time": 0.5043392181396484,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:sao10k/l3.1-euryale-70b",
+      "success": false,
+      "response_time": 0.49338841438293457,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:microsoft/phi-3.5-mini-128k-instruct",
+      "success": false,
+      "response_time": 0.244157075881958,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:nousresearch/hermes-3-llama-3.1-70b",
+      "success": false,
+      "response_time": 0.47646164894104004,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nousresearch/hermes-3-llama-3.1-405b:free",
+      "success": false,
+      "response_time": 0.6020596027374268,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nousresearch/hermes-3-llama-3.1-405b",
+      "success": false,
+      "response_time": 0.5017173290252686,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/chatgpt-4o-latest",
+      "success": false,
+      "response_time": 0.2741661071777344,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:sao10k/l3-lunaris-8b",
+      "success": false,
+      "response_time": 0.2554819583892822,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-2024-08-06",
+      "success": false,
+      "response_time": 0.4957561492919922,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.1-405b",
+      "success": false,
+      "response_time": 0.22194695472717285,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.1-8b-instruct",
+      "success": false,
+      "response_time": 0.2511873245239258,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.1-405b-instruct",
+      "success": false,
+      "response_time": 0.23072028160095215,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3.1-70b-instruct",
+      "success": false,
+      "response_time": 0.22476887702941895,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-nemo:free",
+      "success": false,
+      "response_time": 0.6712520122528076,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-nemo",
+      "success": false,
+      "response_time": 0.513634204864502,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-mini",
+      "success": false,
+      "response_time": 0.3050260543823242,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-mini-2024-07-18",
+      "success": false,
+      "response_time": 0.49491262435913086,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:google/gemma-2-27b-it",
+      "success": false,
+      "response_time": 0.2332754135131836,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:google/gemma-2-9b-it",
+      "success": false,
+      "response_time": 0.23893499374389648,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3.5-sonnet-20240620",
+      "success": false,
+      "response_time": 0.2457733154296875,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:sao10k/l3-euryale-70b",
+      "success": false,
+      "response_time": 0.5927820205688477,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:nousresearch/hermes-2-pro-llama-3-8b",
+      "success": false,
+      "response_time": 0.4780716896057129,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-7b-instruct-v0.3",
+      "success": false,
+      "response_time": 0.24735665321350098,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-7b-instruct:free",
+      "success": false,
+      "response_time": 0.22998762130737305,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-7b-instruct",
+      "success": false,
+      "response_time": 0.5430433750152588,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:microsoft/phi-3-mini-128k-instruct",
+      "success": false,
+      "response_time": 0.4983634948730469,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:microsoft/phi-3-medium-128k-instruct",
+      "success": false,
+      "response_time": 0.23591852188110352,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o",
+      "success": false,
+      "response_time": 0.5185072422027588,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o:extended",
+      "success": false,
+      "response_time": 0.26587700843811035,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-guard-2-8b",
+      "success": false,
+      "response_time": 0.6243205070495605,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4o-2024-05-13",
+      "success": false,
+      "response_time": 0.2517588138580322,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3-8b-instruct",
+      "success": false,
+      "response_time": 0.22467613220214844,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:meta-llama/llama-3-70b-instruct",
+      "success": false,
+      "response_time": 0.5233802795410156,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mixtral-8x22b-instruct",
+      "success": false,
+      "response_time": 0.4838674068450928,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:microsoft/wizardlm-2-8x22b",
+      "success": false,
+      "response_time": 0.2426145076751709,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4-turbo",
+      "success": false,
+      "response_time": 0.4022657871246338,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3-haiku",
+      "success": false,
+      "response_time": 0.36504435539245605,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:anthropic/claude-3-opus",
+      "success": false,
+      "response_time": 0.2230541706085205,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-large",
+      "success": false,
+      "response_time": 0.28569817543029785,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-3.5-turbo-0613",
+      "success": false,
+      "response_time": 0.22439336776733398,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4-turbo-preview",
+      "success": false,
+      "response_time": 0.24874567985534668,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-small",
+      "success": false,
+      "response_time": 0.25986456871032715,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-tiny",
+      "success": false,
+      "response_time": 0.5117433071136475,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-7b-instruct-v0.2",
+      "success": false,
+      "response_time": 0.495694637298584,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mistralai/mixtral-8x7b-instruct",
+      "success": false,
+      "response_time": 0.24083733558654785,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:neversleep/noromaid-20b",
+      "success": false,
+      "response_time": 0.7533116340637207,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:alpindale/goliath-120b",
+      "success": false,
+      "response_time": 0.5478103160858154,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openrouter/auto",
+      "success": false,
+      "response_time": 0.48737525939941406,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4-1106-preview",
+      "success": false,
+      "response_time": 0.46518898010253906,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-3.5-turbo-instruct",
+      "success": false,
+      "response_time": 0.4089493751525879,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:mistralai/mistral-7b-instruct-v0.1",
+      "success": false,
+      "response_time": 0.24799823760986328,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-3.5-turbo-16k",
+      "success": false,
+      "response_time": 0.49531030654907227,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:mancer/weaver",
+      "success": false,
+      "response_time": 0.5524301528930664,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:undi95/remm-slerp-l2-13b",
+      "success": false,
+      "response_time": 0.5103998184204102,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:gryphe/mythomax-l2-13b",
+      "success": false,
+      "response_time": 0.48953890800476074,
+      "status_code": 500
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4-0314",
+      "success": false,
+      "response_time": 0.2584984302520752,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-3.5-turbo",
+      "success": false,
+      "response_time": 0.22990870475769043,
+      "status_code": 429
+    },
+    {
+      "model_id": "openrouter:openai/gpt-4",
+      "success": false,
+      "response_time": 0.5172057151794434,
+      "status_code": 429
+    },
+    {
+      "model_id": "command-r24",
+      "success": false,
+      "response_time": 0.6698262691497803,
+      "status_code": 500
+    },
+    {
+      "model_id": "command-r7b24",
+      "success": true,
+      "response_time": 1.272839069366455,
+      "status_code": 200
+    },
+    {
+      "model_id": "command-r7b-arabic25",
+      "success": false,
+      "response_time": 0.4712080955505371,
+      "status_code": 500
+    },
+    {
+      "model_id": "flux-kontext-dev",
+      "success": false,
+      "response_time": 0.22572636604309082,
+      "status_code": 429
+    },
+    {
+      "model_id": "janus-pro-7b-image",
+      "success": false,
+      "response_time": 0.2761964797973633,
+      "status_code": 429
+    },
+    {
+      "model_id": "video",
+      "success": false,
+      "response_time": 0.49993062019348145,
+      "status_code": 500
+    },
+    {
+      "model_id": "AIBadgr",
+      "success": false,
+      "response_time": 0.21769332885742188,
+      "status_code": 429
+    },
+    {
+      "model_id": "Anthropic",
+      "success": false,
+      "response_time": 0.4896566867828369,
+      "status_code": 500
+    },
+    {
+      "model_id": "ApiAirforce",
+      "success": false,
+      "response_time": 0.2262561321258545,
+      "status_code": 429
+    },
+    {
+      "model_id": "Azure",
+      "success": false,
+      "response_time": 0.5531413555145264,
+      "status_code": 500
+    },
+    {
+      "model_id": "BAAI_Ling",
+      "success": false,
+      "response_time": 0.24295616149902344,
+      "status_code": 429
+    },
+    {
+      "model_id": "BingCreateImages",
+      "success": false,
+      "response_time": 0.2460031509399414,
+      "status_code": 429
+    },
+    {
+      "model_id": "BlackForestLabs_Flux1Dev",
+      "success": false,
+      "response_time": 0.5210187435150146,
+      "status_code": 500
+    },
+    {
+      "model_id": "BlackForestLabs_Flux1KontextDev",
+      "success": false,
+      "response_time": 0.5096266269683838,
+      "status_code": 500
+    },
+    {
+      "model_id": "BlackboxPro",
+      "success": false,
+      "response_time": 0.47283387184143066,
+      "status_code": 500
+    },
+    {
+      "model_id": "CachedSearch",
+      "success": false,
+      "response_time": 0.2342824935913086,
+      "status_code": 429
+    },
+    {
+      "model_id": "Cerebras",
+      "success": false,
+      "response_time": 0.23147869110107422,
+      "status_code": 429
+    },
+    {
+      "model_id": "Chatai",
+      "success": false,
+      "response_time": 0.23777294158935547,
+      "status_code": 429
+    },
+    {
+      "model_id": "Claude",
+      "success": false,
+      "response_time": 0.245650053024292,
+      "status_code": 429
+    },
+    {
+      "model_id": "Cohere",
+      "success": false,
+      "response_time": 0.26300835609436035,
+      "status_code": 429
+    },
+    {
+      "model_id": "CohereForAI_C4AI_Command",
+      "success": false,
+      "response_time": 0.23924493789672852,
+      "status_code": 429
+    },
+    {
+      "model_id": "Copilot",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "CopilotAccount",
+      "success": false,
+      "response_time": 0.6806199550628662,
+      "status_code": 500
+    },
+    {
+      "model_id": "DeepInfra",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "DeepSeek",
+      "success": false,
+      "response_time": 0.5161521434783936,
+      "status_code": 500
+    },
+    {
+      "model_id": "DeepseekAI_JanusPro7b",
+      "success": false,
+      "response_time": 4.369874715805054,
+      "status_code": 500
+    },
+    {
+      "model_id": "FenayAI",
+      "success": false,
+      "response_time": 0.5257551670074463,
+      "status_code": 500
+    },
+    {
+      "model_id": "Gemini",
+      "success": false,
+      "response_time": 0.2679286003112793,
+      "status_code": 429
+    },
+    {
+      "model_id": "GeminiCLI",
+      "success": false,
+      "response_time": 1.7041630744934082,
+      "status_code": 500
+    },
+    {
+      "model_id": "GeminiPro",
+      "success": false,
+      "response_time": 0.4815638065338135,
+      "status_code": 500
+    },
+    {
+      "model_id": "GigaChat",
+      "success": false,
+      "response_time": 0.4919919967651367,
+      "status_code": 500
+    },
+    {
+      "model_id": "GithubCopilot",
+      "success": false,
+      "response_time": 0.5103566646575928,
+      "status_code": 500
+    },
+    {
+      "model_id": "GithubCopilotAPI",
+      "success": false,
+      "response_time": 0.6071276664733887,
+      "status_code": 500
+    },
+    {
+      "model_id": "GlhfChat",
+      "success": false,
+      "response_time": 0.2284238338470459,
+      "status_code": 429
+    },
+    {
+      "model_id": "GradientNetwork",
+      "success": false,
+      "response_time": 0.585658073425293,
+      "status_code": 500
+    },
+    {
+      "model_id": "Grok",
+      "success": false,
+      "response_time": 0.5117413997650146,
+      "status_code": 500
+    },
+    {
+      "model_id": "Groq",
+      "success": false,
+      "response_time": 0.5158512592315674,
+      "status_code": 500
+    },
+    {
+      "model_id": "HailuoAI",
+      "success": false,
+      "response_time": 0.5040261745452881,
+      "status_code": 500
+    },
+    {
+      "model_id": "HuggingChat",
+      "success": false,
+      "response_time": 0.4835207462310791,
+      "status_code": 500
+    },
+    {
+      "model_id": "HuggingFace",
+      "success": false,
+      "response_time": 0.3845195770263672,
+      "status_code": 429
+    },
+    {
+      "model_id": "HuggingFaceAPI",
+      "success": false,
+      "response_time": 0.5070383548736572,
+      "status_code": 500
+    },
+    {
+      "model_id": "HuggingFaceMedia",
+      "success": false,
+      "response_time": 0.34666991233825684,
+      "status_code": 429
+    },
+    {
+      "model_id": "HuggingSpace",
+      "success": false,
+      "response_time": 0.25570249557495117,
+      "status_code": 429
+    },
+    {
+      "model_id": "ItalyGPT",
+      "success": false,
+      "response_time": 0.5211901664733887,
+      "status_code": 500
+    },
+    {
+      "model_id": "LMArena",
+      "success": false,
+      "response_time": 0.2683999538421631,
+      "status_code": 429
+    },
+    {
+      "model_id": "MarkItDown",
+      "success": false,
+      "response_time": 0.2453451156616211,
+      "status_code": 429
+    },
+    {
+      "model_id": "MetaAI",
+      "success": false,
+      "response_time": 0.23473858833312988,
+      "status_code": 429
+    },
+    {
+      "model_id": "MetaAIAccount",
+      "success": false,
+      "response_time": 1.103482961654663,
+      "status_code": 500
+    },
+    {
+      "model_id": "MicrosoftDesigner",
+      "success": false,
+      "response_time": 0.48441386222839355,
+      "status_code": 500
+    },
+    {
+      "model_id": "Microsoft_Phi_4_Multimodal",
+      "success": false,
+      "response_time": 0.23938822746276855,
+      "status_code": 429
+    },
+    {
+      "model_id": "MiniMax",
+      "success": false,
+      "response_time": 0.5322880744934082,
+      "status_code": 500
+    },
+    {
+      "model_id": "Mintlify",
+      "success": false,
+      "response_time": 0.23783493041992188,
+      "status_code": 429
+    },
+    {
+      "model_id": "Nvidia",
+      "success": false,
+      "response_time": 0.24683284759521484,
+      "status_code": 429
+    },
+    {
+      "model_id": "OIVSCodeSer0501",
+      "success": false,
+      "response_time": 0.47965002059936523,
+      "status_code": 500
+    },
+    {
+      "model_id": "OIVSCodeSer2",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Ollama",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OpenAIFM",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OpenRouter",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OpenRouterFree",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OpenaiAPI",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OpenaiAccount",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OpenaiChat",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "OperaAria",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Perplexity",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "PerplexityApi",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Pi",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "PollinationsAI",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "PollinationsImage",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "PuterJS",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Qwen",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "QwenCode",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Qwen_Qwen_2_5",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Qwen_Qwen_2_5M",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Qwen_Qwen_2_5_Max",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Qwen_Qwen_2_72B",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Qwen_Qwen_3",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Replicate",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "StabilityAI_SD35Large",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "TeachAnything",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "ThebApi",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Together",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "WeWordle",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "WhiteRabbitNeo",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "YouTube",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Yqcloud",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "Yupp",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "xAI",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "AnyProvider",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    }
+  ],
+  "fastest_working": [
+    {
+      "model_id": "llama-4-maverick-17b-128e",
+      "success": true,
+      "response_time": 0.7888340950012207,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-r1-0528",
+      "success": true,
+      "response_time": 0.9494895935058594,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-3.2-1b",
+      "success": true,
+      "response_time": 0.9893085956573486,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-3-32b",
+      "success": true,
+      "response_time": 1.0613915920257568,
+      "status_code": 200
+    },
+    {
+      "model_id": "moonshotai/Kimi-K2-Instruct",
+      "success": true,
+      "response_time": 1.0787949562072754,
+      "status_code": 200
+    },
+    {
+      "model_id": "qwen-2.5-coder-7b",
+      "success": true,
+      "response_time": 1.11328125,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-4-maverick-17b-128e-turbo",
+      "success": true,
+      "response_time": 1.1355564594268799,
+      "status_code": 200
+    },
+    {
+      "model_id": "llama-4-maverick",
+      "success": true,
+      "response_time": 1.1443202495574951,
+      "status_code": 200
+    },
+    {
+      "model_id": "deepseek-r1-distill-qwen-32b",
+      "success": true,
+      "response_time": 1.2151644229888916,
+      "status_code": 200
+    },
+    {
+      "model_id": "command-a",
+      "success": true,
+      "response_time": 1.2160511016845703,
+      "status_code": 200
+    }
+  ],
+  "failed_models": [
+    {
+      "model_id": "default",
+      "success": false,
+      "response_time": 0.46431732177734375,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-4o",
+      "success": false,
+      "response_time": 0.503572940826416,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-4o-mini-audio-preview",
+      "success": false,
+      "response_time": 0.22330737113952637,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-4o-mini-tts",
+      "success": false,
+      "response_time": 0.3160591125488281,
+      "status_code": 429
+    },
+    {
+      "model_id": "o1",
+      "success": false,
+      "response_time": 0.49210262298583984,
+      "status_code": 500
+    },
+    {
+      "model_id": "o3-mini",
+      "success": false,
+      "response_time": 0.5334606170654297,
+      "status_code": 500
+    },
+    {
+      "model_id": "o3-mini-high",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "o4-mini-high",
+      "success": false,
+      "response_time": 0.23482465744018555,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-4.1",
+      "success": false,
+      "response_time": 0.24879789352416992,
+      "status_code": 429
+    },
+    {
+      "model_id": "gpt-4.5",
+      "success": false,
+      "response_time": 0.4692115783691406,
+      "status_code": 500
+    },
+    {
+      "model_id": "gpt-oss-120b",
+      "success": false,
+      "response_time": 1.4998278617858887,
+      "status_code": 500
+    },
+    {
+      "model_id": "dall-e-3",
+      "success": false,
+      "response_time": 0.2221202850341797,
+      "status_code": 429
+    },
+    {
+      "model_id": "meta-ai",
+      "success": false,
+      "response_time": 0.516991376876831,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-2-70b",
+      "success": false,
+      "response_time": 0.8834762573242188,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3-8b",
+      "success": false,
+      "response_time": 0.2238607406616211,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3-70b",
+      "success": false,
+      "response_time": 0.2500617504119873,
+      "status_code": 429
+    },
+    {
+      "model_id": "llama-3.1-8b",
+      "success": false,
+      "response_time": null,
+      "status_code": "TIMEOUT"
+    },
+    {
+      "model_id": "llama-3.1-70b",
+      "success": false,
+      "response_time": 0.840566873550415,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.1-405b",
+      "success": false,
+      "response_time": 0.646824836730957,
+      "status_code": 500
+    },
+    {
+      "model_id": "llama-3.2-11b",
+      "success": false,
+      "response_time": 0.5254318714141846,
+      "status_code": 500
+    }
+  ]
+}

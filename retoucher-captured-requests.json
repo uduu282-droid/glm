@@ -1,0 +1,45 @@
+[
+  {
+    "timestamp": 1774394443621,
+    "url": "https://sentry.retoucher.online/api/21/envelope/?sentry_key=8878d4fc9d8e44a2b930309ef70a8545&sentry_version=7&sentry_client=sentry.javascript.nextjs%2F7.114.0",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://retoucher.online/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "content-type": "text/plain;charset=UTF-8",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "postData": "{\"sent_at\":\"2026-03-24T23:20:43.597Z\",\"sdk\":{\"name\":\"sentry.javascript.nextjs\",\"version\":\"7.114.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ea3b3192d8aa4d599e1251bae3cbdeda\",\"init\":true,\"started\":\"2026-03-24T23:20:43.597Z\",\"timestamp\":\"2026-03-24T23:20:43.597Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"1.0.363\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "timestamp": 1774394444729,
+    "url": "https://api-int.retoucher.online/api/v4/UserInfo?clientId=341221059.1774394444&country=IN&timezone=GMT%2B0530",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://retoucher.online/",
+      "accept-language": "en-US,en;q=0.9",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774394450879,
+    "url": "https://mc.yandex.ru/watch/82384084?page-url=goal%3A%2F%2Fretoucher.online%2Fclick_upload&page-ref=https%3A%2F%2Fretoucher.online%2F&charset=utf-8&uah=chu%0A%22Not-A.Brand%22%3Bv%3D%2224%22%2C%22Chromium%22%3Bv%3D%22146%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A146.0.7680.153%0Achl%0A%22Not-A.Brand%22%3Bv%3D%2224.0.0.0%22%2C%22Chromium%22%3Bv%3D%22146.0.7680.153%22%0Achm%0A%3F0%0Achp%0AWindows%0Achv%0A19.0.0&hidv2=1448933784098701330&hittoken=1774394443_d7e13563d9d594267711665f542858c5d3a6961fe90f3c402359c5fc30fa88ec&browser-info=ar%3A1%3Avf%3Acw41qwg7gq0rlux5ymfaktfr8vun3%3Afu%3A3%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2421%3Acn%3A1%3Adp%3A1%3Als%3A305924911157%3Ahid%3A170493810%3Az%3A330%3Ai%3A20260325045050%3Aet%3A1774394451%3Ac%3A1%3Arn%3A556284022%3Arqn%3A5%3Au%3A1774394444719345174%3Aw%3A785x600%3As%3A2560x1440x32%3Ask%3A1%3Awv%3A2%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Aeu%3A0%3Ans%3A1774394442229%3Agi%3AR0ExLjEuMzQxMjIxMDU5LjE3NzQzOTQ0NDQ%3D%3Aadb%3A2%3App%3A3629563401%3Arqnl%3A1%3Ast%3A1774394451%3At%3ARemove%20background%20From%20Image%20-%20Free%20%26%20No%20Signup%20-%20Background%20Remover&t=gdpr(14)mc(g-3)clc(2-167-268)rqnt(5)aw(1)rcm(1)ecs(0)cdl(na)eco(84476420)prs(2)wss(2)w2s(16)evs(ODIzODQwODQ6MDo3LDgyMzg0MDg0OjA6OCw4MjM4NDA4NDowOjk%3D)evt(788)ti(0)&force-urlencoded=1",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://retoucher.online/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "postData": ""
+  }
+]

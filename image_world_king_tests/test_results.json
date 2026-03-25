@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-03-20T09:38:45.990Z",
+  "apiEndpoint": "https://image-world-king.vercel.app/api/gen-v1",
+  "totalTests": 3,
+  "successful": 3,
+  "failed": 0,
+  "results": [
+    {
+      "success": true,
+      "apiUrl": "https://image-world-king.vercel.app/api/gen-v1?text=a%20mystical%20forest%20with%20glowing%20plants",
+      "response": {
+        "api_owner": "@hardhackar007",
+        "expires_in": "5 minutes",
+        "image_url": "https://i.ibb.co/Gvh2FHLS/generated-a-mystical-forest-with-glowing-plants.jpg",
+        "prompt": "a mystical forest with glowing plants",
+        "size_bytes": 171815,
+        "success": true,
+        "thumbnail": "https://i.ibb.co/N64j7TPB/generated-a-mystical-forest-with-glowing-plants.jpg"
+      },
+      "filepath": "C:\\Users\\Ronit\\Downloads\\test models 2\\image_world_king_generated\\iwk_a_mystical_forest_with_glowing_1773999500935.jpg",
+      "prompt": "a mystical forest with glowing plants",
+      "timestamp": 1773999500935
+    },
+    {
+      "success": true,
+      "apiUrl": "https://image-world-king.vercel.app/api/gen-v1?text=futuristic%20cyberpunk%20city%20at%20night",
+      "response": {
+        "api_owner": "@hardhackar007",
+        "expires_in": "5 minutes",
+        "image_url": "https://i.ibb.co/prZHG1MY/generated-futuristic-cyberpunk-city-at-night.jpg",
+        "prompt": "futuristic cyberpunk city at night",
+        "size_bytes": 125463,
+        "success": true,
+        "thumbnail": "https://i.ibb.co/4gMb9FXh/generated-futuristic-cyberpunk-city-at-night.jpg"
+      },
+      "filepath": "C:\\Users\\Ronit\\Downloads\\test models 2\\image_world_king_generated\\iwk_futuristic_cyberpunk_city_at_n_1773999513511.jpg",
+      "prompt": "futuristic cyberpunk city at night",
+      "timestamp": 1773999513511
+    },
+    {
+      "success": true,
+      "apiUrl": "https://image-world-king.vercel.app/api/gen-v1?text=cute%20anime%20girl%20with%20blue%20hair",
+      "response": {
+        "api_owner": "@hardhackar007",
+        "expires_in": "5 minutes",
+        "image_url": "https://i.ibb.co/JjNF1VNw/generated-cute-anime-girl-with-blue-hair.jpg",
+        "prompt": "cute anime girl with blue hair",
+        "size_bytes": 94370,
+        "success": true,
+        "thumbnail": "https://i.ibb.co/23wY9xw1/generated-cute-anime-girl-with-blue-hair.jpg"
+      },
+      "filepath": "C:\\Users\\Ronit\\Downloads\\test models 2\\image_world_king_generated\\iwk_cute_anime_girl_with_blue_hair_1773999524201.jpg",
+      "prompt": "cute anime girl with blue hair",
+      "timestamp": 1773999524201
+    }
+  ]
+}

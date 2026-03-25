@@ -1,0 +1,36 @@
+name = "image-world-king-proxy"
+main = "worker-image-world-king.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables
+[vars]
+RATE_LIMIT = "null"  # DISABLED - no rate limits
+CACHE_TTL = "300"
+TARGET_API = "https://image-world-king.vercel.app/api/gen-v1"
+
+# KV Namespaces (optional but recommended)
+# Uncomment these if you want to enable caching and rate limiting persistence
+# kv_namespaces = [
+#   { binding = "CACHE_KV", id = "your-kv-namespace-id" },
+#   { binding = "STATS_KV", id = "your-kv-namespace-id" },
+#   { binding = "RATE_LIMIT_KV", id = "your-kv-namespace-id" }
+# ]
+
+# Development settings
+[dev]
+port = 8787
+local_protocol = "http"
+
+# Production settings
+[site]
+bucket = "./public"
+
+# Build configuration
+[build]
+command = ""
+watch_dir = ""
+
+# Logging
+[observability]
+enabled = true
+head_sampling_rate = 1

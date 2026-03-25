@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Image Processing - Cloudflare Worker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: system-ui, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 100vh; 
+            padding: 20px; 
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { color: white; text-align: center; margin-bottom: 10px; font-size: 2em; }
+        .subtitle { color: rgba(255,255,255,0.9); text-align: center; margin-bottom: 30px; }
+        .card { background: white; border-radius: 15px; padding: 25px; margin-bottom: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+        
+        .tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 15px; }
+        .tool-item { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.2s; }
+        .tool-item:hover { transform: translateY(-2px); }
+        .tool-item.active { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); box-shadow: 0 0 15px rgba(79, 172, 254, 0.5); }
+        .tool-icon { font-size: 2em; margin-bottom: 8px; }
+        
+        .upload-area { border: 3px dashed #ccc; border-radius: 12px; padding: 30px; text-align: center; cursor: pointer; transition: all 0.3s; }
+        .upload-area:hover, .upload-area.dragover { border-color: #667eea; background: rgba(102, 126, 234, 0.05); }
+        .upload-icon { font-size: 2.5em; color: #667eea; margin-bottom: 10px; }
+        
+        .btn { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; padding: 12px 30px; border: none; border-radius: 50px; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 15px; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(17, 153, 142, 0.4); }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        .preview { max-width: 100%; max-height: 300px; border-radius: 8px; margin-top: 10px; }
+        .checkered { background: repeating-conic-gradient(#808080 0% 25%, #ffffff 0% 50%) 50% / 20px 20px; }
+        
+        .status { padding: 12px; border-radius: 8px; margin-top: 15px; font-weight: bold; text-align: center; }
+        .status.processing { background: #fff3cd; color: #856404; }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        
+        .spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid #f3f3f3; border-top: 3px solid #667eea; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 8px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Unified Image Processing</h1>
+        <p class="subtitle">Powered by Cloudflare Workers • 5 Tools in 1 Endpoint</p>
+        
+        <div class="card">
+            <h2 style="margin-bottom: 15px;">1️⃣ Choose Tool</h2>
+            <div class="tool-grid" id="toolGrid">
+                <div class="tool-item active" data-tool="remove-bg">
+                    <div class="tool-icon">✂️</div>
+                    <strong>Remove Background</strong>
+                </div>
+                <div class="tool-item" data-tool="convert-format">
+                    <div class="tool-icon">🔄</div>
+                    <strong>Convert Format</strong>
+                </div>
+                <div class="tool-item" data-tool="image-to-pdf">
+                    <div class="tool-icon">📄</div>
+                    <strong>Image to PDF</strong>
+                </div>
+                <div class="tool-item" data-tool="remove-text">
+                    <div class="tool-icon">🧹</div>
+                    <strong>Remove Text</strong>
+                </div>
+                <div class="tool-item" data-tool="remove-gemini-watermark">
+                    <div class="tool-icon">🤖</div>
+                    <strong>Remove Gemini WM</strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 style="margin-bottom: 15px;">2️⃣ Upload Image</h2>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <p><strong>Drag & drop</strong> or <strong>click to browse</strong></p>
+                <p style="color: #999; margin-top: 8px;">PNG, JPG, WEBP up to 10MB</p>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        </div>
+        
+        <div class="card" id="processCard" style="display: none;">
+            <h2 style="margin-bottom: 15px;">3️⃣ Process</h2>
+            <img id="originalPreview" class="preview" src="" alt="Original">
+            <button class="btn" id="processBtn">🚀 Process Image</button>
+            <div id="statusMessage"></div>
+        </div>
+    </div>
+
+    <script>
+        // Deployed Cloudflare Worker URL
+        const WORKER_URL = 'https://unified-image-api.llamai.workers.dev/api/process';
+        let selectedTool = 'remove-bg';
+        let selectedFile = null;
+
+        document.querySelectorAll('.tool-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.tool-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                selectedTool = item.dataset.tool;
+            });
+        });
+
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', (e) => { e.preventDefault(); uploadArea.classList.add('dragover'); });
+        uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
+        uploadArea.addEventListener('drop', (e) => { e.preventDefault(); uploadArea.classList.remove('dragover'); handleFile(e.dataTransfer.files[0]); });
+        fileInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
+
+        function handleFile(file) {
+            if (!file || !file.type.startsWith('image/')) { alert('Please upload an image'); return; }
+            selectedFile = file;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                document.getElementById('originalPreview').src = e.target.result;
+                document.getElementById('processCard').style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+
+        document.getElementById('processBtn').addEventListener('click', async () => {
+            if (!selectedFile) { alert('Please select an image'); return; }
+
+            const btn = document.getElementById('processBtn');
+            const statusDiv = document.getElementById('statusMessage');
+            
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span>Processing...';
+            statusDiv.className = 'status processing';
+            statusDiv.innerHTML = '<span class="spinner"></span>Processing your image...';
+
+            try {
+                const formData = new FormData();
+                formData.append('tool', selectedTool);
+                formData.append('image', selectedFile);
+
+                const response = await fetch(WORKER_URL, { method: 'POST', body: formData });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.message || 'Processing failed');
+                }
+
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `processed_${Date.now()}.${response.headers.get('content-type')?.includes('pdf') ? 'pdf' : 'png'}`;
+                link.click();
+
+                statusDiv.className = 'status success';
+                statusDiv.innerHTML = `✅ Success! Download started automatically`;
+                btn.disabled = false;
+                btn.innerHTML = '🚀 Process Another Image';
+
+            } catch (error) {
+                console.error('Error:', error);
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `❌ Error: ${error.message}`;
+                btn.disabled = false;
+                btn.innerHTML = '🚀 Try Again';
+            }
+        });
+    </script>
+</body>
+</html>

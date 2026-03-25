@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-03-20T17:04:03.104Z",
+  "url": "https://imgupscaler.ai/ai-photo-editor/",
+  "summary": {
+    "totalEndpoints": 8,
+    "uploadRequests": 3,
+    "processRequests": 0,
+    "capturedResponses": 2
+  },
+  "endpoints": [
+    "https://api.iconify.design/lucide.json",
+    "https://cdn.magiceraser.org/userspace/magiceraser/plans/web_plans_2026_03_11.json",
+    "https://api.imgupscaler.ai/api/pai-login/v1/user/get-userinfo",
+    "https://www.google-analytics.com/g/collect",
+    "https://pai-us.us-west-1.log.aliyuncs.com/logstores/web-imgupsclaer/track",
+    "https://api.imgupscaler.ai/api/common/upload/upload-image",
+    "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png",
+    "https://api.imgupscaler.ai/api/common/upload/sign-object"
+  ],
+  "uploadRequests": [
+    {
+      "url": "https://api.imgupscaler.ai/api/common/upload/upload-image",
+      "method": "POST",
+      "headers": {
+        "referer": "https://imgupscaler.ai/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryUkET5U4iNgJqofhG",
+        "accept": "*/*",
+        "origin": "https://imgupscaler.ai"
+      },
+      "postData": "------WebKitFormBoundaryUkET5U4iNgJqofhG\r\nContent-Disposition: form-data; name=\"file_name\"\r\n\r\ntest_image.png\r\n------WebKitFormBoundaryUkET5U4iNgJqofhG--\r\n"
+    },
+    {
+      "url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774027423&Signature=IvCO%2BzZrxfA2wZsfcLyEgvP35To%3D",
+      "method": "PUT",
+      "headers": {
+        "referer": "https://imgupscaler.ai/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "content-type": "image/png",
+        "accept": "*/*",
+        "origin": "https://imgupscaler.ai"
+      }
+    },
+    {
+      "url": "https://api.imgupscaler.ai/api/common/upload/sign-object",
+      "method": "POST",
+      "headers": {
+        "referer": "https://imgupscaler.ai/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "content-type": "multipart/form-data; boundary=----WebKitFormBoundarydap7ZpUz2MRvaaNT",
+        "accept": "*/*",
+        "origin": "https://imgupscaler.ai"
+      },
+      "postData": "------WebKitFormBoundarydap7ZpUz2MRvaaNT\r\nContent-Disposition: form-data; name=\"object_name\"\r\n\r\ndatarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png\r\n------WebKitFormBoundarydap7ZpUz2MRvaaNT--\r\n"
+    }
+  ],
+  "processRequests": [],
+  "responses": [
+    {
+      "url": "https://api.imgupscaler.ai/api/common/upload/upload-image",
+      "status": 200,
+      "contentType": "application/json",
+      "response": {
+        "code": 100000,
+        "result": {
+          "url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774027423&Signature=IvCO%2BzZrxfA2wZsfcLyEgvP35To%3D",
+          "object_name": "datarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png"
+        },
+        "message": {
+          "en": "Request Success",
+          "zh": "请求成功"
+        }
+      },
+      "hasImageData": true
+    },
+    {
+      "url": "https://api.imgupscaler.ai/api/common/upload/sign-object",
+      "status": 200,
+      "contentType": "application/json",
+      "response": {
+        "code": 100000,
+        "result": {
+          "url": "https://iudcbe0.pbsimgs.com/datarm/common_upload/2026-03-20/input/123a0e06-42a0-4b49-9a7e-6d3a1c2fc9e3.png?OSSAccessKeyId=LTAI5tHP298riEp9GV29nBRQ&Expires=1774040626&Signature=2DMOM3scHlBqJFbzxi64YlYXOK8%3D"
+        },
+        "message": {
+          "en": "Request Success",
+          "zh": "请求成功"
+        }
+      },
+      "hasImageData": true
+    }
+  ]
+}

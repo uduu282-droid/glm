@@ -1,0 +1,491 @@
+<!DOCTYPE html><html lang="en" class="light"><head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" sizes="512x512" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+		<link rel="shortcut icon" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+		<link rel="apple-touch-icon" sizes="512x512" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+		<meta name="apple-mobile-web-app-title" content="Z.ai - Free AI Chatbot &amp; Agent powered by GLM-5 &amp; GLM-4.7">
+		<meta name="description" content="Meet Z.ai, your free AI-powered assistant. Build websites, create slides, analyze data, and get instant answers. Fast, smart, and reliable, powered by GLM-5.">
+		<meta name="keywords" content="GLM-4.6, GLM 4.6, GLM-4.6-Air, GLM 4.6 Air, GLM 4.5, GLM4.5, GLM4.6, Deep Research, z ai, z.ai, GLM 4.5 AI, GLM 4.6 AI, GLM AI, Chat Z, zai, Chat AI, GLM, z.ia, Chat Z AI, AI chat, chatbot, z.ai chat, free ai chat, free AI, free ai chat no login, GLM-4.5, GLM-4.5 chat, GLM-4.1V, GLM-4.5V, AI assistant chat, AI PPT, AI presentation, AI presentation maker, AI slides maker, AI slides, slide deck, pitch deck, AI deck generator, free pitch deck generator, AI PPT, AI PPT maker, AI for Google Slides, AI for PowerPoint, AI writer, AI writing assistant, AI code generator, full stack code generation, AI full stack developer, claude code, Roo Code, Cline, Kilo Code, OpenCode, Codex, Cursor, GLM Coding Plan, GLM Coding, AI Coding, code writer ai, magic design, magic design tool, AI inspiration board, visual brainstorming AI, chat with AI, AI对话, AI聊天, 聊天机器人, 免费AI聊天, AI做PPT, AI写作, AI编程, 全栈开发, 灵感画板, AI tool, AI helper, AI for students, AI for marketers, AI for content creation, ChatGPT, chatgpt free, Free ChatGPT, gpt chat, Gemini, Grok, Claude, Poe AI, YouChat, Jasper AI, deepseek, qwen, 豆包, 文心一言, AI搜问答, 写作灵感AI, 代码解释工具, PPT思路生成, 如何用AI做PPT, create pitch deck from brief, AI business plan presentation, marketing report slides, AI academic paper assistant, AI legal contract drafting, write social media calendar, AI email responder,  VS Code AI assistant, AI for Notion, AI for Figma, AI math problem solver from image, AI geoguessr solver, image to code generator, table extractor from image, chart data extractor, document analysis AI, image caption generator, visual Q&amp;A, 看图猜成语, AI拍照解题, 数学题解答, 物理题解答, GeoGuess AI, 图片转表格, 图片读数据, 看图问答, analyze video, summarize video content, generate video transcript, find object in image, what is in this picture, 视频分析, 视频内容摘要, 生成视频字幕, 图片里有什么, 识别图中物体, GLM-4.7, GLM 4.7, GLM4.7, skills, coding plan, GLM-5, GLM-5.0, GLM5, GLM 5, Pony, Pony Alpha">
+
+		<link rel="manifest" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/manifest.json">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+		<meta name="theme-color" content="#F4F6F8">
+		<link rel="search" type="application/opensearchdescription+xml" title="Z.ai - Free AI Chatbot &amp; Agent powered by GLM-5 &amp; GLM-4.7" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/opensearch.xml">
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z8QTHYBHP3"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-Z8QTHYBHP3');
+		</script>
+
+		<script>
+			let metrics = {};
+			const observer = new PerformanceObserver((list) => {
+				const entries = list.getEntries();
+
+				entries.forEach((entry) => {
+					// 根据不同的entry类型处理不同的性能指标
+					switch (entry.entryType) {
+						case 'navigation':
+							{
+								const navEntry = entry;
+								metrics = {
+									...metrics,
+									dns: navEntry.domainLookupEnd - navEntry.domainLookupStart,
+									response: navEntry.responseEnd - navEntry.responseStart,
+									dom_parse: navEntry.domInteractive - navEntry.responseEnd,
+									dom_ready: navEntry.domContentLoadedEventEnd - navEntry.fetchStart,
+									resource: navEntry.domComplete - navEntry.domContentLoadedEventEnd,
+									first_interactive: navEntry.domInteractive - navEntry.fetchStart,
+									first_byte: navEntry.responseStart - navEntry.domainLookupStart,
+									loaded: navEntry.loadEventEnd - navEntry.fetchStart
+								};
+								sessionStorage.setItem('performance', JSON.stringify(metrics));
+								// 发送性能指标到阿里云日志服务
+							}
+							break;
+
+						case 'paint':
+							if (entry.name === 'first-paint') {
+								metrics = {
+									...metrics,
+									first_paint: entry.startTime
+								};
+								sessionStorage.setItem('performance', JSON.stringify(metrics));
+							}
+							if (entry.name === 'first-contentful-paint') {
+								metrics = {
+									...metrics,
+									first_contentful_paint: entry.startTime
+								};
+								sessionStorage.setItem('performance', JSON.stringify(metrics));
+							}
+							break;
+					}
+				});
+			});
+
+			// 观察的性能指标类型
+			observer.observe({
+				entryTypes: ['navigation', 'paint']
+			});
+		</script>
+
+		<script>
+			function resizeIframe(obj) {
+				obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+			}
+		</script>
+
+		<script>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			const initTheme = () => {
+				const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
+				// 取用户浏览器设置的主题
+				// const prefersTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+				const prefersTheme = 'light';
+
+				if (!localStorage?.theme) {
+					localStorage.theme = prefersTheme;
+				}
+
+				if (localStorage.theme === 'system') {
+					document.documentElement.classList.add(prefersTheme);
+					metaThemeColorTag.setAttribute(
+						'content',
+						prefersTheme === 'light' ? '#F4F6F8' : '#141618'
+					);
+				} else if (localStorage.theme === 'light') {
+					document.documentElement.classList.add('light');
+					metaThemeColorTag.setAttribute('content', '#F4F6F8');
+				} else {
+					document.documentElement.classList.add('dark');
+					metaThemeColorTag.setAttribute('content', '#141618');
+				}
+
+				// window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+				// 	if (localStorage.theme === 'system') {
+				// 		if (e.matches) {
+				// 			document.documentElement.classList.add('dark');
+				// 			document.documentElement.classList.remove('light');
+				// 			metaThemeColorTag.setAttribute('content', '#141618');
+				// 		} else {
+				// 			document.documentElement.classList.add('light');
+				// 			document.documentElement.classList.remove('dark');
+				// 			metaThemeColorTag.setAttribute('content', '#F4F6F8');
+				// 		}
+				// 	}
+				// });
+
+				function setSplashImage() {
+					const logo = document.getElementById('logo');
+					const isDarkMode = document.documentElement.classList.contains('dark');
+					const splashContainer = document.getElementById('splash-screen');
+
+					if (isDarkMode) {
+						const darkImage = new Image();
+						darkImage.src = 'https://z-cdn.chatglm.cn/z-ai/static/logo.svg';
+						splashContainer.style.backgroundColor = '#141618';
+
+						darkImage.onload = () => {
+							logo.src = 'https://z-cdn.chatglm.cn/z-ai/static/logo.svg';
+							logo.style.filter = ''; // Ensure no inversion is applied if splash-dark.png exists
+						};
+
+						darkImage.onerror = () => {
+							logo.style.filter = 'invert(1)'; // Invert image if splash-dark.png is missing
+						};
+					} else {
+						splashContainer.style.backgroundColor = '#F4F6F8';
+					}
+				}
+
+				// Runs after classes are assigned
+				window.addEventListener('DOMContentLoaded', setSplashImage, { once: true });
+			};
+			initTheme();
+		</script>
+
+		<title>Z.ai - Free AI Chatbot &amp; Agent powered by GLM-5 &amp; GLM-4.7</title>
+
+		<script>
+			// 炫酷的控制台介绍 - 根据语言显示
+			(function () {
+				// 检测用户语言偏好
+				const userLang = navigator.language || navigator.userLanguage;
+				const isChinese =
+					userLang.startsWith('zh') ||
+					userLang.includes('CN') ||
+					userLang.includes('TW') ||
+					userLang.includes('HK');
+
+				// 共同的 ASCII Logo
+				const logoLines = [
+					'%c███████╗     █████╗ ██╗',
+					'%c╚══███╔╝    ██╔══██╗██║',
+					'%c  ███╔╝     ███████║██║',
+					'%c ███╔╝      ██╔══██║██║',
+					'%c███████╗ ██╗██║  ██║██║',
+					'%c╚══════╝ ╚═╝╚═╝  ╚═╝╚═╝'
+				];
+				const logoColors = [
+					'color: #ff6b6b; font-family: monospace; font-size: 12px;',
+					'color: #4ecdc4; font-family: monospace; font-size: 12px;',
+					'color: #45b7d1; font-family: monospace; font-size: 12px;',
+					'color: #f9ca24; font-family: monospace; font-size: 12px;',
+					'color: #ff9ff3; font-family: monospace; font-size: 12px;',
+					'color: #6c5ce7; font-family: monospace; font-size: 12px;'
+				];
+
+				if (isChinese) {
+					// 中文版本
+					console.log(
+						'%c🚀 欢迎来到 Z.ai 🚀',
+						'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;'
+					);
+					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
+					console.log('');
+					console.log(
+						'%c✨ 基于开源GLM模型的智能AI助手',
+						'color: #a29bfe; font-size: 14px; font-weight: bold;'
+					);
+					console.log('%c🧠 支持文本生成、推理和深度研究', 'color: #fd79a8; font-size: 12px;');
+					console.log('%c🌍 为中英文用户量身定制', 'color: #00b894; font-size: 12px;');
+					console.log('%c💡 免费开源的ChatGPT替代方案', 'color: #fdcb6e; font-size: 12px;');
+					console.log('');
+					console.log('%c---', 'color: #ddd;');
+					console.log(
+						'%c由 ❤️ 和大量 ☕ 驱动',
+						'color: #e84393; font-size: 11px; font-style: italic;'
+					);
+					console.log('');
+					console.log(
+						'%c🚀 加入我们！我们正在招聘优秀人才！',
+						'color: #00b894; font-size: 13px; font-weight: bold;'
+					);
+					console.log(
+						'%c💼 查看职位: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU',
+						'color: #0984e3; font-size: 12px; text-decoration: underline;'
+					);
+				} else {
+					// 英文版本
+					console.log(
+						'%c🚀 Welcome to Z.ai 🚀',
+						'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;'
+					);
+					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
+					console.log('');
+					console.log(
+						'%c✨ Advanced AI assistant powered by open-source GLM models',
+						'color: #a29bfe; font-size: 14px; font-weight: bold;'
+					);
+					console.log(
+						'%c🧠 Supports text generation, reasoning, and deep research',
+						'color: #fd79a8; font-size: 12px;'
+					);
+					console.log(
+						'%c🌍 Tailored for both English and Chinese users',
+						'color: #00b894; font-size: 12px;'
+					);
+					console.log(
+						'%c💡 Free and open-source ChatGPT alternative',
+						'color: #fdcb6e; font-size: 12px;'
+					);
+					console.log('');
+					console.log('%c---', 'color: #ddd;');
+					console.log(
+						'%cPowered by ❤️ and lots of ☕',
+						'color: #e84393; font-size: 11px; font-style: italic;'
+					);
+					console.log('');
+					console.log(
+						'%c🚀 Join us! We are hiring talented people!',
+						'color: #00b894; font-size: 13px; font-weight: bold;'
+					);
+					console.log(
+						'%c💼 View jobs: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU',
+						'color: #0984e3; font-size: 12px; text-decoration: underline;'
+					);
+				}
+			})();
+		</script>
+
+		
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/entry/start.CmJ4k-mN.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BVkFYunW.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DFZQlWS9.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DOsrtDJS.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/entry/app.DixiKJ7T.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BzqETyZD.js">
+	<link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/nodes/0.CW-UTNTF.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/D0QH3NT1.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CAm9rDEa.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BJ4IMYPr.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/29XuUA5N.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CSd7Umnr.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CgU5AtxT.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BrXpCOvA.js"><link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/assets/Toaster.uaUbY3tS.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BDEoyLN_.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Kn7OP9-V.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/2TKdtqbR.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DD4KEFBo.js"><link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/assets/0.ByP-Lk6H.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/nodes/1.Crmn9F2j.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/nodes/2.B82PZSkY.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DeR0wJCa.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DySu0oU4.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BCyhUutG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C5UQXoyN.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DMXLx9K2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/pvMioLi6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BeCLJ9hW.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CjNBEH2C.js"><link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/assets/Modal.CyLKLEmt.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/AHXykjjf.js"><link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/assets/ConfirmDialog.kaSBQ3kP.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CURtnqBf.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/COGEUpG_.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CTUD0T3i.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/WCAq_9By.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Bx_FEB8K.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DueO4iw2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DGi9fYjV.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Djyuwcsu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DYZrgBth.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BwqhGvBb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BVFqUorM.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BaFzVcqL.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C9oiQ-Nx.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BSQYwr0r.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DHl_1b-3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/kH7cGuiQ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/0jVzGZnG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BuL4_B3P.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Nx7jb3tu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DK6kIknr.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/D-3CLqAh.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CmYmMlaB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CdzMSI4F.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BecLuBiC.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BeKSntIi.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BjsFTUYo.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/blaDb-jo.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CLOSCvT8.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CqEluOaw.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BEBzYzWP.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DfgaP4vg.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DIA155Vb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/af3hAzBx.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C2IOieIa.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Bgx1gGJt.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/B_Dquy0L.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BYe6Zl09.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BJtC9yfw.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CtLAqguL.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CRL9PbLZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BXQ0BKdv.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/AZkbva8Z.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DaY7CSYD.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DeECKh87.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/odwIX_EZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BauUWy9P.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DKE0ycbB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BBNdFiYJ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DH_0DBz3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/QTdjDvAr.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/PwI19cH_.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BX2sUp4r.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BkZZrdGj.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Bv1XaD7y.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CSuXP-i4.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/5uy4Zm2q.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BUAHdsI7.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/cfcSpbbB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/B7CXnLDa.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/UyTjzuL0.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CiLdxmS3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CXpf9NgZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DFGY7uTR.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/D5EH0wjX.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BB6GdmkF.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DeiljFTO.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DCAmSqQy.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/QAV5lLsK.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/qqDYSrBf.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C1ZhveUZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BB5YT_XH.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BXNFdIiC.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/mAXDrEcl.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Dfl8_4KG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BnwKp4ab.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DA29qO6L.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CqH14z9z.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CzI5-qh1.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BMbZJl0s.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/7VyFShlC.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/nB6Dr2O4.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Bka3vx3Y.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/qQa7uuOZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/D_dV6DIz.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DfeQHxfU.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BPgcznq8.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/D8xQ7783.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/NR3ruk8d.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/D3zPjp3F.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BRij3NO-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DVeIYpbB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CxvDKY7Z.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/E2lBedTd.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Cc7K7h-X.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BnykxYts.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CT5SjDeg.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DYHKZkAQ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/VAxUISTw.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DRwNzUPA.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Cyv-i4cj.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/vNUx831c.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DsHdLyMK.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Bn9iG84V.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/xVB4k0lu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CooxayQm.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DZz1aVWl.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DNCOH507.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/1x8V0RXh.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/2zg9Lsf3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/rZxPGeAz.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/uw1E63kY.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/d012uDfr.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/U-DVb8Uk.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C8wRkhCR.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BTs7buB6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DCb7a-8-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/CKpMPmNZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BcTU99wS.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/261SJTiT.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/vdRq37lK.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Beqv1jnp.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DmTCKowE.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BN3DsmEQ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BAVReh_4.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/RMQIXUot.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Co6FAQiZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/LpLjOA_I.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Dstqrj9I.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/B41RZOtD.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/IqtKzcGG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Z8AbBELp.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/C2yftvNW.js"><link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/assets/ShareChatModal.D2_h0Mix.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BVxvxznb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/BzIfcvEN.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/DwSs2ab3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/chunks/Db2OZPik.js"><link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/assets/2.DwZO_s2c.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/nodes/5.CFfUSmBo.js"></head>
+
+	<body data-sveltekit-preload-data="hover"><script src="https://sdk.rum.aliyuncs.com/v2/browser-sdk.js" crossorigin=""></script>
+		<script>
+			const env = location.hostname === 'chat.z.ai' ? 'prod' : 'pre';
+			!(function (c, b, d, a) {
+				c[a] || (c[a] = {});
+				c[a] = {
+					pid: 'j2c03hoppk@9a8be198b65ba4b',
+					endpoint: 'https://j2c03hoppk-default-cn.rum.aliyuncs.com',
+					// 设置环境信息，参考值：'prod' | 'gray' | 'pre' | 'daily' | 'local'
+					env: env,
+					// 设置路由模式， 参考值：'history' | 'hash'
+					spaMode: 'history',
+					collectors: {
+						// 页面性能指标监听开关，默认开启
+						perf: true,
+						// WebVitals指标监听开关，默认开启
+						webVitals: false,
+						// Ajax监听开关，默认开启
+						api: true,
+						// 静态资源开关，默认开启
+						staticResource: true,
+						// JS错误监听开关，默认开启
+						jsError: true,
+						// 控制台错误监听开关，默认开启
+						consoleError: false,
+						// 用户行为监听开关，默认开启
+						action: true
+					},
+					// 链路追踪配置开关，默认关闭
+					tracing: false,
+					parseViewName(url) {
+						const pathname = new URL(url).pathname;
+						if (!pathname) {
+							return '/';
+						}
+						return pathname.replace(/(.*)\/[a-f0-9-]+$/g, '$1');
+					},
+					evaluateApi(options, response) {
+						const traceId = response?.headers?.get?.('X-Trace-Id') || 'unknown';
+
+						return {
+							name: options.url.replace(/\/[a-f0-9-]{36}/g, '/**'),
+							properties: {
+								traceId
+							}
+						};
+					}
+				};
+				with (b)
+					with (body)
+						with (insertBefore(createElement('script'), firstChild))
+							setAttribute('crossorigin', '', (src = d));
+			})(window, document, 'https://sdk.rum.aliyuncs.com/v2/browser-sdk.js', '__rum');
+		</script>
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_platq5 = {
+						base: "",
+						assets: "https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/entry/start.CmJ4k-mN.js"),
+						import("https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.252/_app/immutable/entry/app.DixiKJ7T.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+
+		<div id="splash-screen" style="
+				position: fixed;
+				z-index: 100;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #f4f6f8;
+			">
+			<style type="text/css" nonce="">
+				html {
+					overflow-y: scroll !important;
+				}
+			</style>
+
+			<img id="logo" style="
+					position: absolute;
+					width: auto;
+					height: 5rem;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				" src="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+
+			<div style="
+					position: absolute;
+					top: 33%;
+					left: 50%;
+
+					width: 24rem;
+					transform: translateX(-50%);
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				">
+				<div style="position: relative; width: 24rem; margin-top: 0.5rem">
+					<div id="progress-background" style="
+							position: absolute;
+							width: 100%;
+							height: 0.75rem;
+
+							border-radius: 9999px;
+							background-color: #f4f6f8;
+						"></div>
+
+					<div id="progress-bar" style="
+							position: absolute;
+							width: 0%;
+							height: 0.75rem;
+							border-radius: 9999px;
+							background-color: #fff;
+						" class="bg-white"></div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var token = localStorage.getItem('token');
+			var base = window.WEBUI_BASE_URL || '';
+			var lang = localStorage.locale ?? (navigator.language.includes('zh') ? 'zh-CN' : 'en-US');
+			var config = {
+				credentials: 'include',
+				headers: {
+					Accept: 'application/json',
+					'Content-Type': 'application/json',
+					...(token ? { Authorization: `Bearer ${token}` } : {}),
+					'Accept-Language': lang
+				}
+			};
+
+			window.GLOBAL_FETCHES = {
+				session: fetch(`${base}/api/v1/auths/`, config).then(async (res) => {
+					if (res.status === 401) {
+						location.replace('/auth');
+					}
+					if (!res.ok) throw await res.json();
+					return res.json();
+				}),
+				config: fetch(`${base}/api/config`, config).then(async (res) => {
+					if (!res.ok) throw await res.json();
+					return res.json();
+				}),
+				models: token && fetch(`${base}/api/models`, config),
+				settings:
+					token &&
+					fetch(`${base}/api/v1/users/user/settings`, config).then(async (res) => {
+						if (!res.ok) throw await res.json();
+						return res.json();
+					})
+			};
+		</script>
+		<script async="" src="//o.alicdn.com/frontend-lib/common-lib/jquery.min.js"></script>
+	
+
+
+<style type="text/css" nonce="">
+	html {
+		overflow-y: hidden !important;
+	}
+
+	#splash-screen {
+		background: #f4f6f8;
+	}
+
+	html.dark #splash-screen {
+		background: #141618;
+	}
+
+	#progress-background {
+		display: none;
+	}
+
+	#progress-bar {
+		display: none;
+	}
+
+	html.her #logo {
+		display: none;
+	}
+
+	html.her #progress-background {
+		display: block;
+	}
+
+	html.her #progress-bar {
+		display: block;
+	}
+
+	@media (max-width: 24rem) {
+		html.her #progress-background {
+			display: none;
+		}
+
+		html.her #progress-bar {
+			display: none;
+		}
+	}
+
+	@keyframes pulse {
+		50% {
+			opacity: 0.65;
+		}
+	}
+
+	.animate-pulse-fast {
+		animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	}
+</style>
+</body></html>

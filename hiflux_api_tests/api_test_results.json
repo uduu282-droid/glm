@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-03-20T09:22:47.439Z",
+  "totalTested": 5,
+  "successful": 0,
+  "results": [
+    {
+      "endpoint": "https://hiflux.ai/api/generate",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "success": false,
+      "response": null
+    },
+    {
+      "endpoint": "https://hiflux.ai/api/image/generate",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "success": false,
+      "response": null
+    },
+    {
+      "endpoint": "https://hiflux.ai/api/v1/generate",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "success": false,
+      "response": null
+    },
+    {
+      "endpoint": "https://hiflux.ai/api/predict",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "success": false,
+      "response": null
+    },
+    {
+      "endpoint": "https://hiflux.ai/api/inference",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "success": false,
+      "response": null
+    }
+  ],
+  "successfulEndpoints": []
+}

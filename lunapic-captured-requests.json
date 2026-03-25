@@ -1,0 +1,314 @@
+[
+  {
+    "timestamp": 1774395248082,
+    "url": "https://www2.lunapic.com/editor/?action=transparent",
+    "method": "GET",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "timestamp": 1774395249017,
+    "url": "https://www2.lunapic.com/editor/images/unified.css",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/?action=transparent",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395249017,
+    "url": "https://www2.lunapic.com/editor/images/lunapic-bw.png",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/?action=transparent",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395249291,
+    "url": "https://www2.lunapic.com/editor/images/slim-tools2.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/?action=transparent",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395249291,
+    "url": "https://support.lunapic.com/editor/premade/transparent.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395249619,
+    "url": "https://www2.lunapic.com/editor/images/chromebg.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/images/unified.css",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395249634,
+    "url": "https://www2.lunapic.com/editor/images/chromebg-over.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/images/unified.css",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395251733,
+    "url": "https://www2.lunapic.com/favicon.ico",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/?action=transparent",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395255017,
+    "url": "https://www2.lunapic.com/editor/",
+    "method": "POST",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "multipart/form-data; boundary=----WebKitFormBoundary6oBbk1W0dB8gnf2U",
+      "origin": "https://www2.lunapic.com",
+      "referer": "https://www2.lunapic.com/editor/?action=transparent",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "timestamp": 1774395258056,
+    "url": "https://www2.lunapic.com/editor/images/unified.css",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395258060,
+    "url": "https://www2.lunapic.com/editor/images/lunapic-bw.png",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395258101,
+    "url": "https://www2.lunapic.com/editor/images/chromebg.gif",
+    "method": "GET",
+    "headers": {
+      "referer": ""
+    }
+  },
+  {
+    "timestamp": 1774395258324,
+    "url": "https://www2.lunapic.com/editor/images/slim-tools2.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395258326,
+    "url": "https://www2.lunapic.com/editor/images/red-loading.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "connection": "keep-alive",
+      "cookie": "icon_id=177439524745787943; srv=www2.lunapic.com; acolor=%23f44336; winw=800; _ga=GA1.1.1684007759.1774395251; __gads=ID=7c98ee28caa735e9:T=1774395249:RT=1774395249:S=ALNI_MYuJGyvwkSituJzoblagA_2K4LfJw; __gpi=UID=0000122caec5344c:T=1774395249:RT=1774395249:S=ALNI_MbrZXiFp-C1VakX_uqJSQ2PnR9CTg; __eoi=ID=c8abc8c5ea545986:T=1774395249:RT=1774395249:S=AA-AfjaFMM2Ky2yeQAaef_1_QbrJ; _ga_BLJQXEKL0Q=GS2.1.s1774395250$o1$g1$t1774395258$j52$l0$h0; fname=cristiano_ronaldo_by_deexie_d88t0lv",
+      "host": "www2.lunapic.com",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395258326,
+    "url": "https://www2.lunapic.com/editor/working/177439524745787943?44998651382",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "connection": "keep-alive",
+      "cookie": "icon_id=177439524745787943; srv=www2.lunapic.com; acolor=%23f44336; winw=800; _ga=GA1.1.1684007759.1774395251; __gads=ID=7c98ee28caa735e9:T=1774395249:RT=1774395249:S=ALNI_MYuJGyvwkSituJzoblagA_2K4LfJw; __gpi=UID=0000122caec5344c:T=1774395249:RT=1774395249:S=ALNI_MbrZXiFp-C1VakX_uqJSQ2PnR9CTg; __eoi=ID=c8abc8c5ea545986:T=1774395249:RT=1774395249:S=AA-AfjaFMM2Ky2yeQAaef_1_QbrJ; _ga_BLJQXEKL0Q=GS2.1.s1774395250$o1$g1$t1774395258$j52$l0$h0; fname=cristiano_ronaldo_by_deexie_d88t0lv",
+      "host": "www2.lunapic.com",
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin"
+    }
+  },
+  {
+    "timestamp": 1774395258327,
+    "url": "https://www2.lunapic.com/editor/images/transback.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395259835,
+    "url": "https://js.ad-score.com/score.min.js?pid=1000942&tt=g#tid=27142&l1=296969&l2=DV360&l3=10263244&l4=5592199&l5=1&l6=1&l7=0&utid=735F06EE-521D-E6A7-7E72-9761C37D2B44&creative_type=display&adid=ftdiv10263244&pub_app=&pub_domain=https%3A%2F%2Fwww2.lunapic.com%2Feditor%2F&uid=&cb=967162.0910654572&pub_ts=1773732480&98420467",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://c6a35ad088735ad9643a75e80f443253.safeframe.googlesyndication.com/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395259837,
+    "url": "https://js.ad-score.com/score.min.js?pid=1000942&tt=g#tid=27142&l1=296969&l2=DV360&l3=10263244&l4=5541755&l5=1&l6=1&l7=0&utid=37608240-459D-B8F5-36CF-B2E84788B35A&creative_type=display&adid=ftdiv10263244&pub_app=&pub_domain=https%3A%2F%2Fwww2.lunapic.com%2Feditor%2F&uid=&cb=435770.8889553291&pub_ts=1773732480&470555690",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://c6a35ad088735ad9643a75e80f443253.safeframe.googlesyndication.com/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395259840,
+    "url": "https://js.ad-score.com/score.min.js?pid=1000942&tt=g#tid=27142&l1=296969&l2=DV360&l3=10263241&l4=5471249&l5=1&l6=1&l7=0&utid=101CCF5D-1206-45B2-CF5F-7D73F4F36AF9&creative_type=display&adid=ftdiv10263241&pub_app=&pub_domain=https%3A%2F%2Fwww2.lunapic.com%2Feditor%2F&uid=&cb=79290.25474238709&pub_ts=1773732480&272854503",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://c6a35ad088735ad9643a75e80f443253.safeframe.googlesyndication.com/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395262603,
+    "url": "https://www2.lunapic.com/editor/",
+    "method": "POST",
+    "headers": {
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryjfp8iAibcUDuckC4",
+      "origin": "https://www2.lunapic.com",
+      "referer": "https://www2.lunapic.com/editor/",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    },
+    "postData": "------WebKitFormBoundaryjfp8iAibcUDuckC4\r\nContent-Disposition: form-data; name=\"savenav\"\r\n\r\nLunaPic > <span itemprop=title><a itemprop=url href=?action=edit-menu>Edit</a></span> > Transparent Background\r\n------WebKitFormBoundaryjfp8iAibcUDuckC4\r\nContent-Disposition: form-data; name=\"fuzz\"\r\n\r\n8\r\n------WebKitFormBoundaryjfp8iAibcUDuckC4\r\nContent-Disposition: form-data; name=\"fill\"\r\n\r\narea\r\n------WebKitFormBoundaryjfp8iAibcUDuckC4\r\nContent-Disposition: form-data; name=\"action\"\r\n\r\ndo-trans\r\n------WebKitFormBoundaryjfp8iAibcUDuckC4\r\nContent-Disposition: form-data; name=\"x\"\r\n\r\n402\r\n------WebKitFormBoundaryjfp8iAibcUDuckC4\r\nContent-Disposition: form-data; name=\"y\"\r\n\r\n128\r\n------WebKitFormBoundaryjfp8iAibcUDuckC4--\r\n"
+  },
+  {
+    "timestamp": 1774395262911,
+    "url": "https://www2.lunapic.com/editor/images/unified.css",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395262914,
+    "url": "https://www2.lunapic.com/editor/images/lunapic-bw.png",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://www2.lunapic.com/editor/",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "timestamp": 1774395262915,
+    "url": "https://www2.lunapic.com/editor/images/chromebg.gif",
+    "method": "GET",
+    "headers": {
+      "referer": ""
+    }
+  }
+]

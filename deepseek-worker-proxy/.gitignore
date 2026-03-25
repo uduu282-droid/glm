@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+.wrangler/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Credential storage
+.deepseek/
+.qwen/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+*_test_results.json
+comprehensive_test_results.json
+service_continuity_report.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

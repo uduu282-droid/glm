@@ -1,0 +1,48 @@
+
+Worker APIs Test Report
+====================
+
+Test Date: 2025-12-22 19:13:25
+
+APIs Tested:
+----------
+
+1. Qwen AI API
+   Description: AI chat API using Qwen model
+   URL: https://qwen-ai.apis-bj-devs.workers.dev/?text=hello
+   Status: error
+   Status Code: 500
+   Response Time: 7.31s
+   Error: {"success":false,"error":"Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON"}
+
+2. Gemini API
+   Description: Google Gemini AI chat API
+   URL: https://gemini-1-5-flash.bjcoderx.workers.dev/?text=hello
+   Status: exception
+   Status Code: N/A
+   Response Time: 0.00s
+   Error: HTTPSConnectionPool(host='gemini-1-5-flash.bjcoderx.workers.dev', port=443): Max retries exceeded wi
+
+3. GPT-3.5 API
+   Description: OpenAI GPT-3.5 chat API
+   URL: https://gpt-3-5.apis-bj-devs.workers.dev/?prompt=hello
+   Status: success
+   Status Code: 200
+   Response Time: 0.93s
+   Response Preview: {'status': True, 'reply': 'Hey there! How’s your day going?', 'join': '@BJ_Devs on Telegram', 'Dev':
+
+4. SeaArt AI API
+   Description: AI image generation API
+   URL: https://seaart-ai.apis-bj-devs.workers.dev/?Prompt=a+cute+boy
+   Status: exception
+   Status Code: N/A
+   Response Time: 0.00s
+   Error: HTTPSConnectionPool(host='seaart-ai.apis-bj-devs.workers.dev', port=443): Read timed out. (read time
+
+
+Summary:
+-------
+Total APIs Tested: 4
+Successful Responses: 1/4
+
+Note: These are free API endpoints provided via Cloudflare Workers.

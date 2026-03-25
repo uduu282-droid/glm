@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-03-20T14:11:30.512Z",
+  "url": "https://fooocus-one-eight.vercel.app/apps/flux",
+  "summary": {
+    "totalEndpoints": 6,
+    "authTokensFound": 0,
+    "creditRequests": 1,
+    "generationCandidates": 4,
+    "cookiesCaptured": 6,
+    "localStorageItems": 0
+  },
+  "endpoints": [
+    "https://stat.re/api/event",
+    "https://www.google-analytics.com/g/collect",
+    "https://fooocus-one-eight.vercel.app/api/auth/guest-login",
+    "https://n.clarity.ms/collect",
+    "https://fooocus-one-eight.vercel.app/api/credits/balance",
+    "https://m.stripe.com/6"
+  ],
+  "authTokens": [],
+  "creditChecks": [
+    {
+      "url": "https://fooocus-one-eight.vercel.app/api/credits/balance",
+      "method": "GET",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "referer": "https://fooocus-one-eight.vercel.app/apps/flux",
+        "accept": "*/*"
+      }
+    }
+  ],
+  "generationRequests": [
+    {
+      "url": "https://stat.re/api/event",
+      "method": "POST",
+      "headers": {
+        "referer": "https://fooocus-one-eight.vercel.app/",
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "content-type": "text/plain",
+        "accept": "*/*",
+        "origin": "https://fooocus-one-eight.vercel.app"
+      },
+      "postData": "{\"n\":\"pageview\",\"v\":33,\"u\":\"https://fooocus-one-eight.vercel.app/apps/flux\",\"d\":\"fooocus.one\",\"r\":null}"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9RCJW17Y5Z&gtm=45je63i0h1v9178238578za200zd9178238578&_p=1774015883800&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=91949661.1774015884&ul=en-us&sr=2560x1440&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=103116026~103200004~115616985~115938466~115938468~116024733~117484252~118104772&sid=1774015883&sct=1&seg=0&dl=https%3A%2F%2Ffooocus-one-eight.vercel.app%2Fapps%2Fflux&dt=AI%20Image%20%26%20Video%20Generator%20-%20Create%2C%20Edit%2C%20Transform%20with%20AI%20%7C%20Fooocus.one&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2436",
+      "method": "POST",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "referer": "https://fooocus-one-eight.vercel.app/",
+        "accept": "*/*",
+        "origin": "https://fooocus-one-eight.vercel.app"
+      }
+    },
+    {
+      "url": "https://fooocus-one-eight.vercel.app/api/auth/guest-login",
+      "method": "POST",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "referer": "https://fooocus-one-eight.vercel.app/apps/flux",
+        "accept": "*/*",
+        "cookie": "_ga=GA1.1.91949661.1774015884; _ga_9RCJW17Y5Z=GS2.1.s1774015883$o1$g0$t1774015883$j60$l0$h0",
+        "origin": "https://fooocus-one-eight.vercel.app"
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9RCJW17Y5Z&gtm=45je63i0h1v9178238578za200zd9178238578&_p=1774015883800&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=91949661.1774015884&ul=en-us&sr=2560x1440&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=103116026~103200004~115616985~115938466~115938468~116024733~117484252~118104772&sid=1774015883&sct=1&seg=0&dl=https%3A%2F%2Ffooocus-one-eight.vercel.app%2Fapps%2Fflux&dt=AI%20Image%20%26%20Video%20Generator%20-%20Create%2C%20Edit%2C%20Transform%20with%20AI%20%7C%20Fooocus.one&en=scroll&epn.percent_scrolled=90&_et=5&tfd=7446",
+      "method": "POST",
+      "headers": {
+        "accept-language": "en-US,en;q=0.9",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "referer": "https://fooocus-one-eight.vercel.app/",
+        "accept": "*/*",
+        "origin": "https://fooocus-one-eight.vercel.app"
+      }
+    }
+  ],
+  "cookies": {
+    "_clsk": "1rnifcc%5E1774015886693%5E1%5E1%5En.clarity.ms%2Fcollect",
+    "_clck": "6dr5w3%5E2%5Eg4i%5E0%5E2270",
+    "_ga": "GA1.1.91949661.1774015884",
+    "_ga_9RCJW17Y5Z": "GS2.1.s1774015883$o1$g0$t1774015883$j60$l0$h0",
+    "__stripe_mid": "951f844d-4d16-4be6-84a6-0fbfe469d840f2ed7a",
+    "__stripe_sid": "fb8e5de2-9541-4681-81a6-794a5c525bcbf36bcb"
+  },
+  "localStorage": {},
+  "tokenPatterns": []
+}

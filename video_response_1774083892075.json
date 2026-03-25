@@ -1,0 +1,22 @@
+{
+  "status": 200,
+  "headers": {
+    "date": "Sat, 21 Mar 2026 09:04:50 GMT",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "cf-ray": "9dfbca9ce84466f6-AMS",
+    "cf-cache-status": "DYNAMIC",
+    "access-control-allow-origin": "https://aivideogenerator.me",
+    "server": "cloudflare",
+    "set-cookie": "JSESSIONID=9E56887CB3732E59F91F0AD4342B438D; Path=/; HttpOnly",
+    "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "access-control-allow-credentials": "true",
+    "access-control-expose-headers": "*",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RUNBLO1pfScMkV6hhsZLkzDMV9XR6wKGYV8kxLvhD4deJgj6%2FfstMARf35M1soOJyY5nmDbFBFxsA%2BH%2BYlQl5huZKC0DSA7h2VJVE83%2F%2FRjJVLJrSzDFGJEf0Rf9jcnt09vgtA%3D%3D\"}]}",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "data": "{\"code\":410003,\"message\":\"Server exception, The response type of the server is not supported by the client.\",\"data\":null}",
+  "timestamp": "2026-03-21T09:04:52.075Z"
+}
