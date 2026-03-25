@@ -1,0 +1,17 @@
+services:
+  # GLM AI Chat Web Service
+- type: web
+  name: glm-ai-chat
+  env: node
+  region: oregon
+  plan: free
+  branch: main
+  rootDir: .
+  buildCommand: npm install
+  startCommand: node server.js
+  envVars:
+    - key: NODE_ENV
+      value: production
+    - key: PORT
+      value: 10000
+  autoDeploy: true

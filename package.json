@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node glm-chat.js",
     "test": "node glm-chat.js --test",
-    "web": "npx http-server -p 3000"
+    "web": "npx http-server -p 3000",
+    "server": "node server.js",
+    "dev": "node --watch server.js"
   },
   "keywords": [
     "glm",
@@ -19,6 +21,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.18.2",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
