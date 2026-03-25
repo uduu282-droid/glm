@@ -1,17 +1,11 @@
 services:
-  # GLM AI Chat Web Service
+  # GLM-5 Chat Web Service (Python)
 - type: web
-  name: glm-ai-chat
-  env: node
+  name: glm-5-chat
+  env: python
   region: oregon
   plan: free
   branch: main
   rootDir: .
-  buildCommand: npm install
-  startCommand: node server.js
-  envVars:
-    - key: NODE_ENV
-      value: production
-    - key: PORT
-      value: 10000
-  autoDeploy: true
+  buildCommand: pip install -r requirements.txt
+  startCommand: python glm_server.py
