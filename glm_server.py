@@ -279,24 +279,23 @@ def chat():
         if not message:
             return jsonify({"error": "Message required"}), 400
         
+        # Always create a fresh session for stateless operation
+        # This handles Render's cold start behavior
         session = get_or_create_session(session_id)
         
-        if session.turn == 0:
-            # First message initializes chat - need second message to get response
-            session.start(message)
-            return jsonify({
-                "response": "Chat initialized. Send another message to continue.",
-                "turn": session.turn,
-                "chat_id": session.chat_id,
-                "info": "First message received. Continue the conversation."
-            })
-        else:
-            response = session.send(message)
-            return jsonify({
-                "response": response,
-                "turn": session.turn,
-                "chat_id": session.chat_id
-            })
+        # Start chat and send message in one go
+        session.start(message)
+        
+        # Get response by calling _complete directly
+        # Generate a unique message ID for this request
+        user_msg_id = _uid()
+        response = session._complete(message, user_msg_id, None)
+        
+        return jsonify({
+            "response": response,
+            "turn": session.turn,
+            "chat_id": session.chat_id
+        })
             
     except Exception as e:
         print(f"Error: {e}")
