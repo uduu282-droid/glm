@@ -161,7 +161,7 @@ class ChatSession:
     def send(self, message: str) -> str:
         if self.chat_id is None:
             self.start(message)
-            return ""
+            # Continue to complete the message instead of returning early
         
         user_msg_id = _uid()
         ts_s = _s()
