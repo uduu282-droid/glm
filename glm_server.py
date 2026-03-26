@@ -283,19 +283,24 @@ def chat():
         # This handles Render's cold start behavior
         session = get_or_create_session(session_id)
         
-        # Start chat and send message in one go
-        session.start(message)
-        
-        # Get response by calling _complete directly
-        # Generate a unique message ID for this request
-        user_msg_id = _uid()
-        response = session._complete(message, user_msg_id, None)
-        
-        return jsonify({
-            "response": response,
-            "turn": session.turn,
-            "chat_id": session.chat_id
-        })
+        if session.turn == 0:
+            # First message - start chat and get response
+            session.start(message)
+            user_msg_id = _uid()
+            response = session._complete(message, user_msg_id, None)
+            return jsonify({
+                "response": response,
+                "turn": session.turn,
+                "chat_id": session.chat_id
+            })
+        else:
+            # Subsequent messages - continue conversation
+            response = session.send(message)
+            return jsonify({
+                "response": response,
+                "turn": session.turn,
+                "chat_id": session.chat_id
+            })
             
     except Exception as e:
         print(f"Error: {e}")
