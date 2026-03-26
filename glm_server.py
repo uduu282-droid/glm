@@ -282,11 +282,13 @@ def chat():
         session = get_or_create_session(session_id)
         
         if session.turn == 0:
+            # First message - start chat and get response
             session.start(message)
+            response = session._complete(message, _uid(), None)
             return jsonify({
-                "response": "",
-                "turn": 1,
-                "info": "Chat started"
+                "response": response,
+                "turn": session.turn,
+                "chat_id": session.chat_id
             })
         else:
             response = session.send(message)
