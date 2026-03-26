@@ -1,0 +1,71 @@
+{
+  "cookies": [
+    {
+      "name": "cdn_sec_tc",
+      "value": "a3b5c99b17728895582645991ebadb7031307626943ef62f980360bddf",
+      "domain": "chat.z.ai",
+      "path": "/",
+      "expires": 1772893160.505173
+    },
+    {
+      "name": "acw_tc",
+      "value": "0a094e6517728895583018565e4ec8431b67a64b92d13335d1e30bdb29948d",
+      "domain": "chat.z.ai",
+      "path": "/",
+      "expires": 1772891360.50519
+    },
+    {
+      "name": "token",
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlMjYxODFlLTM2NTAtNGU5Yy1iMDkyLTQyNmExNWQ3OWZmOCIsImVtYWlsIjoiR3Vlc3QtMTc3Mjg4OTU1ODU4OUBndWVzdC5jb20ifQ.6R1jDzksKq06YlJ0oIMZGjsGMDXDXvGRgxsoZ1_KEn9hSPLCOTylE2lN9gBCbBCGtYJfWhH_mXO3i6f9WF-O2w",
+      "domain": "chat.z.ai",
+      "path": "/",
+      "expires": -1
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.571134615.1772889561",
+      "domain": ".z.ai",
+      "path": "/",
+      "expires": 1780665561
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.2099240554.1772889561",
+      "domain": ".z.ai",
+      "path": "/",
+      "expires": 1807449561.230956
+    },
+    {
+      "name": "ssxmod_itna",
+      "value": "1-QqfhBK0Ie0xmgD_xeFemq7QQMQDm1GPxBP01DpxYK0CzDLxn_qGdqurozwr55tQQjiYreD0BG0AqMD0HmmvDBKQDax7fr0KQABUe53bBOeviji3RX_QZ6t=wc61S9ZN5j1Wyb4I0O0C6UC7eDU4Gn_8Gx1DD8KxGGD0oDt4DIDAYDDxDW_eDLDYoDY4n5xGpQVCnbuCRTD0YDzqDg0BmQxi3DA4DjRmd0RWHqgjYD0LAmN_25DYpQPc0ONxqDAkDrwY_Qx0UaDBd4/UAQxDt0PXYWPPk6kIEow=FDtqD9UPnA07Ktapn5k9YWeTWnYeeqKxxCRD_ii7WrKi4CnNbGqKDqeqeb7zYi7birF4oS4oKeDGRGAjdQ45wYznMzO3sMkeYWkDSIxbG/BwqhqF75MA5VYYqxoq7oe04Mhr/GDqbiFiDD",
+      "domain": ".z.ai",
+      "path": "/",
+      "expires": 1772891362
+    },
+    {
+      "name": "ssxmod_itna2",
+      "value": "1-QqfhBK0Ie0xmgD_xeFemq7QQMQDm1GPxBP01DpxYK0CzDLxn_qGdqurozwr55tQQjiYreD0BG0AqwDDcA_wzKa3WAmBgqA0eY5jj3cv4D",
+      "domain": ".z.ai",
+      "path": "/",
+      "expires": 1772891362
+    },
+    {
+      "name": "_ga_Z8QTHYBHP3",
+      "value": "GS2.1.s1772889561$o1$g0$t1772889562$j59$l0$h0",
+      "domain": ".z.ai",
+      "path": "/",
+      "expires": 1807449562.578799
+    }
+  ],
+  "localStorage": {
+    "_arms_session": "786f79cc58b64c4fa00996471ff0a371-1-1772889561383-1772889561383",
+    "theme": "light",
+    "__00b204e9800998__": "3557668271a19cc873d7c1||1788441561027",
+    "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlMjYxODFlLTM2NTAtNGU5Yy1iMDkyLTQyNmExNWQ3OWZmOCIsImVtYWlsIjoiR3Vlc3QtMTc3Mjg4OTU1ODU4OUBndWVzdC5jb20ifQ.6R1jDzksKq06YlJ0oIMZGjsGMDXDXvGRgxsoZ1_KEn9hSPLCOTylE2lN9gBCbBCGtYJfWhH_mXO3i6f9WF-O2w",
+    "_arms_uid": "uid_xol9qcnuqftnkb8g",
+    "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"creationTimeMs\":1772889561222},\"expires\":1780665561222}}",
+    "locale": "en-US"
+  },
+  "url": "https://chat.z.ai/",
+  "timestamp": 1772889562603
+}

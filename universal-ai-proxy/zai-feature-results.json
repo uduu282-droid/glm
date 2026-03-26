@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Chats Page 1",
+    "url": "https://chat.z.ai/api/v1/chats/?page=1",
+    "method": "GET",
+    "status": 200,
+    "success": true,
+    "data": []
+  },
+  {
+    "name": "Chats Page 2",
+    "url": "https://chat.z.ai/api/v1/chats/?page=2",
+    "method": "GET",
+    "status": 200,
+    "success": true,
+    "data": []
+  },
+  {
+    "name": "Chats Page 3",
+    "url": "https://chat.z.ai/api/v1/chats/?page=3",
+    "method": "GET",
+    "status": 200,
+    "success": true,
+    "data": []
+  },
+  {
+    "name": "API Base",
+    "url": "https://chat.z.ai/api/v1/",
+    "method": "GET",
+    "status": 404,
+    "success": false
+  }
+]
