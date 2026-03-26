@@ -346,7 +346,7 @@ class ChatSession:
 
 def _boot() -> tuple[requests.Session, dict]:
     """Seed cookies and obtain guest JWT."""
-    session = requests.Session(impersonate="firefox")
+    session = requests.Session(impersonate="chrome120")
 
     print("[1] Seeding cookies …")
     r = session.get(
