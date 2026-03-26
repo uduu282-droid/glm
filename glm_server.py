@@ -284,10 +284,9 @@ def chat():
         session = get_or_create_session(session_id)
         
         if session.turn == 0:
-            # First message - start chat and get response
-            session.start(message)
-            user_msg_id = _uid()
-            response = session._complete(message, user_msg_id, None)
+            # First message - use send() which handles history properly
+            # send() will call start() internally since chat_id is None
+            response = session.send(message)
             return jsonify({
                 "response": response,
                 "turn": session.turn,
