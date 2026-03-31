@@ -8,4 +8,8 @@ services:
   branch: main
   rootDir: .
   buildCommand: pip install -r requirements.txt
-  startCommand: python glm_server.py
+  startCommand: python glm_server.py --host 0.0.0.0 --port $PORT
+  healthCheckPath: /health
+  envVars:
+  - key: PORT
+    value: 10000

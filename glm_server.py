@@ -1,321 +1,515 @@
 """
-GLM-5 Chat Server - Deployed on Render
-Based on the reverse-engineered glm.py implementation
+glm_server.py  –  OpenAI-compatible local API server for z.ai / GLM-5
+======================================================================
+Exposes:
+  GET  /v1/models
+  POST /v1/chat/completions   (streaming & non-streaming)
+  POST /v1/session/reset      (force-reset the GLM chat)
+  GET  /health
+
+Usage:
+  pip install fastapi uvicorn curl_cffi
+  python glm_server.py               # listens on http://localhost:8000
+  python glm_server.py --port 11434  # custom port
+  python glm_server.py --eager-boot  # pre-boot session on startup
+
+Point any OpenAI client at:
+  base_url = "http://localhost:8000/v1"
+  api_key  = "glm-local"   # accepted but ignored
+
+Design notes:
+  - One ChatSession is booted once and reused for ALL requests.
+    (No more [1] Seeding cookies … on every turn.)
+  - Only the LAST user message is forwarded each turn; Cline/Cursor send
+    the full history in messages[] but GLM already has session memory.
+  - Streaming pushes every answer-phase token to the client in real-time
+    via loop.call_soon_threadsafe → asyncio.Queue → SSE.
+  - POST /v1/session/reset lets you start a fresh GLM chat without
+    restarting the server.
 """
 
-import os
-import sys
-from flask import Flask, request, jsonify, send_from_directory
-from flask_cors import CORS
-import base64
-import datetime
-import hashlib
-import hmac as _hmac
+from __future__ import annotations
+
+import argparse
+import asyncio
 import json
-import math
-import re
+import threading
 import time
 import uuid
+from typing import Any, Union
 from urllib.parse import urlencode
-from curl_cffi import requests
+
+import uvicorn
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse, StreamingResponse
+from pydantic import BaseModel, ConfigDict, field_validator
+
+# ── GLM internals ─────────────────────────────────────────────────────────────
+from glm import (  # type: ignore
+    BH, FE, UA,
+    ChatSession,
+    _boot, _ms, _s, _uid, _ist, _utcs, _iso,
+    sign,
+)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Flask App Setup
+# StreamingChatSession
 # ─────────────────────────────────────────────────────────────────────────────
 
-app = Flask(__name__, static_folder='.')
-CORS(app)
+class StreamingChatSession(ChatSession):
+    """
+    Subclass of ChatSession that calls self.on_token(delta) for every
+    answer-phase token as it arrives from the GLM SSE stream.
+    """
 
-PORT = int(os.environ.get('PORT', 10000))
+    on_token: Any = None  # callable(str) | None – set before start()/send()
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Secret extraction (from glm.py)
-# ─────────────────────────────────────────────────────────────────────────────
-
-_OB = [
-    "mSorW6/dR1/dVca","W6W0oN3dSW","zCksWP9c","mmk7WPZcUYJcRaODWPZcNCo0W6C",
-    "cdO8BZOZWODyWOVdV17dLq","W4raWP9BW7LqDSkEW6tcISkmz8od","W67cPgJdLW",
-    "lmk6uSojW5dcOxui","aCooWOpdRvygdsm/x0S","W7jBWOzNW5X8nmke","uY3cGxtcKmoZsq",
-    "WOiZuCkCjfz6WQtdVxTgW4/dNCohkq","F8kkWOJdVSkjW6XyoG","WPxcHIBcNCoZeq",
-    "v8oLz8ksW6/dJxafimkAW6iLW7ddQCoZW7RcRa","WQSgzXa","W6iYlCoGu8okBxpdM8kzWRub",
-    "W75fpKtcJxjJWQtdPrxcHmk3ka","CmoMW4O","WR4CAu/cJNa","cv9fw09UWQ8",
-    "DSoZabNdJmo+hSoszs4","WPJdGCoLCa5jEd0oF8ki","W4HMgSocFXHmWRddNw1LW4C",
-    "WQ5REmk0pSkDugy","hehdPGq","FSkmWPZdVSkEW7a","pSk3W5RdNmkmW6vAWRO",
-    "WPuDW4ynWR4GkSkmW6lcJa","jmkAWO/dJx5N","WOq5CCkhoKLXWQC","cMhdN8oIvSky",
-    "bYWoW5BcRCkGW5Gu","W4pcOCodWQBdTmkKeq8jvmkGW6q","u8oad18","WPddN8o7CbjL",
-    "WOxdH3RdNffy","nCkDWPJdJN8","ymkoWPBdJ8kuW6TEieJcTdSOW4vp","W5BdSmkVhSoHsmo+bq",
-    "zCoOWOldOq","WRaHz8ohprWV","vmoLzCkVW6xdHuuwn8krW6S4W7FdU8oPW7a","AudcMt4rnSoY",
-    "haRdTCoKia","CCoLa8kBWPtdVYGcbf/dGmowzq","pSk3W5NcVetdJSkQqLddVxJdLaC",
-    "EXjAW6pdPG","heBdTujZW6e","g8omWOtdQ0e","CNO7crpcMCoys8o6","lCkBWO/dG25RW7dcMG",
-    "W5hcVmo/WR/dHCkLhHO","Dx4SqYBcUmo/BSkGWOCeWQ4TdWzBtZzOqai0EmoXitOCBxGhW5G",
-    "WOldISoQzX9P","W4jKfmofEHv3WOpdH2H6W44","pSk8WRJdOCopW73cOLFcTmoXmW",
-    "uLldJb7cRmo0y8kKWQ3dPq","WQP3D29m","smoFnwtcKb/dM8kR","dCooWPNdUK0RgW",
-    "WPVdOCk0geKjdSoR","W7K1mJOaW7WaWQ0dWPtdMCkMwW","p3mHl34H","W6hcPxxdI1DgW7O",
-    "nmkYWP7cUIRcRgiRWQlcImovW5FdPW","W4xdQ3G0WQX1WRyJ","bcf6W43dV8ko","WOeBW44wWQq",
-    "y8oMWOxdQahcMmo/qW","hYDHW4/dSSku",
-]
-
-def _rc4(ct: str, key: str) -> str:
-    sc = ct.swapcase()
-    sc += "=" * ((4 - len(sc) % 4) % 4)
-    v = base64.b64decode(sc).decode("utf-8", errors="ignore")
-    s = list(range(256)); j = 0
-    for i in range(256):
-        j = (j + s[i] + ord(key[i % len(key)])) % 256
-        s[i], s[j] = s[j], s[i]
-    out = ""; i = j = 0
-    for ch in v:
-        i = (i+1)%256; j = (j+s[i])%256; s[i],s[j]=s[j],s[i]
-        out += chr(ord(ch) ^ s[(s[i]+s[j])%256])
-    return out
-
-def _ji(s) -> float:
-    m = re.match(r"^\s*([-+]?\d+)", str(s)); return int(m.group(1)) if m else float("nan")
-
-def _get_secret() -> str:
-    for sh in range(len(_OB)):
-        arr = _OB[sh:] + _OB[:sh]
-        def K(n, k, a=arr):
-            try:   return _ji(_rc4(a[n-321], k))
-            except: return float("nan")
-        try:
-            v = (-K(382,"e0Pb")/1 + -K(384,"rNOY")/2*(-K(354,"j5ih")/3)
-                 +-K(330,"$VZ*")/4*(K(368,"X3X9")/5) + K(373,"xFg0")/6
-                 + K(343,"xSk8")/7*(K(337,"rNOY")/8) +-K(332,"MS8V")/9+K(344,"!l!0")/10)
-            if int(v) == 251693:
-                return _rc4(arr[380-321], "PPoK")
-        except: pass
-    raise RuntimeError("Secret extraction failed")
-
-_SECRET = _get_secret()
-
-def sign(ts_ms: int, prompt: str, user_id: str, request_id: str) -> str:
-    sp  = f"requestId,{request_id},timestamp,{ts_ms},user_id,{user_id}"
-    b64 = base64.b64encode(prompt.encode()).decode()
-    d   = f"{sp}|{b64}|{ts_ms}"
-    iv  = str(math.floor(ts_ms / 300_000))
-    dk  = _hmac.new(_SECRET.encode(), iv.encode(), hashlib.sha256).hexdigest()
-    return _hmac.new(dk.encode(), d.encode(), hashlib.sha256).hexdigest()
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Helpers
-# ─────────────────────────────────────────────────────────────────────────────
-
-_UTC = datetime.timezone.utc
-_IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
-
-def _ms()  -> int:  return int(time.time() * 1000)
-def _s()   -> int:  return int(time.time())
-def _uid() -> str:  return str(uuid.uuid4())
-def _ist() -> datetime.datetime: return datetime.datetime.now(_IST)
-
-FE  = "prod-fe-1.0.271"
-UA  = "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
-BH  = {
-    "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br", "Connection": "keep-alive",
-}
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Chat Session Class
-# ─────────────────────────────────────────────────────────────────────────────
-
-class ChatSession:
-    def __init__(self, session: requests.Session, auth: dict):
-        self.http         = session
-        self.auth         = auth
-        self.chat_id: str | None  = None
-        self.last_comp_id: str | None = None
-        self.history_messages: dict   = {}
-        self.history_current_id: str | None = None
-        self.turn: int = 0
-
-    def start(self, first_message: str) -> None:
-        ts_s = _s(); ts_ms = _ms()
-        first_msg_id = _uid()
-
-        self.history_messages = {
-            first_msg_id: {
-                "id": first_msg_id, "parentId": None, "childrenIds": [],
-                "role": "user", "content": first_message,
-                "timestamp": ts_s, "models": ["glm-5"],
-            }
-        }
-        self.history_current_id = first_msg_id
-
-        payload = {"chat": {
-            "id": "", "title": "New Chat", "models": ["glm-5"], "params": {},
-            "history": {
-                "messages": self.history_messages,
-                "currentId": self.history_current_id,
-            },
-            "tags": [], "flags": [],
-            "features": [{"type": "tool_selector", "server": "tool_selector_h", "status": "hidden"}],
-            "mcp_servers": [], "enable_thinking": True, "auto_web_search": False,
-            "message_version": 1, "extra": {}, "timestamp": ts_ms,
-        }}
-
-        resp = self.http.post(
-            "https://chat.z.ai/api/v1/chats/new",
-            headers={**BH, "Accept": "application/json", "Content-Type": "application/json",
-                     "Authorization": f"Bearer {self.auth['token']}", "X-FE-Version": FE,
-                     "Referer": "https://chat.z.ai/", "Origin": "https://chat.z.ai"},
-            json=payload, timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        self.chat_id = data["id"]
-
-    def send(self, message: str) -> str:
-        if self.chat_id is None:
-            self.start(message)
-            return ""
-        
-        user_msg_id = _uid()
-        ts_s = _s()
-
-        prev_id = self.history_current_id
-        self.history_messages[user_msg_id] = {
-            "id": user_msg_id, "parentId": prev_id, "childrenIds": [],
-            "role": "user", "content": message,
-            "timestamp": ts_s, "models": ["glm-5"],
-        }
-        if prev_id:
-            self.history_messages[prev_id]["childrenIds"].append(user_msg_id)
-        self.history_current_id = user_msg_id
-
-        return self._complete(message, user_msg_id, self.last_comp_id)
-
-    def _complete(self, message: str, user_msg_id: str, parent_comp_id: str | None) -> str:
+    def _complete(self, message: str, user_msg_id: str, parent_comp_id) -> str:
         self.turn += 1
         ts_ms      = _ms()
         request_id = _uid()
         comp_id    = _uid()
 
         sig = sign(ts_ms, message, self.auth["id"], request_id)
+        ist = _ist()
 
         params = {
             "timestamp": str(ts_ms), "requestId": request_id,
             "user_id": self.auth["id"], "version": "1.0.0", "platform": "web",
             "token": self.auth["token"], "user_agent": UA,
-            "language": "en-US", "timezone": "Asia/Kolkata",
+            "language": "en-US", "languages": "en-US,en", "timezone": "Asia/Kolkata",
+            "cookie_enabled": "true", "screen_width": "1600", "screen_height": "900",
+            "screen_resolution": "1600x900", "viewport_height": "794",
+            "viewport_width": "713", "viewport_size": "713x794",
+            "color_depth": "24", "pixel_ratio": "1.2",
+            "current_url": f"https://chat.z.ai/c/{self.chat_id}",
+            "pathname": f"/c/{self.chat_id}", "search": "", "hash": "",
+            "host": "chat.z.ai", "hostname": "chat.z.ai", "protocol": "https:",
+            "referrer": "",
+            "title": "Z.ai - Free AI Chatbot & Agent powered by GLM-5 & GLM-4.7",
+            "timezone_offset": "-330", "local_time": _iso(), "utc_time": _utcs(),
+            "is_mobile": "false", "is_touch": "false", "max_touch_points": "0",
+            "browser_name": "Firefox", "os_name": "Linux",
             "signature_timestamp": str(ts_ms),
         }
 
-        ist = _ist()
         payload = {
-            "stream": False, "model": "glm-5",
+            "stream": True, "model": "glm-5",
             "messages": [{"role": "user", "content": message}],
             "signature_prompt": message,
-            "chat_id": self.chat_id,
-            "id": comp_id,
-            "current_user_message_id": user_msg_id,
+            "params": {}, "extra": {},
+            "features": {
+                "image_generation": False, "web_search": False,
+                "auto_web_search": True, "preview_mode": True,
+                "flags": [], "enable_thinking": True,
+            },
+            "variables": {
+                "{{USER_NAME}}":        self.auth["name"],
+                "{{USER_LOCATION}}":    "Unknown",
+                "{{CURRENT_DATETIME}}": ist.strftime("%Y-%m-%d %H:%M:%S"),
+                "{{CURRENT_DATE}}":     ist.strftime("%Y-%m-%d"),
+                "{{CURRENT_TIME}}":     ist.strftime("%H:%M:%S"),
+                "{{CURRENT_WEEKDAY}}":  ist.strftime("%A"),
+                "{{CURRENT_TIMEZONE}}": "Asia/Kolkata",
+                "{{USER_LANGUAGE}}":    "en-US",
+            },
+            "mcp_servers": ["advanced-search"],
+            "chat_id":                        self.chat_id,
+            "id":                             comp_id,
+            "current_user_message_id":        user_msg_id,
             "current_user_message_parent_id": parent_comp_id,
             "background_tasks": {"title_generation": True, "tags_generation": True},
         }
 
-        url = "https://chat.z.ai/api/v2/chat/completions?" + urlencode(params)
+        url     = "https://chat.z.ai/api/v2/chat/completions?" + urlencode(params)
         headers = {
             **BH,
-            "Accept": "application/json", "Content-Type": "application/json",
+            "Accept": "text/event-stream", "Content-Type": "application/json",
             "Authorization": f"Bearer {self.auth['token']}",
             "X-FE-Version": FE, "X-Signature": sig,
+            "Referer": f"https://chat.z.ai/c/{self.chat_id}",
+            "Origin": "https://chat.z.ai", "Cache-Control": "no-cache",
         }
 
-        resp = self.http.post(url, headers=headers, json=payload, timeout=120)
-        resp.raise_for_status()
-        data = resp.json()
-        
-        # Extract response from streaming format
-        answer = ""
-        if "choices" in data and len(data["choices"]) > 0:
-            answer = data["choices"][0].get("message", {}).get("content", "")
-        
-        self.last_comp_id = comp_id
-        return answer
+        buf      = [""]
+        phase    = [None]
+        answer   = []
+        sse_err  = [None]
+        _sink    = self.on_token  # capture once so closure is safe
+
+        def _cb(chunk: bytes) -> None:
+            buf[0] += chunk.decode("utf-8", errors="replace")
+            while "\n" in buf[0]:
+                line, buf[0] = buf[0].split("\n", 1)
+                line = line.rstrip("\r").strip()
+                if not line or not line.startswith("data:"):
+                    continue
+                js = line[5:].strip()
+                if not js or js == "[DONE]":
+                    continue
+                try:
+                    ev = json.loads(js)
+                except json.JSONDecodeError:
+                    continue
+                if ev.get("type") != "chat:completion":
+                    continue
+
+                data  = ev.get("data", {})
+                ph    = data.get("phase", "")
+                delta = data.get("delta_content", "")
+
+                if "error" in data:
+                    sse_err[0] = data["error"]
+                    return
+
+                if ph != phase[0]:
+                    if ph == "thinking":
+                        print("\n\033[90m  [thinking]\033[0m ", end="", flush=True)
+                    elif ph == "answer":
+                        print("\n\033[92m  GLM-5 ›\033[0m ", end="", flush=True)
+                    elif ph == "other":
+                        u = data.get("usage", {})
+                        print(f"\n\033[2m  [{u.get('total_tokens','?')} tokens]\033[0m",
+                              flush=True)
+                    elif ph == "done":
+                        print()
+                    phase[0] = ph
+
+                if delta:
+                    print(delta, end="", flush=True)
+                    if ph == "thinking":
+                        pass   # don't stream thinking tokens to client
+                    else:
+                        answer.append(delta)
+                        # ── real-time token push ──────────────────────────
+                        if _sink is not None:
+                            try:
+                                _sink(delta)
+                            except Exception:
+                                pass
+
+        resp = self.http.post(
+            url, headers=headers, json=payload,
+            timeout=120, content_callback=_cb,
+        )
+        if buf[0].strip():
+            _cb(b"\n")
+
+        if not resp.ok:
+            raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:300]}")
+        if sse_err[0]:
+            raise RuntimeError(f"GLM error: {sse_err[0]}")
+
+        full_answer = "".join(answer)
+
+        # persist answer node
+        asst_id = _uid()
+        self.history_messages[asst_id] = {
+            "id": asst_id, "parentId": user_msg_id, "childrenIds": [],
+            "role": "assistant", "content": full_answer,
+            "timestamp": _s(), "models": ["glm-5"],
+        }
+        self.history_messages[user_msg_id]["childrenIds"].append(asst_id)
+        self.history_current_id = asst_id
+        self.last_comp_id       = comp_id
+
+        return full_answer
+
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Bootstrap
+# Persistent session  –  one boot, reused forever
 # ─────────────────────────────────────────────────────────────────────────────
 
-_sessions = {}
+_session_lock = threading.Lock()
+_glm_chat: StreamingChatSession | None = None
+_request_lock = threading.Lock()   # serialise concurrent requests
 
-def _boot() -> tuple[requests.Session, dict]:
-    session = requests.Session(impersonate="firefox")
-    
-    r = session.get("https://chat.z.ai", headers={**BH}, timeout=30)
-    
-    r = session.get(
-        "https://chat.z.ai/api/v1/auths",
-        headers={**BH, "Accept": "application/json"},
-        timeout=30,
-    )
-    r.raise_for_status()
-    auth = r.json()
-    return session, auth
 
-def get_or_create_session(session_id: str):
-    if session_id not in _sessions:
-        session, auth = _boot()
-        _sessions[session_id] = ChatSession(session, auth)
-    return _sessions[session_id]
+def _get_chat() -> StreamingChatSession:
+    global _glm_chat
+    if _glm_chat is None:
+        with _session_lock:
+            if _glm_chat is None:
+                print("[boot] Seeding cookies and authenticating …", flush=True)
+                http, auth = _boot()
+                _glm_chat = StreamingChatSession(http, auth)
+                print(f"[boot] Ready  guest={auth['email']}", flush=True)
+    return _glm_chat
+
+
+def _reset_chat() -> None:
+    global _glm_chat
+    with _session_lock:
+        _glm_chat = None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FastAPI app
+# ─────────────────────────────────────────────────────────────────────────────
+
+app = FastAPI(title="GLM-5 OpenAI-compatible proxy", version="2.0.0")
+app.add_middleware(CORSMiddleware, allow_origins=["*"],
+                   allow_methods=["*"], allow_headers=["*"])
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Pydantic models
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _coerce(v: Any) -> str:
+    if v is None:          return ""
+    if isinstance(v, str): return v
+    if isinstance(v, list):
+        return "".join(
+            p.get("text", "") if isinstance(p, dict) and p.get("type") == "text"
+            else (p if isinstance(p, str) else "")
+            for p in v
+        )
+    return str(v)
+
+
+class Message(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    role: str
+    content: Any = ""
+
+    @field_validator("content", mode="before")
+    @classmethod
+    def _norm(cls, v): return _coerce(v)
+
+
+class ChatRequest(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    model:                 str             = "glm-5"
+    messages:              list[Message]
+    stream:                bool            = False
+    temperature:           Union[float, None] = None
+    max_tokens:            Union[int,   None] = None
+    max_completion_tokens: Union[int,   None] = None
+    top_p:                 Union[float, None] = None
+    frequency_penalty:     Union[float, None] = None
+    presence_penalty:      Union[float, None] = None
+    stop:                  Union[str, list, None] = None
+    n:                     Union[int,   None] = None
+    user:                  Union[str,   None] = None
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Message extraction
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _last_user_msg(messages: list[Message], is_first: bool) -> str:
+    """
+    GLM manages all history server-side via chat_id + parent-ID chain:
+
+        Turn N payload carries:
+          'id'                             = new UUID (becomes next turn's parent)
+          'current_user_message_id'        = new UUID for this user node
+          'current_user_message_parent_id' = previous turn's 'id'
+
+    So we NEVER replay prior turns from messages[]. Cline/Cursor include the
+    full conversation history on every request; we discard everything except
+    the LAST user message. System prompt is injected once on turn 1 only.
+
+    Turn 1 : system_prompt + last_user_message  ->  chat.start()
+    Turn N : last_user_message only             ->  chat.send()
+    """
+    system    = ""
+    last_user = ""
+
+    for m in messages:
+        if m.role == "system":
+            system = m.content.strip()   # keep last system msg seen
+        elif m.role == "user":
+            last_user = m.content        # keep overwriting -> ends up as last
+
+    # System prompt prepended on turn 1 only; silently dropped after
+    if is_first and system and last_user:
+        return f"{system}\n\n{last_user}"
+
+    return last_user
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OpenAI response helpers
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _cid():  return "chatcmpl-" + uuid.uuid4().hex
+
+def _chunk(cid, model, delta, finish=None):
+    return "data: " + json.dumps({
+        "id": cid, "object": "chat.completion.chunk",
+        "created": int(time.time()), "model": model,
+        "choices": [{"index": 0, "delta": delta, "finish_reason": finish}],
+    }) + "\n\n"
+
+def _response(cid, model, content):
+    return {
+        "id": cid, "object": "chat.completion",
+        "created": int(time.time()), "model": model,
+        "choices": [{"index": 0,
+                     "message": {"role": "assistant", "content": content},
+                     "finish_reason": "stop"}],
+        "usage": {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0},
+    }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Core sync send  (always runs inside a thread)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _sync_send(messages: list[Message], token_sink=None) -> str:
+    with _request_lock:          # one GLM request at a time
+        chat     = _get_chat()
+        is_first = chat.turn == 0
+        text     = _last_user_msg(messages, is_first)
+
+        if not text:
+            raise ValueError("No user message found in messages[]")
+
+        chat.on_token = token_sink
+        try:
+            if is_first:
+                chat.start(text)
+                node = chat.history_messages.get(chat.history_current_id, {})
+                return node.get("content", "")
+            else:
+                return chat.send(text)
+        except Exception:
+            _reset_chat()   # start fresh after any error
+            raise
+        finally:
+            chat.on_token = None
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Routes
 # ─────────────────────────────────────────────────────────────────────────────
 
-@app.route('/')
-def index():
-    return send_from_directory('.', 'index.html')
+@app.get("/v1/models")
+async def list_models():
+    return {"object": "list", "data": [{
+        "id": "glm-5", "object": "model", "created": 1700000000,
+        "owned_by": "zhipuai", "permission": [], "root": "glm-5", "parent": None,
+    }]}
 
-@app.route('/health')
-def health():
-    return jsonify({
-        "status": "ok",
-        "service": "GLM-5 Chat",
-        "model": "glm-5",
-        "timestamp": _iso()
-    })
 
-@app.route('/api/chat', methods=['POST'])
-def chat():
+@app.post("/v1/chat/completions")
+async def chat_completions(req: ChatRequest):
+    if not req.messages:
+        raise HTTPException(400, "messages array is empty")
+
+    cid   = _cid()
+    model = req.model or "glm-5"
+    loop  = asyncio.get_event_loop()
+
+    # ── streaming ─────────────────────────────────────────────────────────────
+    if req.stream:
+        queue: asyncio.Queue[str | None] = asyncio.Queue()
+
+        def _sink(delta: str):
+            loop.call_soon_threadsafe(queue.put_nowait, delta)
+
+        def _worker():
+            try:
+                _sync_send(req.messages, token_sink=_sink)
+            except Exception as exc:
+                loop.call_soon_threadsafe(queue.put_nowait, f"\n\n[ERROR] {exc}")
+            finally:
+                loop.call_soon_threadsafe(queue.put_nowait, None)
+
+        threading.Thread(target=_worker, daemon=True).start()
+
+        async def _sse():
+            yield _chunk(cid, model, {"role": "assistant", "content": ""})
+            while True:
+                tok = await queue.get()
+                if tok is None:
+                    break
+                yield _chunk(cid, model, {"content": tok})
+            yield _chunk(cid, model, {}, finish="stop")
+            yield "data: [DONE]\n\n"
+
+        return StreamingResponse(_sse(), media_type="text/event-stream",
+                                 headers={"Cache-Control": "no-cache",
+                                          "X-Accel-Buffering": "no"})
+
+    # ── non-streaming ─────────────────────────────────────────────────────────
     try:
-        data = request.json
-        message = data.get('message', '')
-        session_id = data.get('session_id', 'default')
-        
-        if not message:
-            return jsonify({"error": "Message required"}), 400
-        
-        session = get_or_create_session(session_id)
-        
-        if session.turn == 0:
-            session.start(message)
-            return jsonify({
-                "response": "",
-                "turn": 1,
-                "info": "Chat started"
-            })
-        else:
-            response = session.send(message)
-            return jsonify({
-                "response": response,
-                "turn": session.turn,
-                "chat_id": session.chat_id
-            })
-            
-    except Exception as e:
-        print(f"Error: {e}")
-        return jsonify({
-            "error": str(e),
-            "details": repr(e)
-        }), 500
+        answer = await loop.run_in_executor(None, lambda: _sync_send(req.messages))
+    except Exception as exc:
+        raise HTTPException(500, str(exc))
 
-def _iso() -> str:
-    return datetime.datetime.now(_UTC).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    return JSONResponse(_response(cid, model, answer))
 
-if __name__ == '__main__':
-    print(f"🚀 GLM-5 Chat Server starting on port {PORT}...")
-    print(f"📱 Web interface: http://localhost:{PORT}")
-    print(f"💚 Health: http://localhost:{PORT}/health")
-    app.run(host='0.0.0.0', port=PORT)
+
+@app.get("/health")
+async def health():
+    c = _glm_chat
+    return {"status": "ok",
+            "service": "GLM-5 Chat",
+            "session": "active" if c else "not_booted",
+            "turns": c.turn if c else 0,
+            "chat_id": c.chat_id if c else None,
+            "timestamp": time.time()}
+
+
+@app.post("/health")
+async def health_post():
+    """POST endpoint for uptime bots that use POST instead of GET"""
+    c = _glm_chat
+    return {"status": "ok",
+            "service": "GLM-5 Chat",
+            "session": "active" if c else "not_booted",
+            "turns": c.turn if c else 0,
+            "chat_id": c.chat_id if c else None,
+            "timestamp": time.time()}
+
+
+@app.post("/v1/session/reset")
+async def reset_session():
+    """Start a fresh GLM chat without restarting the server."""
+    _reset_chat()
+    return {"status": "reset",
+            "message": "Session cleared – next request boots a fresh chat."}
+
+
+@app.post("/v1/debug")
+async def debug_echo(request: Request):
+    """Echo the raw request body to diagnose 422 errors."""
+    body = await request.body()
+    try:    parsed = json.loads(body)
+    except: parsed = body.decode(errors="replace")
+    return {"raw": parsed}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Entry point
+# ─────────────────────────────────────────────────────────────────────────────
+
+if __name__ == "__main__":
+    import os
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
+    parser.add_argument("--eager-boot", action="store_true",
+                        help="Boot GLM session immediately on startup")
+    args = parser.parse_args()
+
+    if args.eager_boot:
+        print("[startup] Pre-booting GLM session …")
+        _get_chat()
+
+    print(f"""
+╔══════════════════════════════════════════════════════╗
+║      GLM-5  ·  OpenAI-compatible proxy  v2           ║
+╠══════════════════════════════════════════════════════╣
+║  Base URL  :  http://{args.host}:{args.port}/v1          ║
+║  Models    :  GET  /v1/models                        ║
+║  Chat      :  POST /v1/chat/completions              ║
+║  Reset     :  POST /v1/session/reset                 ║
+║  Health    :  GET/POST /health                       ║
+╚══════════════════════════════════════════════════════╝
+
+  OPENAI_API_BASE = http://{args.host}:{args.port}/v1
+  OPENAI_API_KEY  = glm-local
+""")
+
+    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
