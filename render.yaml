@@ -1,17 +1,14 @@
 services:
-  # GLM-5 Chat Web Service (Python)
+  # GLM-5 Chat Web Service (Docker)
 - type: web
   name: glm-5-chat
-  runtime: python
+  runtime: docker
   region: oregon
   plan: free
   branch: main
   rootDir: .
-  buildCommand: pip install --upgrade pip && pip install -r requirements.txt
-  startCommand: python glm_server.py --host 0.0.0.0 --port $PORT
+  dockerfilePath: ./Dockerfile
   healthCheckPath: /health
   envVars:
   - key: PORT
     value: 10000
-  - key: PYTHON_VERSION
-    value: 3.11.9
