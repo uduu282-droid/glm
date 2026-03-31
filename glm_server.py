@@ -491,7 +491,7 @@ if __name__ == "__main__":
     import os
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument("--host", default=os.environ.get("HOST", "0.0.0.0"))
     parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
     parser.add_argument("--eager-boot", action="store_true",
                         help="Boot GLM session immediately on startup")
