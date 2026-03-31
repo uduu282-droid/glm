@@ -6,9 +6,6 @@ services:
   region: oregon
   plan: free
   branch: main
-  rootDir: .
   dockerfilePath: ./Dockerfile
+  dockerContext: .
   healthCheckPath: /health
-  envVars:
-  - key: PORT
-    value: 10000
