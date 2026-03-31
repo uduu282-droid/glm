@@ -10,7 +10,7 @@ import time
 import uuid
 from urllib.parse import urlencode
 
-from curl_cffi import requests
+import requests
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Secret extraction
@@ -332,8 +332,13 @@ class ChatSession:
 
         resp = self.http.post(
             url, headers=headers, json=payload,
-            timeout=120, content_callback=_cb,
+            timeout=120, stream=True
         )
+
+        # Process streaming response
+        for chunk in resp.iter_content(chunk_size=None):
+            if chunk:
+                _cb(chunk)
 
         # flush any tail without trailing newline
         if buf[0].strip():
@@ -370,12 +375,7 @@ class ChatSession:
 
 def _boot() -> tuple[requests.Session, dict]:
     """Seed cookies and obtain guest JWT."""
-    try:
-        session = requests.Session(impersonate="firefox")
-    except Exception as e:
-        print(f"[!] Browser impersonation not available: {e}")
-        print("[!] Using regular session with Firefox headers")
-        session = requests.Session()
+    session = requests.Session()
 
     print("[1] Seeding cookies …")
     r = session.get(
