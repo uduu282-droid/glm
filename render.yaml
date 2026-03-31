@@ -2,7 +2,7 @@ services:
   # GLM-5 Chat Web Service (Python)
 - type: web
   name: glm-5-chat
-  env: python
+  runtime: python
   region: oregon
   plan: free
   branch: main
@@ -13,3 +13,5 @@ services:
   envVars:
   - key: PORT
     value: 10000
+  - key: PYTHON_VERSION
+    value: 3.11.9
