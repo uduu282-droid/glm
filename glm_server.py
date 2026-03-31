@@ -191,8 +191,14 @@ class StreamingChatSession(ChatSession):
 
         resp = self.http.post(
             url, headers=headers, json=payload,
-            timeout=120, content_callback=_cb,
+            timeout=120, stream=True
         )
+        
+        # Process streaming response
+        for chunk in resp.iter_content(chunk_size=None):
+            if chunk:
+                _cb(chunk)
+        
         if buf[0].strip():
             _cb(b"\n")
 
