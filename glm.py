@@ -335,10 +335,10 @@ class ChatSession:
             timeout=120, stream=True
         )
 
-        # Process streaming response
-        for chunk in resp.iter_content(chunk_size=None):
-            if chunk:
-                _cb(chunk)
+        # Process streaming response line by line for SSE
+        for line in resp.iter_lines():
+            if line:
+                _cb(line + b'\n')
 
         # flush any tail without trailing newline
         if buf[0].strip():
