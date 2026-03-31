@@ -23,5 +23,5 @@ COPY glm.py glm_server.py ./
 # Expose port
 EXPOSE 10000
 
-# Run the server
-CMD ["python", "glm_server.py", "--host", "0.0.0.0", "--port", "10000"]
+# Run the server on 0.0.0.0 and use PORT env var
+CMD ["sh", "-c", "python glm_server.py --host 0.0.0.0 --port ${PORT:-10000}"]
