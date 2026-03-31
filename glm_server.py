@@ -43,7 +43,7 @@ import uvicorn
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, StreamingResponse
-from pydantic import BaseModel, ConfigDict, field_validator
+from pydantic import BaseModel, validator
 
 # ── GLM internals ─────────────────────────────────────────────────────────────
 from glm import (  # type: ignore
@@ -269,17 +269,18 @@ def _coerce(v: Any) -> str:
 
 
 class Message(BaseModel):
-    model_config = ConfigDict(extra="ignore")
     role: str
     content: Any = ""
 
-    @field_validator("content", mode="before")
+    class Config:
+        extra = "ignore"
+
+    @validator("content", pre=True)
     @classmethod
     def _norm(cls, v): return _coerce(v)
 
 
 class ChatRequest(BaseModel):
-    model_config = ConfigDict(extra="ignore")
     model:                 str             = "glm-5"
     messages:              list[Message]
     stream:                bool            = False
@@ -292,6 +293,9 @@ class ChatRequest(BaseModel):
     stop:                  Union[str, list, None] = None
     n:                     Union[int,   None] = None
     user:                  Union[str,   None] = None
+
+    class Config:
+        extra = "ignore"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Message extraction
